@@ -1,0 +1,17 @@
+\chapter{INTRODUCCIÓN}
+
+En el presente trabajo de graduación se tratarán propiedades entre la función zeta de Riemann\footnote{Denotada con la letra griega $\zeta$.} y las funciones
+aritméticas. La función $\zeta$ es una función de variable compleja estudiada ampliamente en la actualidad. La misma es definida como una serie infinita de
+complejos. A lo largo del presente documento se demostrará como las funciones aritméticas aparecen al momento de valuar $\zeta$ sobre distintas expresiones
+que dependan de $s\in\mathbb{C}$ dado.
+
+
+El trabajo de graduación consta de tres secciones principales: La primera sección enmarca un desarrollo teórico de las
+propiedades y conceptos relacionados a las funciones aritméticas. La mayoría de las funciones a utilizar
+cumplen ser multiplicativas, propiedad definida y utilizada ampliamente en dicha sección. Se enlistan y definen las funciones aritméticas principales, demostrando relaciones entre las mismas utilizadas posteriormente en el documento.
+La segunda sección muestra un concepto dual al de las funciones aritméticas, el cual es el concepto de \emph{función $p$}. Junto con este, se define la \emph{convolución de funciones aritméticas}, la cual es una operación utilizada tanto en la segunda como tercera sección del documento.
+Se define dicha pareja de conceptos dado que muchas de las propiedades de las funciones aritméticas son demostradas utilizando la propiedad de multiplicatividad, aspecto que hace necesario la búsqueda de una manera alterna para poder demostrarlas.
+La tercera sección enlista varias de las relaciones entre el desarrollo en serie de la función $\zeta$ y las funciones aritméticas, definiendo un concepto
+similar a las convoluciones, ampliándose el uso del concepto a series. Utilizando
+las propiedades de las convoluciones en series, se realiza la mayoría del desarrollo
+de la teoría que rige los valores de $\zeta$ para distintos múltiplos de un $s\in\mathbb{C}$ dado y las funciones aritméticas que aparecen en su desarrollo en serie, alcanzando la forma general de las mismas.

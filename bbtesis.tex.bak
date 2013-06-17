@@ -1,0 +1,20 @@
+\begin{thebibliography}{99}
+    \addcontentsline{toc}{chapter}{BIBLIOGRAFÍA}
+\bibitem{ob6} Gutiérrez, William. \textbf{Introducción a \TeX y a \LaTeXe}. Guatemala: Universidad de San Carlos de Guatemala, Licenciatura en Matemática.
+
+\bibitem{ob1} Niven, Ivan y otros. \textbf{Introduccion a la Teoría de los Números}. Mexico: Limusa, 1976.
+\bibitem{ob2} Ahlfors, Lars V. \textbf{Complex Analysis (An Introduction to the Theory of Analytic Functions of One Complex Variable)} 3$^{\mathrm{a}}$
+	ed. (International Series in Pure and Applied Mathematics) Estados Unidos: McGraw-Hill Inc., 1991.
+\bibitem{ob3} Hlawka, Edmund y otros. \textbf{Geometric and Analytic Number Theory}. Estados Unidos: Springger-Verlag, 1991.
+\bibitem{ob4} Ebbinghaus, H.D. y otros. \textbf{Numbers}. Estados Unidos: Springger-Verlag, 1991.
+\bibitem{ob5} Burton, David M. \textbf{Elementary Number Theory}. $4^{\mathrm{ta}}$ ed. Estados Unidos: McGraw-Hill Inc., 1991.
+\bibitem[Rudin(1987)]{RudRC}
+Rudin, Walter. \textbf{Real and complex analysis.} 3$^{\mathrm{a}}$
+ed. (International Series in Pure and Applied Mathematics) Estados
+Unidos: McGraw"=Hill, 1987.
+\bibitem[Rudin(1973)]{RudB}
+Rudin, Walter. \textbf{Principles of mathematical analysis.}
+3$^{\mathrm{a}}$ ed. (International Series in Pure and Applied
+Mathematics) Estados Unidos: McGraw"=Hill, 1973.
+
+\end{thebibliography}

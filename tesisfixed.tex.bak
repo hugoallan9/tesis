@@ -1,0 +1,157 @@
+\documentclass[letterpaper,12pt]{thesis}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
+\usepackage{latexsym}
+\usepackage{cancel}
+\usepackage{longtable}
+%\usepackage[text={5.8in,8in},centering]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{bibthesis,color,enumerate,indentfirst,geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref,url,breakurl}
+\decimalpoint
+\makeatother
+
+\hypersetup{pdftitle = {tituloDePDF}, pdfkeywords = {poner un listado de palabras clave}, pdfauthor = {\textcopyright\ 2012, Ricardo Neftalí Pontaza Rodas (pontaza.ricardo@gmail.com)}, pdfsubject = {Trabajo
+de graduación para obtener la Licenciatura en Matemática Aplicada},
+pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
+{true}}
+
+% Dimensiones de la página -----------------------------------------
+\setlength{\oddsidemargin}{41.53pt}      % margen impar
+\setlength{\evensidemargin}{-15.37pt}    % margen par
+\setlength{\textheight}{610pt}           % texto vertical
+\setlength{\textwidth}{433.62pt}         % texto horizontal
+\setlength{\marginparsep}{8pt}           % distancia: texto y nota al margen
+\setlength{\marginparwidth}{44pt}        % longitud de la nota al margen
+\setlength{\topmargin}{10.53pt}          % distancia hacia la cabecera
+\setlength{\headsep}{19pt}               % distancia: texto y cabecera
+\setlength{\footskip}{21pt}              % distancia: texto y pie de página
+\setlength{\parindent}{1cm}              % sangría
+\setlength{\parskip}{21pt}               % distancia entre párrafos
+\linespread{1}                           % interlineado
+
+\setlength\LTleft{0pt} \setlength\LTright{0pt} % parámetros para tablas largas
+
+% Citas (sistema lancasteriano) y direcciones web ------------------
+\bibpunct[--]{[}{]}{,}{n}{,}{;}
+\setlength{\bibsep}{21pt}               % distancia entre items en la bibliografía
+%\urlstyle{rm}                          % fuente en direcciones web
+
+% Protección de la tabla de contenidos
+\addtocontents{toc}{\protect\setlength{\parskip}{1pt}}
+
+
+
+\newtheorem*{teorema2}{Teorema de punto fijo de Banach}
+\newtheorem{teorema}{Teorema}
+\newtheorem*{teoremaconvolucion}{Teorema de Convolución}
+\newtheorem*{teoremaconvolucionseries}{Teorema (Convolución en series infinitas)}
+\newtheorem*{teoremaConvolucionesSeriesFP}{Teorema de convolución de series}
+\newtheorem*{teoremamobius}{Teorema (Inversión de Möbius)}
+\newtheorem*{lema}{Lema}
+\newtheorem{proposition}{Proposición}
+\newtheorem{propiedad}{Propiedad}
+\newtheorem{corolario}{Corolario}
+\newtheorem{escolio}{Escolio}
+\theoremstyle{remark}
+\newtheorem*{nota}{Nota}
+\newtheorem*{solution}{Solución}
+\theoremstyle{exercise}
+\newtheorem*{problema}{Problema}
+\newtheorem*{definicion}{Definición}
+\newtheorem*{notacion}{Notación}
+\newtheorem*{consideracion}{Consideración}
+\newtheorem{ejercicio}{Ejercicio}
+\newtheorem{ejemplo}{Ejemplo}
+\numberwithin{equation}{chapter}
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+
+% Operadores y funciones -------------------------------------------
+\DeclareMathOperator{\Supp}{Supp}       \DeclareMathOperator{\vol}{Vol}%
+\DeclareMathOperator{\Rz}{Re}           \DeclareMathOperator{\Iz}{Im}%
+
+\renewcommand{\spanishoperators}{sen mcd spec d}
+\makeatletter
+\def\section{\@startsection{section}{1}{0pt}{-3.25ex plus -1ex minus -.2ex}{1.5ex plus .2ex}{\normalsize\bf}}
+\makeatother
+\newcommand{\R}{\mathbb{R}}             \newcommand{\Z}{\mathbb{Z}}%
+\newcommand{\C}{\mathbb{C}}             \newcommand{\K}{\mathbb{K}}%
+\newcommand{\N}{\mathbb{N}}             \newcommand{\Q}{\mathbb{Q}}%
+\newcommand{\Af}{\mathfrak{A}}          \newcommand{\Bf}{\mathfrak{B}}%
+\newcommand{\Cf}{\mathfrak{C}}          \newcommand{\Df}{\mathfrak{D}}%
+\newcommand{\Ff}{\mathfrak{F}}          \newcommand{\Lf}{\mathfrak{L}}%
+\newcommand{\Mf}{\mathfrak{M}}          \newcommand{\Sf}{\mathfrak{S}}%
+\newcommand{\Hi}{\mathcal{H}}           \newcommand{\Ba}{\mathcal{B}}%
+\newcommand{\nada}{\varnothing}         \newcommand{\To}{\longrightarrow}%
+\newcommand{\RR}{[-\infty,+\infty]}     \newcommand{\df}{:=}%
+\newcommand{\sani}{$\sigma$\nobreakdash-anillo}
+\newcommand{\salg}{$\sigma$\nobreakdash-álgebra}
+\newcommand{\Dm}{\vspace{-12pt}Demostración: }
+\newcommand{\ff}{f^{-1}}
+
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\pnorm}[2]{\norm{#1}_{#2}}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\su}[2]{\left\{#1_{#2}\right\}}
+\newcommand{\Su}[4]{\suce #1#2 _{#2=#3}^{#4}}
+\newcommand{\union}[4]{\bigcup_{{#2}={#3}}^{#4} #1_{#2}}
+\newcommand{\Union}[4]{\bigcup \limits_{{#2}={#3}}^{#4} #1_{#2}}
+\newcommand{\inter}[4]{\bigcap_{{#2}={#3}}^{#4} #1_{#2}}
+\newcommand{\Inter}[4]{\bigcap \limits_{{#2}={#3}}^{#4} #1_{#2}}
+
+\newcommand{\pdual}[2]{\left<#1,#2\right>}
+\newcommand{\bra}[1]{\left<#1\right\vert}
+\newcommand{\ket}[1]{\left\vert#1\right>}
+\newcommand{\braket}[2]{\left<#1\vert#2\right>}
+\newcommand{\Braket}[2]{\left\vert#1\right>\! \left<#2\right\vert}
+% \theoremstyle{definition}
+\begin{document}
+{\setlength{\baselineskip}{1.3\baselineskip}
+
+\include{portada} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Portada
+
+\include{identi} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Identificación
+
+\include{nomina} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Nómina de Junta Directiva
+
+\include{hojapr} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Hoja de protocolo
+
+% si las cartas están en un fichero PDF, será fácil adjuntarlas con el paquete: pdfpages
+%\include{letter1} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del asesor
+%\include{letter2} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del revisor
+%\include{letter3} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del Director de Escuela
+%\include{letter4} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Orden de impresión
+
+\include{agrade} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Agradecimientos
+
+%\include{dedica} \thispagestyle{empty}                              % Dedicatoria
+
+\par}
+
+\frontmatter    % --------------------------------------------------  Hojas preliminares
+
+\tableofcontents    % Índice general vinculado
+
+{\setlength{\baselineskip}{1.3\baselineskip}
+
+\include{simbolos}  % Lista de símbolos
+
+\include{obje}      % Resumen y objetivos
+
+\include{intr}      % Introducción
+
+\mainmatter
+
+Hello world
+\begin{align*}
+1+1\approx 2
+\end{align*}
+\backmatter     % --------------------------------------------------  Apartados finales
+
+\include{c_y_r}     % Conclusiones y recomendaciones
+
+\par}
+
+\include{bbtesis}   % Bibliografía
+\end{document}

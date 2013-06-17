@@ -1,0 +1,28 @@
+\chapter{RESUMEN}
+
+La función $\zeta$ es una de las funciones más estudiadas tanto en la rama de la Teoría de los Números como de la del Análisis de variable compleja. Su importancia radica en el hecho que permite demostrar propiedades entre los números primos, basándose en el conjunto de los complejos.
+
+ Este trabajo de graduación utiliza los conceptos de funciones aritmética, números primos y convoluciones, demostrando relaciones que se dan entre ellos. Se demuestra la existencia de un concepto dual al de las funciones aritméticas, el cual es el concepto de funciones $p$. Se introduce y trabaja un concepto dual al de convolución aplicándose para las funciones $p$, lo que delimita una manera alterna de demostración de relaciones entre funciones aritméticas. Al utilizar la teoría desarrollada para las funciones aritméticas y las funciones $p$, se demuestra la existencia y se encuentran las funciones aritméticas que aparecen como numerador en la expansión en serie de $\frac{\zeta(2s)}{\zeta(s)}$, $\frac{\zeta^2(s)}{\zeta(2s)}$, $\frac{\zeta^3(s)}{\zeta(2s)}$, $\frac{\zeta(2s)}{\zeta^2(s)}$; se demuestra además que para la expresión general $\frac{\zeta^a(bs)}{\zeta^c(ds)}$, con $a,b,c,d\in\mathbb{N}$, $s\in\mathbb{C}$, se cumple que el numerador de cada término de su expansión en serie define una función aritmética, encontrando la forma general de la misma.
+
+% -------------------------------------------------------------------------------
+
+\chapter{OBJETIVOS}
+
+{\Large \textbf{General}} \label{objetivog}
+\begin{itemize}
+    \item Brindar al lector teoría de la función $\zeta$ de Riemann y sus relaciones con los números primos y las funciones aritméticas, tanto como
+de las relaciones entre las funciones $p$ de dichas funciones aritméticas con la función $\zeta$.
+\end{itemize}
+
+\vspace{18pt}
+
+{\Large \textbf{Específicos}}
+
+\begin{enumerate}
+    \item Mostrar las relaciones que se dan entre las funciones multiplicativas, las
+aritméticas en general y la expansión en serie de razones de la función $\zeta$ valuada en distintos múltiplos de un $s\in\mathbb{C}$.
+    \item Mostrar el concepto de funcines $p$ y mostrar la dualidad con las funciones
+aritméticas.
+    \item Hacer uso de las funciones $p$ y del concepto de multiplicatividad para demostrar varias de las propiedades de las funciones aritméticas.
+	\item Desarrollar propiedades de $\zeta$ y expresiones de la misma utilizando el concepto de funciones $p$.
+\end{enumerate}

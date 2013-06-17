@@ -1,0 +1,9 @@
+\setlength {\parskip }{1pt}
+\select@language {spanish}
+\contentsline {chapter}{LISTA DE S\'IMBOLOS}{III}{chapter*.2}
+\contentsline {chapter}{RESUMEN}{V}{chapter*.3}
+\contentsline {chapter}{OBJETIVOS}{VII}{chapter*.4}
+\contentsline {chapter}{INTRODUCCI\'ON}{IX}{chapter*.5}
+\contentsline {chapter}{CONCLUSIONES}{3}{chapter*.7}
+\contentsline {chapter}{RECOMENDACIONES}{5}{chapter*.8}
+\contentsline {chapter}{BIBLIOGRAF\'IA}{7}{chapter*.9}

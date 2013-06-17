@@ -1,0 +1,71 @@
+\chapter{CONCLUSIONES}
+
+\vspace{6pt}
+
+\begin{enumerate}[1.\hspace{5ex}]
+    \item La propiedad de multiplicatividad de las funciones aritméticas permite calcular expresiones complejas que relacione varias de las mismas.\vspace{12pt}
+    \item Cualquier función aritmética $f$ puede ser vista como función de variable real, definiendo la función $f_p:\mathbb{R}\rightarrow{\mathbb{C}}$ como
+	\begin{align*}
+		f_p(x)&=\sum_{n=0}^\infty f\left(p^n\right)x^n
+	\end{align*}
+	donde $p$ es un primo cualquiera.
+	Esto permite utilizar convoluciones para demostrar varias de sus propiedades sin utilizar el concepto de multiplicatividad.\vspace{12pt}
+    \item Existen dos tipos distintos de convolución. Ambas pueden ser utilizadas para demostrar propiedades de las funciones aritméticas.\vspace{12pt}
+    \item El numerador de cada término de la expansión de serie de la expresión $\frac{\zeta^a(bs)}{\zeta^c(ds)}$, con $a,b,c,d\in\mathbb{N}$ define una función aritmética, la cual depende de los exponentes de las potencias de primos que se encuentran en la factorización prima del índice de cada término en la expansión de serie de dicha expresión.\vspace{12pt}
+	\item Al ser $a,b\in\mathbb{Z}^{+}$, y $h(n)$ la función aritmética que aparece en
+		\begin{align*}
+			 \zeta^a(bs)&=\sum_{n=1}^{\infty}\frac{h(n)}{n^s}
+		\end{align*}
+		Entonces $h$ es de la forma
+		\begin{align}
+			 h\left(p^r\right)&=\left.\left(\frac{d^{r}}{dx^r}\left[\frac{1}{(1-x^b)^a}\right]\right)\right|_{x=0}\left(\frac{1}{r!}\right)
+		\end{align}
+		donde $p$ es un primo cualquiera y $r\in\mathbb{Z}^+$. A la vez, h es multiplicativa y la función $p$ asociada a $h$ es
+		\begin{align}
+			h_p(x)&=\frac{1}{(1-x^b)^a}
+		\end{align*}
+	\item Al ser $c,d\in\mathbb{Z}^+$, y ser $g(n)$ la función aritmética que aparece en
+		\begin{align*}
+		 \frac{1}{\zeta^c(ds)}&=\sum_{n=1}^{\infty}\frac{g(n)}{n^s}
+		\end{align*}
+		Entonces $g$ es de la forma
+		\begin{align*}
+		 g\left(p^r\right)&=\left\{\begin{array}{l}(-1)^{t}\begin{pmatrix}c\\t\end{pmatrix},\text{ con $t\in\mathbb{N}$ tal que }r=td,\text{ y }r\leq cd\\
+		\\
+		0,\text{ en otro caso}
+		\end{array}\right.
+		\end{align*}
+		donde $p$ es un primo cualquiera y $r\in\mathbb{N}$. A la vez $g$ es multiplicativa y la función $p$ asociada a $g$ es
+		\begin{align*}
+		g_p(x)&=(1-x^d)^c
+		\end{align}
+	\item Al ser $a,b,c,d\in\mathbb{Z}^{+}$, y ser $f(n)$ la función aritmética que aparece en
+		\begin{align*}
+		 \frac{\zeta^a(bs)}{\zeta^c(ds)}&=\sum_{n=1}^{\infty}\frac{f(n)}{n^s}
+		\end{align*}
+			Entonces $f$ es de la forma
+		\begin{align*}
+		f(p^r)&=\left.\left(\frac{d^r }{dx^r}\left[\frac{(1-x^d)^c}{(1-x^b)^a}\right]\right)\right|_{x=0}\left(\frac{1}{r!}\right)
+		\end{align*}
+		donde $p$ es un primo cualquiera y $r\in\mathbb{Z}^{+}$. A la vez, $f$ es multiplicativa y la función $p$ asociada a $f$ es
+		\begin{align*}
+		f_p(x)&=\frac{(1-x^d)^c}{(1-x^b)^a}
+		\end{align*}
+\end{enumerate}
+
+% -------------------------------------------------------------------------------
+
+\chapter{RECOMENDACIONES}
+
+\vspace{6pt}
+
+\begin{enumerate}[1.\hspace{5ex}]
+    \item Para un curso a nivel de pregrado en
+    Teoría de Números, como referencia se pueden utilizar
+    los contenidos de las primeras dos secciones del presente trabajo de
+    graduación.\vspace{12pt}
+    \item Como complemento al estudio de la Teoría de Números Analítica se
+    pueden utilizar las últimas dos secciones, con la salvedad de hacer referencia a las definiciones y propiedades básicas de las funciones aritméticas.\vspace{12pt}
+    \item Para enriquecer y sustentar los resultados que se
+    obtengan en el estudio de Teoría de Números Analítica, es necesario analizar los resultados alcanzados como los que se podrían alcanzar al utilizar conceptos como:  números y polinomios de Bernoulli, polinomio de Jacobi, números de Stirling, etc.
+\end{enumerate}

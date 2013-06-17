@@ -1,0 +1,11 @@
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2011.5.30)  28 JUN 2011 09:17
+entering extended mode
+**C:/Documents*and*Settings/Administrator/Desktop/Tesis*Tex/nomina.tex
+("C:/Documents and Settings/Administrator/Desktop/Tesis Tex/nomina.tex"
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2008-06-18, ngerman-x-2008-06-18, french, loaded.
+! Undefined control sequence.
+l.1 \pdfbookmark
+                [112]{NÓMINA DE JUNTA DIRECTIVA}{ndj}
+? 
