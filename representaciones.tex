@@ -30,7 +30,7 @@ Si se escoge una $R\mbox{-base}$ de $V$, se puede definir un isomorfismo $\phi$ 
 
 \begin{definicion}
 Sea $G$ un grupo y $R$ un anillo conmutativo. Una representación matricial de $G$ sobre $R$ de grado $n$ es un homomorfismo de grupos $T \colon G \to GL(n,R)$.
-
+ 
 
 \end{definicion} 
 
@@ -199,7 +199,22 @@ Finalmente si $car(K) \mid m$ entonces se propone la representación $C \colon G
 \end{ejemplo} 
 
 \begin{ejemplo}[Representación de $D_4$]
-Considérese el grupo de simetrías de un cuadrado. Este grupo de 8 elementos, a saber, las reflecciones a través de los ejes $r_1, r_2, r_3, r_4$ y las rotaciones con ángulos $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$ y $2\pi$ alrededor del centro.  
+Considérese el grupo de simetrías de un cuadrado. Este grupo de 8 elementos, a saber, las reflecciones a través de los ejes $r_1, r_2, r_3, r_4$ (como se ve en ) y las rotaciones con ángulos $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$ y $2\pi$ alrededor del centro.  
+
+\begin{pspicture*}(-4.18,-4.18)(5.58,5.32)
+\psline(2,2)(-2,2)
+\psline(-2,2)(-2,-2)
+\psline(-2,-2)(2,-2)
+\psline(2,-2)(2,2)
+\psline[linestyle=dashed,dash=2pt 2pt](0,3.81)(0,-3.81)
+\psline[linestyle=dashed,dash=2pt 2pt](-2.69,2.69)(2.69,-2.69)
+\psline[linestyle=dashed,dash=2pt 2pt](3.81,0)(-3.81,0)
+\psline[linestyle=dashed,dash=2pt 2pt](-2.69,-2.69)(2.69,2.69)
+\rput[tl](4.06,0.42){$r_1$}
+\rput[tl](2.9,3.28){r_2}
+\rput[tl](-0.06,4.46){r_3}
+\rput[tl](-3.18,3.4){r_4}
+\end{pspicture*}
 
 Sea $a$ la rotación de ángulo $\frac{\pi}{2}$ y $b$ la reflexión a través del eje $r_2$. Es fácil ver, bajo consideraciones geométricas, que cualquier otro elemento de este grupo se puede obtener por medio de $a$ y $b$.
 
@@ -331,3 +346,39 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada reducible si e
 0 & C(g)
 \end{pmatrix} \]
 \end{definicion}
+
+El ejemplo \ref*{ejemciclico} muestra que la representación regular de un grupo cíclico de orden $m$, sobre un campo $K$ que contiene raíces de la unidad de orden $m$ es reducible. De hecho, cualquier representación regular de un grupo finito $G \neq \{ 1 \}$ sobre cualquier campo es reducible. En efecto, nótese que si en el espacio de representación $RG$ se toma el elemento $\hat{G} = \sum_{g \in G}g$ entonces $ T_g(\hat{G}) = \hat{G}$ por lo tanto el subespacio generado por $\hat{G}$ es invariante bajo $T$ y $(\hat{G}) \neq RG.$  
+
+\begin{definicion}
+Una representación $T \colon G \to GL(V)$ de un grupo $G$ sobre un campo $K$ es llamado completamente irreducible si para todo subespacio $W$ que es invariante bajo $T$ existe un subespacio invariante $W'$ tal que $V = W \oplus W'.$
+\end{definicion}
+
+Para entender de mejor manera esta definición se dará una interpretación en términos de matrices.
+
+Sea $\{ w_1, w_2, \dots, w_t \}$ y $\{ w_{t+1}, \dots, w_n\}$ bases dadas para $W$ y $W'$ respectivamente, entonces $\{ w_1, w_t, w_{t+1}, \dots, w_n \}$ es una base de $V$ y para cualquier $g \in G$ la matriz de $T_g$ con respecto a esta base es de la forma
+\[ \begin{pmatrix}
+\mathsf{A(g)} & 0 \\
+0 & \mathsf{B(g)}
+\end{pmatrix} \] donde $\mathsf{A(g)}$ y $\mathsf{B(g)}$ son las matrices de representación de $T_g$ en $W$ y $W'$ con respecto a las bases dadas. 
+
+\begin{definicion}
+Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente reducible si cualquier representación matricial $M$ de la forma 
+
+\[ \begin{pmatrix}
+\mathsf{A(g)} & \mathsf{B(g)} \\
+0 & \mathsf{C(g)}
+\end{pmatrix} \] es equivalente a una representación matricial de la forma
+\[ \begin{pmatrix}
+\mathsf{A(g)} & 0 \\
+0 & \mathsf{D(g)} 
+\end{pmatrix} \].
+\end{definicion}
+\newpage
+
+\section{Representación y Módulos.}
+ En este sección se estudiará la conexión que hay entre módulos y representaciones. Dicha conexión se establece usando el concepto de grupo-anillo.
+ 
+ \begin{proposicion}
+ Sea $G$ un grupo y $R$ un anillo conmutativo con unidad. Entonces, existe una biyección entre representaciones de $G$ sobre $R$ y $RG\mbox{-módulos}$ libres y de rango finito. 
+ \end{proposicion}
+
