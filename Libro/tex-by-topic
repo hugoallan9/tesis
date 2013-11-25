@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <title>
+  VictorEijkhout / TeX by Topic   &mdash; Bitbucket
+</title>
+  <link rel="icon" type="image/png" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/img/favicon.png">
+  <meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+  
+  
+<link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/compressed/css/cbb3614dd31b.css" type="text/css" />
+<link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/compressed/css/0066e09d4204.css" type="text/css" />
+
+  <!--[if lt IE 9]><link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/css/aui/aui-ie.css" media="all"><![endif]-->
+  <!--[if IE 9]><link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/css/aui/aui-ie9.css" media="all"><![endif]-->
+  <!--[if IE]><link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/css/aui-overrides-ie.css" media="all"><![endif]-->
+  <meta name="description" content="
+  
+    Source code of the book &quot;TeX by Topic&quot; by Victor Eijkhout.
+
+http://eijkhout.net/texbytopic/texbytopic.html
+  
+"/>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket" />
+  
+  
+  <link href="/VictorEijkhout/tex-by-topic/rss" rel="alternate nofollow" type="application/rss+xml" title="RSS feed for TeX by Topic" />
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@bitbucket"/>
+  <meta name="og:type" content="bitbucket:hgrepository"/>
+  <meta name="og:title" content="VictorEijkhout / TeX by Topic"/>
+  <meta name="og:url" content="https://bitbucket.org/VictorEijkhout/tex-by-topic"/>
+  
+    <meta name="og:description" content="Source code of the book &quot;TeX by Topic&quot; by Victor Eijkhout.
+
+http://eijkhout.net/texbytopic/texbytopic.html"/>
+  
+  
+    <meta name="og:image" content="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/img/language-avatars/default_128.png"/>
+  
+
+  
+    <script src="//cdn.optimizely.com/js/4079040.js"></script>
+  
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+<body class="production "
+      data-base-url="https://bitbucket.org"
+      data-no-avatar-image="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/img/default_avatar/16/user_blue.png"
+      data-current-user="{&quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;isAuthenticated&quot;: false}"
+       data-current-repo="{&quot;scm&quot;: &quot;hg&quot;, &quot;language&quot;: &quot;&quot;, &quot;creator&quot;: {&quot;username&quot;: &quot;VictorEijkhout&quot;}, &quot;id&quot;: 1759421, &quot;readOnly&quot;: false, &quot;owner&quot;: {&quot;username&quot;: &quot;VictorEijkhout&quot;, &quot;isTeam&quot;: false}, &quot;pygmentsLanguage&quot;: null, &quot;slug&quot;: &quot;tex-by-topic&quot;}"
+      
+      
+      
+      
+      >
+<script type="text/javascript" src="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/compressed/js/e98deabf8a2e.js"></script>
+<div id="page">
+  <div id="wrapper">
+    
+    <header id="header" role="banner">
+      
+        
+      
+      <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+          <div class="aui-header-primary">
+            <h1 class="aui-header-logo aui-header-logo-bitbucket logged-out">
+              <a href="/" class="aui-nav-imagelink" id="logo-link">
+                <span class="aui-header-logo-device">Bitbucket</span>
+              </a>
+            </h1>
+            
+            <script id="repo-dropdown-template" type="text/html">
+  
+
+[[#hasViewed]]
+  <div class="aui-dropdown2-section">
+    <strong class="viewed">Recently viewed</strong>
+    <ul class="aui-list-truncate">
+      [[#viewed]]
+        <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+          <a href="[[url]]" title="[[owner]]/[[name]]" class=" aui-icon-container">
+            <img class="repo-avatar size16" src="[[{avatar}]]" alt="[[owner]]/[[name]] avatar"/>
+            [[owner]] / [[name]]
+          </a>
+        </li>
+      [[/viewed]]
+    </ul>
+  </div>
+[[/hasViewed]]
+[[#hasUpdated]]
+<div class="aui-dropdown2-section">
+  <strong class="updated">Recently updated</strong>
+  <ul class="aui-list-truncate">
+    [[#updated]]
+    <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+      <a href="[[url]]" title="[[owner]]/[[name]]" class=" aui-icon-container">
+        <img class="repo-avatar size16" src="[[{avatar}]]" alt="[[owner]]/[[name]] avatar"/>
+        [[owner]] / [[name]]
+      </a>
+    </li>
+    [[/updated]]
+  </ul>
+</div>
+[[/hasUpdated]]
+
+</script>
+            <ul role="menu" class="aui-nav">
+              
+                <li>
+                  <a href="/plans">
+                      Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="/whats-new">
+                    Latest features
+                  </a>
+                </li>
+              
+            </ul>
+            
+          </div>
+          <div class="aui-header-secondary">
+            
+            <ul role="menu" class="aui-nav">
+              <li>
+                <form action="/repo/all" method="get" class="aui-quicksearch">
+                  <label for="search-query" class="assistive">owner/repository</label>
+                  <input id="search-query" class="search" type="text" placeholder="owner/repository" name="name">
+                </form>
+              </li>
+              <li>
+                <a class="aui-dropdown2-trigger"aria-controls="header-help-dropdown" aria-owns="header-help-dropdown"
+                   aria-haspopup="true" data-container="#header .aui-header-inner" href="#header-help-dropdown">
+                  <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span><span class="aui-icon-dropdown"></span>
+                </a>
+                <nav id="header-help-dropdown" class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" aria-hidden="true">
+                  <div class="aui-dropdown2-section">
+                    <ul>
+                      <li>
+                        <a href="/whats-new" id="features-link">
+                          Latest features
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="aui-dropdown2-section">
+                    <ul>
+                      <li>
+                        <a class="support-ga"
+                           data-support-gaq-page="DocumentationHome"
+                           href="https://confluence.atlassian.com/x/bgozDQ"
+                           target="_blank">
+                          Documentation
+                        </a>
+                      </li>
+                      <li>
+                        <a class="support-ga"
+                           data-support-gaq-page="Documentation101"
+                           href="https://confluence.atlassian.com/x/cgozDQ"
+                           target="_blank">
+                          Bitbucket 101
+                        </a>
+                      </li>
+                      <li>
+                        <a class="support-ga"
+                           data-support-gaq-page="DocumentationKB"
+                           href="https://confluence.atlassian.com/x/2w4zDQ"
+                           target="_blank">
+                          Knowledge base
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="aui-dropdown2-section">
+                    <ul>
+                      <li>
+                        <a class="support-ga"
+                           data-support-gaq-page="Answers"
+                           href="https://answers.atlassian.com/tags/bitbucket/"
+                           target="_blank">
+                          Bitbucket on Atlassian Answers
+                        </a>
+                      </li>
+                      <li>
+                        <a class="support-ga"
+                           data-support-gaq-page="Home"
+                           href="/support">
+                        Support
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+                
+                  
+                
+              
+                  <li id="header-signup-button">
+                    <a class="aui-button aui-button-primary aui-style" href="/account/signup/">
+                      Sign up
+                    </a>
+                  </li>
+                <li id="user-options">
+                  <a href="/account/signin/?next=/VictorEijkhout/tex-by-topic" class="aui-nav-link login-link">Log in</a>
+                </li>
+              
+            </ul>
+            
+            
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+      <header id="account-warning" role="banner"
+              class="aui-message-banner warning ">
+        <div class="center-content">
+          <span class="aui-icon aui-icon-warning"></span>
+          <span class="message">
+            
+          </span>
+        </div>
+      </header>
+    
+      <header id="aui-message-bar">
+        
+      </header>
+    
+    
+  <header id="repo-warning" role="banner" class="aui-message-banner warning">
+    <div class="center-content">
+      <span class="aui-icon aui-icon-warning"></span>
+      <span class="message">
+      </span>
+    </div>
+  </header>
+  <script id="repo-warning-template" type="text/html">
+  
+
+
+
+
+  This repository's ownership is pending transfer to <a href="/[[username]]">[[username]]</a>.
+  Visit the <a href="/VictorEijkhout/tex-by-topic/admin/transfer">transfer repository page</a> to view more details.
+
+
+</script>
+  <header id="repo-header" class="subhead row">
+    <div class="center-content">
+      <div class="repo-summary with-repo-watch">
+        <a class="repo-avatar-link" href="/VictorEijkhout/tex-by-topic">
+          <span class="repo-avatar-container size64" title="VictorEijkhout/TeX by Topic">
+  <img alt="VictorEijkhout/TeX by Topic" src="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/img/language-avatars/default_64.png">
+</span>
+
+          
+        </a>
+        <h1><a class="repo-link" href="/VictorEijkhout/tex-by-topic">TeX by Topic</a></h1>
+        <ul class="repo-metadata clearfix">
+          <li>
+            <a class="user" href="/VictorEijkhout">
+              <span class="aui-icon aui-icon-small aui-iconfont-user">User icon</span>
+              <span>VictorEijkhout</span>
+            </a>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+      <div id="repo-toolbar" class="bb-toolbar">
+        
+        <div class="aui-buttons">
+          <a id="repo-clone-button" class="aui-button aui-style" href="https://bitbucket.org/VictorEijkhout/tex-by-topic">
+            <span class="aui-icon aui-icon-small aui-iconfont-devtools-clone"></span>
+            <span>Clone</span>
+            <span class="aui-icon-dropdown"></span>
+          </a>
+          <a id="fork-button" class="aui-button aui-style"
+             href="/VictorEijkhout/tex-by-topic/fork">
+            <span class="aui-icon aui-icon-small aui-iconfont-devtools-fork"></span>
+            <span>Fork</span>
+          </a>
+        </div>
+        <div class="aui-buttons">
+          <a id="compare-button" class="aui-button aui-style"
+             href="/VictorEijkhout/tex-by-topic/compare">
+            <span class="icon compare"></span>
+            <span>Compare</span>
+          </a>
+          <a id="pull-request-button" class="aui-button aui-style"
+             href="/VictorEijkhout/tex-by-topic/pull-request/new">
+            <span class="aui-icon aui-icon-small aui-iconfont-devtools-pull-request">Pull request icon</span>
+            <span>Pull request</span>
+          </a>
+        </div>
+        
+        
+        
+
+<div id="repo-clone-dialog" class="clone-dialog hidden">
+  
+<div class="clone-url">
+  <div class="aui-buttons">
+    <a href="https://bitbucket.org/VictorEijkhout/tex-by-topic"
+       class="aui-button aui-style aui-dropdown2-trigger" aria-haspopup="true"
+       aria-owns="clone-url-dropdown-header">
+      <span class="dropdown-text">HTTPS</span>
+    </a>
+    <div id="clone-url-dropdown-header" class="aui-dropdown2 aui-style-default">
+      <ul class="aui-list-truncate">
+        <li>
+          <a href="https://bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+              data-command="hg clone https://bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+            class="item-link https">HTTPS
+          </a>
+        </li>
+        <li>
+          <a href="ssh://hg@bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+              data-command="hg clone ssh://hg@bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+            class="item-link ssh">SSH
+          </a>
+        </li>
+      </ul>
+    </div>
+    <input type="text" readonly="readonly" value="hg clone https://bitbucket.org/VictorEijkhout/tex-by-topic">
+  </div>
+  
+  <p>Need help cloning? Visit
+     <a href="https://confluence.atlassian.com/x/cgozDQ" target="_blank">Bitbucket 101</a>.</p>
+  
+</div>
+
+
+  
+  
+  
+
+<div class="clone-in-sourcetree"
+  data-https-url="https://bitbucket.org/VictorEijkhout/tex-by-topic"
+  data-ssh-url="ssh://hg@bitbucket.org/VictorEijkhout/tex-by-topic">
+  <p><button class="aui-button aui-style aui-button-primary">Clone in SourceTree</button></p>
+
+
+  <p class="windows-text">
+      
+        <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_win" target="_blank">SourceTree</a>
+        is a free Windows client by Atlassian for Git and Subversion.
+      
+  </p>
+  <p class="mac-text">
+      
+        <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_mac" target="_blank">SourceTree</a>
+        is a free Mac client by Atlassian for Git, Mercurial, and Subversion.
+      
+  </p>
+</div>
+
+  
+</div>
+
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </header>
+  <nav id="repo-tabs" class="aui-navgroup aui-navgroup-horizontal aui-navgroup-horizontal-roomy">
+    <div class="aui-navgroup-inner">
+      <div class="aui-navgroup-primary">
+        <ul class="aui-nav">
+          
+            <li class="aui-nav-selected">
+              <a href="/VictorEijkhout/tex-by-topic/overview" id="repo-overview-link">Overview</a>
+            </li>
+          
+          
+            <li>
+              <a href="/VictorEijkhout/tex-by-topic/src" id="repo-source-link">Source</a>
+            </li>
+          
+          
+            <li>
+              <a href="/VictorEijkhout/tex-by-topic/commits" id="repo-commits-link">
+                Commits
+              </a>
+            </li>
+          
+          
+            <li>
+              <a href="/VictorEijkhout/tex-by-topic/pull-requests" id="repo-pullrequests-link">
+                Pull requests
+                
+                  
+                
+              </a>
+            </li>
+          
+          
+            
+          
+            <li id="issues-tab" class="
+              
+                
+              
+            ">
+              <a href="/VictorEijkhout/tex-by-topic/issues?status=new&amp;status=open" id="repo-issues-link">
+                Issues
+                
+                  
+                
+              </a>
+            </li>
+            <li id="wiki-tab" class="
+                
+                  
+                
+              ">
+              <a href="/VictorEijkhout/tex-by-topic/wiki" id="repo-wiki-link">Wiki</a>
+            </li>
+          
+            <li>
+            <a href="/VictorEijkhout/tex-by-topic/downloads" id="repo-downloads-link">
+              Downloads
+              
+                
+              
+            </a>
+            </li>
+          
+        </ul>
+      </div>
+      <div class="aui-navgroup-secondary">
+        <ul class="aui-nav">
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div id="content" role="main">
+      
+  <div id="repo-content">
+    
+  <div id="repo-overview">
+  
+    
+    
+      <div class="column">
+        
+          
+<section class="bb-banner" id="signup-banner">
+  <div>
+    <p>
+      
+        Bitbucket is a code hosting site with unlimited public and private
+        repositories.  We're also free for small teams!
+      
+    </p>
+    <a class="aui-button aui-button-primary aui-style signup-button" href="/account/signup/">Sign up for free</a>
+    <span class="close aui-icon aui-icon-small aui-iconfont-close-dialog" title="Dismiss this banner">Close</span>
+  </div>
+</section>
+
+        
+        
+          
+            
+              <section id="readme">
+                
+                  <article class="readme file">
+                    <pre class="plaintext">This README belongs with the source of "TeX by Topic"
+copyright Victor Eijkhout 1991-2012,
+released under the GNU Free Documentation License
+
+Printed copies of this book are available on <a href="http://lulu.com" rel="nofollow">lulu.com</a>
+see: <a href="http://www.eijkhout.net/texbytopic/texbytopic.html" rel="nofollow">http://www.eijkhout.net/texbytopic/texbytopic.html</a>
+
+The source of the book is contained in the files 
+  TeXbyTopic.tex
+  figflow.tex
+  glossary.tex
+  tables.tex
+
+If you do anything interesting with this book, kindly contact
+
+  Victor Eijkhout
+  <a href="mailto:victor@eijkhout.net">victor@eijkhout.net</a>
+  Texas Advanced Computing Center
+  The University of Texas at Austin
+  10100 Burnet Road, Austin TX 78758, USA
+
+I am interested in incorporating useful additions into the
+official release of the book.
+
+Victor Eijkhout
+2007-2012
+</pre>
+                  </article>
+                
+              </section>
+            
+          
+        
+        <section id="repo-activity">
+          <h1>
+            Recent activity
+            <a href="/VictorEijkhout/tex-by-topic/rss" class="icon rss">RSS feed fo TeX by Topic</a>
+          </h1>
+          
+            
+              
+                
+
+
+   
+
+
+<div class="newsfeed">
+  
+    
+      
+        
+          
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item start_follow_repo">
+              <span class="icon start_follow_repo"></span>
+              
+
+
+  <a href="/tychobrailleur"><img alt="Sébastien Le Callonnec" src="https://secure.gravatar.com/avatar/8844b6d46bc0f79ae61be9f9f05ce5e4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/tychobrailleur">Sébastien Le Callonnec</a>
+ began watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-04-30T15:43:05+00:00">2013-04-30</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item start_follow_repo">
+              <span class="icon start_follow_repo"></span>
+              
+
+
+  <a href="/mrklein"><img alt="Alexey Matveichev" src="https://secure.gravatar.com/avatar/45ccdd0c71558268237a08ae5184a7f0?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/mrklein">Alexey Matveichev</a>
+ began watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-03-27T07:48:54+00:00">2013-03-27</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item start_follow_repo">
+              <span class="icon start_follow_repo"></span>
+              
+
+
+  <a href="/jordilin"><img alt="jordilin" src="https://secure.gravatar.com/avatar/0c57e2ac5375523989403dedbc9a0d3e?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/jordilin">jordilin</a>
+ began watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-03-20T22:58:12+00:00">2013-03-20</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item issue_update">
+              <span class="icon issue_update"></span>
+              
+
+
+  <a href="/VictorEijkhout"><img alt="Victor Eijkhout" src="https://secure.gravatar.com/avatar/9cb26662ab22dd31e3e9eee2752a4a78?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+    <p>
+
+  <a href="/VictorEijkhout">Victor Eijkhout</a>
+ updated
+    
+    <a href="/VictorEijkhout/tex-by-topic/issue/1/can-not-compile">issue #1</a>
+    
+    in 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-03-06T16:25:08+00:00">2013-03-06</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item stop_follow_repo">
+              <span class="icon stop_follow_repo"></span>
+              
+
+
+  <a href="/Algorhyme_Angel_Tsankov"><img alt="Angel Tsankov" src="https://secure.gravatar.com/avatar/6f519947ef81770752235ae6c148d547?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/Algorhyme_Angel_Tsankov">Angel Tsankov</a>
+ stopped watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-02-23T07:45:49+00:00">2013-02-23</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item start_follow_repo">
+              <span class="icon start_follow_repo"></span>
+              
+
+
+  <a href="/Algorhyme_Angel_Tsankov"><img alt="Angel Tsankov" src="https://secure.gravatar.com/avatar/6f519947ef81770752235ae6c148d547?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/Algorhyme_Angel_Tsankov">Angel Tsankov</a>
+ began watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-02-23T07:45:07+00:00">2013-02-23</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item start_follow_repo">
+              <span class="icon start_follow_repo"></span>
+              
+
+
+  <a href="/ajabutex"><img alt="Ajabu Tex" src="https://secure.gravatar.com/avatar/b5bd268bc6ad61e2194d502a4fadffa2?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/ajabutex">Ajabu Tex</a>
+ began watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-02-06T15:28:19+00:00">2013-02-06</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item start_follow_repo">
+              <span class="icon start_follow_repo"></span>
+              
+
+
+  <a href="/Gaia"><img alt="Xi Chen" src="https://secure.gravatar.com/avatar/4d03c7a06152140ab953f8575707e082?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              <p>
+
+  <a href="/Gaia">Xi Chen</a>
+ began watching 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-01-22T05:17:04+00:00">2013-01-22</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item issue_update">
+              <span class="icon issue_update"></span>
+              
+
+
+  <a href="/VictorEijkhout"><img alt="Victor Eijkhout" src="https://secure.gravatar.com/avatar/9cb26662ab22dd31e3e9eee2752a4a78?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+    <p>
+
+  <a href="/VictorEijkhout">Victor Eijkhout</a>
+ updated
+    
+    <a href="/VictorEijkhout/tex-by-topic/issue/1/can-not-compile">issue #1</a>
+    
+    in 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-01-09T17:03:36+00:00">2013-01-09</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item issue_comment">
+              <span class="icon issue_comment"></span>
+              
+
+
+  <a href="/VictorEijkhout"><img alt="Victor Eijkhout" src="https://secure.gravatar.com/avatar/9cb26662ab22dd31e3e9eee2752a4a78?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2Fa649696e8dec%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+    <p>
+
+  <a href="/VictorEijkhout">Victor Eijkhout</a>
+ commented on
+    
+    <a href="/VictorEijkhout/tex-by-topic/issue/1/can-not-compile#comment-2797006">issue #1</a>
+    
+    in 
+
+
+<a href="/VictorEijkhout/tex-by-topic" title="VictorEijkhout/tex-by-topic">VictorEijkhout/TeX by Topic</a>
+
+</p>
+    
+    
+              <time datetime="2013-01-09T17:02:28+00:00">2013-01-09</time>
+    
+
+                
+              
+            
+          
+          
+            </article>
+          
+        
+      
+    
+  
+</div>
+
+
+
+              
+            
+          
+        </section>
+      </div>
+
+      <div class="column">
+        
+
+
+
+        <section id="repo-stats">
+          
+<div class="clone-url">
+  <div class="aui-buttons">
+    <a href="https://bitbucket.org/VictorEijkhout/tex-by-topic"
+       class="aui-button aui-style aui-dropdown2-trigger" aria-haspopup="true"
+       aria-owns="clone-url-dropdown-overview">
+      <span class="dropdown-text">HTTPS</span>
+    </a>
+    <div id="clone-url-dropdown-overview" class="aui-dropdown2 aui-style-default">
+      <ul class="aui-list-truncate">
+        <li>
+          <a href="https://bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+              data-command="https://bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+            class="item-link https">HTTPS
+          </a>
+        </li>
+        <li>
+          <a href="ssh://hg@bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+              data-command="ssh://hg@bitbucket.org/VictorEijkhout/tex-by-topic"
+            
+            class="item-link ssh">SSH
+          </a>
+        </li>
+      </ul>
+    </div>
+    <input type="text" readonly="readonly" value="https://bitbucket.org/VictorEijkhout/tex-by-topic">
+  </div>
+  
+</div>
+
+
+          <ul class="stats">
+            
+              <li class="branches">
+                <a href="#branches" id="branches-dialog-trigger"
+                   data-url="/api/1.0/repositories/VictorEijkhout/tex-by-topic/branches-tags"
+                   data-template="branches-overview-template">
+                  <span class="aui-icon aui-icon-large aui-iconfont-devtools-branch"></span>
+                  
+                    <span class="value">1</span> Branch
+                  
+                </a>
+              </li>
+              <li class="tags">
+                <a href="#tags" id="tags-dialog-trigger"
+                   data-url="/api/1.0/repositories/VictorEijkhout/tex-by-topic/branches-tags"
+                   data-template="tags-overview-template">
+                  <span class="aui-icon aui-icon-large aui-iconfont-devtools-tag"></span>
+                  
+                    <span class="value">1</span> Tag
+                  
+                </a>
+              </li>
+              <li class="forks">
+                <a href="#forks" id="forks-dialog-trigger"
+                   data-url="/api/1.0/repositories/VictorEijkhout/tex-by-topic/forks"
+                   data-template="forks-overview-template">
+                  <span class="aui-icon aui-icon-large aui-iconfont-devtools-fork"></span>
+                  
+                    <span class="value">1</span> Fork
+                  
+                </a>
+              </li>
+            
+            <li class="followers">
+              <a href="#followers" id="followers-dialog-trigger"
+                  data-url="/api/1.0/repositories/VictorEijkhout/tex-by-topic/followers"
+                  data-template="watchers-overview-template">
+                <span class="aui-icon aui-icon-large aui-iconfont-star"></span>
+                
+                  <span class="value">11</span> Watchers
+                
+              </a>
+            </li>
+          </ul>
+
+          <script id="branches-overview-template" type="text/html">
+  
+
+<div class="tabbed-filter-widget repo-stats-dialog branches" id="branches-dialog">
+  <div class="tabbed-filter">
+    <input placeholder="Filter branches" class="filter-box" autosave="branch-dropdown-1759421" type="text">
+  </div>
+  <div class="tab-pane active-pane branches" id="branch-list">
+    <ol class="filter-list[[^branches]] empty[[/branches]]">
+      <li class="empty-msg">No matching branches</li>
+      [[#branches]]
+        <li class="comprev filter-item">
+          <a href="/VictorEijkhout/tex-by-topic/commits/branch/[[encodedName]]" title="Browse source of [[name]]">[[name]]</a>
+          [[^mainbranch]]
+            <a rel="nofollow" class="compare"
+               href="/VictorEijkhout/tex-by-topic/compare/[[encodedName]].."
+               title="Show changes between [[name]] and the main branch.">Compare</a>
+          [[/mainbranch]]
+        </li>
+      [[/branches]]
+    </ol>
+  </div>
+</div>
+
+</script>
+          <script id="tags-overview-template" type="text/html">
+  
+
+<div class="tabbed-filter-widget repo-stats-dialog tags" id="tags-dialog">
+    <div class="tabbed-filter">
+      <input placeholder="Filter tags" class="filter-box" autosave="tag-dropdown-1759421" type="text">
+    </div>
+    <div class="tab-pane active-pane tags" id="tag-list">
+    <ol class="filter-list[[^tags]] empty[[/tags]]">
+      <li class="empty-msg">No matching tags</li>
+      [[#tags]]
+        <li class="comprev filter-item">
+          <a href="/VictorEijkhout/tex-by-topic/commits/tag/[[encodedName]]" title="Browse source of [[name]]">[[name]]</a>
+            <a rel="nofollow" class="compare"
+               href="/VictorEijkhout/tex-by-topic/compare/[[encodedName]].."
+               title="Show changes between [[name]] and the main branch.">Compare</a>
+        </li>
+      [[/tags]]
+    </ol>
+  </div>
+</div>
+
+</script>
+          <script id="forks-overview-template" type="text/html">
+  
+
+<div class="tabbed-filter-widget repo-stats-dialog forks" id="forks-dialog">
+    <div class="tabbed-filter">
+      <input placeholder="Filter forks" class="filter-box" autosave="fork-dropdown-1759421" type="text">
+    </div>
+    <div class="tab-pane active-pane forks" id="fork-list">
+    <ol class="filter-list[[^forks]] empty[[/forks]]">
+      <li class="empty-msg">No matching forks</li>
+      [[#forks]]
+        <li class="comprev filter-item">
+          <a href="/[[owner.username]]/[[slug]]" title="[[owner.username]]/[[slug]]">[[owner.username]]/[[slug]]</a>
+            <a rel="nofollow" class="compare"
+               href="/VictorEijkhout/tex-by-topic/compare/[[owner.username]]/[[slug]].."
+               title="Show changes between [[owner.username]]/[[slug]] and this repository.">Compare</a>
+        </li>
+      [[/forks]]
+    </ol>
+  </div>
+</div>
+
+</script>
+          <script id="watchers-overview-template" type="text/html">
+  
+
+<div class="followers-dialog repo-stats-dialog" id="followers-dialog">
+  <div id="followers-list" class="followers-list">
+    <ol[[^followers]] class="empty"[[/followers]]>
+      <li class="empty-msg">No watchers yet</li>
+      [[#followers]]
+        <li>
+          <a href="/[[username]]" title="[[display_name]]">
+            <img alt="[[username]]" src="[[avatar]]" class="avatar avatar32" />
+          </a>
+        </li>
+      [[/followers]]
+    </ol>
+  </div>
+</div>
+</script>
+
+          <dl class="metadata">
+            <dt>Owner</dt>
+            <dd><a href="/VictorEijkhout">Victor Eijkhout</a></dd>
+
+            
+              <dt>Website</dt>
+              <dd><a href="http://eijkhout.net/texbytopic/texbytopic.html" rel="nofollow">http://eijkhout.net/…</a></dd>
+            
+
+            <dt>Access level</dt>
+            <dd>Public</dd>
+
+            <dt>Type</dt>
+            <dd>Mercurial</dd>
+
+            
+
+            <dt>Last updated</dt>
+            <dd><time datetime="2013-01-09T18:05:02.841689">2013-01-09</time></dd>
+
+            <dt>Created</dt>
+            <dd><time datetime="2012-12-01T20:36:50.187683">2012-12-01</time></dd>
+
+            <dt>Size</dt>
+            <dd>
+              8.2 MB
+              <a rel="nofollow"
+              
+                  href="/VictorEijkhout/tex-by-topic/get/4ac7b7c234f3.zip"
+                
+              >(download)</a>
+            </dd>
+            
+              
+            
+          </dl>
+        </section>
+        
+          
+            
+          
+        
+      </div>
+      <div class="clearfix"></div>
+    
+    
+    
+  </div>
+
+  
+
+  </div>
+  
+
+<form id="file-search-form" action="#"
+  
+  
+  >
+  <input type="text" id="file-search-query" class="loading">
+  <div id="filtered-files"></div>
+  <div class="tip"><em>Tip:</em> Filter by directory path e.g. <strong>/media app.js</strong> to search for public<strong>/media/app.js</strong>.</div>
+  <div class="tip"><em>Tip:</em> Use camelCasing e.g. <strong>ProjME</strong> to search for <strong>ProjectModifiedE</strong>vent.java.</div>
+  <div class="tip"><em>Tip:</em> Filter by extension type e.g. <strong>/repo .js</strong> to search for all <strong>.js</strong> files in the <strong>/repo</strong> directory.</div>
+  <div class="tip"><em>Tip:</em> Separate your search with spaces e.g. <strong>/ssh pom.xml</strong> to search for src<strong>/ssh/pom.xml</strong>.</div>
+  <div class="tip"><em>Tip:</em> Use ↑ and ↓ arrow keys to navigate and <strong>return</strong> to view the file.</div>
+  <div class="tip mod-osx"><em>Tip:</em> You can also navigate files with <strong>Ctrl+j</strong> <em>(next)</em> and <strong>Ctrl+k</strong> <em>(previous)</em> and view the file with <strong>Ctrl+o</strong>.</div>
+  <div class="tip mod-win"><em>Tip:</em> You can also navigate files with <strong>Alt+j</strong> <em>(next)</em> and <strong>Alt+k</strong> <em>(previous)</em> and view the file with <strong>Alt+o</strong>.</div>
+  <script id="filtered-files-template" type="text/html">
+  
+
+<table class="aui bb-list">
+  <thead>
+    <tr class="assistive">
+      <th class="name">Filename</th>
+    </tr>
+  </thead>
+  <tbody>
+    [[#files]]
+    <tr class="iterable-item">
+      <td class="name [[#isDirectory]]directory[[/isDirectory]]">
+        <span class="aui-icon aui-icon-small[[#isDirectory]] aui-iconfont-devtools-folder-closed[[/isDirectory]][[^isDirectory]] aui-iconfont-devtools-file[[/isDirectory]]"></span>
+        <a href="/VictorEijkhout/tex-by-topic/src/[[node]]/[[name]][[#branch]]?at=[[branch]][[/branch]]"
+           title="[[name]]" class="execute" tabindex="-1">
+          [[&highlightedName]]
+        </a>
+      </td>
+    </tr>
+    [[/files]]
+  </tbody>
+</table>
+
+</script>
+</form>
+
+
+    </div>
+  </div>
+  <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+      <ul>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="Blog"
+               href="http://blog.bitbucket.org">Blog</a>
+        </li>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="Home"
+               href="/support">Support</a>
+        </li>
+        <li>
+          <a class="support-ga"
+               data-support-gaq-page="PlansPricing"
+               href="/plans">Plans &amp; pricing</a>
+        </li>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="DocumentationHome"
+               href="//confluence.atlassian.com/display/BITBUCKET">Documentation</a>
+        </li>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="DocumentationAPI"
+               href="//confluence.atlassian.com/x/IYBGDQ">API</a>
+        </li>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="SiteStatus"
+               href="http://status.bitbucket.org/">Server status</a>
+        </li>
+        <li>
+          <a class="support-ga" id="meta-info"
+               data-support-gaq-page="MetaInfo"
+               href="#">Version info</a>
+        </li>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="EndUserAgreement"
+               href="//www.atlassian.com/end-user-agreement?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=footer">Terms of service</a>
+        </li>
+        <li>
+          <a class="support-ga" target="_blank"
+               data-support-gaq-page="PrivacyPolicy"
+               href="//www.atlassian.com/company/privacy?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=footer">Privacy policy</a>
+        </li>
+      </ul>
+      <div id="meta-info-content" style="display: none;">
+        <ul>
+          
+            
+              <li>English</li>
+            
+          
+          <li>
+            <a class="support-ga" target="_blank"
+               data-support-gaq-page="GitDocumentation"
+               href="http://git-scm.com/">Git 1.8.2.3</a>
+          </li>
+          <li>
+            <a class="support-ga" target="_blank"
+               data-support-gaq-page="HgDocumentation"
+               href="http://mercurial.selenic.com/">Mercurial 2.2.2</a>
+          </li>
+          <li>
+            <a class="support-ga" target="_blank"
+               data-support-gaq-page="DjangoDocumentation"
+               href="https://www.djangoproject.com/">Django 1.3.7</a>
+          </li>
+          <li>
+            <a class="support-ga" target="_blank"
+               data-support-gaq-page="PythonDocumentation"
+               href="http://www.python.org/">Python 2.7.3</a>
+          </li>
+          <li>
+            <a class="support-ga" target="_blank"
+               data-support-gaq-page="DeployedVersion"
+               href="#">30e681352a57 / a649696e8dec @ bitbucket02</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="atlassian-links">
+        <li>
+          <a id="atlassian-jira-link" target="_blank" title="Track everything – bugs, tasks, deadlines, code – and pull reports to stay informed."
+             href="http://www.atlassian.com/software/jira?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">JIRA</a>
+        </li>
+        <li>
+          <a id="atlassian-confluence-link" target="_blank" title="Content Creation, Collaboration & Knowledge Sharing for Teams."
+             href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Confluence</a>
+        </li>
+        <li>
+          <a id="atlassian-bamboo-link" target="_blank" title="Continuous integration and deployment, release management."
+             href="http://www.atlassian.com/software/bamboo/overview?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Bamboo</a>
+        </li>
+        <li>
+          <a id="atlassian-stash-link" target="_blank" title="Git repo management, behind your firewall and Enterprise-ready."
+             href="http://www.atlassian.com/software/stash/overview?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Stash</a>
+        </li>
+        <li>
+          <a id="atlassian-sourcetree-link" target="_blank" title="A free Git and Mercurial desktop client for Mac or Windows."
+             href="http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">SourceTree</a>
+        </li>
+      </ul>
+      <div id="footer-logo">
+        <a target="_blank" title="Bitbucket is developed by Atlassian in San Francisco."
+           href="http://www.atlassian.com?utm_source=bitbucket&amp;utm_medium=logo&amp;utm_campaign=bitbucket_footer">Atlassian</a>
+      </div>
+    </section>
+  </footer>
+</div>
+
+
+  
+<script type="text/javascript" src="https://d3oaxc4q5k2d6q.cloudfront.net/m/a649696e8dec/compressed/js/52f79ab751f7.js"></script>
+
+
+
+<script>
+  (function () {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  }());
+</script>
+<!-- This script exists purely for the benefit of our selenium tests -->
+<script>
+  setTimeout(function () {
+    BB.JsLoaded = true;
+  }, 3000);
+</script>
+
+
+
+  
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"rpm-images.newrelic.com/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","7d4a9813d0","295788","MgMDYhcHDUJVVEIKWAtJJ0MLBRdYW1kZAV4RBBRVDgMXH1VHRhAZFwMRWVdIFVhRQEVZWwQIBV8LAQ==",0,339,new Date().getTime(),"","","","",""]);</script></body>
+</html>

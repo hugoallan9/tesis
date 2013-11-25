@@ -1,23 +1,53 @@
 \documentclass[letterpaper,12pt]{thesis}
 \usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{*3}{*0}
+\usepackage{parskip}
 \usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
 \usepackage{latexsym,wasysym}
-\usepackage{cancel}
+%manejando los margenes
+\usepackage[paper=letterpaper, marginparsep=0in, marginparwidth= 0in, headsep= 0in, headheight= 0in, top=4cm, bottom=2.5cm,left=4cm,right=2.5cm,twoside]{geometry}
 \usepackage{textcomp}
 \usepackage[all]{xy}
 \usepackage{longtable}
-%\usepackage[text={5.8in,8in},centering]{geometry}
 \usepackage[spanish]{babel}
-\usepackage{bibthesis,color,enumerate,indentfirst,geometry}
+\usepackage{bibthesis,color, enumerate, indentfirst}
 \usepackage[pdftex]{graphicx}
 \usepackage{hyperref,url,breakurl}
 \usepackage{ dsfont }
-\usepackage{pstricks-add}
-\usepackage{pgf,tikz}
-\usetikzlibrary{arrows} %paquete para pstrick
+%para manejar las imagenes (titulos y subtitulos de)
+\usepackage{caption}
+\usepackage{subcaption}
+%para cambiar letra de subcaption a 10 pt
+\usepackage{etoolbox}
+\usepackage[nodisplayskipstretch]{setspace}
 
+
+%\usepackage[scaled]{helvet}
+%\renewcommand*\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+
+
+
+%control de espacio en ecuaciones
+%\BeforeBeginEnvironment{equation}{\begin{singlespace}}
+%\AfterEndEnvironment{equation}{\end{singlespace}\noindent\ignorespaces}
+%\BeforeBeginEnvironment{align}{\begin{onehalfspace}}
+%\AfterEndEnvironment{align}{\end{onehalfspace}\noindent\ignorespaces}
 
 \decimalpoint
+\newenvironment{myproof}[1][\proofname]
+ {\par\pushQED{\qed}%
+  \normalfont \topsep6\p@\@plus6\p@\relax
+  \trivlist
+  \item[\hskip\labelsep\itshape#1\@addpunct{.}]\par\noindent}
+ {\popQED\endtrivlist\@endpefalse}
+\makeatother
+\makeatletter
+\patchcmd{\caption@@@make}% <cmd>
+  {\ifcaption@star}% <search>
+    {\ifcaption@star\footnotesize}% <replace>
+    {}{}% <success><failure>
 \makeatother
 
 \hypersetup{pdftitle = {tituloDePDF}, pdfkeywords = {poner un listado de palabras clave}, pdfauthor = {\textcopyright\ 2012, Hugo Allan García Monterrosa (hugoallangm@gmail.com)}, pdfsubject = {Trabajo
@@ -25,20 +55,11 @@ de graduación para obtener la Licenciatura en Matemática Aplicada},
 pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 {true}}
 
-% Dimensiones de la p�gina -----------------------------------------
-\setlength{\oddsidemargin}{41.53pt}      % margen impar
-\setlength{\evensidemargin}{-15.37pt}    % margen par
-\setlength{\textheight}{610pt}           % texto vertical
-\setlength{\textwidth}{433.62pt}         % texto horizontal
-\setlength{\marginparsep}{8pt}           % distancia: texto y nota al margen
-\setlength{\marginparwidth}{44pt}        % longitud de la nota al margen
-\setlength{\topmargin}{10.53pt}          % distancia hacia la cabecera
-\setlength{\headsep}{19pt}               % distancia: texto y cabecera
-\setlength{\footskip}{21pt}              % distancia: texto y pie de p�gina
-\setlength{\parindent}{1cm}              % sangr�a
-\setlength{\parskip}{\baselineskip}              % distancia entre p�rrafos
 
-\linespread{1}                           % interlineado
+\setlength{\parindent}{1cm}              % sangr�a
+\setlength{\parskip}{1.3\baselineskip}              % distancia entre p�rrafos
+
+\setstretch{1.3}                   % interlineado
 
 \setlength\LTleft{0pt} \setlength\LTright{0pt} % par�metros para tablas largas
 
@@ -53,75 +74,64 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 
 
 
-\newtheorem{teorema}{Teorema}
-\newtheorem{lema}{Lema}
-\newtheorem{proposicion}{Proposición}
-\newtheorem{propiedad}{Propiedad}
-\newtheorem{corolario}{Corolario}
-\newtheorem{escolio}{Escolio}
-\theoremstyle{remark}
-\newtheorem{nota}{Nota}
-\newtheorem{solution}{Solución}
-\theoremstyle{exercise}
+
+\newtheoremstyle{ejem} %
+  {\baselineskip} % Space above
+  {\topsep} % Space below
+  {} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+\newtheoremstyle{resto} %
+  {\baselineskip} % Space above
+  {\topsep} % Space below
+  {\itshape} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+  
+\theoremstyle{resto}\newtheorem{teorema}{Teorema}
+\theoremstyle{resto}\newtheorem{lema}{Lema}
+\theoremstyle{resto}\newtheorem{proposicion}{Proposición}
+\theoremstyle{resto}\newtheorem{propiedad}{Propiedad}
+\theoremstyle{resto}\newtheorem{corolario}{Corolario}
+\theoremstyle{resto}\newtheorem{nota}{Nota}
+\newtheorem{solucion}{Solución}
 \newtheorem{problema}{Problema}
-\newtheorem{definicion}{Definición}
+\theoremstyle{resto}\newtheorem{definicion}{Definición}
 \newtheorem{notacion}{Notación}
 \newtheorem{consideracion}{Consideración}
 \newtheorem{ejercicio}{Ejercicio}
-\newtheorem{ejemplo}{Ejemplo}
+\theoremstyle{ejem} \newtheorem{ejemplo}{Ejemplo}
 \numberwithin{equation}{chapter}
 \renewcommand{\theequation}{\thechapter.\arabic{equation}}
+%para manejar el estilo de los ejemplos
 
 % Operadores y funciones -------------------------------------------
-
-\renewcommand{\spanishoperators}{sen mcd spec d}
-\makeatletter
-\def\section{\@startsection{section}{1}{0pt}{-3.25ex plus -1ex minus -.2ex}{1.5ex plus .2ex}{\normalsize\bf}}
+\DeclareMathOperator{\car}{car}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\grado}{deg}
 \makeatother
-\newcommand{\R}{\mathbb{R}}             \newcommand{\Z}{\mathbb{Z}}%
-\newcommand{\C}{\mathbb{C}}             \newcommand{\K}{\mathbb{K}}%
-\newcommand{\N}{\mathbb{N}}             \newcommand{\Q}{\mathbb{Q}}%
-\newcommand{\Af}{\mathfrak{A}}          \newcommand{\Bf}{\mathfrak{B}}%
-\newcommand{\Cf}{\mathfrak{C}}          \newcommand{\Df}{\mathfrak{D}}%
-\newcommand{\Ff}{\mathfrak{F}}          \newcommand{\Lf}{\mathfrak{L}}%
-\newcommand{\Mf}{\mathfrak{M}}          \newcommand{\Sf}{\mathfrak{S}}%
-\newcommand{\Hi}{\mathcal{H}}           \newcommand{\Ba}{\mathcal{B}}%
-\newcommand{\nada}{\varnothing}         \newcommand{\To}{\longrightarrow}%
-\newcommand{\RR}{[-\infty,+\infty]}     \newcommand{\df}{:=}%
-\newcommand{\sani}{$\sigma$\nobreakdash-anillo}
-\newcommand{\salg}{$\sigma$\nobreakdash-álgebra}
-\newcommand{\Dem}{\vspace{-12pt}Demostración: }
-\newcommand{\ff}{f^{-1}}
-
-\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
-\newcommand{\pnorm}[2]{\norm{#1}_{#2}}
-\newcommand{\abs}[1]{\left\vert#1\right\vert}
-\newcommand{\su}[2]{\left\{#1_{#2}\right\}}
-\newcommand{\Su}[4]{\suce #1#2 _{#2=#3}^{#4}}
-\newcommand{\union}[4]{\bigcup_{{#2}={#3}}^{#4} #1_{#2}}
-\newcommand{\Union}[4]{\bigcup \limits_{{#2}={#3}}^{#4} #1_{#2}}
-\newcommand{\inter}[4]{\bigcap_{{#2}={#3}}^{#4} #1_{#2}}
-\newcommand{\Inter}[4]{\bigcap \limits_{{#2}={#3}}^{#4} #1_{#2}}
-\newcommand{\bel}[2]{#1 \in #2}
-\newcommand{\pdual}[2]{\left<#1,#2\right>}
-\newcommand{\bra}[1]{\left<#1\right\vert}
-\newcommand{\ket}[1]{\left\vert#1\right>}
-\newcommand{\braket}[2]{\left<#1\vert#2\right>}
-\newcommand{\Braket}[2]{\left\vert#1\right>\! \left<#2\right\vert}
 \newcommand{\srg}[3]{\sum_{#1 \in #2} #3_{#1} #1 }
-% \theoremstyle{definition}
+%\theoremstyle{\plain}
+
 
 
 \begin{document}
-{\setlength{\baselineskip}{1.3\baselineskip}
+\captionsetup[figure]{labelformat=simple, labelsep=period}
+{ %\setlength{\baselineskip}{1.3\baselineskip}
 
-\include{portada} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Portada
+%\include{portada} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Portada
 
-\include{identi} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Identificaci�n
+%\include{identi} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Identificaci�n
 
-\include{nomina} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % N�mina de Junta Directiva
+%\include{nomina} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % N�mina de Junta Directiva
 
-\include{hojapr} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Hoja de protocolo
+%\include{hojapr} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Hoja de protocolo
 
 % si las cartas est�n en un fichero PDF, ser� f�cil adjuntarlas con el paquete: pdfpages
 %\include{letter1} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del asesor
@@ -129,7 +139,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 %\include{letter3} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del Director de Escuela
 %\include{letter4} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Orden de impresi�n
 
-\include{agrade} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Agradecimientos
+%\include{agrade} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Agradecimientos
 
 %\include{dedica} \thispagestyle{empty}                              % Dedicatoria
 
@@ -139,13 +149,14 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 
 \tableofcontents    % �ndice general vinculado
 
-{\setlength{\baselineskip}{1.3\baselineskip}
-
+{     
+%\onehalfspacing 
+%\setlength{\baselineskip}{1.3\baselineskip}
 \include{simbolos}  % Lista de s�mbolos
 
-\include{obje}      % Resumen y objetivos
+%\include{obje}      % Resumen y objetivos
 
-\include{intr}      % Introducci�n
+%\include{intr}      % Introducci�n
 
 \mainmatter
 
@@ -154,6 +165,8 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \include{gr}
 
 \include{representaciones}
+
+\include{chap4}
 
 \backmatter     % --------------------------------------------------  Apartados finales
 

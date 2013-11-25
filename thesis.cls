@@ -393,7 +393,7 @@
                 \twocolumn
               \fi}
 \newcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
-                    \thispagestyle{plain}%                      %<--------------------  numeración de página
+                    \thispagestyle{plain}%                      %<--------------------  numeraciï¿½n de pï¿½gina
                     \global\@topnum\z@
                     \@afterindentfalse
                     \secdef\@chapter\@schapter}
@@ -423,12 +423,12 @@
   {\parindent \z@ \raggedright \normalfont \centering
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
-        \Large\bfseries \thechapter.\        %<-------------------- tipo de letra contador del título
+        \Large \bfseries \thechapter.\        %<-------------------- tipo de letra contador del tï¿½tulo
       \fi
     \fi
     \interlinepenalty\@M
-    \Large \bfseries #1\par\nobreak           %<---------------------- tipo de letra del título
-    \vskip 50\p@                                %\vskip 40\p@
+    \Large \bfseries #1\par\nobreak           %<---------------------- tipo de letra del tï¿½tulo
+    \vskip 18\p@                                %\vskip 40\p@
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -444,7 +444,8 @@
     \Large \bfseries  #1\par\nobreak
     \vskip 40\p@
   }}
-\newcommand\section{\@startsection {section}{1}{1cm}%                   %<--------------- sangría en el subtítulo
+
+\newcommand\section{\@startsection {section}{1}{1cm}%                   %<--------------- sangrÃ­a en el subtÃ­tulo
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
                                    {\normalfont\normalsize\bfseries}}
@@ -626,7 +627,7 @@
 \DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 \newcommand\@pnumwidth{1.55em}
 \newcommand\@tocrmarg{2.55em}
-\newcommand\@dotsep{5}       %<------------------------------------------ puntos suspensivos en el índice
+\newcommand\@dotsep{5}       %<------------------------------------------ puntos suspensivos en el ï¿½ndice
 \setcounter{tocdepth}{2}
 \newcommand\tableofcontents{%
     \if@twocolumn
@@ -662,14 +663,14 @@
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
-      \leavevmode \bfseries          %<-------------------------------------------- negritas en el índice
+      \leavevmode \bfseries          %<-------------------------------------------- negritas en el ï¿½ndice
       \advance\leftskip\@tempdima
       \hskip -\leftskip
       #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
       \penalty\@highpenalty
     \endgroup
   \fi}
-\newcommand*\l@section{\@dottedtocline{1}{1cm}{2.8em}}        %<------------------- sangr\'ia en el índice
+\newcommand*\l@section{\@dottedtocline{1}{1cm}{2.8em}}        %<------------------- sangr\'ia en el ï¿½ndice
 \newcommand*\l@subsection{\@dottedtocline{2}{3.8em}{3.2em}}
 \newcommand*\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
 \newcommand*\l@paragraph{\@dottedtocline{4}{10em}{5em}}
@@ -768,7 +769,7 @@
   \space\number\day, \number\year}
 \setlength\columnsep{10\p@}
 \setlength\columnseprule{0\p@}
-\pagestyle{plain}                           %<------------------------- numeración y sin cabezera en las páginas
+\pagestyle{plain}                           %<------------------------- numeraciï¿½n y sin cabezera en las pï¿½ginas
 \pagenumbering{arabic}
 \if@twoside
 \else
