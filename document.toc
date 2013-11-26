@@ -1,6 +1,5 @@
 \setlength {\parskip }{1pt}
 \select@language {spanish}
-\contentsline {chapter}{LISTA DE S\IeC {\'I}MBOLOS}{III}{chapter*.2}
 \contentsline {chapter}{\numberline {1}CONCEPTOS PRELIMINARES}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Teor\IeC {\'\i }a de grupos}{1}{section.1.2}
@@ -18,6 +17,8 @@
 \contentsline {section}{\numberline {4.2}\hskip 1em\relax Elementos Idempotentes}{60}{section.4.2}
 \contentsline {section}{\numberline {4.3}\hskip 1em\relax Unidades de Torsi\IeC {\'o}n}{61}{section.4.3}
 \contentsline {section}{\numberline {4.4}\hskip 1em\relax Elementos nilpotentes}{63}{section.4.4}
-\contentsline {chapter}{CONCLUSIONES}{71}{chapter*.6}
-\contentsline {chapter}{RECOMENDACIONES}{73}{chapter*.7}
-\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{75}{chapter*.8}
+\contentsline {chapter}{\numberline {5}UNIDADES DE LOS GRUPO-ANILLOS}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}\hskip 1em\relax Algunas formas de construir unidades}{71}{section.5.1}
+\contentsline {chapter}{CONCLUSIONES}{73}{chapter*.5}
+\contentsline {chapter}{RECOMENDACIONES}{75}{chapter*.6}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{77}{chapter*.7}

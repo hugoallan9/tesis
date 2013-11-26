@@ -1,0 +1,26 @@
+\chapter{UNIDADES DE LOS GRUPO-ANILLOS}
+\section{\quad Algunas formas de construir unidades}
+Sea $R$ un anillo. Se entiende por $\mathcal{U}(R) = \{x \in R \colon (\exists y \in R)xy=yx=1\}$. 
+En particular, dado un grupo $G$ y un anillo $R$, $\mathcal{U}(RG)$ denota al grupo de unidades del grupo-anillo $RG$. Como la función de aumento $\mathcal{E} \colon RG \to R$, dada por $\mathcal{E} \left( \sum a(g)g \right) = \sum a(g)$, es un homomorfismo de anillos, se tiene que $\mathcal{E}(u) \in \mathcal{U}(R)$, para todo $u \in \mathcal{U}(RG).$ Se denotará como $\mathcal{U}_1(RG)$ el subgrupo de unidades de aumento $1$ en $\mathcal{U}(RG)$, a saber
+\[\mathcal{U}_1(RG) = \{u \in \mathcal{U}(RG) \colon \mathcal{E}(u) = 1 \}.\] Para una unidad $u$ del grupo-anillo integral $\mathcal{Z}G$ se tiene que $\mathcal{E}(u) = \pm1$, entonces es claro que \[ \mathcal{U}(\mathcal{Z}G) = \pm \mathcal U_1(\mathcal{Z}G) .\]
+De la misma manera, para un anillo $R$ arbitario se tiene que \[ \mathcal{U}(RG) = \mathcal{U}(R) \times \mathcal{U}_1(RG). \]
+No se conocen muchas formas para construir unidades. La mayoría de las construcciones conocidas son antiguas y elementales. A lo largo de este capítulo, se mostrará y describirá algunas de estas construcciones, donde se trabajará principalmente con grupo-álgebras $KG$ sobre un campo $K$ y con el grupo-anillo integral $\mathcal{Z}G$.
+\begin{ejemplo}[Unidades Triviales]
+Un elemento de la forma $rg$, donde $r \in \mathcal{U}(R)$ y $g \in G$, tiene inversa $r^{-1}g^{-1}$. Los elementos de esta forma son llamados \textbf{unidades triviales} de $RG$. De esta manera, por ejemplo, los elementos $\pm g, g \in G$ son las unidades triviales del grupo-anillo integral $\mathcal{Z}G$. Si $K$ es un campo, entonces las unidades triviales de $KG$ son los elementos de la forma $kg, k \in K, k \neq 0, g \in G$. Hablando de manera general, los grupo-anillos contienen unidades no triviales.
+\end{ejemplo}
+\begin{ejemplo}\label{ejem:unipotentes}
+Sea $\eta \in R$ tal que $\eta^2 =0$, entonces se tiene $(1+\eta)(1-\eta)=1$. De este hecho, tanto $1+\eta$ como $1-\eta$ son unidades de $R$. De la misma manera, si $\eta \in R$ es tal que $\eta ^k =0$ para algún entero positivo $k$, entonces se tiene que
+\begin{equation*}
+(1-\eta)(1+\eta+\eta^2+\cdots+\eta^{k-1}) =  1-\eta^{k} = 1,
+\end{equation*}
+\begin{equation*}
+(1+\eta)(1-\eta+\eta^2+\cdots\pm \eta^{k-1}) =  1 \pm \eta^{k} = 1.
+\end{equation*}
+Así, $1\pm \eta$ son unidades de $R$. Estas unidades son llamadas \textbf{unidades unipotentes} de $R$. En un grupo-álgebra $KG$ sobre un campo de característica $p>0$ se puede iniciar la búsqueda de unidades unipotentes investigando a los elementos nilpotentes. Si $g \in G$ es de orden $p^n$, entonces $(1-g)^{p^n} = 0$, de esta forma se demuestra que $\mu = 1-g$ es nilpotente.
+
+En este caso $1-\eta = g$ es trivial, pero $1+\eta = 2-g$ es no trivial, a menos qu $\car(K)=2$. Nótese que $g-g^2=g(1-g)$ también es nilpotente, entonces $1+g-g^2$ es una unidad no trivial si $g^2 \neq 1$.
+
+En el teorema \ref{teo:caracCar0} y \ref{teo:caracCarEntera} se clasificaron  todos los grupos finitos tal que el grupo-álgebra $KG$ no tiene elementos nilpotentes. Se vera entonces que las grupo-álgebras de grupos finitos casi siempre tienen unidades no triviales.
+\end{ejemplo}
+
+
