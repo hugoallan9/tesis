@@ -19,6 +19,7 @@
 \contentsline {section}{\numberline {4.4}\hskip 1em\relax Elementos nilpotentes}{63}{section.4.4}
 \contentsline {chapter}{\numberline {5}UNIDADES DE LOS GRUPO-ANILLOS}{71}{chapter.5}
 \contentsline {section}{\numberline {5.1}\hskip 1em\relax Algunas formas de construir unidades}{71}{section.5.1}
-\contentsline {chapter}{CONCLUSIONES}{73}{chapter*.5}
-\contentsline {chapter}{RECOMENDACIONES}{75}{chapter*.6}
-\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{77}{chapter*.7}
+\contentsline {section}{\numberline {5.2}\hskip 1em\relax Unidades Triviales}{79}{section.5.2}
+\contentsline {chapter}{CONCLUSIONES}{85}{chapter*.5}
+\contentsline {chapter}{RECOMENDACIONES}{87}{chapter*.6}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{89}{chapter*.7}

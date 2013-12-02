@@ -585,7 +585,7 @@ Nótese que bajo el isomorfismo anterior, es claro que el elemento $a \in RG$ se
 
 \[KG \simeq \frac{K[X]}{(X^n -1 )} \]
 
-Sea $ X^n -1 = f_1f_2\cdots f_t$ la descomposición de $X^n -1$ como producto de polinomios irreducibles en $K[X]$. Como se está asumiendo que $char(K) \nmid n$, este polinomio debe ser separable y por lo tanto $f_i \neq f_j$ si $i \neq j$. Utilizando el teorema chino del residuo \footnote{tambien en la parte inicial y luego referencia a el} se puede escribir:
+Sea $ X^n -1 = f_1f_2\cdots f_t$ la descomposición de $X^n -1$ como producto de polinomios irreducibles en $K[X]$. Como se está asumiendo que $char(K) \nmid n$, este polinomio debe ser separable y por lo tanto $f_i \neq f_j$ si $i \neq j$. Utilizando el teorema chino del residuo \footnote{también en la parte inicial y luego referencia a el} se puede escribir:
 
 \[KG \simeq \frac{K[X]}{f_1} \oplus \frac{K[X]}{f_2} \oplus \cdots \oplus \frac{K[X]}{f_t} \]
 
@@ -623,11 +623,6 @@ donde $\frac{-1 + \sqrt{3}}{2}$ es raíz de $X^2+X+1$ y $\frac{1+i\sqrt{3}}{2}$ 
 por lo que en realidad los últimos dos sumandos son iguales, dejando la expresión de la siguiente manera:
 
 \[  \mathds{Q}G \simeq  \mathds{Q} \oplus \mathds{Q}\left( \frac{-1+i\sqrt{3}}{2} \right)   \]
-
-
-
-
-
 \end{ejemplo}
 
 Los resultados anteriores dan una muy buena descripción de los grupos anillos cuando el anillo es un campo y el grupo es abeliano, por lo cual ahora se trabajará en un caso mas general. 
@@ -655,7 +650,7 @@ donde $\phi$ es la función totiente de Euler. Como $G$ es un grupo cíclico de 
 
 \[ a_d = \frac{n_d}{| K(\zeta_d) : K|}  \]
 
-\begin{ejemplo}
+\begin{ejemplo}\label{ejem:descomposicionRacional}
 Sea $G = < a \colon a^n = 1 >$  un grupo cíclico de orden $n$ y $K = \mathds{Q} $. Es conocido que el polinomio $X^n-1$ se descompone en $\mathds{Q}[X]$ como un producto de polinomios ciclotómicos, a saber:
 
 \[ X^n -1 = \prod_{d \mid n}\Phi_d(X)  \]
@@ -669,7 +664,7 @@ Hay que notar, que como en casos anteriores, bajo este isomorfismo el generador 
 
 Finalmente se cerrará esta sección demostrando un hecho muy importante, a saber, que la caracterización anteriormente dada  también es válida en los grupo-anillos con grupos  abelianos finitos.
 
-\begin{teorema}{Perlis-Walker}
+\begin{teorema}[Perlis-Walker]\label{teo:Perlis-Walker}
 Sea $G$ un grupo finito abeliano de orden $n$ y sea $K$ un campo tal que $char(K)\nmid n$. Entonces
 
 \[  KG \simeq \oplus_{d\mid n}a_dK(\zeta) \]

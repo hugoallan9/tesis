@@ -2,11 +2,11 @@
 \section{\quad Algunas formas de construir unidades}
 Sea $R$ un anillo. Se entiende por $\mathcal{U}(R) = \{x \in R \colon (\exists y \in R)xy=yx=1\}$. 
 En particular, dado un grupo $G$ y un anillo $R$, $\mathcal{U}(RG)$ denota al grupo de unidades del grupo-anillo $RG$. Como la función de aumento $\mathcal{E} \colon RG \to R$, dada por $\mathcal{E} \left( \sum a(g)g \right) = \sum a(g)$, es un homomorfismo de anillos, se tiene que $\mathcal{E}(u) \in \mathcal{U}(R)$, para todo $u \in \mathcal{U}(RG).$ Se denotará como $\mathcal{U}_1(RG)$ el subgrupo de unidades de aumento $1$ en $\mathcal{U}(RG)$, a saber
-\[\mathcal{U}_1(RG) = \{u \in \mathcal{U}(RG) \colon \mathcal{E}(u) = 1 \}.\] Para una unidad $u$ del grupo-anillo integral $\mathcal{Z}G$ se tiene que $\mathcal{E}(u) = \pm1$, entonces es claro que \[ \mathcal{U}(\mathcal{Z}G) = \pm \mathcal U_1(\mathcal{Z}G) .\]
-De la misma manera, para un anillo $R$ arbitario se tiene que \[ \mathcal{U}(RG) = \mathcal{U}(R) \times \mathcal{U}_1(RG). \]
-No se conocen muchas formas para construir unidades. La mayoría de las construcciones conocidas son antiguas y elementales. A lo largo de este capítulo, se mostrará y describirá algunas de estas construcciones, donde se trabajará principalmente con grupo-álgebras $KG$ sobre un campo $K$ y con el grupo-anillo integral $\mathcal{Z}G$.
+\[\mathcal{U}_1(RG) = \{u \in \mathcal{U}(RG) \colon \mathcal{E}(u) = 1 \}.\] Para una unidad $u$ del grupo-anillo integral $\mathds{Z}G$ se tiene que $\mathcal{E}(u) = \pm1$, entonces es claro que \[ \mathcal{U}(\mathds{Z}G) = \pm \mathcal U_1(\mathds{Z}G) .\]
+De la misma manera, para un anillo $R$ arbitrario se tiene que \[ \mathcal{U}(RG) = \mathcal{U}(R) \times \mathcal{U}_1(RG). \]
+No se conocen muchas formas para construir unidades. La mayoría de las construcciones conocidas son antiguas y elementales. A lo largo de este capítulo, se mostrará y describirá algunas de estas construcciones, donde se trabajará principalmente con grupo-álgebras $KG$ sobre un campo $K$ y con el grupo-anillo integral $\mathds{Z}G$.
 \begin{ejemplo}[Unidades Triviales]
-Un elemento de la forma $rg$, donde $r \in \mathcal{U}(R)$ y $g \in G$, tiene inversa $r^{-1}g^{-1}$. Los elementos de esta forma son llamados \textbf{unidades triviales} de $RG$. De esta manera, por ejemplo, los elementos $\pm g, g \in G$ son las unidades triviales del grupo-anillo integral $\mathcal{Z}G$. Si $K$ es un campo, entonces las unidades triviales de $KG$ son los elementos de la forma $kg, k \in K, k \neq 0, g \in G$. Hablando de manera general, los grupo-anillos contienen unidades no triviales.
+Un elemento de la forma $rg$, donde $r \in \mathcal{U}(R)$ y $g \in G$, tiene inversa $r^{-1}g^{-1}$. Los elementos de esta forma son llamados \textbf{unidades triviales} de $RG$. De esta manera, por ejemplo, los elementos $\pm g, g \in G$ son las unidades triviales del grupo-anillo integral $\mathds{Z}G$. Si $K$ es un campo, entonces las unidades triviales de $KG$ son los elementos de la forma $kg, k \in K, k \neq 0, g \in G$. Hablando de manera general, los grupo-anillos contienen unidades no triviales.
 \end{ejemplo}
 \begin{ejemplo}\label{ejem:unipotentes}
 Sea $\eta \in R$ tal que $\eta^2 =0$, entonces se tiene $(1+\eta)(1-\eta)=1$. De este hecho, tanto $1+\eta$ como $1-\eta$ son unidades de $R$. De la misma manera, si $\eta \in R$ es tal que $\eta ^k =0$ para algún entero positivo $k$, entonces se tiene que
@@ -23,4 +23,170 @@ En este caso $1-\eta = g$ es trivial, pero $1+\eta = 2-g$ es no trivial, a menos
 En el teorema \ref{teo:caracCar0} y \ref{teo:caracCarEntera} se clasificaron  todos los grupos finitos tal que el grupo-álgebra $KG$ no tiene elementos nilpotentes. Se vera entonces que las grupo-álgebras de grupos finitos casi siempre tienen unidades no triviales.
 \end{ejemplo}
 
+\begin{proposicion}\label{prop:UnidadesTriviales}
+Sea $G$ un grupo tal que no es libre de elementos de torsión y $K$ un campo de característica $p\leq 0$. Entonces $KG$ sólo tiene unidades triviales si y sólo si se cumple alguna de las siguientes condiciones
+\begin{enumerate}
+\item $K=F_2$ y $G=C_2$ o $C_3$
+\item $K=F_3$ y $G=C_2$
+\end{enumerate}
+\end{proposicion}
+\begin{proof}
+Supóngase que todas las unidades de $KG$ son triviales. Considérese $N=\textless a \textgreater$ subgrupo finito de $G$ de orden $n$. Si no existe $b \in G$ que normalize a $N$, entonces $\eta = (a-1)(1+a+\cdots + a^{n-1})$ es no nulo, pero $\eta^2 = (a-1)b(1+a+\cdots+a^{n-1})(a-1)b(1+a+\cdots+a^{n-1})=0$, de esa cuenta, $\eta +1$ es unidad no trivial de $KG$, proposición que contradice la hipótesis, de donde se concluye que todo subgrupo finito de $G$ es normal.
 
+Sea $H$ un subgrupo finito propio de $G$ y considérese $\hat{H} = \sum_{h \in H}h$. Es fácil notar que  $\hat{H}$ es central y $\hat{H}^2 = |H|\hat{H} $. Tómese $g \in G-H$ fijo. Si $|H| =0$ en $K$ entonces $\hat{H}^2 = 0$ y $g + \hat{H}$ es una unidad no trivial de $KG$ con inverso $g^-1(1-g^-1\hat{H})$. Si $|H| \neq 0$ en $K$, entonces $e = \frac{1}{\hat{H}}\hat{H}$ es idempotente central y $e +g(1-e)$ es una unidad no trivial con inverso $e+g^-1(1-e)$. En ambos casos se llega a una contradicción, por lo que se concluye que $G = \textless a \textgreater$ es de orden primo.
+
+Si $\car (K) = p$ entonces $1+c\hat{G}, c \in K$ es una unidad no trivial, a menos que $p=2$ y $K=F_2$. 
+
+Por otro lado, si $\car(K) \neq p$ entonces, del hecho que $K\textless a \textgreater$ es semisimple y conmutativo, $K\textless a \textgreater$ es suma directa de campos, a saber
+\[ K\textless a \textgreater \simeq K\oplus K(\zeta) \oplus K(\theta) \oplus + \cdots \] donde $\zeta, \theta, \cdots$ son raíces de la unidad de orden $p$. Bajo este isomorfismo, se tiene $a \mapsto (1,\zeta,\theta,\cdots)$, por lo que una unidad trivial $ka^ i, 0\neq k in K$ tiene imagen $(k,k\zeta^i,k\theta^i,\cdots)$. Nótese que si la descomposición de $K\textless a\textgreater$ tuviera más de dos componentes se tendrían unidades de la forma $(1,\zeta,1,\cdots)$ que no corresponden a unidades triviales de $K\textless a \textgreater$.
+Entonces se debe tener \[ K\textless a \textgreater \simeq K \oplus E, E = K(\zeta), |K|=q, |E|=q^r, \circ(a) = p \]. Contando el número de unidades y de elementos se tiene \[ p(q-1) = (q-1)(q^r-1), p^q = q\cdot q^r. \] De la condición anterior, se calcula que $q^p = q(p-1)$ y $q^{p-1} = p+1$, lo cual sólo es posible para $q=2$ y $p=3$ o $q=3$ y $p=2$. Con lo que se demuestra que $K=F_2$ y $G=C_3$ o $K=F_3$ y $G=C_2$.
+
+Para el converso, una simple inspección demuestra que $F_2C_2, F_3C_3 \simeq F_2\oplus F_4$ y $F_3C_2 \simeq F_3 \oplus F_3$ tiene dos, tres y cuatro unidades triviales, lo cual coincide con el número de unidades triviales en cada caso. 
+\end{proof}
+
+En este punto, se ha llegado al punto en el que se desea clasificar los grupos de torsión $G$ de tal forma que el grupo-anillo entero $\mathds{Z}G$ tenga solo unidades triviales.
+
+\begin{ejemplo}
+En el ejemplo \ref{ejem:unipotentes} se dio la construcción de unidades unipotentes a partir de elementos nilpotentes. Ahora se verán elementos nilpotentes en particular que también poseen esa característica. 
+
+Supóngase que $R$ tiene divisores de cero, es decir, se pueden encontrar elementos $x,y \in R$ no nulos tales que $xy = 0$. Si $t$ es algún otro elemento de $R$ entonces $\eta =ytx$ es no nulo tal que $\eta ^2 = (ytx)(ytx) = ytxytx = 0$, así $1+\eta$ es una unidad. En el caso especial cuando $R =\mathds{Z}G$ es un grupo-anillo entero, una manera sencilla de obtener un divisor de cero es considerar un elemento $a \in G$ de orden finito $ n >1$, entonces $a-1$ es divisor de cero, ya que $(a-1)(1+a+\cdot+a^{n-1})=0$. De esa manera, tomando cualquier elemento $b \in G$, se puede construir una unidad de la forma 
+\begin{equation}\label{eqn:biciclicas}
+\mu_{a,b} = 1+(a-1)b\hat{a}, \mbox{ con } \hat{a} = 1+a+\cdots+a^{n-1}
+\end{equation}
+\end{ejemplo}
+
+\begin{definicion}
+Sean $a \in G$ un elemento de orden finito $n$ y $b$ cualquier otro elemento de $G$. La unidad $\mu_{a,b}$ dada por la ecuación \ref{eqn:biciclicas} es llamada unidad bicíclica del grupo-anillo $\mathds{Z}G$. Se denotará por $\mathcal{B}_2$ el subgrupo de $\mathcal{U}(\mathds{Z}G)$ generado por todas las unidades bicíclicas de $\mathds{Z}G$.
+\end{definicion}
+
+Es claro que si $a,b \in G$ conmutan, entonces $\mu_{a,b} = 1$. Se desea saber para que casos $\mu_{a,b}$ es una unidad trivial de $\mathds{Z}G$.
+
+\begin{proposicion}\label{prop:unidadesb}
+Sean $g,h$ elementos de un grupo $G$ con $\circ g = n < \infty$. Entonces, la unidad bicíclica $\mu_{g,h}$ es trivial si y sólo si $h$ normaliza a $\textless g \textgreater$, en cuyo caso $\mu_{g,h} = 1$.
+\end{proposicion}
+\begin{proof}
+Supóngase que $h$ normaliza a $\textless g \textgreater$, entonces $h^{-1}gh = g^j$, para algún entero positivo$j$. De esto se tiene $gh = g^jh$ y como $g^j\hat{g} = \hat{g}$, se tiene $gh\hat{g} = h\hat{g}$. Haciendo los cálculos $\mu_{g,h} = 1+(g-1)h\hat{g}= 1+gh\hat{g}-h\hat{g} =1$.
+
+Para el converso, supóngase que $\mu_{g,h}$ es trivial, entonces, del hecho que $\mathcal{E}(\mu_{g,h})=1$, existe $x \in G$ tal que $\mu_{g,h}=x$. De esta cuenta, se tiene
+\[ 1+(1-g)h\hat{g} = x \] y de esta ecuación se infiere que \[ 1+ h(1+g+g^2+\cdots + g^{n-1}) = x +gh(1+g+g^2+\cdots+g^{n-1}).  \] Si $x=1$ se tiene que $h=ghg^i$ para algún entero positivo $i$. Si $x \neq 1$ entonces $h \notin \textless g \textgreater$, pero $1$ aparece en el lado izquierdo de la ecuación, por lo que también debe aparecer en el lado derecho, esto es, existe $k$ entero positivo tal que $ghg^k = 1$ entonces $h = g^{-1}g^{-k}= g^{-(k+1)}$ y por lo tanto $h \in \textless g \textgreater$, lo cual es una contradicción. 
+\end{proof}
+Como consecuencia inmediata se tiene el resultado:
+\begin{proposicion}
+Sea $G$ un grupo finito. El grupo $\mathcal{B}_2$ es trivial si y sólo si todo subgrupo de $G$ es normal.
+\end{proposicion}
+\begin{proposicion}
+Toda unidad bicíclica $\mu_{g,h} \neq 1$ de $\mathds{Z}G$ es orden infinito. 
+\end{proposicion}
+\begin{proof}
+Dado $\mu_{g,h} = 1 +(g-1)h\hat{g}$ se tiene
+\[  \mu_{g,h}^s = (1+(g-1)h\hat{g}^s = 1+s(g-1)h\hat{g})  \] entonces $\mu_{g,h}^s = 1$ si y sólo si $(g-1)h\hat{g} = 0$, lo cual sucede solo si $\mu_{g,h} = 1$.
+\end{proof}
+Se desea explorar que pasa cuando se trabaja con grupos conmutativos finitos. El lector deberá recordar la definición de la función totiente de Euler $\phi$. 
+Dado $n$, un entero positivo, se cumple que si la factorización de $n$ en producto de números primos es $n = p_1^{n_1}\cdots p_t^{n_t}$, entonces \[ \phi(n) = p_1^{n_1-1}(p_1-1)\cdots p_t^{n_t-1}(p_t-1).  \] Una propiedad de mucha importancia es el famoso teorema de Euler: Si $m$ y $n$ son primos relativos entonces $i^{\phi(n)} \equiv 1 (\mbox{mod n}).$
+\begin{definicion}
+Sea $g$ un elemento de orden $n$ en un grupo $G$. Una unidad cíclica de Bass \footnote{Hyman Bass(5 de Octubre, 1932) es un matemático Americano conocido por sus trabajos en Álgebra y en Matemática educativa.  } es un elemento del grupo-anillo $\mathds{Z}G$ de la forma:
+\[ \mu_{i} = (1+g+\cdots+g^{i-1})^{\phi(n)} + \frac{1-i^{\phi{n}}}{n}\hat{g}  \] donde $i$ es un entero tal que $1<i<n-1$ y $(i,n) = 1$.
+\end{definicion}
+Como es natural, se debe mostrar que $\mu_i$ es una unidad. Es claro que, para $g \in G, \mu_i$ pertenece al grupo-anillo $\mathds{Q}\textless g \textgreater$. Se vió en el ejemplo \ref{ejem:descomposicionRacional} que $\mathds{Q}\textless g \textgreater \simeq \oplus_{d \mid  n} \mathds{Q}(\zeta_d)$ donde $\zeta_d$ es una raíz primitiva de la unidad de orden $d$. Más aún, bajo este isomorfismo, la proyección de $g$ en cada componente es la respectiva raíz de la unidad, así que un elemento de la forma $(1+g+\cdots+g^{i-1})$ proyecta, en cada componente, un elemento de la forma: \[ 1+\zeta_d + \cdots +\zeta_d^{i-1} \in \mathds{Z}[\zeta_n].  \] Si $\zeta_d \neq 1,$ entonces el elemento $\zeta_d$ es invertible en $\mathds{Z}[\zeta_d]$ y es llamada unidad ciclotómica. De lo anterior, el inverso de $\alpha_d$ es \[ \alpha_d^{-1} = \frac{\zeta_d-1}{\zeta_d^i-1} = \frac{\zeta_d^{ik}}{\zeta_d^{i}-1} = 1+\zeta_d^i + \cdots + \zeta_d^{i(k-1)}, \] donde $k$ es cualquier entero tal que $ik \equiv 1 (\mbox{mod } n) $. Es claro que $\alpha_d^{-1} \in \mathds{Z}[\zeta_d] \in \mathds{Z}[\zeta_n]$.
+
+Para la primer componente las cosas cambian, ya que la proyección es precisamente el valor $i$, que no es invertible. Ahora bien, como $(i,n) = 1$ y aplicando el teorema de Euler, se tiene que $i^{\phi(n)} = 1 + tn$ para algún $t \in \mathds{Z}$. Considérese el elemento \[  (1+g+\cdots +g^{i-1})^{\phi(n)} -t\hat{g} \] y nótese que $\hat{g}$ es cero en cualquier componente $\mathds{Q}(\zeta_d)$, con $\zeta_d \neq 1$, por lo que la proyección de $\mu_i$ e cada una de estas componentes es una unidad. Ahora, analizando el caso de la primera componente de nuevo, se puede observar que dicha proyección es $i^{\phi(n)}-tn = 1$, con lo cual se prueba que la proyección sobre dicha componente también es unidad. Más aún, se obtuvo que $-t = \frac{1-i^{\phi(n)}}{n}$, por lo que el elemento $(1+g+\cdots+g^{i-1})^{\phi(n)} -t\hat{g})$ considerado anteriormente es precisamente $\mu_i$. De esta forma se ha demostrado que la proyección de $\mu_i$ en todas las componente de $\oplus_{d \mid n}\mathds{Z}[\zeta_d]$ es una unidad. Si se denota por $R$ la preimagen de este anillo bajo el isomorfismo, se tiene que $\mu_i$ es unidad en $R$.
+\begin{proposicion}
+Sea $g$ un elemento de orden finito en un grupo $G$. Entonces, el elemento \[  \mu_i = (1+g+\cdots+g^{i-1})^{\phi(n)} + \frac{1-i^{\phi(n)}}{n}\hat{g}, \] donde $i$ es un entero tal que $1<i<n-1$ y $(i,n) = 1$, es invertible y su inversa es \[  \mu_i^{-1} = (1+g^i + \cdots + g^{i(k-1)})^{\phi(n)} + \frac{1-k^{\phi(n)}}{n}\hat{g},\] donde $k$ es cualquier entero tal que $ik \equiv 1 (\mbox{mod } n)$.
+\end{proposicion}
+
+\begin{proposicion}\label{prop:basscyclic}
+Sea $g$ un elemento de orden finito $n$ en un grupo $G$ y sea $l$ un entero tal que $1<l<n-1$ y $(l,n) = 1$. Entonces, la unidad cíclica de Bass \[  \mu_l  = (1+g+\cdots+g^{l-1})^{\phi(n)} + \frac{1-l^{\phi(n)}}{n}\hat{g} \] es de orden infinito. 
+\end{proposicion}
+\begin{proof}
+Se sabe que \[ \mathds{Q}\textless g \textgreater \simeq \mathds{Q} \oplus \cdot \oplus \mathds{Q}(\zeta^d) \oplus \cdots \oplus \mathds{Q}(\zeta),\] donde $\zeta$ es una raíz primitiva de la unidad de orden $n$ y $d$ representa a los divisores de $n$. Más aún, en el isomorfismo se tiene \[ g \mapsto (1, \dots , \zeta^d, \dots , \zeta).\] Sea $\mu_l$ como en la proposición. Se requieren demostrar que la proyección $\mu_l(\zeta)$ en la última componente es de orden infinito. Primero nótese que dicha proyección  es de la forma $\mu_l(\zeta) = (1+\zeta+\cdots+\zeta^{l-1})^{\phi(n)}$, de esa cuenta, si $(1+\cdots + \zeta^{l-1})^{\phi(n)}$ fuera de orden finito, entonces se tendría que $(1+\cdots + \zeta^{l-1})$ sería de orden finito. Como $\{ \pm \zeta^t \colon 0\leq t\leq n-1 \}$ son todas raíces de la unidad de $\mathds{Q}(\zeta)$, se tendría que $(1+\cdots +\zeta^{l-1}) = \pm \zeta^s$ para algún entero positivo $s$. Multiplicando la última ecuación por $(1-\zeta)$ se observa que $1-\zeta^l = \pm \zeta^s(1-\zeta)$. Así, tomando valores absolutos, se obtiene $\mid 1 - \zeta^l \mid = \mid 1-\zeta \mid$. Escribiendo $\zeta = \cos \theta + i \sin \theta$, por el teorema de DeMoivre, se tiene $\zeta^l = \cos(l\theta) + i \sin(l\theta)$, de donde se deduce que $\mid 1 - \zeta \mid^2 = \mid 1 - (\cos\theta + i \sin\theta) \mid ^2 = 2(1-\cos\theta)$ y $\mid 1-\zeta^l \mid^2 = \mid 1-(\cos(l\theta) + i\sin(l\theta)  \mid^2 = 2(1-\cos(l\theta))$, de esa cuenta, $\cos\theta = \cos (l\theta)$, lo cual implica que $l\theta = \theta$, lo cual implica que $l\theta = \theta$ o $l\theta = 2\pi-\theta$, por lo tanto $\zeta^l = \zeta$ o $\zeta^l = \zeta^{-1}$. En cualquiera de los dos casos se obtiene una contradicción, lo cual demuestra que $\mu_l$ tiene orden infinito.
+\end{proof}
+\begin{nota}
+En la definición de unidad cíclica de Bass $\mu_l$, $l$ está en el rango $1<l<n-1$. Si se toma $l=n-1$ se tiene \[ \mu_l= (1+g+\cdots+g^{n-2})^{\phi(n)}+\frac{1-l {\phi(n)}}{n}\hat{g}.\] La proyección de $\mu_l$ sobre cualquier componente es $(-g^{-1})^{\phi(n)}$ y $\mu_l = (-g^{-1})^{\phi(n)}$ es trivial. Así mismo, de la restricción $1<l<n-1$, se tiene que $n\geq 5$ para que $\mu_l$ esté definida.
+\end{nota}
+\begin{nota}
+Lo proposición anterior demuestra que $\mu_l$ es una unidad no trivial.
+\end{nota}
+\begin{ejemplo}
+Ahora considérese $g \in G$ un elemento de orden impar, $n \neq 1$ y el elemento \[ \mu = 1-g+g^2-\cdots +g^{c-1},\] donde $(c,2n)=1$. Entonces la proyección en cada componente de $\mathds{Q}\textless g \textgreater$ es una unidad ciclótomica y como la proyección en la primera componente es $1$, se tiene que $\mu$ es una unidad en $\mathds{Z}\textless g \textgreater$. Esta unidad es llamada una \textbf{unidad alternante}.
+\end{ejemplo}
+
+% % % % % % % % % %Inicio de Sección % % % %
+\section{\quad Unidades Triviales}
+En el capítulo anterior se demostró que si $G$ es un grupo abeliano, entonces todas las unidades de torsión de $\mathds{Z}G$ son triviales. Ahora en esta sección se hará un breve estudio de los grupos $G$ que hacen que todas las unidades de $\mathds{Z}G$ sean triviales.
+
+El lector deberá recordar que una unidad trivial de $\mathds{Z}G$ es un elemento de la forma $\pm g, g \in G$. Así, si todas las unidades de $\mathds{Z}G$ son triviales, entonces se tiene que $\mathcal{U}(\mathds{ZG}) = \pm G$. Esta condición se traduce, en términos de unidades normalizadas, como $\mathcal{U}_1(\mathds{Z}G) = G.$
+\begin{lema}
+Sea $G$ un grupo de torsión tal que $\mathcal{U}_1(\mathds{Z}G) = G.$ Entonces todo subgrupo de $G$ es normal. 
+\end{lema}
+\begin{proof}
+Para demostrar este lema, es suficiente demostrar que todo subgrupo cíclico de $G$ es normal.  De esta forma, supóngase que existe un subgrupo cíclico $\textless g \textgreater$ de $G$ que no es normal, es decir, existe $h \in G$, tal que $h^{-1}gh \notin \textless g \textgreater$ y se sigue de la proposición \ref{prop:unidadesb} que la unidad bicíclica $u = 1 + (1-g)h\hat{g}$ es no trivial. 
+\end{proof}
+Es sabido que si $G$ es un grupo abeliano, entonces sus subgrupos son normales. Además, se recuerda al lector que todo grupo de torsión no abeliano $G$ tal que todos sus subgrupos son normales es llamado un grupo Hamiltoneano, este grupo tiene la forma \[ G = K_8\times E \times A,\] donde $E$ es un 2-grupo abeliano elemental - todo elemento $a \neq 1$ en $E$ es de orden 2-, $A$ es un grupo abeliano donde todos sus elementos son de orden impar y $K_8$ es el grupo de los cuaterniones de orden ocho: \[ K_8 = \textless a,b \colon a^4 =1 , a^2 = b^2, bab^{-1} = a^{-1} \textgreater \]
+\begin{proposicion}
+Sea $G$ un grupo de torsión tal que $\mathcal{U}_1(\mathds{Z}G) = G$. Entonces $G$ es abeliano de exponente igual a $1,2,3,4$ o $6$, o bien, $G$ es un 2-grupo hamiltoneano.
+\end{proposicion}
+\begin{proof}
+Del lema anterior se sigue que $G$ es abaliano o bien  $G$ es hamiltoneano. Primero supóngase que $G$ es abeliano. Si su exponente es diferente de $1,2,3,4$ o $6$ entonces $G$ contiene un elemento de orden $n$, con $n = 5$ o $n>6$. En ambos casos, se tiene que $\phi(n) > 2$ - ya que $\phi(n) \equiv (\mbox{mod} 2)$ -  y la proposición \ref{prop:basscyclic} demuestra que $G$ contiene una unidad cíclica de Bass que es no trivial.
+
+De manera análoga, si $G$ es hamiltoneano pero no es un 2-grupo, entonces $G$ contiene un elemento $x \in A$ de orden $p>2$. Entonces, el elemento $g = ax$ tiene orden $n=4p$ y, de nuevo, $\phi(n) > 2$, por lo que $G$ contiene una unidad cíclica de Bass. 
+\end{proof}
+La condición dada en la proposición anterior también es suficiente, pero su demostración no es tan trivial. Se demostrará este hecho a través de una serie de lemas.
+\begin{lema}\label{lema:primerLema}
+Sea $G$ un grupo tal que las unidades de $\mathds{Z}G$ son triviales y $C_2$ un grupo cíclico de orden 2. Entonces las unidades de $\mathds{Z}(G \times C_2)$ también son triviales. 
+\end{lema}
+\begin{proof}
+Sea $C_2 = \textless a \colon a^2 = 1 \textgreater$. Como $\mathds{Z}(G\times C_2) \simeq (\mathds{Z}G)C_2$, un elemento $u \in \mathds{Z}(G\times C_2)$ puede ser escrito de la forma $u = \alpha + \beta a$ donde $\alpha,\beta \in \mathds{Z}G$. Debido a que $u$ es unidad, tiene que existir otro elemento $u^{-1} = \gamma +\delta a$ tal que \[  (\alpha + \beta a)(\gamma + \delta a) = (\alpha \gamma + \beta \delta)+(\alpha\delta + \beta\gamma)a =1. \] Entonces 
+\begin{eqnarray*}
+\alpha\gamma +\beta\delta &=& 1 \\ 
+\alpha\delta + \beta\gamma  &=& 0.
+\end{eqnarray*} Así, se tiene
+\[ (\alpha + \beta)(\gamma + \delta) = \alpha\gamma + \beta\delta + \alpha\delta + \beta\gamma = 1  \]
+\[ (\alpha - \beta)(\gamma - \delta) = \alpha\gamma + \beta\delta -( \alpha\delta + \beta\gamma) = 1  \] lo cual demuestra que $(\alpha + \beta)$ y $(\alpha -\beta)$ son unidades en $\mathds{Z}G$ y por lo tanto son unidades triviales. Entonces, existen $g_1,g_2 \in G$ tales que \[ \alpha + \beta = \pm g_1, \quad \alpha -\beta = \pm g_2.\] 
+De estas últimas igualdades, se sigue que $\alpha = \dfrac{1}{2}(\pm g_1 \pm g_2)$, pero como los coeficientes de $\alpha$ deben ser enteros, tiene que ser cierto que $g_1 = \pm g_2$.
+De esta manera, se tienen dos opciones: \[ \alpha +\beta = \alpha - \beta = \pm g_1 \] o \[ \alpha +\beta = -(\alpha -\beta) = \pm g_1. \]
+Para el primer caso, se obtiene $\alpha = \pm g_1$ y $\beta = 0$, mientras que para el segundo caso $\alpha =0$ y $\beta = \pm g_1$. En ambos casos se obtiene que $u$ es trivial. 
+\end{proof}
+\begin{lema}\label{lema:segundoLema}
+Las unidades del grupo-anillo $\mathds{Z}K_8$ son triviales. 
+\end{lema} 
+\begin{proof}
+En este punto, vale la pena recordar que \[ K_8 = \{ 1,a,b,ab,a^2,a^3,a^2b,ab^3  \}.\] Entonces, todo elemento $\alpha \in \mathds{Z}K_8$ es de la forma \[ \alpha = x_0 + x_1a + x_2b + x_3ab + y_0a^2 + y_1a^3 + y_2a^2b + y_3ab^3.\] Ahora, téngase en consideración al anillo de cuaterniones integrales, esto es, el anillo \[ H = \{ m_0 + m_1i+ m_2j +m_3k \colon m_0, m_1, m_2, m_3 \in \mathds{Z} \}.\] Es fácil ver que las únicas unidades de $H$ son $\pm 1, \pm i, \pm j, \pm k.$ Ahora considérese el epimorfismo $\phi \colon \mathds{Z}K_8 \to H$ dado por \[ \alpha \mapsto (x_0 - y_0) + (x_1 - y_1)i + (x_2 - y_2)j +(x_3-y_3)k. \]
+Por ser un morfismo, si $\alpha$ es unidad en $\mathds{Z}K_8$ entonces $\phi(\alpha)$ es unidad de $H$; por lo tanto, para algún índice $r, \quad 0 \leq r \leq 3,$ se debe cumplir que 
+\begin{eqnarray*}
+x_r - y_r &=&1 \\  
+x_s - y_s &=& 0 \mbox{ si } s \neq r .
+\end{eqnarray*}
+Por otro lado, es fácil notar que $a^2$  es central y que $\frac{K_8}{<a^2> \simeq C_2 \times C_2}.$ Si se denota como $\bar{g}$ la clase de un elemento $g \in K_8$ bajo el cociente y como $\psi \colon \mathds{Z}K_8 \to \mathds{Z}\left(\dfrac{K_8}{<a^2>}\right)$, la extensión de la proyección canónica $K_8 \to \left( \dfrac{K_8}{<a^2>} \right)$ hacia $\mathds{Z}K_8$, se tiene que \[ \psi(\alpha) = (x_0 + y_0) +(x_1 + y_1) \bar{a} + (x_2 + y_2)\bar{b} + (x_3+y_3)\bar{ab}.\] Se sigue del lema anterior que las unidades de $\mathds{Z}(C_2\times C_2)$ son triviales. Así, para algún índice $h, 0\leq h \leq 3,$ se tiene 
+ \begin{eqnarray*}
+ x_h + y_h &=& \pm 1 \\
+ x_k + y_k &=& 0, \mbox{ si } h \neq k.
+ \end{eqnarray*}
+ Es fácil notar que $r = h$ y \[ x_r = \mp 1, y_r =0, x_s = y_s =0, \mbox{ si } s \neq r, \] o 
+ \[ x_r =0 , y_r = \pm 1, x_s = y_s = 0 \mbox{ si } s \neq r.  \] En ambos casos se llega a que $\alpha$ es unidad trivial de $\mathds{Z}K_8$.
+\end{proof}
+\begin{lema}\label{lema:tercerLema}
+Sea $\zeta$ una raíz primitiva de la unida de orden 3 o 4. Entonces, las unidades del anillo ciclotómico $\mathds{Z}[\zeta]$ son simplemente $\{\pm \zeta^{i} \}$
+\end{lema}
+\begin{proof}
+Se considerará primero el caso en que $\zeta$ es una raíz cúbica de la unidad. Recordemos que el polinomio minimal de $\zeta$ es $X^2 + X + 1,$ así que todo elemento $\alpha \in \mathds{Z}[\zeta]$ es de la forma $\alpha = a+b\zeta$, con $a,b \in \mathds{Z}$. Supóngase que $\alpha$ es una unidad de $\mathds{Z}[\zeta]$. Dado que la aplicación $f \colon \mathds{Z}[\zeta]\to \mathds{Z}[\zeta]$ dada por $f(x+y) = x+y\zeta^2$ es un automorfismo, se sigue que $\alpha^{'} = a + b\zeta^2$ es también una unidad y así \[ \alpha\alpha^{'} = (a + b\zeta)(a + b\zeta^2) = a^2 + b^2 + ab(\zeta  + \zeta^2) = a^2 + b^2 -ab \] es también una unidad, pero $\alpha\alpha^{'} \in \mathds{Z}$, así que $a^2 + b^2 -ab = \pm 1$. Supóngase, sin pérdida de generalidad, que $\mid a \mid \geq \mid b \mid$. Si $b \neq 0$, se sigue $a^2 + b^2 > ab \pm 1,$ lo cual es una contradicción. 
+
+Si $b = 0$, entonces $\alpha = a \in \mathds{Z}$ es una unidad y $\alpha = \pm 1$. Si $b = 1,$ se tiene que $a^2 + 1 = a \pm 1$ lo cual implica que $a^2 = a$ o  $a^2-a+2 = 0$. Para el primer caso se tiene $a = 0$  o $a=1$ y para el segundo caso no se tiene solución en los enteros. Si $a=0$ se tiene $\alpha = b\zeta$ y como $\mid \alpha \mid = 1$, se sigue que $\alpha = \pm \zeta$. Finalmente, si $a = b = 1$ se tiene que $\alpha =1 + \zeta = -\zeta^2$.
+El caso en que $\zeta$ es raíz primitiva de la unidad de orden cuatro es aún más fácil, ya que $\zeta = i$ y los elementos en $\mathds{Z}[i]$ son de la forma $\alpha = a + bi, a,b \in \mathds{Z}$, es decir que $\alpha \in \mathds{C}$ y por lo tanto $a = \pm 1$ y $b = 0$ o $a = 0$ y $b = \pm 1$
+\end{proof}
+\begin{teorema}[Higman]\label{teo:Higman}
+Sea $G$ un grupo de torsión. Entonces, todas las unidades de $\mathds{Z}G$ son triviales si y sólo si $G$ es un grupo abeliano de exponente igual a $1,2,3,4$ o $6$ o $G$ es un 2-grupo hamiltoneano. 
+\end{teorema}
+\begin{proof}
+La condición necesaria ya se ha demostrado. Para probar la condición suficiente, considérese el caso en que $G$ es un grupo abeliano de exponente igual a $1,2,3,4$ o $6$ y supóngase que $G$ es finito. En este caso, el teorema \ref{teo:Perlis-Walker} asegura que \[ \mathds{Q}G \simeq \oplus_{d \mid n}a_d\mathds{Q}(\zeta_d)  \] donde $\zeta_d$ denota a las raíces primitivas de la unidad de orden $d$ y $a_d = \dfrac{\eta_d}{\mid K(\zeta_d : K \mid)}$. En esta fórmula, $\eta_d$ denota el número de elementos de orden $d$ en $G$. En otra palabras, solamente las raíces de la unidad cuyos órdenes son iguales a los órdenes de los elementos en $G$ aparecen en la descomposición.
+Sea $R$ la preimagen, bajo el isomorfismo, del orden \[ M = \oplus_{d \mid n}a_d \mathds{Z}[\zeta_d].\] Nótese que si $G$ es como se propuso al inicio, entonces $G$ es de la forma 
+\begin{eqnarray*}
+G &\simeq& C_2 \times \cdots \times C_2, \\
+G &\simeq& C_3 \times \cdots \times C_3, \\
+G &\simeq& C_4 \times \cdots \times C_4,  \\
+G &\simeq& C_2 \times \cdots \times C_2 \times C_3 \times \cdots \times C_3, \\
+G &\simeq& C_2 \times \cdots \times C_2 \times C_4 \times \cdots \times C_4.
+\end{eqnarray*}
+Sin embargo, por el lema \ref{lema:primerLema}, se puede asumir que $G$ es del segundo o del tercer tipo. En ambos casos, se sigue del lema \ref{lema:tercerLema} que todas las unidades de $R$ son triviales y por lo tanto de orden finito. 
+Como $\mathcal{U}(\mathds{Z}G)$ está contenido en $R$, también sus unidades son de orden finito, como $G$ es abeliano, se sigue que estas deben ser triviales.
+En el caso en que $G$ es un 2-grupo hamiltoneano la conclusión se sigue directamente del lema \ref{lema:primerLema} y \ref{lema:tercerLema}
+\end{proof}
