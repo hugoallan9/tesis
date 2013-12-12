@@ -1,0 +1,79 @@
+\chapter{\quad Aplicaciones}
+En este capítulo se darán los conceptos básicos de teoría de códigos. Se empezará dando una descripción del sistema de comunicación como lo propuso Claude E. Shannon \footnote{Claude Elwood Shannon (Míchigan, 30 de abril de 1916 - 24 de febrero de 2001) fue un ingeniero electrónico y matemático estadounidense, recordado como «el padre de la teoría de la información»} en 1948. En esta parte también se introducirán todos los conceptos básicos del sistema de comunicación como canal, codificador, decodificador y código. Una vez la teoría básica está dada se hace un breve estudio de los códigos lineales, para terminar este capítulo con una clase de códigos en particular, los cíclicos. 
+
+\section{\quad Sistema de Comunicación}
+La figura \ref{fig:sistemaComunicacion} muestra un sistema de comunicación de una \textbf{fuente} a un \textbf{destino} mediante un \textbf{canal}. La comunicación puede ser en el dominio del espacio - es decir, de un punto a otro - o en el dominio del tiempo - es decir, al guardar información en algún punto en el tiempo para ser recuperada posteriormente-.
+\begin{figure}
+\centering
+\caption{Sistema de Comunicación propuesto por Shannon}
+\includegraphics[angle=-90,width=0.7\linewidth]{sistema.pdf}
+\caption*{Fuente: Elaboración propia con software Dia.}
+\label{fig:sistemaComunicacion}
+\end{figure}
+La codificación de la fuente tiene doble propósito. Primero, servir como traductor entre la salida de la fuente y la entrada al canal. Por ejemplo, si la información transmitida de la fuente al destino está en señal análoga y el canal espera recibir señal digital, se necesitará una conversión de análoga a digital en la fase de codificación y un convertidor de señal digital a análoga en la gase de decodificación. Como segunda función se podría requerir que el codificador de la fuente comprima la salida de la fuente para economizar en la longitud de la transmisión, eso significa que en el otro extremo, el decodificador de la fuente necesitará descomprimir la señal.
+
+Algunas aplicaciones necesitan que el decodificador restaure la información para que sea idéntica a la original, en cuyo caso se dice que la compresión es \textbf{sin pérdidas}.
+
+Otras aplicaciones, como la mayoría de transmisiones de audio e imágenes, permiten una diferencia -controlada- o distorsión entre la información original y la restaurada, así que esta posibilidad es usada para lograr mayor compresión. En este caso se dice que la compresión es \textbf{con pérdidas.}
+
+Los canales no son perfectos debido a limitaciones físicas y de ingeniería, es decir, su salida puede diferir de su entrada debido al ruido o a defectos de fabricación.
+
+Más aún, en algunos casos el diseño requiere que el formato de la información de salida del canal difiera del formato de entrada. Además hay aplicaciones tales como los medios de almacenamiento masivo mágnetico y óptico, donde no se permiten ciertos patrones en el flujo de bits a transmitir. Dado esto, el rol principal del codificador del canal, es superar estas limitaciones y hacer el canal tan transparente  como sea posible, tanto desde el punto de vista de la fuente como del destino. 
+
+Es así como entran a participar los códigos. Los códigos fueron inventados para corregir errores en los canales de comunicación debido al ruido. Por ejemplo, supóngase que hay un cable telegráfico desde Ciudad de Guatemala hasta Ciudad de Panamá, mediante el cual se pueden transmitir unos y ceros. Usualmente cuando un cero es enviado se recibe un cero, pero ocasionalmente un cero puede ser recibido como un uno o un uno como un cero. Supóngase que en promedio, 1 de cada 100 símbolos se recibe de forma errónea, es decir, por cada símbolo hay una probabilidad $p=1/100$ de que ocurra un error en el canal. A esto se le llama un canal binario simétrico y se denota como BSC.
+\begin{figure}
+\centering
+\caption{Canal Binario Simétrico}
+\includegraphics[angle=-90,width=0.6\linewidth]{CBS.pdf}
+\caption*{Fuente: Elaboración propia con software Dia.}
+\label{fig:CBS}
+\end{figure} 
+Además supóngase que se enviarán muchos mensajes importantes por ese cable y se necesita enviarlos de manera rápida y segura. Los mensajes ya se encuentran escritos como cadenas de ceros y unos, producidos, quizás, por alguna computadora.
+
+Se van a \textbf{codificar} estos mensajes para darles una protección en contra del ruido del canal. Un bloque de $k$ símbolos del mensaje $u = u_1\dots u_k, u_i = 0 \mbox{ o } 1$, será codificado como una \textbf{palabra-código} $x = x_1 \dots x_n, x_i = 0 \mbox{ o } 1$ donde $n \geq k$ (véase la figura \ref{fig:codificacion}). Estas palabra-códigos forman un código.
+\begin{figure}
+\caption{Proceso de Codificación}
+\centering
+\input{codificacion.tex}
+\caption*{Fuente: Elaboración propia con software Dia y exportado a \TeX}
+\label{fig:codificacion}
+\end{figure}
+La primera parte de la palabra-código consiste en ele mensaje mismo: \[ x_1 = u_1, x_2 = u_2, \dots , x_k = u_k, \] seguido de $n-k$ símbolos de comparación $x_{k+1, \dots , x_n}$. 
+Los símbolos de comparación son elegidos de tal forma que las palabra-códigos satisfagan 
+\[ H \begin{pmatrix}
+x_1 \\ 
+x_2 \\
+\vdots \\
+x_n
+\end{pmatrix} = Hx^{t} = 0, \] donde la matriz $H$ de $(n-k)\times k$ es la matriz de comparación de paridad del código, dada por 
+\begin{equation}\label{ecu:defCodigo}
+H = [A \mid I_{n-k}],
+\end{equation}  
+donde $A$ es una matriz fija de $(n-k)\times k$ de ceros y unos y \[ I = \begin{pmatrix}
+1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \dots & 1
+\end{pmatrix} \] es la matriz identidad de $(n-k) \times (n-k)$. La aritmética en la ecuación \ref{ecu:defCodigo} se hace en módulo 2, es decir que se está trabajando con el campo $\mathds{Z}_2$. 
+\begin{ejemplo}
+La matriz de comparación de paridad 
+\[ H = \left(\begin{array}{ccc|ccc}
+0 & 1 & 1 & 1 & 0 & 0 \\
+1 & 0 & 1 & 0 & 1 & 0 \\
+1 & 1 & 0 & 0 & 0 & 1
+\end{array}\right) \] define un código con $k=3$ y $n=6$. Para este código 
+\[ A = \begin{pmatrix}
+0 & 1 & 1\\
+1 & 0 & 1 \\
+1 & 1 & 0
+\end{pmatrix}.  \]
+El mensaje $u_1u_2u_3$ es codificado en la palabra-código $x = x_1x_2x_3x_4x_5x_6$ que empieza con el propio mensaje:
+\[ x_1 = u_1, x_2 = u_2, x_3 = u_3, \] seguido de tres símbolos de comparación $x_4x_5x_6$ tales que $Hx^t = 0$, es decir, se cumple
+\begin{eqnarray}
+x_2 + x_3 + x_4 = 0, \\
+
+\end{eqnarray}
+\end{ejemplo}
+
+
+

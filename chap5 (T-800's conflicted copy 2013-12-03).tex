@@ -1,0 +1,72 @@
+\chapter{UNIDADES DE LOS GRUPO-ANILLOS}
+\section{\quad Algunas formas de construir unidades}
+Sea $R$ un anillo. Se entiende por $\mathcal{U}(R) = \{x \in R \colon (\exists y \in R)xy=yx=1\}$. 
+En particular, dado un grupo $G$ y un anillo $R$, $\mathcal{U}(RG)$ denota al grupo de unidades del grupo-anillo $RG$. Como la función de aumento $\mathcal{E} \colon RG \to R$, dada por $\mathcal{E} \left( \sum a(g)g \right) = \sum a(g)$, es un homomorfismo de anillos, se tiene que $\mathcal{E}(u) \in \mathcal{U}(R)$, para todo $u \in \mathcal{U}(RG).$ Se denotará como $\mathcal{U}_1(RG)$ el subgrupo de unidades de aumento $1$ en $\mathcal{U}(RG)$, a saber
+\[\mathcal{U}_1(RG) = \{u \in \mathcal{U}(RG) \colon \mathcal{E}(u) = 1 \}.\] Para una unidad $u$ del grupo-anillo integral $\mathcal{Z}G$ se tiene que $\mathcal{E}(u) = \pm1$, entonces es claro que \[ \mathcal{U}(\mathcal{Z}G) = \pm \mathcal U_1(\mathcal{Z}G) .\]
+De la misma manera, para un anillo $R$ arbitrario se tiene que \[ \mathcal{U}(RG) = \mathcal{U}(R) \times \mathcal{U}_1(RG). \]
+No se conocen muchas formas para construir unidades. La mayoría de las construcciones conocidas son antiguas y elementales. A lo largo de este capítulo, se mostrará y describirá algunas de estas construcciones, donde se trabajará principalmente con grupo-álgebras $KG$ sobre un campo $K$ y con el grupo-anillo integral $\mathcal{Z}G$.
+\begin{ejemplo}[Unidades Triviales]
+Un elemento de la forma $rg$, donde $r \in \mathcal{U}(R)$ y $g \in G$, tiene inversa $r^{-1}g^{-1}$. Los elementos de esta forma son llamados \textbf{unidades triviales} de $RG$. De esta manera, por ejemplo, los elementos $\pm g, g \in G$ son las unidades triviales del grupo-anillo integral $\mathcal{Z}G$. Si $K$ es un campo, entonces las unidades triviales de $KG$ son los elementos de la forma $kg, k \in K, k \neq 0, g \in G$. Hablando de manera general, los grupo-anillos contienen unidades no triviales.
+\end{ejemplo}
+\begin{ejemplo}\label{ejem:unipotentes}
+Sea $\eta \in R$ tal que $\eta^2 =0$, entonces se tiene $(1+\eta)(1-\eta)=1$. De este hecho, tanto $1+\eta$ como $1-\eta$ son unidades de $R$. De la misma manera, si $\eta \in R$ es tal que $\eta ^k =0$ para algún entero positivo $k$, entonces se tiene que
+\begin{equation*}
+(1-\eta)(1+\eta+\eta^2+\cdots+\eta^{k-1}) =  1-\eta^{k} = 1,
+\end{equation*}
+\begin{equation*}
+(1+\eta)(1-\eta+\eta^2+\cdots\pm \eta^{k-1}) =  1 \pm \eta^{k} = 1.
+\end{equation*}
+Así, $1\pm \eta$ son unidades de $R$. Estas unidades son llamadas \textbf{unidades unipotentes} de $R$. En un grupo-álgebra $KG$ sobre un campo de característica $p>0$ se puede iniciar la búsqueda de unidades unipotentes investigando a los elementos nilpotentes. Si $g \in G$ es de orden $p^n$, entonces $(1-g)^{p^n} = 0$, de esta forma se demuestra que $\mu = 1-g$ es nilpotente.
+
+En este caso $1-\eta = g$ es trivial, pero $1+\eta = 2-g$ es no trivial, a menos qu $\car(K)=2$. Nótese que $g-g^2=g(1-g)$ también es nilpotente, entonces $1+g-g^2$ es una unidad no trivial si $g^2 \neq 1$.
+
+En el teorema \ref{teo:caracCar0} y \ref{teo:caracCarEntera} se clasificaron  todos los grupos finitos tal que el grupo-álgebra $KG$ no tiene elementos nilpotentes. Se vera entonces que las grupo-álgebras de grupos finitos casi siempre tienen unidades no triviales.
+\end{ejemplo}
+
+\begin{proposicion}\label{prop:UnidadesTriviales}
+Sea $G$ un grupo tal que no es libre de elementos de torsión y $K$ un campo de característica $p\leq 0$. Entonces $KG$ sólo tiene unidades triviales si y sólo si se cumple alguna de las siguientes condiciones
+\begin{enumerate}
+\item $K=F_2$ y $G=C_2$ o $C_3$
+\item $K=F_3$ y $G=C_2$
+\end{enumerate}
+\end{proposicion}
+\begin{proof}
+Supóngase que todas las unidades de $KG$ son triviales. Considérese $N=\textless a \textgreater$ subgrupo finito de $G$ de orden $n$. Si no existe $b \in G$ que normalize a $N$, entonces $\eta = (a-1)(1+a+\cdots + a^{n-1})$ es no nulo, pero $\eta^2 = (a-1)b(1+a+\cdots+a^{n-1})(a-1)b(1+a+\cdots+a^{n-1})=0$, de esa cuenta, $\eta +1$ es unidad no trivial de $KG$, proposición que contradice la hipótesis, de donde se concluye que todo subgrupo finito de $G$ es normal.
+
+Sea $H$ un subgrupo finito propio de $G$ y considérese $\hat{H} = \sum_{h \in H}h$. Es fácil notar que  $\hat{H}$ es central y $\hat{H}^2 = |H|\hat{H} $. Tómese $g \in G-H$ fijo. Si $|H| =0$ en $K$ entonces $\hat{H}^2 = 0$ y $g + \hat{H}$ es una unidad no trivial de $KG$ con inverso $g^-1(1-g^-1\hat{H})$. Si $|H| \neq 0$ en $K$, entonces $e = \frac{1}{\hat{H}}\hat{H}$ es idempotente central y $e +g(1-e)$ es una unidad no trivial con inverso $e+g^-1(1-e)$. En ambos casos se llega a una contradicción, por lo que se concluye que $G = \textless a \textgreater$ es de orden primo.
+
+Si $\car (K) = p$ entonces $1+c\hat{G}, c \in K$ es una unidad no trivial, a menos que $p=2$ y $K=F_2$. 
+
+Por otro lado, si $\car(K) \neq p$ entonces, del hecho que $K\textless a \textgreater$ es semisimple y conmutativo, $K\textless a \textgreater$ es suma directa de campos, a saber
+\[ K\textless a \textgreater \simeq K\oplus K(\zeta) \oplus K(\theta) \oplus + \cdots \] donde $\zeta, \theta, \cdots$ son raíces de la unidad de orden $p$. Bajo este isomorfismo, se tiene $a \mapsto (1,\zeta,\theta,\cdots)$, por lo que una unidad trivial $ka^ i, 0\neq k in K$ tiene imagen $(k,k\zeta^i,k\theta^i,\cdots)$. Nótese que si la descomposición de $K\textless a\textgreater$ tuviera más de dos componentes se tendrían unidades de la forma $(1,\zeta,1,\cdots)$ que no corresponden a unidades triviales de $K\textless a \textgreater$.
+Entonces se debe tener \[ K\textless a \textgreater \simeq K \oplus E, E = K(\zeta), |K|=q, |E|=q^r, \circ(a) = p \]. Contando el número de unidades y de elementos se tiene \[ p(q-1) = (q-1)(q^r-1), p^q = q\cdot q^r. \] De la condición anterior, se calcula que $q^p = q(p-1)$ y $q^{p-1} = p+1$, lo cual sólo es posible para $q=2$ y $p=3$ o $q=3$ y $p=2$. Con lo que se demuestra que $K=F_2$ y $G=C_3$ o $K=F_3$ y $G=C_2$.
+
+Para el converso, una simple inspección demuestra que $F_2C_2, F_3C_3 \simeq F_2\oplus F_4$ y $F_3C_2 \simeq F_3 \oplus F_3$ tiene dos, tres y cuatro unidades triviales, lo cual coincide con el número de unidades triviales en cada caso. 
+\end{proof}
+
+En este punto, se ha llegado al punto en el que se desea clasificar los grupos de torsión $G$ de tal forma que el grupo-anillo entero $\mathcal{Z}G$ tenga solo unidades triviales.
+
+\begin{ejemplo}
+En el ejemplo \ref{ejem:unipotentes} se dio la construcción de unidades unipotentes a partir de elementos nilpotentes. Ahora se verán elementos nilpotentes en particular que también poseen esa característica. 
+
+Supóngase que $R$ tiene divisores de cero, es decir, se pueden encontrar elementos $x,y \in R$ no nulos tales que $xy = 0$. Si $t$ es algún otro elemento de $R$ entonces $\eta =ytx$ es no nulo tal que $\eta ^2 = (ytx)(ytx) = ytxytx = 0$, así $1+\eta$ es una unidad. En el caso especial cuando $R =\mathcal{Z}G$ es un grupo-anillo entero, una manera sencilla de obtener un divisor de cero es considerar un elemento $a \in G$ de orden finito $ n >1$, entonces $a-1$ es divisor de cero, ya que $(a-1)(1+a+\cdot+a^{n-1})=0$. De esa manera, tomando cualquier elemento $b \in G$, se puede construir una unidad de la forma 
+\begin{equation}\label{eqn:biciclicas}
+\mu_{a,b} = 1+(a-1)b\hat{a}, \mbox{ con } \hat{a} = 1+a+\cdots+a^{n-1}
+\end{equation}
+\end{ejemplo}
+
+\begin{definicion}
+Sean $a \in G$ un elemento de orden finito $n$ y $b$ cualquier otro elemento de $G$. La unidad $\mu_{a,b}$ dada por la ecuación \ref{eqn:biciclicas} es llamada unidad bicíclica del grupo-anillo $\mathds{Z}G$. Se denotará por $\mathcal{B}_2$ el subgrupo de $\mathcal{U}(\mathds{Z}G)$ generado por todas las unidades bicíclicas de $\mathds{Z}G$.
+\end{definicion}
+
+Es claro que si $a,b \in G$ conmutan, entonces $\mu_{a,b} = 1$. Se desea saber para que casos $\mu_{a,b}$ es una unidad trivial de $\mathds{Z}G$.
+
+\begin{proposicion}\label{prop:unidadesb}
+Sean $g,h$ elementos de un grupo $G$ con $\circ g = n < \infty$. Entonces, la unidad bicíclica $\mu_{g,h}$ es trivial si y sólo si $h$ normaliza a $\textless g \textgreater$, en cuyo caso $\mu_{g,h} = 1$.
+\end{proposicion}
+\begin{proof}
+Supóngase que $h$ normaliza a $\textless g \textgreater$, entonces $h^{-1}gh = g^j$, para algún entero positivo$j$. De esto se tiene $gh = g^jh$ y como $g^j\hat{g} = \hat{g}$, se tiene $gh\hat{g} = h\hat{g}$. Haciendo los cálculos $\mu_{g,h} = 1+(g-1)h\hat{g}= 1+gh\hat{g}-h\hat{g} =1$.
+
+Para el converso, supóngase que $\mu_{g,h}$ es trivial, entonces, del hecho que $\mathcal{E}(\mu_{g,h})=1$, existe $x \in G$ tal que $\mu_{g,h}=x$. De esta cuenta, se tiene
+\[ 1+(1-g)h\hat{g} = x \] y de esta ecuación se infiere que \[ 1+ h(1+g+g^2+\cdots + g^{n-1}) = x +gh(1+g+g^2+\cdots+g^{n-1}).  \] Si $x=1$ se tiene que $h=ghg^i$ para algún entero positivo $i$. Si $x \neq 1$ entonces $h \notin \textless g \textgreater$, pero $1$ aparece en el lado izquierdo de la ecuación, por lo que también debe aparecer en el lado derecho, esto es, existe $k$ entero positivo tal que $ghg^k = 1$ entonces $h = g^{-1}g^{-k}= g^{-(k+1)}$ y por lo tanto $h \in \textless g \textgreater$, lo cual es una contradicción. 
+\end{proof}
