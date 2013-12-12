@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.7)  11 DEC 2013 22:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.7)  12 DEC 2013 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1333,7 +1333,10 @@ LaTeX Info: Redefining \nameref on input line 125.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./document.toc [1
+ (./document.toc
+Underfull \vbox (badness 1565) has occurred while \output is active []
+
+ [1
 
 
 
@@ -1585,7 +1588,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-<cuadrado.png, id=471, 267.399pt x 253.78815pt>
+<cuadrado.png, id=476, 267.399pt x 253.78815pt>
 File: cuadrado.png Graphic file (type png)
  <use cuadrado.png>
 Package pdftex.def Info: cuadrado.png used on input line 196.
@@ -2067,7 +2070,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 4.
 
-<sistema.pdf, id=805, 614.295pt x 1011.78pt>
+<sistema.pdf, id=810, 614.295pt x 1011.78pt>
 File: sistema.pdf Graphic file (type pdf)
  <use sistema.pdf>
 Package pdftex.def Info: sistema.pdf used on input line 9.
@@ -2080,7 +2083,7 @@ Underfull \vbox (badness 5771) has occurred while \output is active []
 
 
 ]
-<CBS.pdf, id=813, 614.295pt x 794.97pt>
+<CBS.pdf, id=818, 614.295pt x 794.97pt>
 File: CBS.pdf Graphic file (type pdf)
  <use CBS.pdf>
 Package pdftex.def Info: CBS.pdf used on input line 27.
@@ -2102,186 +2105,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [88]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.74 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.74 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ [89]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.74 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ [90]
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.74 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \hskip 11.74988pt
+(hyperref)                replaced by space on input line 108.
 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.74 
-     
-I'm guessing that you meant to end an alignment here.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.74 
-     
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.74 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $$ inserted.
-<to be read again> 
-                   \@@par 
-l.74 
-     
-Displays can use special alignments (like \eqalignno)
-only if nothing but the alignment itself is between $$'s.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.74 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Misplaced alignment tab character &.
-\reserved@a ->&
-                & &
-l.75 \end{eqnarray}
-                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-\reserved@a ->& &
-                  &
-l.75 \end{eqnarray}
-                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-\reserved@a ->& & &
-                   
-l.75 \end{eqnarray}
-                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \cr.
-\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
-                                                  
-l.75 \end{eqnarray}
-                   
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten \endgroup.
-\H@endeqnarray ->\@@eqncr \egroup 
-                                  \global \advance \c@equation \m@ne $$\@ign...
-l.75 \end{eqnarray}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.75 \end{eqnarray}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.75 \end{eqnarray}
-                   
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-) [89] [90
+[91] [92]) [93] [94
 
 
 ]
 \openout2 = `c_y_r.aux'.
 
- (./c_y_r.tex [91
+ (./c_y_r.tex [95
 
 
-] [92
+] [96
 
-]) [93]
+]) [97]
 \openout2 = `bbtesis.aux'.
 
- (./bbtesis.tex [94
+ (./bbtesis.tex [98
 
 
 
-]) [95]
+]) [99]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
 
@@ -2290,7 +2143,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 739F22B5E85918B06B44B625B9A92A47;1772.
+(rerunfilecheck)             Checksum: 22F1C455108E25AB81366AEF1C0E2426;1849.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2298,15 +2151,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
- 21625 strings out of 493488
- 350992 string characters out of 3141348
- 495609 words of memory out of 3000000
- 24059 multiletter control sequences out of 15000+200000
+ 21637 strings out of 493488
+ 351122 string characters out of 3141348
+ 495640 words of memory out of 3000000
+ 24061 multiletter control sequences out of 15000+200000
  18631 words of font info for 85 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,15n,92p,3241b,880s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2374,10 +2230,10 @@ exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/public/wasy/wasy10.pfb></usr/local/texlive/2012/texmf
 -dist/fonts/type1/public/xypic/xyatip10.pfb></usr/local/texlive/2012/texmf-dist
 /fonts/type1/public/xypic/xybtip10.pfb>
-Output written on document.pdf (97 pages, 572947 bytes).
+Output written on document.pdf (101 pages, 583128 bytes).
 PDF statistics:
- 1059 PDF objects out of 1200 (max. 8388607)
- 910 compressed objects within 10 object streams
- 341 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1089 PDF objects out of 1200 (max. 8388607)
+ 936 compressed objects within 10 object streams
+ 351 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,6 +22,7 @@
 \contentsline {section}{\numberline {5.2}\hskip 1em\relax Unidades Triviales}{79}{section.5.2}
 \contentsline {chapter}{\numberline {6}\hskip 1em\relax Aplicaciones}{85}{chapter.6}
 \contentsline {section}{\numberline {6.1}\hskip 1em\relax Sistema de Comunicaci\IeC {\'o}n}{85}{section.6.1}
-\contentsline {chapter}{CONCLUSIONES}{91}{chapter*.8}
-\contentsline {chapter}{RECOMENDACIONES}{93}{chapter*.9}
-\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{95}{chapter*.10}
+\contentsline {section}{\numberline {6.2}\hskip 1em\relax C\IeC {\'o}digos C\IeC {\'\i }clicos}{91}{section.6.2}
+\contentsline {chapter}{CONCLUSIONES}{95}{chapter*.8}
+\contentsline {chapter}{RECOMENDACIONES}{97}{chapter*.9}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{99}{chapter*.10}
