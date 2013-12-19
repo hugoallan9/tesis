@@ -1,4 +1,5 @@
 \documentclass[letterpaper,12pt]{thesis}
+\raggedbottom
 \usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{tikz}
@@ -95,25 +96,26 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
   {.5em} % Space after theorem head
   {} % Theorem head spec (can be left empty, meaning `normal')
   
-\theoremstyle{resto}\newtheorem{teorema}{Teorema}
-\theoremstyle{resto}\newtheorem{lema}{Lema}
-\theoremstyle{resto}\newtheorem{proposicion}{Proposición}
-\theoremstyle{resto}\newtheorem{propiedad}{Propiedad}
-\theoremstyle{resto}\newtheorem{corolario}{Corolario}
-\theoremstyle{resto}\newtheorem{nota}{Nota}
-\newtheorem{solucion}{Solución}
-\newtheorem{problema}{Problema}
-\theoremstyle{resto}\newtheorem{definicion}{Definición}
-\newtheorem{notacion}{Notación}
-\newtheorem{consideracion}{Consideración}
-\newtheorem{ejercicio}{Ejercicio}
-\theoremstyle{ejem} \newtheorem{ejemplo}{Ejemplo}
+\theoremstyle{resto}\newtheorem{teorema}{Teorema}[section]
+\theoremstyle{resto}\newtheorem{lema}{Lema}[section]
+\theoremstyle{resto}\newtheorem{proposicion}{Proposición}[section]
+\theoremstyle{resto}\newtheorem{propiedad}{Propiedad}[section]
+\theoremstyle{resto}\newtheorem{corolario}{Corolario}[section]
+\theoremstyle{resto}\newtheorem{nota}{Nota}[section]
+\newtheorem{solucion}{Solución}[section]
+\newtheorem{problema}{Problema}[section]
+\theoremstyle{resto}\newtheorem{definicion}{Definición}[section]
+\newtheorem{notacion}{Notación}[section]
+\newtheorem{consideracion}{Consideración}[section]
+\newtheorem{ejercicio}{Ejercicio}[section]
+\theoremstyle{ejem} \newtheorem{ejemplo}{Ejemplo}[section]
 \numberwithin{equation}{chapter}
 \renewcommand{\theequation}{\thechapter.\arabic{equation}}
 %para manejar el estilo de los ejemplos
 
 % Operadores y funciones -------------------------------------------
 \DeclareMathOperator{\car}{car}
+\DeclareMathOperator{\Ima}{Im}
 \DeclareMathOperator{\tr}{tr}
 \DeclareMathOperator{\grado}{deg}
 \makeatother

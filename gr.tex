@@ -46,26 +46,17 @@ Por otro lado $xr=\alpha\gamma$ dada por $(\alpha\gamma)(u)=\sum_{gh=u}\alpha(g)
  \end{proof}
 
 La definición de grupo-anillo que se presentó anteriormente es bastante rigurosa y además es bien definida, ya que se ha construido un espacio vectorial de funciones en el cual todas las operaciones tienen sentido, lo cual le brinda el soporte necesario para trabajar en álgebra. En algunas ocasiones resulta un poco tedioso y complicado estar trabajando sobre un espacio vectorial de funciones, así que se replanteará los grupo-anillos como \textit{R-combinaciones lineales}, es decir, a cada elemento de $RG$ se le asigna una combinación lineal de elementos de $G$ con coeficientes en $R$, de la siguiente manera
-
 \begin{equation}
 \alpha = \srg{g}{G}{a}
 \end{equation}
 donde $a_g \in R$ y $a_g \neq 0$ si $g \in sop(\alpha)$
-
-
 \begin{nota}
-Con la identificación anterior se verifica que la suma de $\alpha, \beta \in RG$ es componente a componente, es decir $\alpha + \beta= \srg{g}{G}{a}+\srg{g}{G}{b}= \sum_{g\in G} (a_g+b_g)g $ y el producto está dado por $\alpha\beta=\sum_{g,h\in G}a_gb_hgh$
-
+Con la identificación anterior se verifica que la suma de $\alpha, \beta \in RG$ es componente a componente, es decir $\alpha + \beta= \srg{g}{G}{a}+\srg{g}{G}{b}= \sum_{g\in G} (a_g+b_g)g $ y el producto está dado por $\alpha\beta=\sum_{g,h\in G}a_gb_hgh$.
 \end{nota}
-
-
 Ahora es práctico establecer los siguientes teoremas:
-
 \begin{teorema}\label{grupo}
-$RG$ es un grupo aditivo
-
+$RG$ es un grupo aditivo.
 \end{teorema}
-
 \begin{proof}
 Se procede por incisos:
 \begin{enumerate}
@@ -75,19 +66,15 @@ Se procede por incisos:
 
 \item Existe $-\alpha$ tal que $\alpha+(-\alpha)= (-\alpha)+\alpha =0$ para cualquier $\alpha \in RG$. En efecto $-\alpha = \srg{g}{G}{-a}$ y por lo tanto $\alpha+ (-\alpha)=\sum_{g\in G}(a_g+(-a_g) )g= \sum_{g\in G}((-a_g)+a_g)g = \sum_{g \in G}0\cdot g = 0 $
 
-\item[iv)] $\alpha + \beta = \srg{g}{G}{a}+\srg{g}{G}{b}=\sum_{g \in G}(a_g+b_g)g= \sum_{g \in G}(b_g+a_g)g=\beta + \alpha $ \qedhere
+\item $\alpha + \beta = \srg{g}{G}{a}+\srg{g}{G}{b}=\sum_{g \in G}(a_g+b_g)g= \sum_{g \in G}(b_g+a_g)g=\beta + \alpha $ \qedhere
 \end{enumerate}
 
 La clausura de la operación $+$  se sigue directamente de la definición. Vale la pena notar que para realizar esta prueba se uso simplemente el hecho que $G$ es grupo y $R$ es un anillo y por lo tanto satisfacen propiedades algebraicas respecto de sus operaciones.
 \end{proof}
-
 Nótese que se ha probado que $(RG,+)$ es un grupo abeliano, lo cual será de utilidad para el siguiente teorema:
-
 \begin{teorema}
 $RG$ es un anillo con las operaciones $+$ y $\cdot$
 \end{teorema}
-
-
 \begin{proof}
 Ya se ha probado que $(RG,+)$ es un grupo abeliano, por lo que a continuación se probará, de nuevo por incisos, que $(RG,\cdot)$ es asociativo y distributivo tanto por la derecha como por la izquierda:
 \begin{enumerate}
@@ -106,17 +93,13 @@ Es de interés estudiar la estructura algebraica de $RG$, así que se introduce 
 \begin{definicion}
 Sea $\lambda \in R$ entonces se define el producto por elementos del anillo como: 
 \begin{equation}
-\lambda \left(\srg{g}{G}{a}\right) = \srg{g}{G}{\lambda a}
+\lambda \left(\srg{g}{G}{a}\right) = \srg{g}{G}{\lambda a}.
 \end{equation}
 \end{definicion}
-
 Con esta definición podemos proclamar el siguiente teorema
-
 \begin{teorema}
-$RG$ es un $R$ -módulo
+$RG$ es un $R$ -módulo.
 \end{teorema}
-
-
 \begin{proof}
 Ya se estableció en el teorema \ref{grupo} que $(RG,+)$ es un grupo aditivo. De la definición anterior se sigue que $\lambda\gamma \in RG$. Ahora se procede por incisos: 
 \begin{enumerate}
@@ -126,9 +109,7 @@ Ya se estableció en el teorema \ref{grupo} que $(RG,+)$ es un grupo aditivo. De
 \item $1_R\alpha = \sum{g \in G}1_Ra_gg = \srg{g}{G}{a}$
 \end{enumerate}
 Y con esto concluye la prueba. \qedhere
-
 \end{proof}
-
 Una extensión del resultado anteriormente presentado es que si $R$ es un anillo conmutativo entonces $RG$ es un álgebra sobre $R$. Se puede resaltar que si $R$ es conmutativo  entonces el rango de $RG$ como módulo libre sobre $R$ está bien definido, de hecho si $G$ es finito se tiene que $rango(RG) = |G|$
 
 Ahora se establecerá un resultado de mucha importancia en los grupo-anillos, ya que relaciona a estos con los homomorfismos, que es uno de los objetivos del álgebra.
@@ -170,7 +151,7 @@ De hecho la proposición \ref{up} se puede utilizar como una definición de $RG$
 Sea $G$ un grupo y $R$ un anillo. Sea $X$ un anillo conteniendo $R$ y $\nu \colon G \to X$ una función tal que $\nu (gh) = \nu(g)\nu(h)$ para todo $g,h \in G$ y tal que, para todo anillo $A$ que contiene a $R$ y cualquier función $f \colon G \to A$ que satisface $f(gh) = f(g)f(h)$ para todo $g, h \in G$, existe un único homomorfismo $R$-lineal $f^* \colon X \to A$ tal que el siguiente diagrama es conmutativo: 
 
 \begin{figure}[h!]
-\caption{$\quad$ \textbf{Definición alternativa para $RG$}}
+\caption{\quad \textbf{Definición alternativa para $RG$}}
 \centering
 $\xymatrix { G \ar[r]^f 
 \ar[d]_{\nu}
@@ -268,12 +249,9 @@ Para un subgrupo $H \in \mathcal{S}(G)$ se denota por $\Delta_{R}(G,H)$ el anill
 \end{definicion}
 
 Cuando se esté trabajando con un anillo fijo $R$ se omitirá el subindíce y por lo tanto al ideal anterior se le denotará simplemente como $\Delta(G,H)$. Nótese que el ideal $\Delta(G,G)$ coincide con $\Delta(G)$, del cual se habló en la sección anterior.
-
 \begin{lema}
-Sea $H$ un subgrupo de un grupo $G$ y sea $S$ el conjunto de los generadores de $H$. Entonces, el conjunto $\{ s-1 : s \in S \}$ es un conjunto de generadores de $\Delta (G,H) $ como ideal por izquierda de $RG$ 
-
+Sea $H$ un subgrupo de un grupo $G$ y sea $S$ el conjunto de los generadores de $H$. Entonces, el conjunto $\{ s-1 : s \in S \}$ es un conjunto de generadores de $\Delta (G,H) $ como ideal por izquierda de $RG$.
 \end{lema}
-
 \begin{proof}
 Como $S$ es un conjunto de generadores de $H$, cada elemento $1 \neq h \in H$ puede ser escrito en la forma $h=s_1^{\epsilon_1} s_2^{\epsilon_2} \cdot s_r^{\epsilon_r} $ donde $s_i \in S$ y $\epsilon_i =\pm 1$, $1 \leq i \leq r$. Por lo tanto es suficiente probar que todo elemento de la forma $h-1$ con $h \in H$  pertenece al ideal generado por $\{s-1 : s \in S \}$. Para hacer esto se procede por inducción matemática sobre $r$. \\
 
@@ -648,14 +626,10 @@ Por otro lado, como $grad(f_{d_i}) = [K(\zeta_d):K]$, se deduce que todos los po
 \[ \phi(d) = a_d[K(\zeta_d):K] \]
 
 donde $\phi$ es la función totiente de Euler. Como $G$ es un grupo cíclico de orden $n$, para cada divisor de $n$, el número de elementos de orden $d$ en $G$, que se denota con $n_d$, es precisamente $\phi(d)$, entonces:
-
 \[ a_d = \frac{n_d}{| K(\zeta_d) : K|}  \]
-
 \begin{ejemplo}\label{ejem:descomposicionRacional}
 Sea $G = < a \colon a^n = 1 >$  un grupo cíclico de orden $n$ y $K = \mathds{Q} $. Es conocido que el polinomio $X^n-1$ se descompone en $\mathds{Q}[X]$ como un producto de polinomios ciclotómicos, a saber:
-
 \[ X^n -1 = \prod_{d \mid n}\Phi_d(X)  \]
-
 y los polinomios $\Phi_d$ son irreducibles en $\mathds{Q}[Q]$. Por lo tanto, en este caso en particular, la descomposición de $\mathds{Q}G$ es:
 
 \[ \mathds{Q}G \simeq \oplus_{d\mid n} \mathds{Q}(\zeta_d)  \]
@@ -751,7 +725,7 @@ Por otro lado, $f(\alpha) = \sum_{g \in G}a_gg, \quad f(\beta) = \sum_{g \in G}b
 
 Para demostrar el teorema se procede por inducción sobre el orden de $G$. Supóngase que el resultado es válido para cualquier grupo abeliano de orden menor que $n$. 
 
-Sea $G$ tal que $|G| = n$. Si $G$ es generado no hay algo que demostrar. Si $G$ no fuera un grupo generado se puede utilizar el teorema de estructura \footnote{poner en capitulo 1} de los grupos finitos abelianos para escribir $G = G_1 x H$ donde $H$ 4s generado y $|G_1| = n_1 < n$. Por hipótesis de inducción se puede escribir 
+Sea $G$ tal que $|G| = n$. Si $G$ es generado no hay algo que demostrar. Si $G$ no fuera un grupo generado se puede utilizar el teorema\ref{teo:estructuraAbelianos} de estructura de los grupos finitos abelianos para escribir $G = G_1 x H$ donde $H$ 4s generado y $|G_1| = n_1 < n$. Por hipótesis de inducción se puede escribir 
 
 \[ RG_1 \simeq \oplus_{d_1\mid n_1} a_{d_1}K(\zeta_{d_1})   \]
 donde $a_{d_1} = \frac{n_{d_1}}{[K(\zeta_{d_1}):K]}$ y $n_{d_1}$ denota el numero de elementos de orden $d_1$ en $G_1$. Aplicando el lema \ref{lema1} se cumple
@@ -775,6 +749,5 @@ Sea $d = [d_1, d_2]$ entonces por el teorema del elemento primitivo, se tiene $K
 con $a_d = \sum_{d1,d2}a_{d_1}a_{d_2}$ y donde la  suma recorre todos los $d_1,d_2$ son números naturales tales que $[d_1,d_2] = d$. Por otro lado, del hecho que $[K(\zeta_d):K] = [K(\zeta_{d_1, \zeta_{d_2}}): K(\zeta_{d_1})][K(\zeta_{d_1}):K] $ se tiene que: 
 
 
-\[ a_d[K(\zeta_{d} :K)] = \sum_{d_1,d_2}a_{d_1}a_{d_2}[K(\zeta_{d_1, \zeta_{d_2}}): K(\zeta_{d_1})][K(\zeta_{d_1}):K] = \sum_{d_1,d_2}n_{d_1}n_{d_2}   \]
-
+\[ a_d[K(\zeta_{d} :K)] = \sum_{d_1,d_2}a_{d_1}a_{d_2}[K(\zeta_{d_1, \zeta_{d_2}}): K(\zeta_{d_1})][K(\zeta_{d_1}):K] = \sum_{d_1,d_2}n_{d_1}n_{d_2}   \] \qedhere
 \end{proof}

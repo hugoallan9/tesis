@@ -1,19 +1,313 @@
 \chapter{CONCEPTOS PRELIMINARES}
-
-% ---------------> conjuntos, funciones y sucesiones
+En este capítulo se presentará la teoría básica de álgebra abstracta necesaria para la comprensión de los siguientes capítulos. Dicha exposición no pretende ser una guía de estudios de álgebra, más bien refresca resultados básicos de teoría de grupos, anillos y álgebras. En la medida de lo posible se evitará dar demostraciones de los resultados de estas teorías, a menos de que dicha teoría no sea materia de estudios de una licenciatura den Matemática.
 \section{Antecedentes}
+La \textit{teoría de grupos} como la conocemos actualmente tiene sus orígenes en los trabajos de Ruffini, Abel, Lagrange y Galois a inicios siglo \lsc{xix}, quienes trabajaron con el concepto de \textbf{permutación} (en su tiempo Cauchy las llamaba \textsf{sustituciones}, ver \cite[página 104]{bib:libroGuti}). Con Cayley \cite[página 104]{bib:libroLosGrandes} se formalizó el concepto de \textbf{grupo} y además se dieron muchos avances significativos que impulsaron la investigación de este tema. 
 
-
+Entre los avances hechos por Cayley figuran:
+\begin{itemize}
+\item Dió una definición formal de grupo usando la notación de multiplicación.
+\item Introdujo el concepto de \textit{tabla} como una operación.
+\item Demostró que existen dos grupos no isomorfos de orden cuatro, dando ejemplos explícitos. 
+\item Demostró que existen dos grupos no isomorfos de orden seis, uno de los cuales es conmutativo y el otro es isomorfo a $\mathcal{S}_3$, el grupo de permutaciones de tres elementos.
+\item Demostró que el orden de todo elemento es divisor del orden del grupo. 
+\end{itemize}
+Así es como se da paso a un breve estudio de la teoría de grupos, tratando de evitar las demostraciones de no ser necesarias, pero dando referencias bibliográficas en la medida de lo posible. 
 %-----------------------> teoría de grupos
 \section{Teoría de grupos}
-aquí irá toda la teoría de grupos que se tenga que desarrollar previo a comenzar propiamente la tésis.
+\begin{definicion}
+Un \textbf{grupo} es un conjunto no vacío $G$ junto con una operacion binaria - denotada como $\cdot$ - tal que, para todo $a,b \in G$ las cumplen las siguientes:
+\begin{enumerate}
+\item $(a\cdot b)\cdot c = a \cdot (b\cdot c)$,
+\item Existe un elemento único $1\in G$, tal que $a\cdot 1 = 1 \cdot a = a$,
+\item Existe un elemento único $a^{-1} \in G$, tal que $a\cdot a^{-1} =a^{-1}\cdot a =1$.
+\end{enumerate}
+Si, además de las tres propiedades anteriores, se cumple que \[ a\cdot b = b \cdot a , \] entonces se dice que el grupo es \textbf{abeliano}  o \textbf{conmutativo}. 
+Si el conjunto $G$ es finito, entonces el número de elementos de $G$ es llamado el \textbf{orden} de $G$ y es denotado como $G$. 
+\end{definicion}
+\begin{ejemplo}\label{ejemplo:simetrias}
+Sea $M$ un conjunto finito. El lector deberá recordar que una aplicación de $M$ a $M$ es llamada \textit{permutación} de $M$. Es claro entonces que la aplicación identidad de $M$ a $M$ es una permutación, que la composición de dos permutaciones es una permutación y la inversa de una permutación también es permutación. A partir de estos hechos, es evidente que dado un conjunto $M$ se puede construir conjunto de permutaciones y que este constituye un grupo respecto a la composición de funciones. Este grupo usualmente es denotado como $\mathcal{S}_M$ y es llamado el \textbf{grupo de permutaciones de $M$}. 
+Si $M = \{  1,2,\dots, n \}$ entonces $\mathcal{S}_M$ es llamado el \textit{grupo de simetrías de grado $n$} y se denotada como $\mathcal{S}_n$. Dado un elemento $\psi \in \mathcal{S}_n$, si se elige que $i_k = \psi (k), \ 1 \leq k \leq n$, entonces se puede representar $\psi$ en la forma:
+\[ \psi = \begin{pmatrix}
+1 & 2 & 3 & \cdots & n \\
+i_1 & i_2 & i_3 & \cdots & i_n
+\end{pmatrix} \],
+la cual es una notación introducida por Cauchy en 1845 \cite[vol 1, páginas 64-90]{bib:Cauchy}. Usando esta notación, la inversa de $\psi$ se representa como \[ \psi^{-1} = \begin{pmatrix}
+i_1 & i_2 & i_3 & \cdots & i_n \\
+1 & 2 & 3 & \cdots & n
+\end{pmatrix}.
+ \]
+ Dadas, por ejemplo, \[ \phi = \begin{pmatrix}
+ 1 & 2 & 3 & 4 & 5 \\
+ 3 & 5 & 2 & 4 & 1
+ \end{pmatrix} \mbox{ y } \psi = \begin{pmatrix}
+ 1 & 2 & 3 & 4 & 5 \\
+  2 & 1 & 4 & 5 & 3
+ \end{pmatrix}, \]
+ se tiene que $\phi \circ \psi (1) = \phi(2) = 5$. Haciendo el cálculo para el resto de los números se obtiene \[ \phi \circ \psi = \begin{pmatrix}
+ 1 & 2 & 3 & 4 & 5 \\
+  5 & 3 & 4 & 1 & 2
+ \end{pmatrix}. \]
+ De la misma manera se obtiene \[ \psi \circ \phi = \begin{pmatrix}
+ 1 & 2 & 3 & 4 & 5 \\
+  4 & 3 & 1 & 5 & 2
+ \end{pmatrix}. \]
+ Este simple cálculo demuestra que, en general, $\mathcal{S}_n$ no es conmutativo. De hecho, es fácil demostrar que $\mathcal{S}_n$ es conmutativo si y sólo si $n \leq 2$. 
+\end{ejemplo}
+\begin{definicion}
+Un subconjunto no vacío $H$ de un grupo $G$ es llamado \textbf{subgrupo de $G$} si es cerrado bajo la operación de $G$ y $H$, con la restricción de la operación de $G$, es un grupo por sí mismo.
+\end{definicion}
+\begin{ejemplo}[Subgrupos cíclicos]
+Sea $a$ un elemento del grupo $G$. Para un exponente entero se definen las potencias de $a$ como
+\[ a^n = \left\{ \begin{array}{lr}
+\underset{\mbox{n veces}}{\underbrace{a \cdot a \cdots a}} & \mbox{ si } n >0\\
+\underset{\mid n \mid \mbox{ veces }}{\underbrace{a^{-1}\cdot a^{-1}\cdots a^{-1}}} & \mbox{ si } n<0 \\
+1 & \mbox{ si } n = 0.
+\end{array} \right.  \]
+Como $a^m \cdot a^n = a^{m+n}$, se sigue que el conjunto
+\[\langle a \rangle = \{ a^n : n \in \mathds{Z} \} \]
+es un subgrupo de $G$, llamado \textbf{subgrupo cíclico de $G$} generado por $a$.
+Si este grupo es finito, entonces existen enteros positivos $n,m$ distintos tales que $a^n = a^m$, de esta cuenta, se tiene $a^{n-m} = a^{m-n} = 1$. El entero positivo más pequeño $n$  tal que $a^n = 1$ se le llama \textbf{orden de $a$} y se denota como $\circ(a)$. Si $\langle a \rangle$ es infinito se dice que $a$ es de \textbf{orden infinito}.
+Si existe un elemento $a$ en $G$ tal que $G = \langle a \rangle$, entonces se dice que $G$ es un \textbf{grupo cíclico} y que $a$ es un \textbf{generador} de $G$. Nótese que $\circ(a) = \mid \langle a \rangle \mid $.
+\end{ejemplo}
+\begin{ejemplo}
+Sea $X$ un subconjunto no vacío de un grupo $G$. Se define el \textbf{subgrupo generado por $X$} como la intersección de todos los subgrupos de $G$ que contienen a $X$. Nótese que esta familia de subgrupos es no vacía, ya que por lo menos $G$ pertenece a ella. Es fácil demostrar que esta intersección definida previamente es un subgrupo de $G$. Este subgrupo es denotado como $\langle X \rangle$. Se propone como ejercicio al lector, demostrar que 
+\[ \langle X \rangle = \{ x_1^{\epsilon_1} \cdots x_k^{\epsilon_k} \colon x_i \in X, \ \epsilon_i = \pm 1, \ k \geq 1 \} \cup \{1\} .\]
+Si $\langle X \rangle = G$ se dice que $X$ es un \textbf{conjunto de generadores de $G$}. Si $X$ es finito, entonces se dice que $G$ es un \textbf{grupo finitamente generado}.
+\end{ejemplo}
+ \begin{lema}
+ Un subconjunto no vacío $H$ de un grupo $G$ es un subgrupo de $G$ si y sólo si para cualesquiera $x,h \in H$ se tiene que $x^-y \in H$.
+ \end{lema}
+ \begin{definicion}
+ El \textbf{centro} de un grupo $G$ es el subgrupo \[ \mathcal{Z}(G) = \{ a \in G \colon ax=xa, \ \forall  x \in G \}. \]
+ \end{definicion}
+Dado un subgrupo $H$ de un grupo $G$, se puede definir una \textit{partción} de $G$, es decir una cubierta de $G$ hecha de subconjuntos disjuntos. 
+\begin{definicion}
+Sea $H$ un subgrupo de un grupo $G$. Dado un elemento $a \in G$, los subconjuntos de la forma 
+\begin{eqnarray*}
+aH &=& \{ ah \colon h \in H \}, \\
+Ha &=& \{ ha \colon h \in H \} 
+\end{eqnarray*}
+son llamados  clases lateral izquierda y derecha del subgrupo $H$ determinadas por $a$, respectivamente.
+\end{definicion}
+Algunas propiedades elementales de las clases son:
+\begin{proposicion}
+Sea $H$ un subgrupo de un grupo $G$ y $a,b$ elementos arbitrarios de $G$. Entonces se cumple:
+\begin{enumerate}
+\item Si $b \in aH$ entonces $bH = aH$.
+\item Si $b \notin aH$ entonces $aH \cap bH = \emptyset$.
+\end{enumerate}
+\end{proposicion}
+\begin{corolario}
+Sea $H$ un subgrupo de un grupo $G$. Dados $a,b \in G$ se cumple que $b \in aH$ si y sólo si $aH = bH$.
+\end{corolario}
+Todo elemento en una clase lateral es un \textbf{representante} de la misma. Un conjunto completo de representantes de un clase lateral izquierda(derecha) es llamado \textbf{transversal izquierdo(derecho) de $H$ en $G$}.
+\begin{definicion}
+Sea $H$ un subgrupo de un grupo $G$. Si el numero de clases izquierdas(derechas) de $H$ en $G$ es finito, entonces este número es llamado  \textbf{índice} de $H$ en $G$ y se denota como $(G\colon H)$.
+\end{definicion}
+\begin{teorema}[Lagrange]
+Sea $H$ un subgrupo de un grupo finito $G$. Entonces, el orden de $H$ divide a el orden de $G$. Más aún, de manera más formal, se tiene
+\[ \mid G \mid = (G \colon H) \mid H \mid. \]
+\end{teorema}
+\begin{corolario}
+Sea $a$ un elemento de un grupo finito $G$. Entonces $\circ(a)$ es un divisor de $\mid G \mid$.
+\end{corolario}
+\begin{ejemplo}
+Considérese nuevamente a $\mathcal{S}_3$, el grupo de simetrías de grado tres. Se sabe que $\mid \mathcal{S}_3 \mid = 6$. Explícitamente, este grupo se expresa como \[ \mathcal{S}_3 = \{ I, (12), (13), (23), (123), (132) \} .\]
+Sea $H = \{ I, (12) \} $ y $\alpha = (123)$. Entonces \[ \alpha H = \{ (123), (13) \}   \mbox{ y } H\alpha = \{ (123), (23) \} ,\] con esto se demuestra que, en general, las clases laterales derechas e izquierdas determinadas por el mismo elemento no son iguales.
+\end{ejemplo}
+Los subgrupos cuyas clases laterales derechas e izquierdas generadas por el mismo elemento son iguales son de especial importancia. Nótese que para un elemento $a$ y un subgrupo $H$ de un grupo $G$, se tiene que $aH = Ha$ si y sólo si $a^{-1}Ha=H$. Esto sugiere la siguiente
+\begin{definicion}
+Sea $H$ un subgrupo de un grupo $G$. Se dice que $H$ es normal en $G$, y se escribe $H \triangleleft G$ si $a^{-1}Ha = H$ para cualquier $a \in G$.
+\end{definicion}
 
-%-----------------------> teoria de anillos, módulos  y algebras
+%-------------subsección --------------------------
+\subsection{Homomorfismos y grupos cocientes}
+El concepto de \textit{homomorfismo} es, quizás, uno de los conceptos más importantes en álgebra y en particular para este trabajo.
+\begin{definicion}
+Sea $G_1, G_2 $ grupos. Una aplicación $f \colon G_1 \to G_2$ es llamada un \textbf{homomorfismo de grupos} si para todo $g, h \in G$ se cumple que \[ f(g \cdot h) = f(g) \cdot f(h) . \]
+\end{definicion}
+\begin{definicion}
+Sea $f \colon G_1 \to G_2$ un homomorfismo de grupos. Entonces, la \textbf{imagen de $f$} es el conjunto \[ \Ima(f) = \{ y \in G_2 \colon (\exists x \in G_1)f(x) =y \}. \]
+El \textbf{kernel de $f$} es el conjunto \[ \ker(f) =  \{ x \in G_1 \colon f(x) = 1 \}.\] 
+\end{definicion}
+\begin{definicion}
+Un homomorfismo de grupos $f \colon G_1 \to G_2$ es llamado un \textbf{epimorfismo} si es sobreyectivo. Se llama a $f$ un \textbf{monomorfismo} si es inyectivo. Por último, se dice que $f$ es un  \textbf{isomorfismo} si es sobreyectivo e inyectivo. Dados dos grupos $G_1$ y $G_2$, se dice que son isomorfos, y se denota como $G_1 \simeq G_2$ si existe un isomorfismo $f \colon G_1 \to G_2$. 
+\end{definicion} 
+Un homomorfismo de un grupo $G$ en sí mismo es llamado un \textbf{endomorfismo} y si a su vez es un isomorfismo se llama  \textbf{automorfismo} de $G$. 
+El siguiente resultado se debe al famoso matemático Británico Arthur Cayley, el cual demuestra la relevancia de los grupos de permutación en la teoría de grupos.
+\begin{teorema}[Cayley]
+Todo grupo $G$ es isomorfo a un grupo de permutaciones.
+\end{teorema}
+\begin{definicion}
+Sea $H$ un subgrupo normal de un grupo $G$ y $a, b \in G$ se dice que $a \equiv b (\mod{H})$ si $b^{-1}a \in H$. Es fácil demostrar que esta relación es de equivalencia. Para un elemento $a \in G$ se denota su clase de equivalencia como \[ \bar{a} = \{ x \in G \colon x \equiv a(\mod{H}) \} = \{ x \in G \colon a^{-1}x \in H \} = aH. \]
+Se denota como $G/H$ al conjutno de clases de equivalencia de los elementos de $G$. Se define el producto de elementos en $G/H$ como \[ \bar{a}\cdot \bar{b} = \overline{ab}. \] Esta operación es bien definida y $G/H$ es un grupo, llamado \textbf{grupo cociente}. 
+\end{definicion}
+Considérese la aplicación $\omega \colon G \to G/H$ dada por: \[G \ni a \mapsto \omega(a) = 	\bar{a} = aH. \]
+Es evidente que $\omega$ es un epimorfismo de grupos, llamado \textbf{homomorfismo canónico} de $G$ hacia el grupo cociente $G/H$. Este homomorfismo satisface que $\omega(1) = 1H = H$ y $\ker(\omega) = H.$ 
+\begin{teorema}[Primer teorema de isomorfía de grupos]
+Sea $f \colon G_1  \to G_2$ un homomorfismo de grupos, $\omega$ el homomorfismo canónico de $G_1$ hacia el grupo cociente $G_1/\ker(f)$ e $i$ la inclusión de $\Ima(f)$ en $G_2$. Entonces existe un homomorfismo único $\bar{f} \colon G_1/\ker(f) \to \Ima(f)$ tal que $f = i \circ \bar{f}\circ \omega$, es decir que diagrama  de la figura \ref{fig:primerTeoremaIsomofia} conmuta.
+\begin{figure}
+\caption{\quad \textbf{Primer teorema de isomorfía de Grupos}}
+\centering
+$\xymatrix { G_1 \ar[r]^f 
+\ar[d]_{\omega}
+ & G_2\\
+X \ar[r]_{\bar{f}} & \Ima(f) \ar[u]_i }$
+\caption*{Fuente: elaboración propia con paquete \textbf{xymatrix} para computadora.}
+\label{fig:primerTeoremaIsomofia}
+\end{figure}
+Además $\bar{f}$ es un isomorfismo. 
+\end{teorema}
+\begin{corolario}
+Sea $f \colon G_1 \to G_2$ un epimorfismo. Entonces \[ G_1/\ker(f) \simeq G_2. \]
+\end{corolario}
+\begin{lema}
+Sea $H$ un subgrupo normal de $G$. Entonces
+\begin{enumerate}
+\item Para cada subgrupo $K$ de $G$ que contiene a $H$, el conjunto $K/H = \{ xH \colon x \in K \}$ es un subgrupo de $G/H$ que es normal si y sólo si $K$ es normal.
+\item Si $\mathcal{K}$ es un subgrupo de $G/H$, entonces la preimagen $K = \{ x \in G \colon xH \in \mathcal{K} \}$ es un subgrupo de $G$ que contiene a $H$, tal que $\mathcal{K} = K/H$.
+\end{enumerate}
+\end{lema}
+\begin{teorema}
+Sea $f \colon G_1 \to G_2$ un epimorfismo de grupos, entonces existe un biyección entre el conjunto de subgrupos de $G_2$ y el conjunto de subgrupos de $G_1$ que contienen a $\ker(f)$.
+\end{teorema}
+\begin{teorema}[Segundo teorema de isomorfía de grupos]
+Sea $H$ y $K$ subgrupos de un grupo $G$ y supóngase que $K$ es normal. Entonces: \[ \frac{H}{H \cap K} \simeq \frac{HK}{K}, \] donde $HK = \{ hk \colon h \in H, \ k \in K \}$.
+\end{teorema}
+\begin{teorema}[Tercer teorema de isomorfía de grupos]
+Sean $H \subset K$ subgrupos normales de un grupo $G$. Entonces:
+\[\frac{G/H}{K/H} \simeq \frac{G}{K}. \]
+\end{teorema}
+\subsection{Productos directos}
+\begin{definicion}
+Sean $H,\ K$ subgrupos de un grupo $G$. Se dice que $G$ es el \textbf{producto directo interno} de $H$ y $K$ y se escribe $G = H \times K$ si se cumplen las siguientes condiciones:
+\begin{enumerate}
+\item $G=HK$,
+\item $H \cap K = \{1\}$,
+\item $H \triangleleft G$ y $K \triangleleft G$.
+\end{enumerate}
+\end{definicion}
+La definición anterior se puede extender a familias arbitrarias de subgrupos normales.
+\begin{definicion}
+Sea $\{H_i\}_{i \in I}$ un familia de subgrupos normales de un grupo $G$. Entonces $G$ es llamado el \textbf{producto directo interno} de los subgrupos $\{H_i\}_{i \in I}$ si se cumplen las siguientes condiciones:
+\begin{enumerate}
+\item $G =\langle H_i \colon i \in I \rangle$, es decir que cada elemento $g$ de $G$ se puede escribir como producto de un número finito de elementos de los subgrupos $\{H_i\}_{i \in I}$.
+\item $H_i \cap \langle H_j \colon j \in I, \ j \neq i \rangle = \{1\}$ para todo índice $i \in I$.
+\end{enumerate}
+\end{definicion} 
+Si $G_1, \dots, G_n$ son una familia de grupos y $G = G_1\dot{\times}\cdots\dot{\times}G_n$ su \textbf{producto directo externo}, entonces los conjuntos
+\[ H_1=\{(x,1,\dots,1)\colon x \in G_1\},\dots,H_n=\{(1,1,\dots,x)\colon x \in G_n \} \] son subgrupos normales de $G$ tales que $G_i \simeq H_i,1\leq i \leq n$ y $G$ es también el producto directo interno de los subgrupos $H_1, \dots, H_n$.
+De manera similar, si $G$ es el producto directo interno de una familia de subgrupos normales $H_1,\dots,H_n$ y se construye el producto directo externo $\bar{G} = H_1\dot{\times}\cdots\dot{\times}H_n$, entonces se tiene que $\bar{G} \simeq G$. Debido a este hecho, no se hace distinción entre producto interno y externo.
+
+%-------------subsección de grupos abelianos
+\subsection{Grupos Abelianos}
+Los grupos abelianos resultan de mucho interés para el desarrollo del capítulo \ref{chap:unidades}, así que se remarca sus importancia.
+Sea $G$ un grupo abeliano. Un elemento de $G$ es llamado un \textbf{elemento de torsión} si este es de orden finito. Si dos elementos $g,h \in G$ son de torsión, de órdenes $m$ y $n$ respectivamente, entonces es inmediato que $(g^{-1}h)^{mn} = 1$, lo cual demuestra que el conjunto de elementos de torsión de $G$ es un subgrupo de $G$. Nótese que este hecho también demuestra que dado un número primo $p$, el conjunto de elementos de $G$ cuyos órdenes son potencias de $p$ también constituyen un subgrupo de $G$.
+\begin{definicion}
+Sea $G$ un grupo abeliano. Entonces, el subgrupo 
+\[T(G) = \{ g \in G \colon \circ(g) < \infty \}  \]
+es llamado el \textbf{subgrupo de torsión} de $G$ y el subgrupo \[ G(p) = \{g \in G \colon \circ(g) \mbox{ es una potencia de } p  \} \] es llamado la \textbf{componente $p$-primaria} de $G$.
+\end{definicion}
+Se dice que $G$ es un grupo \textbf{libre de elementos de torsión} si $T(G) = 1$.
+Un grupo abeliano que es producto directo de grupos cíclicos infinitos se llama \textbf{abeliano libre}. Al número de factores directos se le llama \textbf{rango} del grupo abeliano libre. Si dicho número no es finito, se dice que tiene \textbf{rango infinito}.
+\begin{teorema}
+Un grupo $G$ que es abeliano, finitamente generado y libre de elementos de torsión debe ser libre.
+\end{teorema}
+\begin{teorema}
+Sea $G$ un grupo abeliano finitamente generado. Entonces $T(G)$ es finito, $G/T(G)$ es libre de rango finito y \[ G \simeq T(G)\times \frac{G}{T(G)}. \]
+\end{teorema}
+\begin{lema}
+Sea $g$ un elemento de orden $\circ(g) = p_1^{n_1}\cdots p_t^{n_t}$ de un grupo $G$. Entonces se puede escribir $g = g_1\cdots g_t$ con $\circ(g_i) = p_i^{n_i}, i\leq i \leq t$. Más aún, los elementos $g_1, \dots, g_t$ que están determinados de manera única son potencias de $g$ y por lo tanto conmutan entre ellos. 
+\end{lema}
+Un elemento cuyo orden es potencia de un primo $p$ es llamado  \textbf{$p$-elemento}. Por otro lado, si $p$ no divide el orden del elemento, se dice que es un \textbf{$p'$-elemento}.
+\begin{lema}
+Sea $G$ un grupo abeliano finito de orden $\mid G \mid = p_1^{n_1}\cdots p_t^{n_t}$. Entonces \[ G = G(p_1)\times \cdots \times G(p_t). \]
+\end{lema}
+\begin{definicion}
+Sea $p$ un primo. Un grupo finito $G$ es llamado \textbf{$p$-grupo} si su orden es una potencia de $p$.
+Se dice que un grupo abeliano $G$ es un \textbf{abeliano elemental} si existe un primo $p$ tal que todos los elementos distintos al elemento identidad son de orden $p$.
+\end{definicion}
+Es interesante notar que los $p$-grupos abelianos elementales también pueden ser vistos como espacios vectoriales.
+\begin{lema}
+Sea $G$ un $p$-grupo abeliano elemental. Entonces $G$ es un espacio vectorial sobre $\mathds{Z}_p$. Más aún, si $G$ es finito entonces puede ser escrito como producto directo de de número finito de grupos cíclicos de orden $p$.
+\end{lema}
+Para un grupo $G$ se define su \textbf{exponente}, y se denota como $\exp(G)$, como el entero positivo más pequeño $m$, tal que $g^m=1$ para cualquier $g \in G$. Nótese que $G$ es un $p$-grupo abeliano elemental si y sólo $\exp(G)=p$ y que si $G$ es un grupo abeliano con $\exp(G) = p^m$, entonces $\exp(G^p) = p^{m-1}$.
+\begin{teorema}\label{teo:estructuraAbelianos}
+Sea $G$ un $p$-grupo abeliano finito. Entonces $G$ se puede escribir como producto directo de $p$-subgrupos cíclicos. Esta descomposición es única, en el sentido que si
+\[ G = C_1 \times \dots \times C_t = D_1 \times \cdots D_s \]
+donde $C_i,C_j, 1\leq i \leq t, 1\leq j \leq s,$ son $p$-grupos cíclicos de órdenes $p^{n_1} \geq \cdots \geq p^{n_t}>1$ y $p^{m_1}\geq \cdots \geq p^{m_s}>1$ respectivamente, entonces $t=s$ y $n_i = m_i, 1\leq i \leq t$.
+\end{teorema} 
+\begin{proposicion}
+Sea $G$ un grupo abeliano finito de orden $n$. Entonces para cada divisor $d$ de $n$, el número de subgrupos cíclicos de $G$ de orden $d$ es igual al número de factores cíclicos de $G$ del mismo orden.
+\end{proposicion}
+
+%--------------Seccion Hamiltonianos
+\subsection{Grupos Hamiltonianos}
+Se define el \textbf{grupo de cuaterniones} de orden 8 como:\[ K_8 = \{ \langle a,b \colon a^4 =1, \ a^2 = b ^2, \ bab^{-1} = a^{-1} \rangle. \} \]
+Los elementos de este grupo se enumeran de la siguiente manera:
+\[ K_8 = \{ 1,a,a^2, a^3, b, ab, a^2b, a^3b \}. \]
+\begin{definicion}
+Dados dos elementos $x,y$ en un grupo $G$, el \textbf{conmutador} de $x$ y $y$ es el elemento $[x,y] = x^{-1}y^{-1}xy \in G$. Dados dos subconjuntos $H$ y $K$ de un grupo $G$, se denota como $[H,K]$ el subgrupo de $G$ generado por el conjunto:
+\[\{(h,k) \colon h \in H, k \in K\}. \]
+En particular, el grupo $G'=[G,G]$ es llamado \textbf{subgrupo conmutador} o \textbf{subgrupo derivado} de $G$.
+\end{definicion}
+Un cálculo directo demuestra que $K'_8 = \mathcal{Z}(K_8) = \{1, a^2\}$. Además, $a^2$ es el único elemento de $K_8$ de orden 2, así que si $H$ es un subgrupo cualquiera de $K_8$, entonces se tiene que $K'_8 = \{1,a^2\} \subset H$. Es fácil notar que cualquier subgrupo de $K_8$ es normal.
+\begin{definicion}
+El 4-grupo de Klein está definido por
+\[ G = \{1,a,b,ab\}, \] donde sus elementos distintos de la identidad son de orden 2.
+\end{definicion}
+\begin{ejercicio}\label{ejer:klein}
+Demostrar que $K_8/K'_8$ es el 4-grupo de Klein.
+\end{ejercicio} 
+\begin{solucion}
+Se sabe que $K'_8 = \{1,a^2\}$, entonces calculando las clases de equivalencia se tiene:
+\begin{eqnarray*}
+\bar{1} &=& K'_8\\
+\bar{a} &=& \{a, a^3\} \\
+\bar{b} &=&  \{b, a^2b \} \\
+\overline{ab} &=& \{ ab, a^3b \}
+\end{eqnarray*}
+lo cual genera una partición, por lo tanto $K_8/K'_8 = \{\bar{1},\bar{a},\bar{b}, \bar{ab}  \}$. Ahora bien, $\bar{a}\cdot\bar{a} =\bar{a^2}=\bar{1}, \ \bar{b}\bar{b} = \bar{b^2} = \bar{a^2} = \bar{1}$ y finalmente $\overline{ab}\cdot\overline{ab} = \overline{(ab)^2} = \bar{1}$ con lo que concluye la demostración. \qedsymbol
+\end{solucion}
+\begin{definicion}
+Un grupo G es  \textbf{Hamiltoniano} si no es conmutativo y todos sus subgrupos son normales. 
+\end{definicion}
+Los grupos Hamiltonianos son bastante conocidos y jugarán un papel importante en este trabajo.
+\begin{lema}
+Todo grupo Hamiltoniano contiene un subgrupo isomorfo a $K_8$.
+\end{lema}
+\begin{teorema}
+Un grupo $G$ es Hamiltoniano si y sólo si $G$ es producto directo de un grupo cuaterniones de orden 8, un 2-grupo abeliano elemental $E$ y un grupo abeliano $A$ en el cual todos sus elementos son de orden impar.
+\end{teorema}
+La demostración de este importante teorema se puede consultar en \footnote{buscar bibliografía}.
+
+
+
+
+%----------------> teoria de anillos, módulos  y algebras
 
 \section{Anillos, Módulos y Álgebras}
-
-aquí también se tiene que escribir las definiciones, teoremas de morfías y todo lo de semisimplicidad.
-
+En lo subsiguiente será de vital importancia conocer propiedades importantes de los anillos, módulos y álgebras, es por eso que se ha dedica esta sección para su estudio, en la mayoría de veces, sin demostraciones.
+\subsection{Anillos}
+Se comienza con la definición de anillo y algunos conceptos básicos.
+\begin{definicion}
+Un \textbf{anillo} es un conjunto no vacío $R$ junto con dos operaciones binarias llamadas suma y multiplicación y denotadas como $+$ y $\cdot$ respectivamente, tal que para todo $a,b\in R$ se cumplen las siguientes propiedades:
+\begin{enumerate}
+\item $a+(b+c) = (a+b)+c$
+\item Existe un único elemento $0\in R$ tal que $a+0=0+a=a$
+\item $a+b=b+a$
+\item Existe un elemento $-a\in R$ tal que $a+(-a) = (-a)+a=0$
+\item $a\cdot(b\cdot c) = (a\cdot b)\cdot c$
+\item $a\cdot(b+c) = a\cdot b+ a\cdot c$
+\item $(a+b)\cdot c= a\cdot c+b\cdot c $
+\end{enumerate}
+Además, si se satisface
+\begin{enumerate}
+\item[8.] $a \cdot b = b\cdot a$
+\end{enumerate}
+se dice que el anillo es \textbf{conmutativo}.
+Un anillo 
+\end{definicion}
 
 
 

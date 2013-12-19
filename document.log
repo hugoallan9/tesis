@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.7)  12 DEC 2013 16:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.7)  18 DEC 2013 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,8 +1177,8 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-Package hyperref Info: Option `plainpages' set `false' on input line 57.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 57.
+Package hyperref Info: Option `plainpages' set `false' on input line 58.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 58.
 \c@teorema=\count157
 \c@lema=\count158
 \c@proposicion=\count159
@@ -1201,28 +1201,28 @@ LaTeX Warning: Label `aumento' multiply defined.
 (./c_y_r.aux) (./bbtesis.aux))
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 127.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1287,33 +1287,33 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 125.
+LaTeX Font Info:    Try loading font information for U+msa on input line 127.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 125.
+LaTeX Font Info:    Try loading font information for U+msb on input line 127.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 125.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 127.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 125.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 127.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 125.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 127.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-Package xypdf Info: Line width: 0.47998pt on input line 125.
+Package xypdf Info: Line width: 0.47998pt on input line 127.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring OFF on input line 125.
+Package hyperref Info: Link coloring OFF on input line 127.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1323,9 +1323,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count176
 )
-LaTeX Info: Redefining \ref on input line 125.
-LaTeX Info: Redefining \pageref on input line 125.
-LaTeX Info: Redefining \nameref on input line 125.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
 
 (./document.out) (./document.out)
 \@outlinefile=\write5
@@ -1333,10 +1333,7 @@ LaTeX Info: Redefining \nameref on input line 125.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./document.toc
-Underfull \vbox (badness 1565) has occurred while \output is active []
-
- [1
+ (./document.toc [1
 
 
 
@@ -1349,18 +1346,21 @@ Underfull \vbox (badness 1565) has occurred while \output is active []
 
  (./tch1.tex
 CAP\'ITULO 1.
-) [1
+[1
 
 
 
-]
+] [2] [3]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 67.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [4]
+[5] [6] [7] <xymatrix 2x2 182> [8] [9] [10] [11] [12] [13] [14] [15]) [16]
 \openout2 = `gr.aux'.
 
- (./gr.tex [2
 
-
-
-]
+(./gr.tex
 CAP\'ITULO 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1372,29 +1372,33 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 4.
 
-[3] [4] [5]
-Overfull \hbox (29.09145pt too wide) in paragraph at lines 94--95
+[17
+
+
+
+] [18] [19]
+Overfull \hbox (29.09145pt too wide) in paragraph at lines 81--82
 []$\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^L^^M\OT1/cmr/m/n/12 ) 
 = [] [] = [] [] =
  []
 
 
-Overfull \hbox (11.6668pt too wide) in paragraph at lines 95--96
+Overfull \hbox (11.6668pt too wide) in paragraph at lines 82--83
 []$\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^L \OT1/cmr/m/n/12 + \O
 ML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 ) = [] [] = [][] \OML/cmm/m/it/12 a[]g [] \OT
 1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (27.8899pt too wide) in paragraph at lines 96--97
+Overfull \hbox (27.8899pt too wide) in paragraph at lines 83--84
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^L\O
 T1/cmr/m/n/12 )\OML/cmm/m/it/12 ^^M \OT1/cmr/m/n/12 = [] [] = [][](\OML/cmm/m/i
 t/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/1
 2 c[]gh \OT1/cmr/m/n/12 = [][] \OML/cmm/m/it/12 a[]c[]gh \OT1/cmr/m/n/12 +
  []
 
-[6] [7] <xymatrix 2x2 141>
-Overfull \hbox (7.6962pt too wide) in paragraph at lines 146--149
+[20] [21] <xymatrix 2x2 141>
+Overfull \hbox (7.6962pt too wide) in paragraph at lines 127--130
 []\OT1/cmr/m/n/12 Similarmente $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m
 /it/12 ^^L\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 a[]b[]f\OT1/cmr/m/n/12 (\O
 ML/cmm/m/it/12 gh\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 a[]b[]f\OT1/cmr/m/n/
@@ -1404,47 +1408,27 @@ m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
  ^^L\OT1/cmr/m/n/12 )$.
  []
 
-[8] <xymatrix 2x2 141> <xymatrix 3x3 280>
+[22] <xymatrix 2x2 141> <xymatrix 3x3 280>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ []
 
- [11]
+[25] [26]
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 
-Underfull \vbox (badness 1789) has occurred while \output is active []
-
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-[13]
-Underfull \vbox (badness 3179) has occurred while \output is active []
-
- [14]
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
- [15]
-[16] [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-[19] [20]
-Overfull \hbox (39.99377pt too wide) in paragraph at lines 503--505
+[27] [28] [29] [30] [31] [32] [33] [34]
+Overfull \hbox (39.99377pt too wide) in paragraph at lines 481--483
 \OML/cmm/m/it/12 R$ \OT1/cmr/m/n/12 - ho-mo-mor-fis-mo. En efec-to $\OML/cmm/m/
 it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ax\OT1/cmr/m/n/12 ) = [] [][] \OML
 /cmm/m/it/12 g[]^^Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 gax\OT1/cmr/m/n/12 ) = [] 
@@ -1452,55 +1436,24 @@ it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ax\OT1/cmr/m/n/12 ) = [] [][] \OML
 ((\OML/cmm/m/it/12 ga\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )$. 
  []
 
-
-Underfull \vbox (badness 5022) has occurred while \output is active []
-
- [21]
-[22]
-Overfull \hbox (3.89989pt too wide) in paragraph at lines 545--548
+[35] [36]
+Overfull \hbox (3.89989pt too wide) in paragraph at lines 523--526
 \OT1/cmr/m/it/12 es un ideal mi-ni-mal iz-quier-do. Da-do $\OML/cmm/m/it/12 x \
 OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 KG$\OT1/cmr/m/it/12 , se con-si-de-ra $\OML/
 cmm/m/it/12 ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = (\OML/cmm
 /m/it/12 []; [] ; []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-Underfull \vbox (badness 3942) has occurred while \output is active []
-
- [25]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 606.
-
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
- [29]
-Overfull \hbox (23.12285pt too wide) in paragraph at lines 688--689
+[37] [38] [39] [40] [41] [42]
+Overfull \hbox (23.12285pt too wide) in paragraph at lines 662--663
 [][] \OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g; h\OT1/cmr/m/n/12 
 )$. De es-ta for-ma se tie-ne $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^M[]\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 ^^L[]h;  ^^L[] \OT1/cmr/m/n/
 12 = [][] \OML/cmm/m/it/12 a[]h$
  []
 
-
-Overfull \hbox (9.92303pt too wide) detected at line 697
+[43]
+Overfull \hbox (9.92303pt too wide) detected at line 671
 \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^M[]\OT1/cmr/m/n/12 ) + \O
 ML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^M[]\OT1/cmr/m/n/12 ) = \OML
 /cmm/m/it/12 f [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 []h;  [] \OT1/cmr/m/n
@@ -1508,11 +1461,8 @@ ML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^M[]\OT1/cmr/m/n/12 ) = \OML
 n/12 )\OML/cmm/m/it/12 g
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Overfull \hbox (23.91197pt too wide) in paragraph at lines 717--719
+[44]
+Overfull \hbox (23.91197pt too wide) in paragraph at lines 691--693
 []$\OML/cmm/m/it/12 f$ \OT1/cmr/bx/n/12 es so-bre-yec-ti-va: \OT1/cmr/m/n/12 Da
 -do $[][] \OML/cmm/m/it/12 []h \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 (\OML/cmm/m/
 it/12 RG\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 H$ \OT1/cmr/m/n/12 se cons-tru-ye $\O
@@ -1520,11 +1470,8 @@ ML/cmm/m/it/12 ^^M \OT1/cmr/m/n/12 = [][] \OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (
 \OML/cmm/m/it/12 g; h\OT1/cmr/m/n/12 )$,
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-Overfull \hbox (33.17351pt too wide) in paragraph at lines 740--741
+[45]
+Overfull \hbox (33.17351pt too wide) in paragraph at lines 714--715
 []\OT1/cmr/bx/n/12 Conserva pro-duc-tos: \OT1/cmr/m/n/12 Co-mo en el ca-so an-t
 e-rior, se tie-ne $\OML/cmm/m/it/12 ^^M \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^L
  \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 []^^L[]; []  ; []^^L[]\OT1/cmr/m/n/12 )$
@@ -1532,7 +1479,7 @@ e-rior, se tie-ne $\OML/cmm/m/it/12 ^^M \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^L
  []
 
 
-Overfull \hbox (24.51251pt too wide) in paragraph at lines 740--741
+Overfull \hbox (24.51251pt too wide) in paragraph at lines 714--715
 \OT1/cmr/m/n/12 y por lo tan-to, su ima-gen ba-jo $\OML/cmm/m/it/12 f$\OT1/cmr/
 m/n/12 , es $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^M\OT1/cmr/m/
 n/12 ) = [][] \OML/cmm/m/it/12 c[]u;  c[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 c
@@ -1540,107 +1487,57 @@ n/12 ) = [][] \OML/cmm/m/it/12 c[]u;  c[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 c
  []
 
 
-Overfull \hbox (27.94614pt too wide) in paragraph at lines 742--743
+Overfull \hbox (27.94614pt too wide) in paragraph at lines 716--717
 \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/
 m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^L\OT1/cmr/m/n/12 ) = [][] \OML/cmm
 /m/it/12 d[]u;  d[] \OT1/cmr/m/n/12 = [][] \OML/cmm/m/it/12 a[]b[] \OT1/cmr/m/n
 /12 = [] =
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33])
-[34]
+[46] [47]) [48]
 \openout2 = `representaciones.aux'.
 
  (./representaciones.tex
 CAP\'ITULO 3.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35
+[49
 
 
 
-]
-[36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] [50]
+Overfull \hbox (9.68501pt too wide) in paragraph at lines 49--50
+[][]\OT1/cmr/bx/n/12 Ejemplo 3.1.2. []\OT1/cmr/m/n/12 Sea $\OML/cmm/m/it/12 G$ 
+\OT1/cmr/m/n/12 el gru-po de Klein de cua-tro ele-men-tos,es de-cir, $\OML/cmm/
+m/it/12 G \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12
+ ; a; b; ab\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
+ []
 
- [37]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-<cuadrado.png, id=476, 267.399pt x 253.78815pt>
+[52] [53] [54] [55] <cuadrado.png, id=636, 267.399pt x 253.78815pt>
 File: cuadrado.png Graphic file (type png)
- <use cuadrado.png>
+
+<use cuadrado.png>
 Package pdftex.def Info: cuadrado.png used on input line 196.
 (pdftex.def)             Requested size: 267.39835pt x 253.7875pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43 <./cuadrado.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
-<xymatrix 2x2 182>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
+ [56] [57 <./cuadrado.png>] [58] <xymatrix 2x2 182> [59]
+[60] [61]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 377.
 
-[48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+[62] [63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
-[51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-Underfull \vbox (badness 4913) has occurred while \output is active []
-
- [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54])
-[55]
+[65] [66] [67] [68]) [69]
 \openout2 = `chap4.aux'.
 
- (./chap4.tex [56
+ (./chap4.tex [70
 
 
 
@@ -1651,26 +1548,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 3.
 
+[71] [72] [73]
+Overfull \hbox (3.54422pt too wide) in paragraph at lines 79--81
+[][]\OT1/cmr/bx/n/12 Teorema 4.1.2. []\OT1/cmr/m/it/12 Sea $\OML/cmm/m/it/12 G$
+ \OT1/cmr/m/it/12 un gru-po fi-ni-to y $\OML/cmm/m/it/12 K$ \OT1/cmr/m/it/12 un
+ cam-po de ca-rac-ter^^S^^Psti-ca ce-ro. Sup^^Songa-
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-[58] [59]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 92.
 
-[60]
+[74]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 117.
 
-
-Underfull \vbox (badness 4899) has occurred while \output is active []
-
- [61]
+[75]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 125.
 
@@ -1703,13 +1599,13 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 128.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 128.
 
-[62]
+[76]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 174.
 
-[63]
+[77]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 180.
 
@@ -1722,17 +1618,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 180.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 180.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [64]
-[65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66]
-Underfull \vbox (badness 4291) has occurred while \output is active []
-
- [67]
+[78] [79] [80] [81]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 309.
 
@@ -1745,10 +1631,10 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 309.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 309.
 
-[68]) [69]
+[82]) [83]
 \openout2 = `chap5.aux'.
 
- (./chap5.tex [70
+ (./chap5.tex [84
 
 
 
@@ -1759,10 +1645,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 2.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [71]
+[85]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 34.
 
@@ -1775,10 +1658,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 34.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 34.
 
-
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
- [72]
+[86]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 36.
 
@@ -1863,10 +1743,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 42.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 42.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [73]
+[87]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 65.
 
@@ -1893,10 +1770,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 68.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 68.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74]
+[88]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 71.
 
@@ -1921,7 +1795,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 71.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 71.
 
-[75]
+[89]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 90.
 
@@ -1946,7 +1820,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 90.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 90.
 
-[76]
+[90]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 101.
 
@@ -1959,10 +1833,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 101.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 101.
 
-
-Underfull \vbox (badness 4713) has occurred while \output is active []
-
- [77]
+[91]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 110.
 
@@ -1987,10 +1858,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 110.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 110.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [78]
+[92]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
@@ -2032,7 +1900,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 124.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 124.
 
-[79]
+[93]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 138.
 
@@ -2045,17 +1913,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 138.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 138.
 
-
-Underfull \vbox (badness 1783) has occurred while \output is active []
-
- [80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [82]
-[83]) [84]
+[94] [95] [96] [97]) [98]
 \openout2 = `chap6.aux'.
 
  (./chap6.tex
@@ -2063,106 +1921,82 @@ CAP\'ITULO 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
-(hyperref)                replaced by space on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 4.
 
-<sistema.pdf, id=810, 614.295pt x 1011.78pt>
+<sistema.pdf, id=969, 614.295pt x 1011.78pt>
 File: sistema.pdf Graphic file (type pdf)
  <use sistema.pdf>
 Package pdftex.def Info: sistema.pdf used on input line 9.
 (pdftex.def)             Requested size: 614.29349pt x 1011.77753pt.
-
-Underfull \vbox (badness 5771) has occurred while \output is active []
-
- [85
+ [99
 
 
 
 ]
-<CBS.pdf, id=818, 614.295pt x 794.97pt>
+<CBS.pdf, id=977, 614.295pt x 794.97pt>
 File: CBS.pdf Graphic file (type pdf)
  <use CBS.pdf>
 Package pdftex.def Info: CBS.pdf used on input line 27.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [86 <./sistema.pdf>] (./codificacion.tex
+ [100 <./sistema.pdf>]
+(./codificacion.tex
 \du=\skip58
 )
 Overfull \hbox (6.97267pt too wide) in paragraph at lines 126--38
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [87 <./CBS.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [90]
+[101 <./CBS.pdf>] [102] [103] [104]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 108.
 
-[91] [92]) [93] [94
+[105] [106]) [107] [108
 
 
 ]
 \openout2 = `c_y_r.aux'.
 
- (./c_y_r.tex [95
+ (./c_y_r.tex [109
 
 
-] [96
+] [110
 
-]) [97]
+]) [111]
 \openout2 = `bbtesis.aux'.
 
- (./bbtesis.tex [98
+ (./bbtesis.tex
+[112
 
 
 
-]) [99]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
-
-(./document.aux (./tch1.aux) (./gr.aux) (./representaciones.aux) (./chap4.aux)
-(./chap5.aux) (./chap6.aux) (./c_y_r.aux) (./bbtesis.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
+] [113]) [114]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+ (./document.aux (./tch1.aux) (./gr.aux)
+(./representaciones.aux) (./chap4.aux) (./chap5.aux) (./chap6.aux) (./c_y_r.aux
+) (./bbtesis.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 22F1C455108E25AB81366AEF1C0E2426;1849.
+(rerunfilecheck)             Checksum: D93C670DD8D735828094AEA8E46F9CD6;2239.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 21637 strings out of 493488
- 351122 string characters out of 3141348
- 495640 words of memory out of 3000000
- 24061 multiletter control sequences out of 15000+200000
- 18631 words of font info for 85 fonts, out of 3000000 for 9000
+ 21764 strings out of 493488
+ 353242 string characters out of 3141348
+ 496888 words of memory out of 3000000
+ 24099 multiletter control sequences out of 15000+200000
+ 18932 words of font info for 86 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,15n,92p,3241b,880s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
+ 56i,17n,92p,3241b,910s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
 ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2170,8 +2004,8 @@ t, replaced by a fixed one
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{lema.12} has been referenced but does not exist, re
-placed by a fixed one
+pdfTeX warning (dest): name{lema.4.4.1} has been referenced but does not exist,
+ replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
 , replaced by a fixed one
@@ -2203,6 +2037,7 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
@@ -2230,10 +2065,10 @@ exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/public/wasy/wasy10.pfb></usr/local/texlive/2012/texmf
 -dist/fonts/type1/public/xypic/xyatip10.pfb></usr/local/texlive/2012/texmf-dist
 /fonts/type1/public/xypic/xybtip10.pfb>
-Output written on document.pdf (101 pages, 583128 bytes).
+Output written on document.pdf (116 pages, 634232 bytes).
 PDF statistics:
- 1089 PDF objects out of 1200 (max. 8388607)
- 936 compressed objects within 10 object streams
- 351 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1277 PDF objects out of 1440 (max. 8388607)
+ 1106 compressed objects within 12 object streams
+ 439 named destinations out of 1000 (max. 500000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
