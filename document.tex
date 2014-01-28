@@ -1,15 +1,16 @@
+%-----------------------Inicio Preámbulo-----------------------------------------------
 \documentclass[letterpaper,12pt]{thesis}
 \raggedbottom
+\usepackage{layouts}
 \usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{tikz}
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{*3}{*0}
 \usepackage{parskip}
 \usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
 \usepackage{latexsym,wasysym}
 %manejando los margenes
-\usepackage[paper=letterpaper, marginparsep=0in, marginparwidth= 0in, headsep= 0in, headheight= 0in, top=4cm, bottom=2.5cm,left=4cm,right=2.5cm,twoside]{geometry}
+\usepackage[paper=letterpaper, marginparsep=0in,footskip = 0.7505cm, marginparwidth= 0in, headsep= 0in, headheight= 0in, top=4cm, bottom=2.5cm,left=4cm,right=2.5cm,twoside]{geometry}
 \usepackage{textcomp}
 \usepackage[all]{xy}
 \usepackage{longtable}
@@ -23,11 +24,14 @@
 %para cambiar letra de subcaption a 10 pt
 \usepackage{etoolbox}
 \usepackage[nodisplayskipstretch]{setspace}
+%---------------------------Fin Preambulo------------------------------------------------
 
 
-%\usepackage[scaled]{helvet}
-%\renewcommand*\familydefault{\sfdefault}
-%\usepackage[T1]{fontenc}
+%-------------Implementacion distancia titulos, subtitulos, etc -------------
+\titlespacing{\section}{0pt}{*3}{*0.1} % <------  Separación ente el titulo de seccion y parrafo y seccion y titulo.
+
+
+
 
 
 
@@ -61,7 +65,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \setlength{\parindent}{1cm}              % sangr�a
 \setlength{\parskip}{1.3\baselineskip}              % distancia entre p�rrafos
 
-\setstretch{1.3}                   % interlineado
+\setstretch{1.48}                   % interlineado
 
 \setlength\LTleft{0pt} \setlength\LTright{0pt} % par�metros para tablas largas
 
@@ -73,9 +77,25 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 % Protecci�n de la tabla de contenidos
 \addtocontents{toc}{\protect\setlength{\parskip}{1pt}}
 
+%----------------Definicion de listas----------
+%Para listados enumerados
+\newcounter{ContadorLista}
+\newenvironment{bulletList}{
+\begin{list}
+{\centering\arabic{ContadorLista}.}
+{
+\usecounter{ContadorLista}
+\setlength{\labelsep}{1.125cm}% Separación entre número y texto
+\setlength{\labelwidth}{1cm}
+\setlength\listparindent{0cm}
+\setlength\leftmargin{1.4cm} % Distancia entre borde y número
+\setlength{\parsep}{.55cm}% Separación entre elementos
+}
+}{
+\end{list}
+}
 
-
-
+\newcommand{\newItem}{\item[$\circ$]}
 
 \newtheoremstyle{ejem} %
   {\baselineskip} % Space above
@@ -88,7 +108,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
   {} % Theorem head spec (can be left empty, meaning `normal')
 \newtheoremstyle{resto} %
   {\baselineskip} % Space above
-  {\topsep} % Space below
+  {0mm} % Space below
   {\itshape} % Body font
   {} % Indent amount
   {\bfseries} % Theorem head font
@@ -120,13 +140,13 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \DeclareMathOperator{\grado}{deg}
 \makeatother
 \newcommand{\srg}[3]{\sum_{#1 \in #2} #3_{#1} #1 }
-%\theoremstyle{\plain}
+\newcommand{\modulo}[1]{R\mbox{-módulo}}
 
 
 
 \begin{document}
 \captionsetup[figure]{labelformat=simple, labelsep=period}
-{ %\setlength{\baselineskip}{1.3\baselineskip}
+{ %\setlength{\baselineskip}{1.5\baselineskip}
 
 %\include{portada} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Portada
 
@@ -162,6 +182,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 %\include{intr}      % Introducci�n
 
 \mainmatter
+
 
 \include{tch1}
 

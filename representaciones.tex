@@ -78,12 +78,8 @@ Como $T_{\sigma}$ deja a la base intacta (salvo permutaciones), es claro que $T_
  
 Es claro que $T$ es un isomorfismo, por su definición, y por lo tanto una representación de $S_n$.
 
-Como se puede apreciar una representación por si sóla puede ser poca descriptiva, por lo tanto se considera de mas utilidad conocer la representación matricial. Para este caso en particular, considérese $A(\sigma)$, la matriz asociada a $T_{\sigma}$, que se obtiene al calcular $T_{\sigma}(v_j)$ como combinación lineal de la base. Como $T_{\sigma} (v_j) = v_{\sigma(j)}$, entonces los coeficientes de la matriz anterior son cero en todas sus entradas excepto en $(\sigma(j),j)$, en la cual la entrada vale uno. De esta manera es fácil notar que $A(\sigma)$ es una matriz que tiene exactamente una entrada igual a uno en cada fila y columna y las demás iguales a cero. Dicha matriz se conoce como la \textbf{matriz de permutación}.\newline
-
+Como se puede apreciar una representación por si sóla puede ser poca descriptiva, por lo tanto se considera de mas utilidad conocer la representación matricial. Para este caso en particular, considérese $A(\sigma)$, la matriz asociada a $T_{\sigma}$, que se obtiene al calcular $T_{\sigma}(v_j)$ como combinación lineal de la base. Como $T_{\sigma} (v_j) = v_{\sigma(j)}$, entonces los coeficientes de la matriz anterior son cero en todas sus entradas excepto en $(\sigma(j),j)$, en la cual la entrada vale uno. De esta manera es fácil notar que $A(\sigma)$ es una matriz que tiene exactamente una entrada igual a uno en cada fila y columna y las demás iguales a cero. Dicha matriz se conoce como la \textbf{matriz de permutación}.
 \end{ejemplo}
-
-
-
 \begin{ejemplo}[La representación Regular]
 Sea $G$ un grupo finito de orden $n$ y $R$ un anillo conmutativo. Se requiere definir una representación de $G$ sobre $R$, para ello se considerará  como espacio de representación a $RG$, es decir, a el grupo-anillo de $G$ sobre $R$. 
 
@@ -204,7 +200,6 @@ De manera mas abstracta, este grupo --que es llamado grupo diédrico de orden oc
 \begin{equation*}
 a^4 = 1, \quad b^2 = 1 , \quad baba = 1.  
 \end{equation*}
-
 Por lo tanto este grupo puede ser descrito  como 
 \begin{equation*}
 D_4 = \{ 1, a, a^2, a^3, b, ab, a^2b, a^3b \}. 
@@ -227,7 +222,6 @@ C(b) & = 1 \\
 D(b) & = -1.
 \end{aligned}
 \end{equation*}
-
 Pensando en el significado geométrico de $a$ y $b$, como dos funciones del plano al plano, se puede calcular sus matrices con respecto a la base canónica para obtener otra representación matricial de $D_4$:
 \begin{equation*}
 \begin{aligned}
@@ -259,9 +253,7 @@ Si se eligen bases $\{v_1, \dots, v_n\}$ y $\{ w_1, \dots, w_m \}$ de $V$ y $N$ 
 A(g) & 0 \\
 0 & B(g)
 \end{pmatrix}. \end{equation*}
-
 \end{ejemplo}
-
 Los ejemplos anteriormente expuestos sirven de motivación para introducir algunos conceptos de teoría de la representación. En este trabajo se restringirán las representaciones al caso en el cual $R$ es un campo, debido a que con este caso se logra ilustrar la relación de teoría de representación con los problemas de grupo-anillos.
 
 Primero considérese $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$ y asúmase que $\phi \colon V \to W$ es un isomorfismo de espacios vectoriales sobre $K$. Entonces se puede definir una nueva representación $\overline{T} \colon G \to GL(W)$ por medio de $\overline{T_g} \colon \phi \circ T_g \circ \phi^{-1}$ para todo $g \in G$. Esto es, esencialmente, una copia de $T$. La relación entre estas dos representaciones está ilustrada en el siguiente diagrama:
@@ -342,17 +334,15 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada reducible si e
 \mathsf{UM(g)U^{-1}} = \begin{pmatrix}
 \mathsf{A(g)} & \mathsf{B(g)} \\
 0 & C(g)
-\end{pmatrix} 
+\end{pmatrix}. 
 \end{equation*}  
-
 \end{definicion}
 
 El ejemplo \ref{ejemciclico} muestra que la representación regular de un grupo cíclico de orden $m$, sobre un campo $K$ que contiene raíces de la unidad de orden $m$ es reducible. De hecho, cualquier representación regular de un grupo finito $G \neq \{ 1 \}$ sobre cualquier campo es reducible. En efecto, nótese que si en el espacio de representación $RG$ se toma el elemento $\hat{G} = \sum_{g \in G}g$ entonces $ T_g(\hat{G}) = \hat{G}$ por lo tanto el subespacio generado por $\hat{G}$ es invariante bajo $T$ y $(\hat{G}) \neq RG.$  
 
 \begin{definicion}
-Una representación $T \colon G \to GL(V)$ de un grupo $G$ sobre un campo $K$ es llamado completamente irreducible si para todo subespacio $W$ que es invariante bajo $T$ existe un subespacio invariante $W'$ tal que $V = W \oplus W'.$
+Una representación $T \colon G \to GL(V)$ de un grupo $G$ sobre un campo $K$ es llamado completamente irreducible si para todo subespacio $W$ que es invariante bajo $T$ existe un subespacio invariante $W'$ tal que $V = W \oplus W'$.
 \end{definicion}
-
 Para entender de mejor manera esta definición se dará una interpretación en términos de matrices.
 
 Sea $\{ w_1, w_2, \dots, w_t \}$ y $\{ w_{t+1}, \dots, w_n\}$ bases dadas para $W$ y $W'$ respectivamente, entonces $\{ w_1, w_t, w_{t+1}, \dots, w_n \}$ es una base de $V$ y para cualquier $g \in G$ la matriz de $T_g$ con respecto a esta base es de la forma
@@ -387,7 +377,7 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente 
  \end{equation}
  
  Usando está definición de producto se verifica:
- \begin{enumerate}
+ \begin{bulletList}
  \item Distributividad de la suma de escalares respecto al producto por escalar \begin{eqnarray*}
   (\alpha + \beta)v &=& \left( \sum_{g \in G}(a_g + b_g)g  \right)v \\
    &=& \sum_{g \in G}(a_g + b_g)T_g(v) \\
@@ -420,7 +410,7 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente 
   &=& I(v) \\
   &=& v.
  \end{eqnarray*}
- \end{enumerate}
+ \end{bulletList}
   Por lo expuesto anteriormente es fácil notar que la multiplicación por escalar definida en la ecuación \ref{defproducto} induce un $RG\mbox{-módulo}$.
  
  Al converso, si $M$ es un $RG\mbox{-módulo}$ de rango finito sobre $R$, se define la representación de $G$ sobre $R$ asignando a cada elemento $g \in G$ el $R\mbox{-automorfismo}$ $T_g \colon M \to M$ dado por $T_g(m) = gm$.
@@ -431,18 +421,16 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente 
  \end{proof}
   Como ejemplo considérese  un grupo finito $G$ y $RG$ como un módulo sobre sí mismo, de esta forma $RG$ es de rango finito $|G|$ sobre $R$. Entonces, dado un elemento $x \in G$, la representación $T_x \colon RG \to RG$ viene dada por: \begin{equation*}T_{x}\left( \sum_{g \in G}a(g)g\right) = x\left( \sum_{g \in G}a(g)g\right) = \left( \sum_{g \in G}a(g)gxg\right).\end{equation*}
   
-  Esto significa que $x \in G$ actúa en los elementos de la base $G = \{ g_1, \dots, g_n \}$ multiplicándolos por la izquierda. En otras palabras, la representación asociada al $RG\mbox{-módulo}$ $RG$ es precisamente la representación regular de $G$. \newline
-   
-  \begin{lema}
+  Esto significa que $x \in G$ actúa en los elementos de la base $G = \{ g_1, \dots, g_n \}$ multiplicándolos por la izquierda. En otras palabras, la representación asociada al $RG\mbox{-módulo}$ $RG$ es precisamente la representación regular de $G$. 
+\begin{lema}
   Sea $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$, con espacio de representación $V$, entonces un subespacio $W \subset V$ es invariante bajo $T$ si y sólo si $W$ es un $KG\mbox{-módulo}$ de $V$. 
   \end{lema}
-  
   \begin{proof}
   Se procede a demostrar este hecho en dos partes:
-  \begin{enumerate}
+  \begin{bulletList}
   \item Sea $W \subset V$ invariante bajo $T$, entonces $T_{g}(W) = W$ para cualquier $g \in G$. Sean $w_1, w_2 \in W$ se tiene que $T_{g}(w_1 + w_2) = T_{g}(w_1) + T_{g}(w_2) \in W$, así $T_{g}^{-1}(T_{g}(w_1 + w_2)) \in W$. Por otra parte, si se considera $\alpha = \sum_{g \in G}a(g)g$ entonces $\alpha w = \sum_{g \in G}a(g)T_g(w) \in W$ y por lo tanto $W$ es un $KG\mbox{-módulo}$ de $V$.
   \item Sea $W$ subespacio de $V$, $W \subset V$ y $W$ un $KG\mbox{-módulo}$ de $V$, entonces para $w \in W$ y $g \in RG$ se tiene $gw = 1\cdot T_g(w) \in W$. \qedhere
-  \end{enumerate} 
+  \end{bulletList} 
   \end{proof}
   
   \begin{teorema}

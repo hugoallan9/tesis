@@ -91,7 +91,8 @@
 %%   Right brace   \}     Tilde         \~}
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{thesis}
-              [2006/02/24 Modificado por William Roberto Gutierrez.]
+              [2006/02/24 Modificado por William Roberto Gutierrez.
+              2014/01/12 Modificado por Hugo Allan García]
 \newcommand\@ptsize{}
 \newif\if@restonecol
 \newif\if@titlepage
@@ -392,6 +393,9 @@
               \if@tempswa
                 \twocolumn
               \fi}
+%------------------------------------------------------------------------------------
+%					Definición del comando Chapter 
+%-------------------------------------------------------------------------------------
 \newcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
                     \thispagestyle{plain}%                      %<--------------------  numeraci�n de p�gina
                     \global\@topnum\z@
@@ -419,7 +423,7 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-  \vspace*{-40\p@}%                             %<------------------ espacio hacia arriba
+  %\vspace*{0cm}%                             %<------------------ espacio hacia arriba
   {\parindent \z@ \raggedright \normalfont \centering
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
@@ -428,7 +432,7 @@
     \fi
     \interlinepenalty\@M
     \Large \bfseries #1\par\nobreak           %<---------------------- tipo de letra del t�tulo
-    \vskip 18\p@                                %\vskip 40\p@
+    \vspace{0.55in}                                %\vskip 40\p@
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -445,7 +449,7 @@
     \vskip 40\p@
   }}
 
-\newcommand\section{\@startsection {section}{1}{1cm}%                   %<--------------- sangría en el subtítulo
+\newcommand\section{\@startsection {section}{1}{0cm}%                   %<--------------- sangría en el subtítulo
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
                                    {\normalfont\normalsize\bfseries}}
@@ -746,13 +750,16 @@
 \newcommand\indexspace{\par \vskip 10\p@ \@plus5\p@ \@minus3\p@\relax}
 \renewcommand\footnoterule{%
   \kern-3\p@
-  \hrule\@width.4\columnwidth
+   \moveright\baselineskip\vbox{
+      \advance\hsize-3\baselineskip
+      \hrule\@width.4\columnwidth
+    }  
   \kern2.6\p@}
 \@addtoreset{footnote}{chapter}
 \newcommand\@makefntext[1]{%
     \parindent 1em%
     \noindent
-    \hb@xt@1.8em{\hss\@makefnmark}#1}
+    \hb@xt@10mm{\hss\@makefnmark}#1}
 \newcommand\contentsname{Contents}
 \newcommand\listfigurename{List of Figures}
 \newcommand\listtablename{List of Tables}
