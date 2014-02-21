@@ -24,6 +24,16 @@
 %para cambiar letra de subcaption a 10 pt
 \usepackage{etoolbox}
 \usepackage[nodisplayskipstretch]{setspace}
+
+
+\makeatletter
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{1.5em}
+  \setlength\belowdisplayskip{1.5em}
+  \setlength\abovedisplayshortskip{1.5em}
+  \setlength\belowdisplayshortskip{1.5em}
+}
+
 %---------------------------Fin Preambulo------------------------------------------------
 
 
@@ -35,11 +45,6 @@
 
 
 
-%control de espacio en ecuaciones
-%\BeforeBeginEnvironment{equation}{\begin{singlespace}}
-%\AfterEndEnvironment{equation}{\end{singlespace}\noindent\ignorespaces}
-%\BeforeBeginEnvironment{align}{\begin{onehalfspace}}
-%\AfterEndEnvironment{align}{\end{onehalfspace}\noindent\ignorespaces}
 
 \decimalpoint
 \newenvironment{myproof}[1][\proofname]
@@ -89,13 +94,13 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \setlength{\labelwidth}{1cm}
 \setlength\listparindent{0cm}
 \setlength\leftmargin{1.4cm} % Distancia entre borde y número
-\setlength{\parsep}{.55cm}% Separación entre elementos
+\setlength{\parsep}{.0cm}% Separación entre elementos
 }
 }{
 \end{list}
 }
 
-\newcommand{\newItem}{\item[$\circ$]}
+\newcommand{\newItem}{\item[$\bullet$]}
 
 \newtheoremstyle{ejem} %
   {\baselineskip} % Space above
@@ -135,6 +140,8 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 
 % Operadores y funciones -------------------------------------------
 \DeclareMathOperator{\car}{car}
+\DeclareMathOperator{\rango}{rango}
+\DeclareMathOperator{\sop}{sop}
 \DeclareMathOperator{\Ima}{Im}
 \DeclareMathOperator{\tr}{tr}
 \DeclareMathOperator{\grado}{deg}
