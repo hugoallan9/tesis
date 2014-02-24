@@ -5,8 +5,10 @@ En este capítulo se darán los conceptos básicos de teoría de códigos. Se em
 La figura \ref{fig:sistemaComunicacion} muestra un sistema de comunicación de una \textbf{fuente} a un \textbf{destino} mediante un \textbf{canal}. La comunicación puede ser en el dominio del espacio (es decir, de un punto a otro) o en el dominio del tiempo -(al guardar información en algún punto en el tiempo para ser recuperada posteriormente).
 \begin{figure}
 \centering
-\caption{Sistema de Comunicación propuesto por Shannon}
+\caption{\hskip 2em \textbf{Sistema de Comunicación propuesto por Shannon}}
+\vskip 1em
 \includegraphics[angle=-90,width=0.9\linewidth]{Pictures/sistema.pdf}
+\vskip 1.80em
 \caption*{Fuente: Elaboración propia con software Dia.}
 \label{fig:sistemaComunicacion}
 \end{figure}
@@ -23,8 +25,10 @@ Más aún, en algunos casos el diseño requiere que el formato de la informació
 Es así como entran a participar los códigos. Los códigos fueron inventados para corregir errores en los canales de comunicación debido al ruido. Por ejemplo, supóngase que hay un cable telegráfico desde Ciudad de Guatemala hasta Ciudad de Panamá, mediante el cual se pueden transmitir unos y ceros. Usualmente cuando un cero es enviado se recibe un cero, pero ocasionalmente un cero puede ser recibido como un uno o un uno como un cero. Supóngase que en promedio, 1 de cada 100 símbolos se recibe de forma errónea, es decir, por cada símbolo hay una probabilidad $p=1/100$ de que ocurra un error en el canal. A esto se le llama un canal binario simétrico y se denota como BSC por sus siglas en inglés.
 \begin{figure}
 \centering
-\caption{Canal Binario Simétrico}
+\caption{\hskip 2em \textbf{Canal Binario Simétrico}}
+\vskip 1em
 \input{Sources/CBS.tex}
+\vskip 1.80em
 \caption*{Fuente: Elaboración propia con software Dia.}
 \label{fig:CBS}
 \end{figure} 
@@ -32,9 +36,11 @@ Además supóngase que se enviarán muchos mensajes importantes por ese cable y 
 
 Se van a \textbf{codificar} estos mensajes para darles una protección en contra del ruido del canal. Un bloque de $k$ símbolos del mensaje $u = u_1\dots u_k,\ u_i = 0 \mbox{ o } 1$, será codificado como una \textbf{palabra-código} $x = x_1 \dots x_n, x_i = 0 \mbox{ o } 1$ donde $n \geq k$ (véase la figura \ref{fig:codificacion}). Estas palabra-códigos forman un código.
 \begin{figure}
-\caption{Proceso de Codificación}
+\caption{\hskip 2em \textbf{Proceso de Codificación}}
 \centering
+\vskip 1em
 \input{codificacion.tex}
+\vskip 1.80em
 \caption*{Fuente: Elaboración propia con software Dia y exportado a \TeX}
 \label{fig:codificacion}
 \end{figure}

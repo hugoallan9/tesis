@@ -453,11 +453,11 @@
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
                                    {\normalfont\normalsize\bfseries}}
-\newcommand\subsection{\@startsection{subsection}{2}{35pt}%
+\newcommand\subsection{\@startsection{subsection}{2}{0cm}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
                                      {\normalfont\normalsize\bfseries}}
-\newcommand\subsubsection{\@startsection{subsubsection}{3}{50pt}%
+\newcommand\subsubsection{\@startsection{subsubsection}{3}{-45pt}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
                                      {\normalfont\normalsize\bfseries}}

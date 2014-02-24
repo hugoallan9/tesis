@@ -146,12 +146,14 @@ Es evidente que $\omega$ es un epimorfismo de grupos, llamado \textbf{homomorfis
 \begin{teorema}[Primer teorema de isomorfía de grupos]
 Sea $f \colon G_1  \to G_2$ un homomorfismo de grupos, $\omega$ el homomorfismo canónico de $G_1$ hacia el grupo cociente $X = G_1/\ker(f)$ e $i$ la inclusión de $\Ima(f)$ en $G_2$. Entonces existe un homomorfismo único $\bar{f} \colon G_1/\ker(f) \to \Ima(f)$ tal que $f = i \circ \bar{f}\circ \omega$, es decir que diagrama  de la figura \ref{fig:primerTeoremaIsomofia} conmuta.
 \begin{figure}
-\caption{\quad \textbf{Primer teorema de isomorfía de Grupos}}
-\centering
-$\xymatrix { G_1 \ar[r]^f 
+\caption{\hskip 2em \textbf{Primer teorema de isomorfía de Grupos}}
+\vskip -0.59em
+\[\xymatrix { G_1 \ar[r]^f 
 \ar[d]_{\omega}
  & G_2\\
-X \ar[r]_{\bar{f}} & \Ima(f) \ar[u]_i }$
+X \ar[r]_{\bar{f}} & \Ima(f) \ar[u]_i }\]
+\captionsetup[figure]{textfont = normal, labelformat=empty, labelsep=period}
+\vskip 0.20em
 \caption*{Fuente: elaboración propia con paquete \textbf{xymatrix} para \LaTeX.}
 \label{fig:primerTeoremaIsomofia}
 \end{figure}
@@ -276,7 +278,7 @@ Un grupo G es  \textbf{hamiltoniano} si no es conmutativo y todos sus subgrupos 
 \begin{lema}
 Todo grupo hamiltoniano contiene un subgrupo isomorfo a $K_8$.
 \end{lema}
-\begin{teorema}
+\begin{teorema}\label{teo:abelianohamiltoniano}
 Un grupo $G$ es hamiltoniano si y sólo si $G$ es producto directo de un grupo cuaterniones de orden 8, un 2-grupo abeliano elemental $E$ y un grupo abeliano $A$ en el cual todos sus elementos son de orden impar.
 \end{teorema}
 La demostración de este importante teorema se puede consultar en \cite[p.130]{bib:groupBook}.
@@ -653,7 +655,8 @@ Sea $B' = \hom_R(M^{(n)}, M^{(n)})$. Se asegura que $f^{(n)} \in \hom_{B'}(M^{(n
 \begin{eqnarray*}
 f^{(n)} \circ \phi(m_1+\cdots +m_n) &=& \cdots \\ 
 \cdots &=& f^{(n)}(\phi_{11}(m_1) +\cdots+\phi_{1n}(m_n)+\cdots+\phi_{n1}(m_1)+\cdots+\phi_{nn}(m_n))  \\
-&=& \phi_{11}(f(m_1)) + \cdots + \phi_{1n}(f(m_n)) + \cdots + \phi_{n1}(f(m_1 )) + \cdots + \phi_{nn}f((m_n))   \\
+&=& \phi_{11}(f(m_1)) + \cdots + \phi_{1n}(f(m_n)) + \cdots \\ 
+& &\cdots + \phi_{n1}(f(m_1 )) + \cdots + \phi_{nn}f((m_n))   \\
 &=& \phi(f(m_1) + \cdots + f(m_n)  \\
 &=&\phi \circ f^{(n)}(m_1 + \cdots + m_n).
 \end{eqnarray*}
