@@ -1,6 +1,6 @@
 \chapter{TEORÍA DE REPRESENTACIÓN DE GRUPOS}
 
-\section{Definición y Ejemplos}
+\section{\hskip 1em Definición y Ejemplos}
 
 Como se mencionó en el capítulo 1 \footnote{ponerlo ejemplos en esta parte de la definición de grupos} el concepto de \textbf{grupo de permutaciones} fue dado explícitamente por primera vez en las memorias de Galois en  1830, aunque la primera definición de grupo abstracto fue dado hasta en 1854 por Cayley, aunque pasó inadvertidamente por un tiempo, hasta que dicha definición fue dada nuevamente en repetidas ocasiones por varios matemáticos, a saber: Leopold Kronecker en 1870, Heinrich Martin Weber en 1882 y Ferdinand Georg Frobenius en 1887. De esa forma los grupos fueron considerados por mucho tiempo como objetos concretos antes de llegar a ser estudiados como estructuras algebraicas abstractas.
 
@@ -123,7 +123,7 @@ De manera similar se obtiene la representación matricial de los elementos resta
 \begin{nota}
 Ya se mencionó que $\rho(g)$ con $g \in G$ es una matriz de permutación, pero es importante hacer notar que si se toma $ 1 \neq g \in G$, entonces para cualquier $g_i \in G$ se tiene que $ gg_i \neq g_i $. Esto implica que para cualquier elemento $g_i$ de la base se cumple que $T_g(g_i) \neq g_i$ y por ende los elementos de la diagonal de $\rho(g)$ son todos iguales a cero. Más aún, de lo anteriormente expuesto, se deduce que si $g \neq 1$ entonces $tr(\rho(g)) = 0$ si $g \neq 1$ y $tr(\rho(g)) = |G|$ si $g = 1$. Este resultado elemental es de mucha importancia cuando se está trabajando con la representación regular.
 \end{nota}
-\begin{ejemplo}\label{rciclica}[Algunas representaciones de grupos cíclicos]
+\begin{ejemplo}\label{rciclica}(Algunas representaciones de grupos cíclicos)
 Considérese el grupo cíclico $G = \{1,a, \cdots, a^{m-1} \}$ y sea $K$ un campo. Si se desea construir una representación matricial $A \colon G \to GL(n,K)$ es necesario escoger la matriz $A(a)$, ya que por ser $A$ un homomorfismo, las matrices de representación de los restantes elementos del grupo están determinadas por $A(a^r) = (A(a))^r $. Además para demostrar que $A$ es un homomorfismo de grupos, basta con probar que $(A(a))^r = I$, para algún $r \in \mathds{Z}$.
 
 Supóngase que $\\car(K) \nmid m$ y que $K$ contiene una raíz primitiva de la unidad de orden $m$,  $\xi$. Entonces 
@@ -350,13 +350,13 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente 
 \end{definicion}
 
 
-\section{\quad Representación y Módulos.}
+\section{\hskip 1em Representación y Módulos.}
  En este sección se estudiará la conexión que hay entre módulos y representaciones. Dicha conexión se establece usando el concepto de grupo-anillo.
  
- \begin{proposicion}
+ \begin{proposicion}\label{prop:biyeccionModulos}
  Sea $G$ un grupo y $R$ un anillo conmutativo con unidad. Entonces, existe una biyección entre representaciones de $G$ sobre $R$ y $RG\mbox{-módulos}$ libres y de rango finito. 
  \end{proposicion}
- \begin{proof}
+ \begin{proof*}
  Dada una representación $T \colon G \to GL(V)$ de $G$ sobre $R$, se asocia a ella el $RG\mbox{-módulo}$ construido a partir de $V$ manteniendo la misma estructura aditiva y definiendo el producto de un elemento $v \in V$ por un escalar $\alpha = \srg{g}{G}{a} \in RG$ como 
  \begin{equation}\label{defproducto}
  \alpha v = \left( \srg{g}{G}{a}  \right)v = \sum_{g \in G}a(g)T_g(v).
@@ -404,29 +404,29 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente 
  Nótese que dado $T \colon G \to GL(V)$ una representación de $G$ sobre $R$ y $M$ su $RG\mbox{-módulo}$ inducido, se tiene que $S$, la representación inducida por $M$, es tal que $S_g(m) = gm = \alpha m \simeq T_g(m)$, donde $\alpha$ es la imagen de la inmersión de $G$ en $RG$ dada en el teorema \ref{inmersion}.
  
  De manera similar, dado $M$ un $RG\mbox{-módulo}$ y $S \colon G \to GL(M)$ su representación inducida, entonces su $RG\mbox{-módulo}$ inducido por la ecuación \ref{defproducto} deja invariante a $M$. Por lo tanto se ha demostrado que las aplicaciones construidas anteriormente son inversas la una de la otra. 
- \end{proof}
+ \end{proof*}
   Como ejemplo considérese  un grupo finito $G$ y $RG$ como un módulo sobre sí mismo, de esta forma $RG$ es de rango finito $|G|$ sobre $R$. Entonces, dado un elemento $x \in G$, la representación $T_x \colon RG \to RG$ viene dada por: \begin{equation*}T_{x}\left( \sum_{g \in G}a(g)g\right) = x\left( \sum_{g \in G}a(g)g\right) = \left( \sum_{g \in G}a(g)gxg\right).\end{equation*}
   
   Esto significa que $x \in G$ actúa en los elementos de la base $G = \{ g_1, \dots, g_n \}$ multiplicándolos por la izquierda. En otras palabras, la representación asociada al $RG\mbox{-módulo}$ $RG$ es precisamente la representación regular de $G$. 
 \begin{lema}
   Sea $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$, con espacio de representación $V$, entonces un subespacio $W \subset V$ es invariante bajo $T$ si y sólo si $W$ es un $KG\mbox{-módulo}$ de $V$. 
   \end{lema}
-  \begin{proof}
+  \begin{proof*}
   Se procede a demostrar este hecho en dos partes:
   \begin{bulletList}
   \newItem Sea $W \subset V$ invariante bajo $T$, entonces $T_{g}(W) = W$ para cualquier $g \in G$. Sean $w_1, w_2 \in W$ se tiene que $T_{g}(w_1 + w_2) = T_{g}(w_1) + T_{g}(w_2) \in W$, así $T_{g}^{-1}(T_{g}(w_1 + w_2)) \in W$. Por otra parte, si se considera $\alpha = \sum_{g \in G}a(g)g$ entonces $\alpha w = \sum_{g \in G}a(g)T_g(w) \in W$ y por lo tanto $W$ es un $KG\mbox{-módulo}$ de $V$.
   \newItem Sea $W$ subespacio de $V$, $W \subset V$ y $W$ un $KG\mbox{-módulo}$ de $V$, entonces para $w \in W$ y $g \in RG$ se tiene $gw = 1\cdot T_g(w) \in W$. \qedhere
   \end{bulletList} 
-  \end{proof}
+  \end{proof*}
   
-  \begin{teorema}
+  \begin{teorema}\label{teo:relacionTG}
   Sea $G$ un grupo y $K$ un campo. Entonces:
   \begin{bulletList}
   \newItem Dos representaciones $T$ y $T'$ de $G$ sobre $R$ son equivalentes si y sólo si los correspondientes $RG\mbox{-módulos}$ son isomorfos.
   \newItem Una representación es irreducible (o completamente reducible) si y sólo si el correspondiente $RG\mbox{-módulo}$ es irreducible (o completamente reducible).
   \end{bulletList}
   \end{teorema}
-  \begin{proof}
+  \begin{proof*}
   Se procede a demostrar este lema por incisos:
   \begin{bulletList}
   \newItem Supóngase que $T$ y $T'$ son representaciones de $G$ sobre $K$ equivalentes, entonces existe $\phi \colon V \to W$ isomorfismo, donde $V$ y $W$ son los espacios de representación de $T$ y $T'$ respectivamente, tal que $T'_g = \phi T_g \phi^{-1}$ para cualquier $g \in G$. Entonces se probará que $\phi$ es isomorfismo de $RG\mbox{-módulos}$ también.  En efecto
@@ -448,7 +448,7 @@ Una representación matricial $M \colon G \to GL(n,K)$ es llamada completamente 
    
    \newItem Si una representación $T$ es irreducible, entonces los únicos subespacios de $V$ que son invariantes bajo $T$ son los triviales y ,por el lema anterior, los únicos submódulos de $M$, el módulo inducido por $T$, son los los triviales. De manera análoga se puede demostrar el converso. \qedhere
    \end{bulletList}
-  \end{proof}
+  \end{proof*}
   También es posible notar que si un $RG\mbox{-módulo}$ $M$ admite una descomposición como suma directa de submódulos $M = \oplus_{i = 1}^{t}M_i$ y si $T$ y $T_i$ denota las representaciones correspondientes a estos módulos, entonces $T = \oplus_{i = 1}^tT_i$. 
  
  En lo que sigue, se mostrará como la información que ya se conoce a cerca de los grupo-anillos se puede trasladar a términos de representaciones de grupos. 

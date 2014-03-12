@@ -1,4 +1,4 @@
-\chapter{\hspace{1cm} ELEMENTOS ALGEBRAICOS}
+\chapter{ELEMENTOS ALGEBRAICOS}
 
 \section{\quad Generalidades y definiciones}
 En este capítulo será de especial interés estudiar algunos elementos algebraicos en grupo-álgebras usando la representación regular que puede ser definida para un álgebra finito dimensional con unidad sobre un campo $K$ de la siguiente manera.
@@ -24,7 +24,7 @@ Sea $G$ un grupo finito y $K$ un campo. Sea $p$ la representación regular de $K
 \tr\rho(\gamma) = |G|\gamma(1).
 \end{equation*}
 \end{lema} 
-\begin{proof}
+\begin{proof*}
 Se sabe que $\tr\rho(\gamma)$ es independiente de la base elegida, así que se elige $G=\{g_1, \dots, g_n \}$ como $K$-base para $KG$ y se asume que $g_1=1$.
 Entonces
 \begin{equation*}
@@ -34,12 +34,12 @@ Para un elemento $g\neq 1 \in G$, se tiene $gg_i \neq g_i$, para $1\leq i\leq n$
 \begin{equation*}
 \tr\rho(\gamma) = \sum_{g \in G}\gamma(g)\tr(g) = \gamma(1)\tr\rho(1) = \gamma(1)|G|.\qedhere
 \end{equation*} 
-\end{proof}
+\end{proof*}
 
 \begin{lema}\label{lem:BH}
 Sea $\gamma = \sum_{g \in G}\gamma(g)g$ una unidad de orden finito en el grupo-anillo entero  $\mathds{Z}G$ con $G$ un grupo finito y asúmase que $\gamma(1)\neq 0$. Entonces $\gamma = \gamma(1) = \pm 1.$
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Sea $|G| = n$ y supóngase que $\gamma^{m} = 1$ para algún entero positivo $m$. Si se considera la representación regular $\rho$ del grupo-álgebra $\mathds{C}G$ y a $\mathds{Z}G$ como un subanillo de la misma, se tiene que $\tr\rho(\gamma) = n\gamma(1)$.
 Como $\gamma^{m} = 1$, entonces $\left( \rho(\gamma) \right)^m = \rho(\gamma^{m}) = I$, de esto se sigue que $\rho(\gamma)$ es raíz del polinomio $X^m-1$, cuyas raíces son todas distintas. Esto implica, por el teorema espectral(véase \cite[p 214]{bib:lang}), que existe una base de $\mathds{C}G$ donde la matriz de $\rho(\gamma)$ es diagonal de la forma
 \begin{equation*}
@@ -62,13 +62,13 @@ Como $\gamma^{m} = 1$, entonces $\left( \rho(\gamma) \right)^m = \rho(\gamma^{m}
  Como $\mid n\gamma(1)\mid = n\mid\gamma(1)\mid \leq n$, entonces $\mid \gamma(1) \mid = 1$ y $\left| \sum_{i = 1}^{n}\xi_i \right| = \sum\limits_{i = 1}^{n}\mid \xi_i \mid$, lo cual sucede si y sólo si $\xi_1=\xi_2=\cdots = \xi_n$.
  
  Así $n\gamma(1) = n\xi_1$ y $\gamma(1) = \xi_1=\pm 1$. Se concluye que $\rho(\gamma) = \pm I$, de donde, $\gamma = \pm 1$.
-\end{proof}
+\end{proof*}
 \begin{corolario}
 Supóngase que $\gamma = \sum_{g \in G}\gamma(g)g$ es una unidad central en el grupo-anillo entero $\mathds{Z}G$ con $G$ un grupo finito de orden finito. Entonces $\gamma$ es de la forma $\gamma = \pm g$ con $g \in  \mathcal{Z}(G)$.
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Sea $\gamma = \sum_{g \in G}\gamma(g)g$ una unidad central de orden $m$. Supóngase que $\gamma(g_0) \neq 0$, para algún $g_0 \in G$. Entonces $\gamma g_0^{-1}$ es también una unidad de orden finito en $\mathds{Z}G$. Mas aún, el coeficiente de $1$ en la expresión de $\gamma g_0^{-1}$ es $\gamma(g_0) \neq 0$, de donde $\gamma g_0^{-1} = \pm 1$ y por lo tanto $\gamma = \pm g_0$.
-\end{proof}
+\end{proof*}
 Una consecuencia inmediata del corolario anterior es el siguiente
 \begin{teorema}\label{teo:Graham-Higman}
 Sea $A$ un grupo abeliano finito. Entonces, el grupo de torsión de las unidades del grupo-anillo entero $\mathds{Z}A$ es igual $\pm A$.
@@ -84,12 +84,12 @@ Sea $G$ un grupo finito y $K$ un campo de característica cero. Supóngase que $
 \newItem $e(1) = 0 \Leftrightarrow e = 0$ y $e(1) = 1 \Leftrightarrow e=1$.   
 \end{bulletList} 
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Considérese la representación regular de $KG$ escrita con respecto a la base $G$ de $KG$. Entonces, por el lema \ref{lem:traza}, se tiene que $\tr\rho = \mid G \mid e(1)$. Más aún, como $e^2 = e$, $\rho(e)$ satisface el polinomio $X^2 - X = X(X-1)$ y por lo tanto $\rho(e)$ puede ser diagonalizada. Los valores propios de $\rho(e)$ son $0$ o $1$ ya que $\rho(e)$ es idempotente. Debido a que la traza es la suma de los valores propios, se tiene que $\tr\rho(e) = r$, donde $r$ es el número de valores propios iguales a $1$ y por lo tanto también es el rango de $\rho(e)$. Se concluye entonces que $0\leq e(1) \leq 1$.
 
 Nótese que $e(1) = 0 $ si y sólo si el rango de $\rho(e)$ es $0$ y eso pasa sólo si $e = 0$. Similarmente $e(1) = 1$ si y sólo si el rango de $\rho(e)$ es $\mid G \mid $, lo cual pasa sólo si $\rho(e)$ es la matriz identidad, es decir, si $e = 1$. 
-\end{proof} 
-\section{\quad Elementos Idempotentes}
+\end{proof*} 
+\section{\hskip 1em  Elementos Idempotentes}
 Se ha demostrado en el teorema \ref{teo:idme} que si $K$ es un campo de característica cero y $G$ es un grupo finito, entonces cualquier elemento idempotente $e \in KG$ cumple que $e(1) \in \mathds{Q}$. Se dará, en esta sección, un resultado análogo a este resultado, donde $K$ tiene característica $p > 0$.
 
 \begin{teorema}\label{teo:genidem}
@@ -113,12 +113,12 @@ Supóngase que $e = e^2 \in \mathds{Z}G$, como $e(1)$ es un entero, se sigue del
 \begin{corolario}
 El grupo-anillo entero $\mathds{Z}G$ sólo contiene idempotentes triviales, para cualquier grupo $G$.
 \end{corolario}
-\section{\quad Unidades de Torsión}
+\section{\hskip 1em Unidades de Torsión}
 Se demostró en el lema \ref{lem:BH} que si $G$ es un grupo finito, $\gamma \in \mathds{Z}G$ es una unidad de orden finito y $\gamma(1) \neq 0$ entonces $\gamma = \pm 1$.Dicho resultado es válido también cuando $G$ es un grupo infinito. 
 \begin{teorema}\label{teo:Passman-Bass}
 Sea $\gamma = \sum\gamma(g)g \in \mathds{Z}G$ que satisface $\gamma^n = 1$, para algún entero positivo $n$. Si $\gamma(1) \neq 0$ entonces $\gamma = \pm 1$.
 \end{teorema} 
-\begin{proof}
+\begin{proof*}
 Sea $\mathds{C}[X]$ el anillo de polinomios con coeficientes en $\mathds{C}$. Considérese el homomorfismo $\phi \colon \mathds{C}[X] \to \mathds{C}[\gamma]$ dada por $X \mapsto \gamma$. El kernel de este homomorfismo es el ideal $\langle f(X) \rangle$ generado por el polinomio minimal $f(X)$ de $\gamma$. Entonces $f(X)$ divide a $X^n - 1$ y por lo tanto tiene sus raíces distintas. 
 Así, se tiene 
 \begin{equation*}
@@ -135,7 +135,7 @@ Entonces, $s\gamma(1) = \sum\xi_ir_i$. De igual manera; como $\sum e_i = 1$ se t
 \mid s\gamma(1) \mid = \left| \sum\xi_ir_i  \right| \leq \sum \mid \xi \mid \mid r_i \mid = \sum \mid r_i \mid = s.
 \end{equation*}
 Como $\mid s\gamma(1) \mid \leq s$, se tiene $\mid \gamma(1) \mid = 1$ y también $\left| \sum \xi_ir_i \right| = \sum \mid \xi_i \mid \mid r_i \mid$. Se sigue que todos los $\xi_i$ son iguales y $\gamma = \sum \xi_1e_1 = \xi_1 = \gamma(1) \in \mathds{Z}$. 
-\end{proof}
+\end{proof*}
 
 Este último resultado tiene bastantes consecuencias útiles. El lector deberá recordar que, como se mostró en la proposición \ref{prep:conjugacion}, hay una involución estándar en $\mathds{Z}G$ dada por 
 \begin{equation*}
@@ -157,9 +157,9 @@ lo cual implica que $\gamma\gamma^* = 0 $ si y sólo si $\gamma = 0$.
 \begin{corolario}
 Supóngase que $\gamma \in \mathds{Z}G$ tiene la propiedad de conmutar con $\gamma^*$. Si $\gamma$ es una unidad central de orden finito, entonces $\gamma = \pm g_0$ para algún $g_0 \in G$.
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Por hipótesis $\gamma^n = 1$ para algún entero positivo $n$ y $\gamma\gamma^* = \gamma^*\gamma$, por lo tanto $(\gamma\gamma^*) = 1$. Más aún, $(\gamma\gamma^*)(1) = \sum \gamma(g)^2 \neq 0$. Entonces, por el teorema anterior, $\gamma\gamma^* = 1$. De esta manera, existe un único coeficiente $\gamma(g_0)$ que es distinto de cero. Se concluye entonces que $\gamma = \pm g_0$. 
-\end{proof}
+\end{proof*}
 Como consecuencia inmediata se tienen los siguientes:
 \begin{corolario}
 Todas las unidades centrales de orden finito en $\mathds{Z}G$ son triviales.
@@ -167,7 +167,7 @@ Todas las unidades centrales de orden finito en $\mathds{Z}G$ son triviales.
 \begin{corolario}
 Si $A$ es un grupo abeliano cualquiera, entonces todas las unidades de torsión de $\mathds{Z}A$ son triviales.
 \end{corolario}
-\section{\quad Elementos nilpotentes}
+\section{\hskip 1em Elementos nilpotentes}
 Ahora se desea clasificar los grupo-álgebras $KG$ de un grupo finito $G$ sobre un anillo $K$ tal que $KG$ no tiene elementos nilpotentes no triviales. Es posible observar que si $\car(K) = p > 0$ y $G$ contiene un elemento $g$ tal que $g^{p^{n}} = 1$ para algún entero positivo $n$, entonces $(g - 1 )^{p^{n}} = g^{p^{n}} - 1 = 0$. De esto se sigue el resultado
 \begin{proposicion}\label{prop:nilpotentes}
 Si $K$ es un campo de característica $p > 0 $ y $G$ contiene $p$-elementos, entonces $KG$ contiene elementos nilpotentes.  
@@ -206,11 +206,11 @@ Al escalar $N(\alpha) := \alpha\overline{\alpha}$ se le llama la norma de $\alph
 \begin{proposicion}
 El álgebra de los cuaterniones $H(F)$ tiene divisores de cero si y sólo si la ecuación $X^2 + Y^2 = -1$ tiene solución en $F$.
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Supóngase que existen elementos $a,b \in F$ tal que $a^2 + b^2 = -1$. Entonces, para $\alpha = a + bi + j$ se tiene $N(\alpha) = \alpha\overline{\gamma} = 0$; $\alpha$ es divisor de cero en $H(F)$.
 
 Falta demostrar que si $H(F)$ tiene divisores de cero, entonces la ecuación $X^2 + Y^2 = -1$ tiene soluciones en $F$. Cuando $F$ es de característica dos se tiene $1 + 0 = -1$ entonces se asumirá que $\car (F) \neq 2$. Supóngase que existen elementos $\alpha = a + bi + cj + dk \neq 0$ y $\beta \neq 0 \in H(F)$ tal que $\alpha\beta = 0 $. Entonces, $\overline{\alpha}\alpha\beta = N(\alpha)\beta = 0 $ de donde $N(\alpha) = a^2 +b^2 + c^2 + d^2 = 0$. Si alguno de los coeficientes de $\alpha$ es cero, se tiene que la ecuación $X^2 + Y^2 =-1$ tiene solución en $F$. Si, por el contrario, todos los coeficientes de $\alpha$ son distintos de cero se puede considerar $\alpha'\alpha\beta = 0$ y del lema \ref{lem:propq} se sabe que $\gamma = \alpha'\alpha$ a lo sumo tiene tres coeficientes no nulos y por lo tanto $N(\gamma)\beta = 0$ implica que $X^2 + Y^2 = -1$ tiene solución en $F$. Por último falta considerar el caso en que $\gamma = 0$, en cuyo caso se tiene, por el lema \ref{lem:propq}, que $a^2 + b^2 -c^2 -d^2 = 0 $ y de $N(\alpha) = 0 $ se sigue  que $a^2 + b^2 + c^2 + d^2 = 0 $ entonces $a^2 + b^2 = 0$, de donde $\left( \frac{a}{b} \right)^2 + 0 = -1$.
-\end{proof}
+\end{proof*}
 Este resultado se puede ampliar de la siguiente manera.
 \begin{proposicion}
 Las siguientes proposiciones son equivalentes:
@@ -221,15 +221,15 @@ Las siguientes proposiciones son equivalentes:
 \end{bulletList}
 \end{proposicion}
 
-\begin{proof}
+\begin{proof*}
 Para la demostración de esta proposición solo falta probar que si $H(F)$ no tiene divisores de cero entonces es un anillo de división. Sea $0 \neq \alpha \in H(F)$ entonces $\overline{\alpha}\alpha = N(\alpha) \neq 0$ y por lo tanto $\alpha\left( \frac{\overline{\alpha}}{N(\alpha)} = 1\right)$.
-\end{proof}
+\end{proof*}
 
 \begin{teorema}\label{teo:caracterizacion}
 Supóngase que $\car(F) \neq 2$. Entonces el álgebra de los cuaterniones $H(F)$ es un anillo de división o isomorfo a $M_2(F)$, el anillo de matrices de $2\times 2$ sobre el campo $F$. La última opción sucede únicamente si $X^2 + Y^2 = -1$ tiene solución en $F$.
 \end{teorema}
 
-\begin{proof}
+\begin{proof*}
 Se debe demostrar que si $H(F)$ no es un anillo de división entonces es isomorfo a $M_2(F)$. En efecto, supóngase que existen $x,y \in F$ tal que $x^2 + y^2 = -1$. Considérese la aplicación $\theta \colon H(F) \to M_2(F)$ dada por:
 \begin{eqnarray*}
 \theta(i) &=& \begin{pmatrix}
@@ -274,7 +274,7 @@ by -c + dx &=& 0 \\
 a -bx + dy &=& 0
 \end{eqnarray*}
 un sistema de ecuaciones en $a, b, c,d$ con determinante $4(x^2 + y^2) \neq 0$, entonces la única solución de dicho sistema es la trivial, de donde $H(F) \simeq M_2(F)$.
-\end{proof}
+\end{proof*}
 
 Por lo expuesto en esta sección, el lector podrá intuir que es esencial poder trabajar con álgebras de cuaterniones sobre campos ciclótomicos de la forma $F = \mathds{Q}(\xi)$, donde $\xi$ es una raíz primitiva de la unidad. 
 
@@ -295,7 +295,7 @@ Sea $F$ un campo de característica distinta de $2 $. Entonces,
 FK_8 \simeq 4F\oplus H(F).
 \end{equation*}
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Se escribe $K_8$ como
 \begin{equation*}
 K_8 = \textless a, b \colon a^4 = 1, a^2 = b^2, bab^{-1} = a^{-1} \textgreater
@@ -305,16 +305,16 @@ y como se demostró en el ejercicio \ref{ejer:klein}, $\overline{K_8} = \frac{K_
 F\overline{K_8} \simeq F \oplus F \oplus F \oplus F.
 \end{equation*}
 Por otro lado, como existe $\phi \colon FK_8 \to H(F)$ endomorfismo dada por $a \mapsto i$, $b \mapsto j$, se sigue que $H(F)$ es isomorfo a algún sumando simple de $FK_8$ y contando las dimensiones se obtiene el resultado. 
-\end{proof}
+\end{proof*}
 
 Ahora se tiene la capacidad de clasificar las grupo-álgebras $FG$ con la propiedad que $FG$ no contenga elementos nilpotentes.
 \begin{teorema}\label{teo:caracCarEntera}
 Sea $F$ un campo de característica $p > 0$ y sea $G$ un grupo finito. Entonces $FG$ no tiene elementos nilpotentes si y sólo si $G$ es un $p'$-grupo abeliano. 
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Supóngase que $FG$ no tiene elementos nilpotentes. Entonces de las proposiciones \ref{prop:nilpotentes} y \ref{prop:AH} se tiene que $G$ es un $p'$-grupo y que $G$ es abeliano o hamiltoniano. Supóngase que $G$ es hamiltoneano. Entonces $p \neq 2$.Más aún, siempre se puede resolver $X^2 + Y^2 = -1$ en un campo con $p$ elementos (y por lo tanto también en $F$). Entonces $FK_8$ tiene elementos nilpotentes por el teorema \ref{teo:caracterizacion} y el lema \ref{lem:K8}. Así, $G$ debe ser abeliano.
 Para el converso basta notar que $FG$, siendo semisimple y conmutativo, es suma directa de campos. 
-\end{proof}
+\end{proof*}
 
 Existe una caracterización cuando el campo tiene característica cero, a continuación se presentan los resultados sin su demostración, pero se recomienda al lector consultar \cite{bib:Sehgal}.
 \begin{teorema}\label{teo:caracCar0}

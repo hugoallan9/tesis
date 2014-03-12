@@ -1,9 +1,7 @@
 \chapter{CONCEPTOS PRELIMINARES}
-En este capítulo se presentará la teoría básica del álgebra abstracta necesaria para la comprensión del contenido a desarrollar más adelante. Dicha exposición no pretende ser una guía de estudios del álgebra, más bien refresca resultados básicos de teoría de grupos, anillos y álgebras. En la medida de lo posible se evitará dar demostraciones de los resultados de estos conceptos, a menos que no sean materia de estudio de una licenciatura en Matemática.
-\section{Antecedentes}
-La \textit{teoría de grupos} como la conocemos actualmente tiene sus orígenes en los trabajos de Ruffini, Abel, Lagrange y Galois a inicios siglo \lsc{xix}, quienes trabajaron con el concepto de \textbf{permutación} ( en su tiempo Cauchy las llamaba \textsf{sustituciones}, ver \cite[p.104]{bib:libroGuti} ). Con Cayley \cite[p. 104]{bib:libroLosGrandes} se formalizó el concepto de \textbf{grupo} y además se dieron muchos avances significativos que impulsaron la investigación de este tema. 
-
-Entre los avances hechos por Cayley figuran:
+En este capítulo se presentará la teoría básica del álgebra abstracta necesaria para la comprensión del contenido a desarrollar más adelante. Dicha exposición no pretende ser una guía de estudios del álgebra, más bien refresca resultados básicos de teoría de grupos, anillos y álgebras. En la medida de lo posible se evitará dar demostraciones de los resultados de estos conceptos, a menos que no sean materia de estudio de la licenciatura en Matemática.
+\section{\hskip 1.1em Antecedentes}
+La \textit{teoría de grupos} como la conocemos actualmente tiene sus orígenes en los trabajos de Ruffini, Abel, Lagrange y Galois a inicios siglo \lsc{xix}, quienes trabajaron con el concepto de \textbf{permutación} (en su tiempo Cauchy las llamaba \textsf{sustituciones}, ver \cite[p.104]{bib:libroGuti}). Con Cayley \cite[p. 104]{bib:libroLosGrandes} se formalizó el concepto de \textbf{grupo} y además se dieron muchos avances significativos que impulsaron la investigación de este tema. Entre los avances hechos por Cayley figuran:
 \begin{bulletList}
 \newItem Definición formal de grupo usando la notación de multiplicación.
 \newItem Utilizar una \textit{tabla} para mostrar como actúa una operación.
@@ -12,25 +10,27 @@ Entre los avances hechos por Cayley figuran:
 \newItem Demostración de que el orden de todo elemento es divisor del orden del grupo, cuando éste es finito. 
 \end{bulletList}
 %-----------------------> teoría de grupos
-\section{Teoría de grupos}
+\section{\hskip 1.1em Teoría de grupos}
 \begin{definicion}
 Un \textbf{grupo} es un conjunto no vacío $G$ junto con una operación binaria, denotada como $\cdot$, tal que para cada $a,b \in G$ se cumplen las siguientes condiciones:
 \begin{bulletList}
-\item $(a\cdot b)\cdot c = a \cdot (b\cdot c)$,
-\item Existe un elemento único $1\in G$, tal que $a\cdot 1 = 1 \cdot a = a$,
-\item Para cada $a\in G$ existe un elemento único $a^{-1} \in G$, tal que \[a\cdot a^{-1} =a^{-1}\cdot a =1.\]
+\newItem $(a\cdot b)\cdot c = a \cdot (b\cdot c)$,
+\newItem Existe un elemento único $1\in G$, tal que $a\cdot 1 = 1 \cdot a = a$.
+\newItem Para cada $a\in G$ existe un elemento único $a^{-1} \in G$, tal que \[a\cdot a^{-1} =a^{-1}\cdot a =1.\]
 \end{bulletList}
-Si, además de las tres propiedades anteriores, se cumple que \[ a\cdot b = b \cdot a , \mbox{ para cada } a,b \in G \] entonces se dice que el grupo es \textbf{abeliano}  o \textbf{conmutativo}. 
+Si, además de las tres propiedades anteriores, se cumple  \[ a\cdot b = b \cdot a , \mbox{ para cada } a,b \in G \] entonces se dice que el grupo es \textbf{abeliano}  o \textbf{conmutativo}. 
 Si el conjunto $G$ es finito, entonces el número de elementos de $G$ es llamado el \textbf{orden} de $G$ y se denota como $\circ(G)$. 
 \end{definicion}
 \begin{ejemplo}\label{ejemplo:simetrias}
-Sea $M$ un conjunto finito. El lector deberá recordar que una aplicación biyectiva de $M$ a $M$ es llamada \textit{permutación} de $M$. Es claro entonces que la aplicación identidad de $M$ a $M$ es una permutación, que la composición de dos permutaciones es una permutación y la inversa de una permutación también es permutación. A partir de estos hechos, es evidente que dado un conjunto $M$ se puede construir conjunto de permutaciones y que este constituye un grupo respecto a la composición de funciones. Este grupo usualmente es denotado como $\mathcal{S}_M$ y es llamado el \textbf{grupo de permutaciones de $M$}. 
+Sea $M$ un conjunto finito. El lector deberá recordar que una aplicación biyectiva de $M$ a $M$ es llamada \textit{permutación} de $M$. Es claro entonces que la aplicación identidad de $M$ a $M$ es una permutación, que la composición de dos permutaciones es una permutación y la inversa de una permutación también es permutación. 
+
+A partir de estos hechos, es evidente que dado un conjunto $M$ se puede construir conjunto de permutaciones y que este constituye un grupo respecto a la composición de funciones. Este grupo usualmente es denotado como $\mathcal{S}_M$ y es llamado el \textbf{grupo de permutaciones de $M$}. 
 Si $M = \{  1,2,\dots, n \}$ entonces $\mathcal{S}_M$ es llamado el \textit{grupo de simetrías de grado $n$} y se denotada como $\mathcal{S}_n$. Dado un elemento $\psi \in \mathcal{S}_n$, si se elige que $i_k = \psi (k), \ 1 \leq k \leq n$, entonces se puede representar $\psi$ en la forma:
 \[ \psi = \begin{pmatrix}
 1 & 2 & 3 & \cdots & n \\
 i_1 & i_2 & i_3 & \cdots & i_n
 \end{pmatrix}, \]
-la cual es una notación introducida por Cauchy en 1845 \cite[vol 1, p. 64-90]{bib:Cauchy}. Usando esta notación, la inversa de $\psi$ se representa como \[ \psi^{-1} = \begin{pmatrix}
+la cual es una notación introducida por Cauchy en 1845 \cite[vol 1, p. 64-90]{bib:Cauchy}. Usando esta notación, la inversa de $\psi$ se representa como: \[ \psi^{-1} = \begin{pmatrix}
 i_1 & i_2 & i_3 & \cdots & i_n \\
 1 & 2 & 3 & \cdots & n
 \end{pmatrix}.
@@ -38,7 +38,7 @@ i_1 & i_2 & i_3 & \cdots & i_n \\
  Dadas, por ejemplo, \[ \phi = \begin{pmatrix}
  1 & 2 & 3 & 4 & 5 \\
  3 & 5 & 2 & 4 & 1
- \end{pmatrix} \mbox{ y } \psi = \begin{pmatrix}
+ \end{pmatrix} \mbox{\qquad y \qquad } \psi = \begin{pmatrix}
  1 & 2 & 3 & 4 & 5 \\
   2 & 1 & 4 & 5 & 3
  \end{pmatrix}, \]
@@ -58,7 +58,7 @@ Un subconjunto no vacío $H$ de un grupo $G$ es llamado \textbf{subgrupo de $G$}
 \begin{ejemplo}[Subgrupos cíclicos]
 Sea $a$ un elemento del grupo $G$. Para un exponente entero se definen las potencias de $a$ como
 \[ a^n = \left\{ \begin{array}{lr}
-\underset{\mbox{n veces}}{\underbrace{a \cdot a \cdots a}} & \mbox{ si } n >0\\
+\underset{n\mbox{ veces}}{\underbrace{a \cdot a \cdots a}} & \mbox{ si } n >0\\
 \underset{\mid n \mid \mbox{ veces }}{\underbrace{a^{-1}\cdot a^{-1}\cdots a^{-1}}} & \mbox{ si } n<0 \\
 1 & \mbox{ si } n = 0.
 \end{array} \right.  \]
@@ -66,10 +66,10 @@ Como $a^m \cdot a^n = a^{m+n}$, se sigue que el conjunto
 \[\langle a \rangle = \{ a^n : n \in \mathds{Z} \} \]
 es un subgrupo de $G$, llamado \textbf{subgrupo cíclico de $G$} generado por $a$.
 Si este grupo es finito, entonces existen enteros positivos $n,m$ distintos tales que $a^n = a^m$, de esta cuenta, se tiene $a^{n-m} = a^{m-n} = 1$. El entero positivo más pequeño $n$  tal que $a^n = 1$ se le llama \textbf{orden de $a$} y se denota como $\circ(a)$. Si $\langle a \rangle$ es infinito se dice que $a$ es de \textbf{orden infinito}.
-Si existe un elemento $a$ en $G$ tal que $G = \langle a \rangle$, entonces se dice que $G$ es un \textbf{grupo cíclico} y que $a$ es un \textbf{generador} de $G$. Nótese que $\circ(a) = \mid \langle a \rangle \mid $.
+Si existe un elemento $a$ en $G$ tal que $G = \langle a \rangle$, entonces se dice que $G$ es un \textbf{grupo cíclico} y que $a$ es un \textbf{generador} de $G$. Nótese que $\circ(a) = | \langle a \rangle | $.
 \end{ejemplo}
 \begin{ejemplo}
-Sea $X$ un subconjunto no vacío de un grupo $G$. Se define el \textbf{subgrupo generado por $X$} como la intersección de todos los subgrupos de $G$ que contienen a $X$. Nótese que esta familia de subgrupos es no vacía, ya que por lo menos $G$ pertenece a ella. Es fácil demostrar que esta intersección definida previamente es un subgrupo de $G$. Este subgrupo es denotado como $\langle X \rangle$. Se propone como ejercicio al lector, demostrar que 
+Sea $X$ un subconjunto no vacío de un grupo $G$. Se define el \textbf{subgrupo generado por $X$} como la intersección de todos los subgrupos de $G$ que contienen a $X$. Esta familia de subgrupos es no vacía, ya que por lo menos $G$ pertenece a ella. Es fácil demostrar que esta intersección definida previamente es un subgrupo de $G$. Este subgrupo es denotado como $\langle X \rangle$. Se propone al lector demostrar que 
 \[ \langle X \rangle = \{ x_1^{\epsilon_1} \cdots x_k^{\epsilon_k} \colon x_i \in X, \ \epsilon_i = \pm 1, \ k \geq 1 \} \cup \{1\} .\]
 Si $\langle X \rangle = G$ se dice que $X$ es un \textbf{conjunto de generadores de $G$}. Si $X$ es finito, entonces se dice que $G$ es un \textbf{grupo finitamente generado}.
 \end{ejemplo}
@@ -79,14 +79,14 @@ Si $\langle X \rangle = G$ se dice que $X$ es un \textbf{conjunto de generadores
  \begin{definicion}
  El \textbf{centro} de un grupo $G$ es el subgrupo \[ \mathcal{Z}(G) = \{ a \in G \colon ax=xa, \mbox{ para cada }  x \in G \}. \]
 \end{definicion}
-Dado un subgrupo $H$ de un grupo $G$, se puede definir una \textit{partición} de $G$, es decir una cubierta de $G$ hecha de subconjuntos disjuntos. 
+Dado un subgrupo $H$ de un grupo $G$, se puede definir una \textbf{partición} de $G$, es decir una cubierta de $G$ hecha de subconjuntos disjuntos. 
 \begin{definicion}
 Sea $H$ un subgrupo de un grupo $G$. Dado un elemento $a \in G$, los subconjuntos de la forma 
 \begin{eqnarray*}
 aH &=& \{ ah \colon h \in H \}, \\
 Ha &=& \{ ha \colon h \in H \} 
 \end{eqnarray*}
-son llamados  clases lateral izquierda y derecha del subgrupo $H$ determinadas por $a$, respectivamente.
+son llamados \textbf{ clases lateral izquierda y derecha del subgrupo $H$} determinadas por $a$, respectivamente.
 \end{definicion}
 Algunas propiedades elementales de las clases laterales son:
 \begin{proposicion}
@@ -99,9 +99,9 @@ Sea $H$ un subgrupo de un grupo $G$ y $a,b$ elementos arbitrarios de $G$. Entonc
 \begin{corolario}
 Sea $H$ un subgrupo de un grupo $G$. Dados $a,b \in G$ se cumple que $b \in aH$ si y sólo si $aH = bH$.
 \end{corolario}
-Todo elemento en una clase lateral es un \textbf{representante} de la misma. Un conjunto completo de representantes de un clase lateral izquierda ( derecha ) es llamado \textbf{transversal izquierdo ( derecho ) de $H$ en $G$}.
+Todo elemento en una clase lateral es un \textbf{representante} de la misma. Un conjunto completo de representantes de un clase lateral izquierda (derecha) es llamado \textbf{transversal izquierdo (derecho) de $H$ en $G$}.
 \begin{definicion}
-Sea $H$ un subgrupo de un grupo $G$. Si el numero de clases izquierdas(derechas) de $H$ en $G$ es finito, entonces este número es llamado  \textbf{índice} de $H$ en $G$ y se denota como $(G:H)$.
+Sea $H$ un subgrupo de un grupo $G$. Si el numero de clases izquierdas (derechas) de $H$ en $G$ es finito, entonces este número es llamado  \textbf{índice} de $H$ en $G$ y se denota como $(G:H)$.
 \end{definicion}
 \begin{teorema}[Lagrange]
 Sea $H$ un subgrupo de un grupo finito $G$. Entonces, el orden de $H$ divide a el orden de $G$. Más aún, de manera más formal, se tiene
@@ -111,7 +111,7 @@ Sea $H$ un subgrupo de un grupo finito $G$. Entonces, el orden de $H$ divide a e
 Sea $a$ un elemento de un grupo finito $G$. Entonces $\circ(a)$ es un divisor de $\mid G \mid$.
 \end{corolario}
 \begin{ejemplo}
-Considérese nuevamente a $\mathcal{S}_3$, el grupo de simetrías de grado tres. Se sabe que $\mid \mathcal{S}_3 \mid = 6$. Explícitamente, este grupo se expresa como \[ \mathcal{S}_3 = \{ I, (12), (13), (23), (123), (132) \}, \mbox{ donde } I = (1) .\]
+Considérese nuevamente a $\mathcal{S}_3$, el grupo de simetrías de grado tres. Se sabe que $|  \mathcal{S}_3 | = 6$. Explícitamente, este grupo se expresa como \[ \mathcal{S}_3 = \{ I, (12), (13), (23), (123), (132) \}, \mbox{ donde } I = (1) .\]
 Sea $H = \{ I, (12) \} $ y $\alpha = (123)$. Entonces \[ \alpha H = \{ (123), (13) \}   \mbox{ y } H\alpha = \{ (123), (23) \} ,\] con esto se demuestra que, en general, las clases laterales derechas e izquierdas determinadas por el mismo elemento no son iguales.
 \end{ejemplo}
 Los subgrupos cuyas clases laterales derechas e izquierdas generadas por el mismo elemento son iguales son de especial importancia. Nótese que para un elemento $a$ y un subgrupo $H$ de un grupo $G$, se tiene que $aH = Ha$ si y sólo si $a^{-1}Ha=H$. Esto sugiere la siguiente
@@ -120,8 +120,7 @@ Sea $H$ un subgrupo de un grupo $G$. Se dice que $H$ es \textbf{normal} en $G$, 
 \end{definicion}
 
 %-------------subsección --------------------------
-\subsection{Homomorfismos y grupos cocientes}
-El concepto de \textit{homomorfismo} es, quizás, uno de los conceptos más importantes en álgebra y en particular para este trabajo.
+\subsection{\hskip 1.1em Homomorfismos y grupos cocientes}
 \begin{definicion}
 Sean $G_1$ y $G_2 $ grupos. Una aplicación $f \colon G_1 \to G_2$ es llamada un \textbf{homomorfismo de grupos} si para cada $g, h \in G$ se cumple que \[ f(g \cdot h) = f(g) \cdot f(h) . \]
 \end{definicion}
@@ -130,7 +129,7 @@ Sea $f \colon G_1 \to G_2$ un homomorfismo de grupos. Entonces, la \textbf{image
 El \textbf{kernel de $f$} es el conjunto \[ \ker(f) =  \{ x \in G_1 \colon f(x) = 1 \}.\] 
 \end{definicion}
 \begin{definicion}
-Un homomorfismo de grupos $f \colon G_1 \to G_2$ es llamado un \textbf{epimorfismo} si es sobreyectivo. Se llama a $f$ un \textbf{monomorfismo} si es inyectivo. Por último, se dice que $f$ es un  \textbf{isomorfismo} si es sobreyectivo e inyectivo. Dados dos grupos $G_1$ y $G_2$, se dice que son isomorfos, y se denota como $G_1 \simeq G_2$ si existe un isomorfismo $f \colon G_1 \to G_2$. 
+Un homomorfismo de grupos $f \colon G_1 \to G_2$ es llamado un \textbf{epimorfismo} si es sobreyectivo. Se llama a $f$ un \textbf{monomorfismo} si es inyectivo. Por último, se dice que $f$ es un  \textbf{isomorfismo} si es sobreyectivo e inyectivo. Dados dos grupos $G_1$ y $G_2$, se dice que son \textbf{isomorfos}, y se denota como $G_1 \simeq G_2$ si existe un isomorfismo $f \colon G_1 \to G_2$. 
 \end{definicion} 
 Un homomorfismo de un grupo $G$ en sí mismo es llamado un \textbf{endomorfismo} y si a su vez es un isomorfismo se llama  \textbf{automorfismo} de $G$. 
 El siguiente resultado se debe al famoso matemático británico Arthur Cayley, el cual demuestra la relevancia de los grupos de permutación en la teoría de grupos.
@@ -138,7 +137,7 @@ El siguiente resultado se debe al famoso matemático británico Arthur Cayley, e
 Todo grupo $G$ es isomorfo a un grupo de permutaciones.
 \end{teorema}
 \begin{definicion}
-Sea $H$ un subgrupo normal de un grupo $G$ y $a, b \in G$. Se dice que $a\equiv b(\mod{H})$ si $b^{-1}a \in H$. Es fácil demostrar que esta relación es de equivalencia. Para un elemento $a \in G$ se denota su clase de equivalencia como \[ \bar{a} = \{ x \in G \colon x \equiv a \pmod{H}  \} = \{ x \in G \colon a^{-1}x \in H \} = aH. | \]
+Sea $H$ un subgrupo normal de un grupo $G$ y $a, b \in G$. Se dice que $a\equiv b\pmod{H}$ si $b^{-1}a \in H$. Es fácil demostrar que esta relación es de equivalencia. Para un elemento $a \in G$ se denota su clase de equivalencia como \[ \bar{a} = \{ x \in G \colon x \equiv a \pmod{H}  \} = \{ x \in G \colon a^{-1}x \in H \} = aH.  \]
 Se denota como $G/H$ al conjunto de clases de equivalencia de los elementos de $G$. Se define el producto de elementos en $G/H$ como \[ \bar{a}\cdot \bar{b} = \overline{ab}. \] Esta operación es bien definida y $G/H$ es un grupo, llamado \textbf{grupo cociente}. 
 \end{definicion}
 Considérese la aplicación $\omega \colon G \to G/H$ dada por: \[G \ni a \mapsto \omega(a) = 	\bar{a} = aH. \]
@@ -165,8 +164,8 @@ Sea $f \colon G_1 \to G_2$ un epimorfismo. Entonces \[ G_1/\ker(f) \simeq G_2. \
 \begin{lema}
 Sea $H$ un subgrupo normal de $G$. Entonces
 \begin{bulletList}
-\item Para cada subgrupo $K$ de $G$ que contiene a $H$, el conjunto $K/H = \{ xH \colon x \in K \}$ es un subgrupo de $G/H$ que es normal si y sólo si $K$ es normal.
-\item Si $\mathcal{K}$ es un subgrupo de $G/H$, entonces la preimagen $K = \{ x \in G \colon xH \in \mathcal{K} \}$ es un subgrupo de $G$ que contiene a $H$, tal que $\mathcal{K} = K/H$.
+\newItem Para cada subgrupo $K$ de $G$ que contiene a $H$, el conjunto $K/H = \{ xH \colon x \in K \}$ es un subgrupo de $G/H$ que es normal si y sólo si $K$ es normal.
+\newItem Si $\mathcal{K}$ es un subgrupo de $G/H$, entonces la preimagen $K = \{ x \in G \colon xH \in \mathcal{K} \}$ es un subgrupo de $G$ que contiene a $H$, tal que $\mathcal{K} = K/H$.
 \end{bulletList}
 \end{lema}
 \begin{teorema}
@@ -179,31 +178,31 @@ Sea $H$ y $K$ subgrupos de un grupo $G$ y supóngase que $K$ es normal. Entonces
 Sean $H \subset K$ subgrupos normales de un grupo $G$. Entonces:
 \[\frac{G/H}{K/H} \simeq \frac{G}{K}. \]
 \end{teorema}
-\subsection{Productos directos}
+\subsection{\hskip 1.1em Productos directos}
 \begin{definicion}
 Sean $H,\ K$ subgrupos de un grupo $G$. Se dice que $G$ es el \textbf{producto directo interno} de $H$ y $K$ y se escribe $G = H \times K$ si se cumplen las siguientes condiciones:
 \begin{bulletList}
-\item $G=HK$,
-\item $H \cap K = \{1\}$,
-\item $H \triangleleft G$ y $K \triangleleft G$.
+\newItem $G=HK$.
+\newItem $H \cap K = \{1\}$.
+\newItem $H \triangleleft G$ y $K \triangleleft G$.
 \end{bulletList}
 \end{definicion}
-La definición anterior se puede extender a familias arbitrarias de subgrupos normales.
+La definición anterior se puede extender a familias arbitrarias de subgrupos normales, como se muestra en la siguiente definición.
 \begin{definicion}
 Sea $\{H_i\}_{i \in I}$ un familia de subgrupos normales de un grupo $G$. Entonces $G$ es llamado el \textbf{producto directo interno} de los subgrupos $\{H_i\}_{i \in I}$ si se cumplen las siguientes condiciones:
 \begin{bulletList}
-\item $G =\langle H_i \colon i \in I \rangle$, es decir que cada elemento $g$ de $G$ se puede escribir como producto de un número finito de elementos de los subgrupos $\{H_i\}_{i \in I}$.
-\item $H_i \cap \langle H_j \colon j \in I, \ j \neq i \rangle = \{1\}$ para cada índice $i \in I$.
+\newItem $G =\langle H_i \colon i \in I \rangle$, es decir que cada elemento $g$ de $G$ se puede escribir como producto de un número finito de elementos de los subgrupos $\{H_i\}_{i \in I}$.
+\newItem $H_i \cap \langle H_j \colon j \in I, \ j \neq i \rangle = \{1\}$ para cada índice $i \in I$.
 \end{bulletList}
 \end{definicion}
 \begin{definicion}
-Dada una familia de grupos $G_1, \dots, G_n$ considérese el producto cartesiano $G = G_1 \times \cdots G_n$. Considérese la operación entre elementos de $G$ componente a componente usando la operación de cada $G_i, 1 \leq i \leq n$. Entonces bajo la operación definida previamente $G$ es un grupo llamado \textbf{producto directo externo} de $G_1, \dots, G_n$.
+Dada una familia de grupos $G_1, \dots, G_n$ considérese el producto cartesiano $G = G_1 \times \cdots \times G_n$. Considérese la operación entre elementos de $G$ componente a componente usando la operación de cada $G_i, 1 \leq i \leq n$. Con la operación definida previamente es fácil demostrar que $G$ es un grupo. A este se le llama \textbf{producto directo externo} de $G_1, \dots, G_n$.
 \end{definicion} 
 Si $G_1, \dots, G_n$ es una familia de grupos y $G = G_1\dot{\times}\cdots\dot{\times}G_n$ su \textbf{producto directo externo}, entonces los conjuntos
 \[ H_1=\{(x,1,\dots,1)\colon x \in G_1\},\dots,H_n=\{(1,1,\dots,x)\colon x \in G_n \} \] son subgrupos normales de $G$ tales que $G_i \simeq H_i,1\leq i \leq n$ y $G$ es también el producto directo interno de los subgrupos $H_1, \dots, H_n$.
 De manera similar, si $G$ es el producto directo interno de una familia de subgrupos normales $H_1,\dots,H_n$ y se construye el producto directo externo $\bar{G} = H_1\dot{\times}\cdots\dot{\times}H_n$, entonces se tiene que $\bar{G} \simeq G$. Debido a este hecho, no se hace distinción entre producto interno y externo.
 %-------------subsección de grupos abelianos
-\subsection{Grupos Abelianos}
+\subsection{\hskip 1.1em Grupos abelianos}
 Los grupos abelianos resultan de mucho interés para el desarrollo del capítulo \ref{chap:unidades}, así que se remarca sus importancia.
 Sea $G$ un grupo abeliano. Un elemento de $G$ es llamado un \textbf{elemento de torsión} si este es de orden finito. Si dos elementos $g,h \in G$ son de torsión, de órdenes $m$ y $n$ respectivamente, entonces es inmediato que $(g^{-1}h)^{mn} = 1$, lo cual demuestra que el conjunto de elementos de torsión de $G$ es un subgrupo de $G$. Nótese que este hecho también demuestra que dado un número primo $p$, el conjunto de elementos de $G$ cuyos órdenes son potencias de $p$ también constituyen un subgrupo de $G$.
 \begin{definicion}
@@ -224,7 +223,7 @@ Sea $g$ un elemento de orden $\circ(g) = p_1^{n_1}\cdots p_t^{n_t}$ de un grupo 
 \end{lema}
 Un elemento cuyo orden es potencia de un primo $p$ es llamado  \textbf{$p$-elemento}. Por otro lado, si $p$ no divide el orden del elemento, se dice que es un \textbf{$p'$-elemento}.
 \begin{lema}
-Sea $G$ un grupo abeliano finito de orden $\mid G \mid = p_1^{n_1}\cdots p_t^{n_t}$. Entonces \[ G = G(p_1)\times \cdots \times G(p_t). \]
+Sea $G$ un grupo abeliano finito de orden $|G| = p_1^{n_1}\cdots p_t^{n_t}$. Entonces \[ G = G(p_1)\times \cdots \times G(p_t). \]
 \end{lema}
 \begin{definicion}
 Sea $p$ un primo. Un grupo finito $G$ es llamado \textbf{$p$-grupo} si su orden es una potencia de $p$.
@@ -245,7 +244,7 @@ Sea $G$ un grupo abeliano finito de orden $n$. Entonces para cada divisor $d$ de
 \end{proposicion}
 
 %--------------Seccion hamiltonianos
-\subsection{Grupos hamiltonianos}
+\subsection{\hskip 1.1em Grupos hamiltonianos}
 Se define el \textbf{grupo de cuaterniones} de orden 8 como:\[ K_8 =  \langle a,b \colon a^4 =1, \ a^2 = b ^2, \ bab^{-1} = a^{-1} \rangle.  \]
 Los elementos de este grupo se enumeran de la siguiente manera:
 \[ K_8 = \{ 1,a,a^2, a^3, b, ab, a^2b, a^3b \}. \]
@@ -281,30 +280,30 @@ Todo grupo hamiltoniano contiene un subgrupo isomorfo a $K_8$.
 \begin{teorema}\label{teo:abelianohamiltoniano}
 Un grupo $G$ es hamiltoniano si y sólo si $G$ es producto directo de un grupo cuaterniones de orden 8, un 2-grupo abeliano elemental $E$ y un grupo abeliano $A$ en el cual todos sus elementos son de orden impar.
 \end{teorema}
-La demostración de este importante teorema se puede consultar en \cite[p.130]{bib:groupBook}.
+La demostración de este importante teorema se puede consultar en \cite[p. 130]{bib:groupBook}.
 %----------------> teoria de anillos, módulos  y algebras
-\section{Anillos, Módulos y Álgebras}
+\section{\hskip 1.1em Anillos, Módulos y Álgebras}
 En lo subsiguiente será de vital importancia conocer propiedades importantes de los anillos, módulos y álgebras, es por eso que se ha dedica esta sección para su estudio, la mayoría de veces, no se darán demostraciones.
-\subsection{Anillos}
+\subsection{\hskip 1.1em Anillos}
 \begin{definicion}
 Un \textbf{anillo} es un conjunto no vacío $R$ dotado con dos operaciones binarias llamadas suma y multiplicación y denotadas como $+$ y $\cdot$ respectivamente, tal que para cada $a,b\in R$ se cumplen las siguientes propiedades:
 \begin{bulletList}
-\item $a+(b+c) = (a+b)+c$
-\item Existe un único elemento $0\in R$ tal que $a+0=0+a=a$
-\item $a+b=b+a$
-\item Para cada $a \in R$ existe un elemento $-a\in R$ tal que $a+(-a) = (-a)+a=0$
-\item $a\cdot(b\cdot c) = (a\cdot b)\cdot c$
-\item $a\cdot(b+c) = a\cdot b+ a\cdot c$
-\item $(a+b)\cdot c= a\cdot c+b\cdot c $
+\newItem $a+(b+c) = (a+b)+c$.
+\newItem Existe un único elemento $0\in R$ tal que $a+0=0+a=a$.
+\newItem $a+b=b+a$.
+\newItem Para cada $a \in R$ existe un elemento $-a\in R$ tal que $a+(-a) = (-a)+a=0$.
+\newItem $a\cdot(b\cdot c) = (a\cdot b)\cdot c$.
+\newItem $a\cdot(b+c) = a\cdot b+ a\cdot c$.
+\newItem $(a+b)\cdot c= a\cdot c+b\cdot c $.
 \end{bulletList}
 Además, si se satisface
-\begin{bulletList}\addtocounter{ContadorLista}{7}
-\item $a \cdot b = b\cdot a$
+\begin{bulletList}
+\newItem $a \cdot b = b\cdot a$.
 \end{bulletList}
 se dice que el anillo es \textbf{conmutativo}.
 Un anillo es llamado  \textbf{dominio} si satisface:
-\begin{bulletList}\addtocounter{ContadorLista}{8}
-\item $a\cdot b = 0$ implica que $a = 0$  o $b = 0$.
+\begin{bulletList}
+\newItem $a\cdot b = 0$ implica que $a = 0$  o $b = 0$.
 \end{bulletList}
 \end{definicion}
 Dos elementos $a,b$ distintos de cero de un anillo $R$ tales que $ab = 0$ son llamados \textbf{divisores de cero}. Así que un dominio es un anillo sin divisores de cero.
@@ -323,23 +322,26 @@ Sea $R$ un anillo. Entonces el conjunto $R[X]$ de todos los polinomios con coefi
 Sea $R$ un anillo. Entonces, el conjunto $M_n(R)$ de todas la matrices de $n\times n$ con entradas en $R$, con suma y producto usual de matrices es un anillo. Este anillo es llamado \textbf{anillo completo de matrices} de $n\times n$ sobre $R$.
 \end{ejemplo}
 \begin{ejemplo}
-Sean $R_1, R_2, \dots, R_n$ anillos. El anillo \[ R_1\dot{\oplus}R_2\dot{\oplus}\cdots\dot{\oplus} R_n = \{ (a_1,a_2,\dots,a_n) \dots a_i \in R_i, 1\leq i \leq n \},  \] con la suma y el producto definido componente a componente es llamado  \textbf{suma directa} de los anillos $R_1, R_2,\dots,R_n$.
+Sean $R_1, R_2, \dots, R_n$ anillos. El anillo \[ R_1\dot{\oplus}R_2\dot{\oplus}\cdots\dot{\oplus} R_n = \{ (a_1,a_2,\dots,a_n),\   a_i \in R_i, 1\leq i \leq n \},  \] con la suma y el producto definido componente a componente es llamado  \textbf{suma directa} de los anillos $R_1, R_2,\dots,R_n$.
 \end{ejemplo}
-El siguiente ejemplo es el primer ejemplo de un anillo no conmutativo en la historia de las matemáticas. 
+El siguiente ejemplo es el primero de un anillo no conmutativo en la historia de las matemáticas. 
 \begin{ejemplo}
 Sean $i,j,k$ símbolos dados y considérese el conjunto $\mathcal{H}$ de todas las expresiones de la forma $x_0 + x_1i+x_2j+x_3k$ donde los coeficientes $x_0,x_1,x_2,x_3$ son números reales.
 Se define la suma de dos elementos de este conjunto como \[ (x_0 + x_1i+x_2j+x_3k)+(y_0 + y_1i+y_2j+y_3k) = (x_0 + y_0) + (x_1 + y_1)i + (x_2+y_2)j + (x_3+y_3)k.  \] La multiplicación está definida de manera distributiva, con las siguientes reglas:
 \begin{equation*}
-i^2 = j^2 = k^2 = -1
+i^2 = j^2 = k^2 =-1
 \end{equation*}
-\vskip -6.0 em
-\begin{equation*}
-ij = k = -ji
-\end{equation*} \[ jk = i = -kj \] \[ ki = j = -ik .\] Por medio de un cálculo sencillo se demuestra que $\mathcal{H}$ es un anillo, llamado \textbf{anillo de cuaterniones reales}. Dado un cuaternión $\alpha = x_0 + x_1i + x_2j + x_3k$, se define el \textbf{conjugado} $\bar{\alpha}$ de $\alpha$ como \[ \bar{\alpha} = x_0-x_1i - x_2j-x_3k. \] La norma de $\alpha$ se define como \[ \lVert \alpha \rVert = \alpha\bar{\alpha} = x_0 ^2 + x_1^2 + x_ 2^2 + x_ 3^2. \]
+\vspace*{-5.1em}
+\begin{alignat*}{3}
+ij &= k &= -ji\\
+jk &= i &= -kj\\
+ki &= j &= -ik.\\
+\end{alignat*}
+ Por medio de un cálculo sencillo se demuestra que $\mathcal{H}$ es un anillo, llamado \textbf{anillo de cuaterniones reales}. Dado un cuaternión $\alpha = x_0 + x_1i + x_2j + x_3k$, se define el \textbf{conjugado} $\bar{\alpha}$ de $\alpha$ como \[ \bar{\alpha} = x_0-x_1i - x_2j-x_3k. \] La norma de $\alpha$ se define como \[ \lVert \alpha \rVert = \alpha\bar{\alpha} = x_0 ^2 + x_1^2 + x_ 2^2 + x_ 3^2. \]
 Al igual que en el caso de los números complejos, se cumple que:
 \begin{bulletList}
-\item $\lVert \alpha\beta \rVert = \lVert \alpha \rVert \lVert \beta \rVert = \lVert \alpha\beta \rVert$
-\item $\lVert \alpha \rVert \geq 0$ y $\lVert \alpha \rVert  = 0 $ si y sólo si $\alpha = 0 $
+\newItem $\lVert \alpha\beta \rVert = \lVert \alpha \rVert \lVert \beta \rVert = \lVert \alpha\beta \rVert$.
+\newItem $\lVert \alpha \rVert \geq 0$ y $\lVert \alpha \rVert  = 0 $ si y sólo si $\alpha = 0 $.
 \end{bulletList}
 Si $\alpha \in \mathcal{H}$ es distinto de cero, se tiene que $\lVert \alpha \rVert \neq 0$, entonces se puede definir $\alpha' = \bar{\alpha}/\lVert \alpha \rVert$. Entonces \[ \alpha\alpha'= \alpha \frac{\bar{\alpha}}{\lVert \alpha \rVert} = 1 \] y de manera similar se demuestra que $\alpha'\alpha = 1$, de donde se sigue que $\alpha^{-1} = \alpha'$. Este argumento demuestra que $\mathcal{H}$ es un anillo de división.
 Se define $\mathcal{H}_{\mathds{Q}}$ restringiendo $\mathcal{H}$ al campo de los números racionales. A este conjunto se le conoce como cuaterniones racionales.
@@ -356,8 +358,8 @@ El \textbf{centro} de un anillo $R$ es el subanillo \[ \mathcal{Z}(R) = \{a \in 
 \begin{definicion}
 Un subconjunto no vacío $L$ de un anillo $R$ es un \textbf{ideal izquierdo} de $R$ si cumple las siguientes propiedades:
 \begin{bulletList}
-\item Si $x,y \in L$ entonces $x-y \in L$.
-\item Si $x \in L$ y $a \in R$ entonces $ax \in L$.
+\newItem Si $x,y \in L$ entonces $x-y \in L$.
+\newItem Si $x \in L$ y $a \in R$ entonces $ax \in L$.
 \end{bulletList}
 \end{definicion}
 De manera similar se define un \textbf{ideal derecho} de un anillo $R$. Un subconjunto no vacío $L$ de un anillo $R$ se llama \textbf{ideal} de $R$ si es un ideal derecho e izquierdo de $R$. 
@@ -371,8 +373,8 @@ Sea $D$ un anillo de división y $n$ un entero positivo. Entonces el anillo comp
 \begin{definicion}
 Sean $R, S$ anillos. Una aplicación $f \colon R \to S$ se llama \textbf{homomorfismo de anillos} si para cualesquiera $a,b \in R$ se cumple:
 \begin{bulletList}
-\item $f(a+b) = f(a) +f(b)$
-\item $f(ab) = f(a)f(b)$.
+\newItem $f(a+b) = f(a) +f(b)$.
+\newItem $f(ab) = f(a)f(b)$.
 \end{bulletList}
 \end{definicion}
 \begin{definicion}
@@ -388,14 +390,14 @@ Sea $I$ un ideal de $R$. El grupo cociente aditivo $R/I$ con la multiplicación 
 \end{definicion}
 
 %----------------Inicio de algebras y módulos
-\subsection{Módulos y álgebras}
+\subsection{\hskip 1.1em Módulos y álgebras}
 \begin{definicion}
-Sea $R$ un anillo. Un grupo aditivio abeliano $M$ es llamado un \textbf{$R\mbox{-módulo}$ izquierdo}  si para todo $a \in R$ y $m \in M$ se cumple que $am \in M$ y 
+Sea $R$ un anillo. Un grupo aditivo abeliano $M$ es llamado un \textbf{$R\mbox{-módulo}$ izquierdo}  si para todo $a \in R$ y $m \in M$ se cumple que $am \in M$ y 
 \begin{bulletList}
-\item $(a+b)m = am  + bm$
-\item $a(m_1 + m_2) = am_1 + am_2$
-\item $a(b)m = (ab)m$
-\item $1m = m$ 
+\newItem $(a+b)m = am  + bm$.
+\newItem $a(m_1 + m_2) = am_1 + am_2$.
+\newItem $a(b)m = (ab)m$.
+\newItem $1m = m$.
 \end{bulletList}
 para cualesquiera $a,b \in R$ y $m, m_1, m_2 \in M$.
 \end{definicion}
@@ -413,8 +415,8 @@ Sea $R$ un anillo conmutativo. Un $R\mbox{-módulo}$ $A$ es un \textbf{$R\mbox{-
 \begin{definicion}
 Sea $M$ un módulo sobre un anillo $R$. Un conjunto no vacío $N \subset M$ es llamado un \textbf{$R\mbox{-submódulo}$} de $M$ si se cumplen las siguientes condiciones:
 \begin{bulletList}
-\item Para todos $x,y \in N$ se tiene $x + y \in N$
-\item Para cualquier $r \in R$ y todo $n \in N$, $rn \in N$
+\newItem Para todos $x,y \in N$ se tiene $x + y \in N$
+\newItem Para cualquier $r \in R$ y todo $n \in N$, $rn \in N$
 \end{bulletList}
 Si $R$ es conmutativo y $M$ es un $R\mbox{-álgebra}$, entonces  se dice que $N$ es un $R\mbox{-subálgebra}$ de $M$ si es un submódulo y un subanillo de $M$ al mismo tiempo. 
 \end{definicion}
@@ -422,9 +424,9 @@ Todo módulo $M \neq \{0\}$ contiene al menos dos submódulos, a saber, $M$ y $\
 Sea $N$ un submódulo de un $R\mbox{-módulo}$ $M$. Al igual que en el caso de los anillos, el grupo cociente aditivo $M/N$ es un $R\mbox{-módulo}$ con $r\bar{m} = \overline{rm}, r\in R, m \in M$. Este es el módulo cociente entre $M$ y $N$. 
 
 %-----------------subsection modulos libres
-\subsection{Módulos libres}
+\subsection{\hskip 1.1em Módulos libres}
 \begin{definicion}
-Un conjunto $S = \{ s_i\}_{i \in I}$, $I$  un conjunto de índices, de elementos de un $R\mbox{-módulo}$ $M$ es un \textbf{conjunto de generadores} de $M$ si $M = RS$, es decir, si todo elemtno de $M$ se puede escribir como un combinación lineal finita de elementos de $S$ con coeficientes en $R$.
+Un conjunto $S = \{ s_i\}_{i \in I}$, $I$  un conjunto de índices, de elementos de un $R\mbox{-módulo}$ $M$ es un \textbf{conjunto de generadores} de $M$ si $M = RS$, es decir, si todo elemento de $M$ se puede escribir como un combinación lineal finita de elementos de $S$ con coeficientes en $R$.
 \end{definicion}
 \begin{definicion}
 Un conjunto $S = \{ s_i\}_{i \in I}$ de elementos de un $R\mbox{-módulo}$ $M$ es  \textbf{linealmente independiente} o $R\mbox{-libre}$ si toda combinación lineal de elementos de $S$ con coeficientes en $R$ de la forma \[ r_{i_1}s_{i_1} + \cdots + r_{i_t}s_{i_t} = 0   \] implica que $r_{i_1} = \cdots = r_{i_t} = 0$. 
@@ -438,8 +440,8 @@ Un $R\mbox{-módulo}$ $M$ es \textbf{libre} si tiene una base.
 \begin{definicion}
 Sea $\{M_i\}_{i \in I}$, $I$ un conjunto de índices,  un familia de submódulos de un $R\mbox{-módulo}$ $M$. Se dice que $M$ es la \textbf{suma directa} de submódulos de esta familia y se escribe $M = \oplus_{i \in I}M_i$ si se cumplen las siguientes condiciones:
 \begin{bulletList}
-\item Para todo $i \in I$ se satisface que $M_i \cap \left( \sum_{j \neq i} M_j \right) = \emptyset$.
-\item $M = \sum_{i \in I}m_i$.
+\newItem Para todo $i \in I$ se satisface que $M_i \cap \left( \sum_{j \neq i} M_j \right) = \emptyset$.
+\newItem $M = \sum_{i \in I}m_i$.
 \end{bulletList}
 En particular, si $\{ m_i \}_{i \in I}$ es un $R\mbox{-base}$ de $M$, entonces $M$ es la suma directa de $M = \oplus_{i \in I}Rm_i$.
 \end{definicion}
@@ -456,7 +458,7 @@ Sea $R$ un anillo. Todo $\modulo{R}$ $M$ es una imagen epimórfica de un $\modul
 \end{proposicion}
 
 % ------------Inicio subseccion semisimplicidad
-\subsection{Semisimplicidad}
+\subsection{\hskip 1.1em Semisimplicidad}
 En álgebra lineal se demuestra que todo subespacio de espacio vectorial es un sumando directo. Esta aseveración no es válida en el caso de módulos sobre anillos arbitrarios, por ejemplo, $\mathds{Z}$ no es un sumando directo de $\mathds{Q}$ como $\mathds{Z}\mbox{-módulo}$. Será de interés conocer los módulos que cumplen la propiedad de tener submódulos que sean sumandos directos. 
 \begin{definicion}
 Un $R\mbox{-módulo}$ $M$ es \textbf{semisimple} si todo submódulo de $M$ es un sumando directo. 
@@ -464,11 +466,11 @@ Un $R\mbox{-módulo}$ $M$ es \textbf{semisimple} si todo submódulo de $M$ es un
 \begin{proposicion}
 Sea $N \neq (0)$ un submódulo de un módulo semisimple $M$. Entonces $N$ es semisimple y contiene a un módulo simple.
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Sea $S$ un submódulo arbitario de $N$. Entonces $N$ es también submódulo de $M$, así que existe $S'$ tal que $M = S \oplus S'$. Se asegura que $N = S \oplus (S'\cup N)$. En efecto, por definición $S \cap (S'\cup N) \subset S\cap S' = (0)$. Por otro lado, dado un elemento $n \in N$ se puede escribir $n = x + y$ con $x \in S, y \in S'$, pero $y = n - x \in N$, entonces $y \in N \cup S'$, con lo que se demuestra que $N$ es semisimple. 
 Para demostrar que $N$ contiene a un submódulo semisimple elíjase un elemento $x \in N, x \neq 0$. Considérese la familia de submódulos de $N$ que tienen a $x$ como elemento y nótese que dicha familia es no vacía, está parcialmente ordenada por inclusión y además toda cadena está acotada por $N$ , por lo que, usando el lema de Zorn, existe un elemento maximal $N_1$. Como $N$ es semisimple, existe $N_2$ submódulo de $N$ tal que $N = N_1 \oplus N_2$. Se requiere demostrar que $N_2$ es simple.
 Si $N_2$ no fuera simple, entonces existe $W$ submódulo propio de $N_2$ tal que $N_2 = W \oplus W'$, con $W'$ submódulo de $N_2$. De esta manera, $N = N_1 \oplus W \oplus W'$ y $N_1 = (N_1 + W)\cup(N_1 + W')$. Como $x \notin N_1$ entonces $x \notin N_1 + W$ ni $x \in N_1 + W'$, lo cual contradice el hecho que $N_1$ es maximal.   
-\end{proof}
+\end{proof*}
 \begin{teorema}\label{teo:caracSemi}
 Sea $M$ un $\modulo{R}$. Entonces, las siguientes condiciones son equivalentes:
 \begin{bulletList}
@@ -477,7 +479,7 @@ Sea $M$ un $\modulo{R}$. Entonces, las siguientes condiciones son equivalentes:
 \item\label{item:ssimple3} $M$ es suma (no necesariamente directa) de submódulos simples.
 \end{bulletList}
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 (\ref{item:ssimple1}) $\implies$ (\ref{item:ssimple2}). Sea $\mathcal{F}$ la colección de todos los submódulos de $M$ que se pueden escribir como suma directa de submódulos simples. La proposición anterior asegura la existencia de dichos submódulos. Se define un orden en $\mathcal{F}$ de la siguiente manera: dados dos elementos $\oplus_{i \in I}M_i$ y $\oplus_{i \in J}M_i$ de $\mathcal{F}$, se tiene que $\oplus_{i \in I}M_i  \prec \oplus_{i \in J}M_i$ si y sólo si $I \subset J$. 
 Ahora como $(\mathcal{F, \prec})$ satisface las condiciones del lema de Zorn, existe un elemento maximal $M_0 \in \mathcal{F}$ que se puede escribir como $M_0 = \oplus_{i \in I}M_i$ con $M_i, i \in I$ simple.
 Ahora sólo falta demostrar que $M_0 = M$. En efecto, si $M_0 \neq M$, entonces existe un submódulo $N$ de $M$ tal que $M = M_0 \oplus N$, pero, por la proposición anterior, $N$ contiene un submódulo simple $S$ y por lo tanto $M_0 \oplus S = \oplus_{i \in I}M_i \oplus S \supset M_0$, lo cual contradice la maximalidad de $M_0$.
@@ -486,21 +488,21 @@ Ahora sólo falta demostrar que $M_0 = M$. En efecto, si $M_0 \neq M$, entonces 
 
 (\ref{item:ssimple3}) $\implies$ (\ref{item:ssimple1}). Supóngase que $M = \sum_{i \in I}M_i$, donde cada componente $M_i, i \in I$ es simple. Sea $N$ un submódulo propio cualquiera de $M$. Se demostrará que $N$ es sumando directo. 
 Considérese la familia \[ \mathcal{J} = \left\{ \sum_{i \in J} M_i \colon J \subset I, \left(\sum_{i \in J}M_i \right) \cap N = (0)  \right\} \] y nótese que si $N \cap M_i \neq (0)$ entonces $M_i \subset N$. Como $N \neq M$, se deduce que existe al menos un submódulo $M_i$ tal que $N \cap M_i = (0)$ y $\mathcal{J} \neq \emptyset$. Por el lema de Zorn se puede encontrar un submódulo maximal en $\mathcal{J}$, a saber $M_0 = \sum_{i \in \mathcal{J}_0}M_i$. Como $\left( \sum_{i \in \mathcal{J}_0}M_i  \right) \cap N = (0)$, sólo queda por demostrar que $M = M_0 + N$. Para ello se demostrará que $M_i \subset M_0 + N$, para todo $i \in I$. Supóngase por el absurdo que esto no es cierto, entonces existe un índice $i_{0}$ tal que $M_{i_0} \nsubseteq M_0 + N $. Ahora bien, $M_{i_0}$ es simple, se tiene que $M_{i_0} \cap (M_0 + N) = (0)$. Entonces $(M_{i_0} + M_0)\cap N =(0)$, lo que implica que $M_{i_0} + M_0 \in \mathcal{J}$, lo cual contradice la maximalidad de $M_0$.
-\end{proof}
+\end{proof*}
 Si se conoce la descomposición de un módulo semisimple como suma directa de módulos simples, entonces se puede determinar la estructura de todos sus submódulos. 
 \begin{corolario}
 Sea $M = \oplus_{i \in I}M_i$ una descomposición de un módulo semisimple $M$ como suma directa de submódulos y sea $N$ un submódulo de $M$. Entonces, existe un subconjunto de índices $J \subset I $ tal que $N \simeq \oplus_{i \in J}M_i$.
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Como se vió en la demostración de la última implicación del teorema anterior, dado un submódulo $N$ de $M$ se puede encontrar un subconjunto de índices $J_0 \subset I$  tal que $M = N \oplus N_0$, donde $N_0 = \oplus_{i \in J_0}M_i$. Entonces:
 \[ N \simeq \frac{M}{N_0} = \frac{\oplus_{i \in I}M_i}{\oplus_{i \in J_0}M_i} \simeq \oplus_{i \in I \backslash J_0} M_i, \] de donde se sigue el resultado, con $J = I \backslash J_0$.
-\end{proof}
+\end{proof*}
 \begin{corolario}
 Un módulo cociente $L$ de un módulo semisimple $M$ es isomorfo a un submódulo de $M$ y por lo tanto es también semisimple.
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Sea $L$ un módulo cociente de $M$, $\pi \colon M \to L$ el homomorfismo canónico y $N = \ker(\pi)$. Entonces, existe un submódulo $N'$ de $M$ tal que $M = N \oplus N'$ y por lo tanto $N'\simeq M/\ker(\pi) \simeq L$. Con esto, el resultado se sigue del corolario anterior.
-\end{proof}
+\end{proof*}
 \begin{definicion}
 Un anillo $R$ es \textbf{semisimple} si como módulo $_RR$ es semisimple. 
 \end{definicion}
@@ -513,22 +515,22 @@ Sea $R$ un anillo. Entonces las siguientes proposicione son equivalentes:
 \item\label{item:rssimple3} $R$ es una suma directa de un número finito de ideales izquierdos minimales.
 \end{bulletList}
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 (\ref{item:rssimple1}) $\implies$ (\ref{item:rssimple2}) es evidente.
 
 (\ref{item:rssimple2}) $\implies$ (\ref{item:rssimple3}). Como los submódulos de $_RR$ son precisamente los ideales izquierdos minimales de $R$, se sigue del teorema \ref{teo:caracSemi} que $R$ se puede escribir como $R = \oplus_{i \in I}L_i$ donde cada $L_i, i \in I$ es un ideal izquierdo minimal. De esta manera sólo queda por demostrar que esta suma es finita.
 En particular, como $R = \langle 1 \rangle$, el elemento $1 \in R$ se puede escribir como una suma finita; a saber: $1 = x_{i_1} + \cdots + x_{i_n}$, donde $x_{i_j} \in L_{i_j}$. Entonces para $r \in R$, se tiene que $r = r \cdot 1 = rx_{i_1} + \cdots +rx_{i_n}$, donde $rx_{i_j} \in L_{i_j}, 1\leq j \leq n$. Esto demuestra que $R \subset L_{i_1} \oplus \cdots \oplus L_{i_n}$, de donde $R = L_{i_1} \oplus \cdots \oplus L_{i_n}$.
 Nótese que el teorema \ref{teo:caracSemi} demuestra inmediatamente que (\ref{item:rssimple3})~ $\implies$(\ref{item:rssimple2}), así que la demostración estará completa si se demuestra que (\ref{item:rssimple2}) $\implies$~(\ref{item:rssimple1}). 
 Supóngase que $R$ es semisimple y sea $M$ un $\modulo{R}$, entonces de la proposición \ref{prop:bimodulos} se sabe que $M$ es una imagen epimórfica de un $\modulo{R}$ libre $F$. Entonces $F$ se puede escribir como $F = \oplus_{i}Ra_i$ donde $Ra_i \simeq R$ es semisimple. Por esto, $F$ es semisimple y por lo tanto $M$ lo es. 
-\end{proof}
+\end{proof*}
 \begin{teorema}\label{teo:idealIdem}
 Sea $R$ un anillo. Entonces $R$ es semisimple si y sólo si todo ideal izquierdo $L$ de $R$ es de la forma $L = Re$, donde $e \in R$ es un idempotente.
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Supóngase que $R$ es semisimple y sea $L$ un ideal  izquierdo de $R$. Entonces $L$ es un sumando directo de $R$ entonces existe un ideal izquierdo $L'$ tal que $R = L \oplus L'$. De esa cuenta, se puede escribir $1 = x + y$ donde $x \in L$ y $y \in L'$. Entonces $x = x \cdot 1 = x^2 + xy$. De la igualdad anterior se deduce que $xy = x - x^2 \in L$ y como $L'$ es un ideal izquierdo se tiene que $xy \in L'$. De la definición de suma directa se sabe que $L \cap L' = (0)$ por lo tanto $xy = x - x^2 = 0$, de donde $x = x^2$ es un idempotente. Es obvio que $Rx \subset L$. Además dado $a  \in L$ se tiene que $a = a \cdot 1 = ax + ay$, de esto se obtiene $a -ax = ay\in L\cap L'=(0)$ y así $a = ax \in Rx$ demostrando que $L = Rx$. 
 
 Ahora bien, supóngase que los ideales izquierdos de $R$ son de la forma propuesta en el enunciado. Dado esto, se requiere demostrar que todo ideal izquierdo de $R$ es sumando directo. Por hipótesis $L = Re$ donde $e \in R$ es idempotente. Sea $L'= R(1-e)$. Entonces es claro que $L'$ es un ideal izquierdo y dado un elemento $x \in R$ se puede escribir $x = xe + x(1-e)$, así que $R = Re + R(1-e)$. Además si $x \in Re \cap R(1-e)$ se tiene que cumplir que $x = re = s(1-e)$, con $r,s \in R$. Entonces $xe = s(1-e)e = 0$, de donde $x = 0$.  
-\end{proof}
+\end{proof*}
 \begin{teorema}\label{teo:familiaIdempotentes}
 Sea $R = \oplus_{i = 1}^t L_i$ una descomposición de un anillo semisimple como suma directa de ideales izquierdos minimales. Entonces, existe una familia $\{e_1, \dots, e_t \}$ de elementos de $R$ tal que:
 \begin{bulletList}
@@ -539,12 +541,12 @@ Sea $R = \oplus_{i = 1}^t L_i$ una descomposición de un anillo semisimple como 
 \end{bulletList}
 Además, si existe una familia de idempotentes $\{e_1, \dots, e_t \}$ que satisface las cuatro condiciones anteriores entonces la familia de ideales izquierdos minimales $L_i = Re_i$ es tal que $R = \oplus_{i=1}^tL_i$.
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Supóngase que $R = \oplus_{i = 1}^tL_i$ es una descomposición del anillo $R$ como suma directa de ideales izquierdos minimales. Con esta descomposición se puede escribir $1 = e_1 + \cdots + e_t$ donde $e_i \in L_i$. Entonces se deduce, como en el teorema anterior, que $e_i$ es idempotente tal que $L_i = Re_i, 1 \leq i \leq t$. Si $i \neq j$ entonces $e_ie_j = 0$. Por último, si para algún índice $i$ se puede escribir $e_i = e_i'+ e_i''$, donde $e_i', e_i''$ son idempotentes tales que $e_i, e_i'' \neq 0$ y $e_i'e_i''=0$ entonces de nuevo, como en el teorema anterior, se obtiene que $L_i = Re_i'\oplus Re_i''$ con $Re_i', Re_i'' \neq 0$, lo cual contradice la minimalidad de $L_i$. 
 
 Para el converso, supóngase que existe una familia de idempotentes $\{ e_1, \dots, e_t \}$ que satisfacen las condiciones dadas. Se demostrará en primera instacia, que $L_i = Re_i$ es minimal. Para ello supóngase por el absurdo que no lo es, entonces existe un ideal izquierdo $J$ tal que $J \subset L_i$, pero como $_RR$ es semisimple entonces $L_i$ también lo es, por lo tanto existe $J'$ tal que $L_i = J\oplus J'$. Esto implica que se puede escribir $e_i = e_i'+ e_i''$, donde $e_i', e_i''$ son idempotentes tales que $e_i, e_i'' \neq 0$, lo cual es una contradicción.
 $R = L_1 + L_2 + \cdots + L_t$ se deduce fácilmente del hecho que $1 = e_1 + \cdots + e_t$. Ahora para demostrar que la suma es directa, tómese $x \in L_j \cap \left( \sum_{i \neq j}L_i \right)$. Entonces se puede escribir $x = r_je_j = \sum_{i \neq j}r_ie_i$. Multiplicando por $e_j$ por la derecha la ecuación anterior se obtiene $r_je_je_j = x = \sum_{i \neq j}r_ie_ie_j = 0$.
-\end{proof}
+\end{proof*}
 \begin{definicion}
 Sea $R$ un anillo. Una familia de idempotentes $\{ e_1, \dots, e_t \}$ que satisfacen las condiciones \ref{item:orto1}, \ref{item:orto2} y \ref{item:orto3} del teorema anterior es llamada una \textbf{famlia completa de idempotentes ortogonales}. Un idempotente que satisface la condición \ref{item:orto4} se llama \textbf{primitivo}.
 \end{definicion}
@@ -553,26 +555,26 @@ Sea $L$ un ideal izquierdo minimal de un anillo semisimple $R$ y sea $M$ un $\mo
 \end{lema}
 
 %------------Inicio Subsección: teorema de Wedderburn-Artin
-\subsection{El teorema de Wedderburn-Artin}
+\subsection{\hskip 1.1em El teorema de Wedderburn-Artin}
 Este teorema y los que sirven de base para su demostración son de mucha importancia, ya que revelan la estructura de los anillos semisimples.
 \begin{lema}
 Sea $L$ un ideal izquierdo minimal de un anillo semisimple $R$. Entonces la suma de todos los ideales izquierdos de $R$ isomorfos a $L$ es un ideal bilateral de $R$.
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Sea $A = \sum_{J \simeq L}J$. Es evidente que $A$ es un ideal izquierdo. Se desea demostrar que $A$ es también un ideal derecho. Como $R$ es semisimple se puede escribir $R = \oplus_{i = 1}^tL_i$ como suma directa de ideales izquierdos minimales. Entonces $AR = \sum_{J \simeq L}JR = \sum_{J \sim L}\sum_{i=1}^{t}JL_i$, pero $JL_i = (0)$ o $JL_i = L_i$. Por el lema \ref{lema:multiModulo} se demuestra que la última alternativa sólo es posible cuando $J \simeq L_i$, lo que implica que $L_i \subset A$. De esta manera se demuestra que $AR \subset A$.
-\end{proof}
+\end{proof*}
 \begin{lema}
 Sea $I$ un ideal que contiene a un ideal izquierdo minimal $L$ de un anillo semisimple. Entonces $I$ contiene a todos los ideales izquierdos isomorfos a $L$.
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Sea $ L \subset I$ un anillo izquierdo minimal y sea $J$ un ideal izquierdo isomorfo a $L$. Entonces, del lema \ref{lema:multiModulo}, se tiene que $J = LJ \subset I$. 
-\end{proof}
+\end{proof*}
 \begin{proposicion}
 Sea $L$ un ideal izquierdo minimal de un anillo simisimple $R$ y $B$ la suma de todos los ideales de $R$ isomorfos a $L$. Entonces $B$ es un ideal bilateral minimal de $R$.
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Sea $B_1$ un ideal de $R$ contenido en $B$ y $L_1$ un ideal izquierdo minimal de $R$ contenido en $B_1$. Si $L_1 \not\simeq L$, entonces se tiene que $L_1J = (0)$, para todo $J \simeq L$. Así, $L_1B = (0)$ lo cual implica, en particular, que $L_1L_1 = (0)$. Esto no es posible porque el teorema \ref{teo:idealIdem}  implica que $L_1$ contiene a un elemento idempotente. Este argumento implica que $L_1 \simeq L$ y por el lema anterior se obtiene que $B_1 = B$. 
-\end{proof}
+\end{proof*}
 Dada una descomposición de un anillo semisimple $R$ como suma directa de ideales izquierdos minimales se puede agrupar los ideales izquierdos isomorfos de la siguiente manera:
 \[ R = \underbrace{L_{11}\oplus \cdots \oplus L_{1r_1}} \oplus \underbrace{L_{21}\oplus \cdots \oplus L_{2r_2}} \oplus \cdots  \oplus \underbrace{L_{s1}\oplus \cdots \oplus L_{sr_s}}. \]
 Con la notación anterior, $L_{ij} \simeq L_{ik}$ y $L_{ij}L_{kh} = (0)$ si $i \neq k$, por el lema \ref{lema:multiModulo}. 
@@ -584,9 +586,9 @@ Con la notación anterior, sea $A_i$ la suma de todos los ideales izquierdos iso
 \item\label{item:Restructura3} $R = \oplus_{i=1}^{s}A_i$ como anillos, donde $s$ es el número de clases isomorficas de ideales minimales de $R$.
 \end{bulletList}
 \end{teorema}
-\begin{proof}
-\ref{item:Restructura1} se sigue directamente de la proposición anterior. Para demostrar \ref{item:Restructura2}, se escribe \[ R = (L_{11}\oplus \cdots \oplus L_{1r_1}) \oplus (L_{21}\oplus \cdots \oplus L_{2r_2}) \oplus \cdots  \oplus (L_{s1}\oplus \cdots \oplus L_{sr_s}). \]Entonces todo elemento $x \in R$ se puede escribir en la forma $x = x_{11} + \cdots + x_{rr_1} + \cdots + x_{s1} +\cdots +x_{xr_s}$, con $x_{ij} \in L_{ij}$. Sea $y_i = x_{i1} + \cdots + x_{ir_i}, 1\leq i \leq s$. Entonces $y_i \in A_i, 1\leq i \leq s$ y $x = y_1 + \cdots + y_s$. Esto demuestra que $R = A_1 + \cdots + A_s$. Para terminar, se tiene que $A_i\cap A_j = (0)$ se sigue de la definición de $A_i$ y del lema~\ref{lema:multiModulo}. 
-\end{proof}
+\begin{proof*}
+(\ref{item:Restructura1}) se sigue directamente de la proposición anterior. Para demostrar (\ref{item:Restructura2}), se escribe \[ R = (L_{11}\oplus \cdots \oplus L_{1r_1}) \oplus (L_{21}\oplus \cdots \oplus L_{2r_2}) \oplus \cdots  \oplus (L_{s1}\oplus \cdots \oplus L_{sr_s}). \]Entonces todo elemento $x \in R$ se puede escribir en la forma $x = x_{11} + \cdots + x_{rr_1} + \cdots + x_{s1} +\cdots +x_{xr_s}$, con $x_{ij} \in L_{ij}$. Sea $y_i = x_{i1} + \cdots + x_{ir_i}, 1\leq i \leq s$. Entonces $y_i \in A_i, 1\leq i \leq s$ y $x = y_1 + \cdots + y_s$. Esto demuestra que $R = A_1 + \cdots + A_s$. Para terminar, se tiene que $A_i\cap A_j = (0)$ se sigue de la definición de $A_i$ y del lema~\ref{lema:multiModulo}. 
+\end{proof*}
 \begin{definicion}
 Un anillo $R$ es \textbf{simple} si sus únicos ideales son $(0)$ y $R$.
 \end{definicion}
@@ -597,13 +599,13 @@ Los ideales $A_i, 1\leq i \leq s$, definidos previamente son simples.
 \begin{proposicion}\label{prop:unicidadDescomposicion}
 Sea $R = \oplus_{i=1}^s A_i$ la descomposición de un anillo semisimple $R$ como suma directa de ideales minimales. Entonces:
 \begin{bulletList}
-\item Todo ideal $I$ de $R$ se puede escribir de la forma $I = A_{i_1} \oplus \cdots \oplus A_{i_t}$, donde $1\leq i_{i_1} < \cdots < i_{t} \leq s$.
-\item Si $R = \oplus_{j = 1}^rB_i$ es otra descomposición de $R$ como suma suma directa de ideales minimales, entonces $s = r$ y (después de una posible ordenación de los índices) $A_i = B_i$ para todo $i$.
+\newItem Todo ideal $I$ de $R$ se puede escribir de la forma $I = A_{i_1} \oplus \cdots \oplus A_{i_t}$, donde $1\leq i_{i_1} < \cdots < i_{t} \leq s$.
+\newItem Si $R = \oplus_{j = 1}^rB_i$ es otra descomposición de $R$ como suma suma directa de ideales minimales, entonces $s = r$ y (después de una posible ordenación de los índices) $A_i = B_i$ para todo $i$.
 \end{bulletList}
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Sea $I$ un ideal de $R$. Entonces $I = \oplus_{i = 1}^{s}(A_i \cap I)$. Como los $A_i$ son minimales la primera propiedad queda probada. Por la misma razón cada $B_j$ es igual a algún $A_i$ y viceversa. 
-\end{proof}
+\end{proof*}
 \begin{definicion}
 Los únicos ideales minimales de un anillo semisimple $R$ son llamados las \textbf{componentes simples de $R$}. 
 \end{definicion}
@@ -616,88 +618,89 @@ Sea $R = \oplus_{i = 1}^sA_i$ una descomposición de un anillo semisimple como s
 \item $e_i$ no puede ser escrito como $e_i = e_i'+e_i''$ donde $e_i', e_i''$ son idempotentes centrales tales que $e_i',e_i'' \neq 0$ y $e_i'e_i'' = 0, 1\leq i \leq t$.
 \end{bulletList}
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 La demostración es análoga a la del teorema \ref{teo:familiaIdempotentes}. La única diferencia es que $e_i, 1\leq i \leq s$ son centrales. Entonces para $x \in R$ se tiene de la tercera condición que $x = \sum_{i=1}^{t}xe_i = \sum_{i=1}^{t}e_ix$. Como los $A_i$ son ideales y la suma es directa se concluye que $xe_i = e_ix$.
-\end{proof}
+\end{proof*}
 \begin{definicion}
 Los elementos $\{ e_1, \dots, e_s \}$ del  teorema anterior son llamados los \textbf{idempotentes centrales primitivos de $R$}.
 \end{definicion}
 \begin{lema}\label{lema:estructuraSemi}
-Sea $R$ un anillo, $M = M_1 \oplus \cdots \oplus M_r$ y $N = N_1 \oplus \cdots \oplus \cdots N_s$ dos $R\mbox{-módulos}$ escritos como sumas directas de submódulos. Sea $\epsilon_j \colon M_j \to M$ la inclusión de $M_j$ en $M$ y $\pi_i \colon N \to N_i$ el homomorfismo natural de $N$ hacia sus componentes.
+Sea $R$ un anillo, $M = M_1 \oplus \cdots \oplus M_r$ y $N = N_1 \oplus \cdots \oplus \cdots \oplus N_s$ dos $R\mbox{-módulos}$ escritos como sumas directas de submódulos. Sea $\epsilon_j \colon M_j \to M$ la inclusión de $M_j$ en $M$ y $\pi_i \colon N \to N_i$ el homomorfismo natural de $N$ hacia sus componentes.
 \begin{bulletList}
-\item Supóngase que para cualquier par de índices $i,j$ existe un homomorfismo $\phi_{ij} \in \hom_R(M_j, N_i)$. Entonces,  la aplicación $\phi \colon M \to N$ definida por: \[\phi(m_1 + \cdots + m_r) = \begin{pmatrix}
+\newItem Supóngase que para cualquier par de índices $i,j$ existe un homomorfismo $\phi_{ij} \in \hom_R(M_j, N_i)$. Entonces,  la aplicación $\phi \colon M \to N$ definida por: \[\phi(m_1 + \cdots + m_r) = \begin{pmatrix}
 \phi_{11} & \cdots & \phi_{1r} \\
-\cdots & \cdots & \cdots \\
+\vdots & \ddots & \vdots \\
 \phi_{s1} & \cdots & \phi_{sr}
 \end{pmatrix} 
 \begin{pmatrix}
 m_1 \\
-\cdots \\
+\vdots \\
 m_r
 \end{pmatrix}\]
 \[ = \underset{\in N_1}{\underbrace{\phi_{11}(m_1) + \cdots + \phi_{1r}(m_r)}} +\cdots+\underset{\in N_s}{\underbrace{\phi_{s1}(m_1) + \cdots + \phi_{sr}(m_r)}}, \] es un homomorfismo. Para indicar que $\phi$ es de la forma previamente descrita se  escribe $\phi = (\phi_{ij})$. El converso también es cierto, es decir, si $\phi$ es de la forma descrita en el inciso anterior, entonces $\phi_{ij} = \pi_i\circ\phi\circ\epsilon_j \in \hom_R(M_j, N_i)$ y $\phi = (\phi_{ij})$.
-\item Para $\phi = (\phi_{ij})$ y $\psi = (\psi_{ij})$ se tiene que $\phi + \psi = (\phi_{ij} +  \psi_{ij})$.
-\item $\hom_R(M^{(n)}, M^{(n)}) \simeq M_n(\hom_R(M,M))$ como anillos. 
+\newItem Para $\phi = (\phi_{ij})$ y $\psi = (\psi_{ij})$ se tiene que $\phi + \psi = (\phi_{ij} +  \psi_{ij})$.
+\newItem $\hom_R(M^{(n)}, M^{(n)}) \simeq M_n(\hom_R(M,M))$ como anillos. 
 \end{bulletList} 
 \end{lema}
 \begin{lema}
 Sea $R$ un anillo, $M$ un $\modulo{R}$ semisimple y $B= \hom_R(M,M)$. Entonces $M$  admite una estructura de $\modulo{B}$ dada por $\phi \cdot m = \phi(m),$ para todo $\phi \in B, m \in M$. Más aún para cada $m \in M$ y $f \in \hom_B(M,M)$ existe un elemento $a \in R$ tal que $f(m) = am$.  
 \end{lema}
-\begin{proof}
+\begin{proof*}
 La primera aseveración es evidente. Para demostrar la segunda, sea $m \in M$ y considérese el submódulo $Rm$. Como $M$ es semisimple, entonces existe un submódulo $W$ tal que $M = RM \oplus W$. Si se denota  la proyección hacia $R_m$ como $\phi \colon M \to M$ se tiene que $\pi \in \hom_R(M,M) = B$. Dado un elemento $f \in \hom_B(M,M)$, se tiene:\[ f(m) = f(\pi(m)) = \pi(f(m)) \in Rm. \] Así, existe un elemento $a \in R$ tal que $f(m) = am$. 
-\end{proof}
+\end{proof*}
 \begin{teorema}[Teorema de densidad de Jacobson]
-Sea $M$ un $\modulo{R}$ semisimple, $B= \hom_R(M,M)$ y $f \in  \hom_B(M,M)$. Si $\{ m_1, \dots, m_n \}$ es un conjunto arbitario de elementos de $M$, entonces existe un elemento $a \in R$ tal que $f(m_i) = am_i$, para todo $1\leq i \leq n$.
+Sea $M$ un $\modulo{R}$ semisimple, $B= \hom_R(M,M)$ y $f \in  \hom_B(M,M)$. Si $\{ m_1, \dots, m_n \}$ es un conjunto arbitrario de elementos de $M$, entonces existe un elemento $a \in R$ tal que $f(m_i) = am_i$, para todo $1\leq i \leq n$.
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Dada $f \in \hom_B(M,M)$ se define $f^{(n)} \colon M^{(n)} \to M^{(n)}$ por: \[ f^{(n)}(x_1 + \cdots + x_n) = f(x_1) + \cdots+ f(x_n), \ x_1, \dots, x_n \in M. \]
 Sea $B' = \hom_R(M^{(n)}, M^{(n)})$. Se asegura que $f^{(n)} \in \hom_{B'}(M^{(n)}, M^{(n)})$. En efecto, dado $\phi \in B'$, por lema \ref{lema:estructuraSemi} se puede escribir $\phi = (\phi_{ij}) \in \hom_R(M_j,M_i)$. Se tiene
 \begin{eqnarray*}
 f^{(n)} \circ \phi(m_1+\cdots +m_n) &=& \cdots \\ 
-\cdots &=& f^{(n)}(\phi_{11}(m_1) +\cdots+\phi_{1n}(m_n)+\cdots+\phi_{n1}(m_1)+\cdots+\phi_{nn}(m_n))  \\
+\cdots &=& f^{(n)}(\phi_{11}(m_1) +\cdots+\phi_{1n}(m_n)+\cdots\\ 
+& &\cdots +\phi_{n1}(m_1)+\cdots+\phi_{nn}(m_n))  \\
 &=& \phi_{11}(f(m_1)) + \cdots + \phi_{1n}(f(m_n)) + \cdots \\ 
 & &\cdots + \phi_{n1}(f(m_1 )) + \cdots + \phi_{nn}f((m_n))   \\
 &=& \phi(f(m_1) + \cdots + f(m_n)  \\
 &=&\phi \circ f^{(n)}(m_1 + \cdots + m_n).
 \end{eqnarray*}
 Por el lema anterior, existe un elemento $a \in R$ tal que $f^{(n)}(m_1+\cdots+m_n) = a(m_1+\cdots+m_n)$, por lo tanto $f(m_i) = am_i, 1\leq i \leq n$.
-\end{proof}
+\end{proof*}
 \begin{lema}[Lema de Schur]
 Sea $R$ un anillo, $M,N$ $R\mbox{-módulos}$ simples y $f \colon M \to N$ un homomorfismo no nulo. Entonces $f$ es un isomorfismo.
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Dado que $\Ima(f)$ es un submódulo de un módulo simple $N$ y no es igual a $(0)$, entonces $\Ima(f) = N$, así que $f$ es epimorfismo. De manera similar $\ker(f)$ es un submódulo de un módulo simple $N$ y no es igual a $M$ entonces $\ker(f) = (0)$. De esto $f$ es un monomorfismo y por lo tanto $f$ es isomorfismo.
-\end{proof}
+\end{proof*}
 \begin{corolario}
 Sea $R$ un anillo y $M,N$ $R\mbox{-módulos}$ simples. Entonces:
 \begin{bulletList}
-\item Si $M \not\simeq N$ entonces $\hom_R(M,N) = (0)$.
-\item $\hom_R(M,M)$ es un anillo de división. 
+\newItem Si $M \not\simeq N$ entonces $\hom_R(M,N) = (0)$.
+\newItem $\hom_R(M,M)$ es un anillo de división. 
 \end{bulletList}
 \end{corolario}
 \begin{teorema}[Wedderburn-Artin]
 Un anillo $R$ es semisimple si y sólo si es una suma directa de álgebras de matrices sobre anillos de división:
 \[ R \simeq M_{n_1}(D_1)\oplus \cdots \cdots M_{n_s}(D_s).  \]
 \end{teorema}
-Para la demostración de este importante resultado se sugiere ver \cite[página 200]{bib:AlgebraPostGrado}.
+Para la demostración de este importante resultado se sugiere ver \cite[p. 200]{bib:AlgebraPostGrado}.
 \begin{teorema}
 Sea $R$ un anillo semisimple y supóngase que 
 \[ R \simeq M_{n_1} \oplus \cdots \oplus M_{n_s} \simeq M_{m_1}(D_1')\oplus \cdots \oplus M_{m_r}(D_r'), \] donde $D_i, D_j', 1 \leq i \leq s, 1 \leq j \leq r$ son anillos de división. Entonces $s = r$. Además bajo un posible reordenamiento de los índices, se tiene que $n_i = m_i, D_i \simeq D_i'$. 
 \end{teorema} 
-\begin{proof}
+\begin{proof*}
 Como los anillos de matrices sobre anillos de división son simples se tiene por la proposición \ref{prop:unicidadDescomposicion} que $s = r$ y existe una biyección entre los dos conjuntos de ideales tal que los correspondientes ideales son iguales. Sólo falta demostrar que si $M_n(D)\simeq M_m(D')$, donde $D$ y $D'$ son anillos de división, entonces $n = m$ y $D \simeq D'$.
 
 Sea $E = M_n(D)$, $E' = M_m(D')$ y 
 \[ L = \begin{pmatrix} 
 D &  0 & \cdots & 0 \\
 D &  0 & \cdots & 0 \\
- & & \cdots & \\
+\vdots &\vdots& \ddots &\vdots \\
  D &  0 & \cdots & 0
 \end{pmatrix} , L'=\begin{pmatrix}
 D' & 0 & \cdots & 0\\
 D' & 0 & \cdots & 0\\
- & & \cdots & \\
+\vdots &\vdots& \ddots &\vdots \\
 D' & 0 & \cdots & 0\\
 \end{pmatrix}.\]
 Entonces $L = eE, L'= fE'$ donde $e$ y $f$ son las correspondientes matrices idempotentes con 1 en la posición $(1,1)$ y ceros en cualquier otra posición. Bajo el isomorfismo $E \to E'$, $e$ tiene imagen $e'$ un idempotente tal que $e'L'$ es un ideal izquierdo minimal. Cambiando la base de $E'$ se tiene el isomorfismo $E \to E'$ tal que $e \mapsto f$ y $L \to L$. Entonces \[ D \simeq eEe \to fE'f \simeq D' \] y contando las dimensiones se llega a que $n = m$.  
-\end{proof}
+\end{proof*}

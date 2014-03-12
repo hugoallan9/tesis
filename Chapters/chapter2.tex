@@ -1,7 +1,7 @@
-\chapter{\quad GRUPO-ANILLOS}
+\chapter{GRUPO-ANILLOS}
 
 %----------------->Definicion formal de los grupo-anillos, 
-\section{\quad Hechos Básicos De Los Grupo-Anillos}
+\section{\hskip 1em Hechos Básicos De Los Grupo-Anillos}
 En este capítulo se darán las definiciones  matemáticas que dan paso al estudio de los grupo-anillos y se relacionará la teoría de grupos y anillos con esta estructura matemática.
 
 Considérese la siguiente construcción: Sea G un grupo cualquiera y R un anillo cualquiera. Entonces se define $RG:=\{\alpha | \alpha \colon  G \to R , |\sop(\alpha)|< \infty \}$ donde $\sop(\alpha):=\{g \in G: \alpha (g)\neq 0\}$. Al conjunto $\sop(\alpha)$ se le llama el soporte de $\alpha$. Se puede observar que los elementos de $RG$ son funciones con soporte finito. 
@@ -18,11 +18,11 @@ Ahora se procede a mostrar dos teoremas que son básicos para el estudio posteri
 Existe una copia de $G$ en $RG$, es decir, se puede encontrar $G_1 \subset RG$ tal que existe  un homomorfismo entre $G$ y $G_1$.  
 \end{teorema}
 
-\begin{proof}
+\begin{proof*}
 Considérese la función $i \colon G \to RG$ tal que $x \mapsto \alpha$ donde $\alpha(x)=1$ y $\alpha(g)=0$ si $g\neq x$. Con la identificación anterior es fácil notar que $i$ es una función inyectiva.
 En efecto, si $x,y \in G$ entonces $i(x)=\alpha$ , $i(y)=\beta$, pero $\alpha \neq \beta$ si $x \neq y$, por definición.
 Ahora se probará que $i$ es un homomorfismo de grupos. Nótese que $i(xy)=\gamma$ , donde $\gamma(xy)=1$ y $\gamma(g)=0$ si $g \neq xy$. Por otro lado, $i(x)i(y)=\alpha\beta$ donde $(\alpha\beta)(u)= \sum_{gh=u}\alpha(g)\beta(h)  $, pero el producto $ \alpha(g)\beta(h)  $ se anula a menos que  $g=x$ y $h=y$, en cuyo caso la función vale $1$, con esto $i(x)i(y)=i(xy)$. 
-\end{proof}
+\end{proof*}
 
 A $i$ se le llama la función de inclusión y de acá en adelante se usará dicho nombre para denotar a esta función.
 
@@ -31,17 +31,17 @@ Existe una copia de $R$ en $RG$.
 \end{teorema}
 
 
-\begin{proof}
+\begin{proof*}
 Considérese la función $v \colon R \to RG$ tal que $v(r) = \beta$ con $\beta(g) = r$ si $ g = 1_G $ y $\beta(g)=0$ si $g \neq 1_G$. Es claro que $v$ es inyectiva y la demostración es análoga a la presentada en el teorema anterior. Ahora falta probar que $v$ es un homomorfismo de anillos (que RG es un anillo se probará mas adelante). En efecto, $v(sr)=\theta$ donde $\theta(g)=sr$ si $g=1_G$ y $\theta(g) = 0$ si $g \neq 1_G$. De manera similar se tiene que $v(s)v(r)=\gamma\beta$ donde $(\gamma\beta)(u)=\sum_{gh=u}\gamma(g)\beta(h) $ pero $\gamma $ y $\beta$ se anulan a menos que $g=h=1_G$ y en ese caso $u=1_G$, por lo que se ha probado que $v$ es un homomorfismo de anillos. \qedhere
-\end{proof}
+\end{proof*}
 Con las identificaciones anteriores es fácil probar la siguiente: 
 \begin{propiedad}
 Si $g \in G$ y $r \in R$ entonces $rg=gr$ en $RG$.
 \end{propiedad}
-\begin{proof}
+\begin{proof*}
 Nótese que $r=\gamma$ y $x=\alpha$ y usando la definición del producto en $RG$ se tiene que $rx=\gamma\alpha$ donde $(\gamma\alpha)(u)=\sum_{gh=u}\gamma(g) \alpha(h) $ pero por definición $\gamma$ y $\alpha$ se anulan en todas partes excepto en $g=1_G$ y $h=x$ respectivamente, por lo tanto $(\gamma\alpha)(u)=r$ cuando $u=x$ y $(\gamma\alpha)(u)=0$ para $u \neq x $ \\
 Por otro lado $xr=\alpha\gamma$ dada por $(\alpha\gamma)(u)=\sum_{gh=u}\alpha(g)\gamma(h)$ de nuevo la función sólo existe cuando $g=x$ y $h=1_G$ de esa forma $(\alpha\gamma)(u)=r$ cuando $u=x$ y se anula en cualquier otro caso, con la cual concluye la demostración.
-\end{proof}
+\end{proof*}
 
 La definición de grupo-anillo que se presentó anteriormente es bastante rigurosa y además es bien definida.Se construyó un espacio vectorial de funciones en el cual todas las operaciones tienen sentido, lo cual le brinda el soporte necesario para trabajar en álgebra. 
 
@@ -57,7 +57,7 @@ Ahora es práctico establecer los siguientes teoremas:
 \begin{teorema}\label{grupo}
 $RG$ es un grupo aditivo.
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Se procede por incisos:
 \begin{bulletList}
 \newItem  Sean $\alpha, \beta, \gamma \in RG$ entonces $\alpha+(\beta+\gamma)=\srg{g}{G}{a}+\left(\srg{g}{G}{b}+ \srg{g}{G}{c} \right)= \srg{g}{G}{a}+\left(\sum_{g\in G}(b_g+c_g)g\right)=\sum_{g\in G}(a_g+b_g+c_g)g= \sum_{g\in G}((a_g+b_g)+c_g)g=\left(\sum_{g\in G}(a_g+b_g)g \right) +\srg{g}{G}{c}=(\alpha+\beta)+\gamma $.
@@ -65,21 +65,21 @@ Se procede por incisos:
 \newItem Existe $-\alpha$ tal que $\alpha+(-\alpha)= (-\alpha)+\alpha =0$ para cualquier $\alpha \in RG$. En efecto $-\alpha = \srg{g}{G}{-a}$ y por lo tanto $\alpha+ (-\alpha)=\sum_{g\in G}(a_g+(-a_g) )g= \sum_{g\in G}((-a_g)+a_g)g = \sum_{g \in G}0\cdot g = 0 $.
 \newItem $\alpha + \beta = \srg{g}{G}{a}+\srg{g}{G}{b}=\sum_{g \in G}(a_g+b_g)g= \sum_{g \in G}(b_g+a_g)g=\beta + \alpha $.
 \end{bulletList}
-\end{proof}
+\end{proof*}
 La clausura de la operación $+$  se sigue directamente de la definición. Vale la pena notar que para realizar esta prueba se uso simplemente el hecho que $G$ es grupo y $R$ es un anillo y por lo tanto satisfacen propiedades algebraicas respecto de sus operaciones.
 
 Nótese que se ha probado que $(RG,+)$ es un grupo abeliano, lo cual será de utilidad para el siguiente teorema:
 \begin{teorema}
 $RG$ es un anillo con las operaciones $+$ y $\cdot$
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Ya se ha probado que $(RG,+)$ es un grupo abeliano, por lo que a continuación se probará, de nuevo por incisos, que $(RG,\cdot)$ es asociativo y distributivo tanto por la derecha como por la izquierda:
 \begin{bulletList}
 \newItem $\alpha(\beta\gamma) = \left(\srg{g}{G}{a}\right)\left[\left(\srg{g}{G}{b}\right)\left(\srg{g}{G}{c}\right)\right] = \left(\srg{g}{G}{a}\right)\left(\sum_{g,h\in G}b_gc_hgh\right) = \sum_{f,g,h \in G}a_f(b_gc_h)f(gh) = \sum_{f,g,h \in G} (a_fb_g)c_h(fg)h = (\alpha\beta)\gamma$
 \newItem  $\alpha(\beta + \gamma) = \left( \srg{g}{G}{a} \right) \left(\srg{g}{G}{b} + \srg{g}{G}{c} \right) = \srg{g}{G}{a} \left( \sum_{g \in G}(b_g+c_g)\right) = \sum_{g,h \in G}a_g(b_h+c_h)gh  = \sum_{g,h \in G} a_gb_hgh + \sum_{g,h \in G} a_gc_hgh = \alpha\beta + \alpha\gamma$  
 \newItem $(\alpha + \beta)\gamma = \left( \sum_{g\in G}(a_g+b_g)g\right) \left(\srg{g}{G}{c}\right) = \sum_{g,h \in G} (a_g+b_g)c_hgh = \sum_{g,h \in G}a_gc_hgh + \sum_{g,h\in G}b_gc_hgh = \alpha\gamma + \beta\gamma$ 
 \end{bulletList}
-\end{proof}
+\end{proof*}
 Para enriquecer la estructura algebraica de $RG$, se introduce una operación mas sobre $RG$.
 \begin{definicion}
 Sea $\lambda \in R$ entonces se define el producto por elementos del anillo como: 
@@ -91,7 +91,7 @@ Con esta definición se estable el siguiente:
 \begin{teorema}
 $RG$ es un \modulo{R}.
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Ya se estableció en el teorema \ref{grupo} que $(RG,+)$ es un grupo aditivo. De la definición anterior se sigue que $\lambda\gamma \in RG$. Ahora se procede por incisos: 
 \begin{bulletList}
 \newItem $(\lambda_1+\lambda_2)\alpha = \sum_{g \in G} (\lambda_1+\lambda_2)a_gg = \srg{g}{G}{\lambda_1 a} + \srg{g}{G}{\lambda_2 a} = \lambda_1\alpha + \lambda_2\alpha$.
@@ -100,7 +100,7 @@ Ya se estableció en el teorema \ref{grupo} que $(RG,+)$ es un grupo aditivo. De
 \newItem $1_R\alpha = \sum{g \in G}1_Ra_gg = \srg{g}{G}{a}$.
 \end{bulletList}
 Y con esto concluye la prueba. \qedhere
-\end{proof}
+\end{proof*}
 Una extensión del resultado anterior es que si $R$ es un anillo conmutativo entonces $RG$ es un álgebra sobre $R$. Se puede resaltar que si $R$ es conmutativo  entonces el rango de $RG$ como módulo libre sobre $R$ está bien definido, de hecho si $G$ es finito se tiene que $\rango(RG) = |G|$.
 
 Un resultado de mucha importancia en los grupo-anillos, es el que relaciona a estos con los homomorfismos, que es uno de los objetivos del álgebra.
@@ -117,20 +117,20 @@ RG \ar@{--}[ru]_{f^*} & }\]
 \label{fig:diagramaProposicion}
 \end{figure}
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Considérese la función $f^* \colon RG \to A$ tal que $f^*(g)=\sum_{g\in G}a_gf(g)$. Ahora solo falta hacer los cálculos correspondiente para mostrar que $f^*$ es un homomorfismo de anillos. En efecto, $f^*(\alpha + \beta ) = \sum_{g \in G}(a_g + b_g)f(g) = \sum_{g \in G}a_gf(g) + \sum_{g \in G}b_gf(g) = f^*(\alpha) + f^*(\beta) $. 
 
 Similarmente $f^*(\alpha\beta)=\sum_{g,h\in G}a_gb_hf(gh)= \sum_{g,h\in G}a_gb_hf(g)f(h) = f^*(\alpha)f^*(\beta)$. Ahora sea $r \in R$ entonces $f^*(r\alpha)=\sum_{g\in G}ra_gf(g)=r\sum_{g\in G}a_gf(g)=rf^*(\alpha)$
 Sea $x \in G$ entonces $i(x) = \srg{g}{G}{a}$ donde $a_g = 1$ si $g = x$ y $a_g= 0$ en cualquier otro caso, por lo tanto $f^*(i(g))= \sum_{g \in G} a_gf(g)=f(x)$. De los cálculos anteriores se sigue que $f^*\circ i = f$, con lo cual concluye la prueba. 
 \qedhere
-\end{proof}
+\end{proof*}
 De la proposición anterior se deriva un corolario que será de utilidad en el desarrollo del trabajo.
 \begin{corolario}\label{cor:aumento}
 Sea $f \colon G \to H$ un homomorfismo de grupos. Entonces, existe un único homomorfismo de anillos $f^* \colon RG \to RH$ tal que $f^*(g) = f(g)$ para cualquier $g \in G$. Si $R$ es conmutativo, entonces $f^*$ es un homomorfismo de $R-$ álgebras, mas aún si $f$ es un epimorfismo (monomorfismo), entonces $f^*$ es también un epimorfismo (monomorfismso)
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Usar el teorema anterior con $A=RH$ lo anterior se puede hacer porque $RH$ es un anillo que contiene a R y hay una copia de $H$ en $RH$, con lo cual se deriva que debe existir $f^*$ homomorfismo $R-$ lineal de anillos tal que $f^*(g)=f(g)$ para cualquier elemento $g \in G$.
-\end{proof}
+\end{proof*}
 De hecho la proposición \ref{up} se puede utilizar como una definición de $RG$, como se sigue de la siguiente proposición:
 \begin{proposicion}
 Sea $G$ un grupo y $R$ un anillo. Sea $X$ un anillo que contiene a $R$ y $\nu \colon G \to X$ una función tal que $\nu (gh) = \nu(g)\nu(h)$ para todo $g,h \in G$ y tal que, para todo anillo $A$ que contiene a $R$ y cualquier función $f \colon G \to A$ que satisface $f(gh) = f(g)f(h)$ para todo $g, h \in G$, existe un único homomorfismo $R$-lineal $f^* \colon X \to A$ tal que el diagrama de la figura \ref{fig:alternativa para RG} es conmutativo: 
@@ -149,7 +149,7 @@ Entonces $X \simeq RG$
 \end{proposicion}
 
 
-\begin{proof}
+\begin{proof*}
 La demostración es tan simple como notar que el  diagrama de la figura \ref{fig:categorias} conmuta con $I_X$
 
 \begin{figure}[h!]
@@ -160,7 +160,7 @@ La demostración es tan simple como notar que el  diagrama de la figura \ref{fig
 \caption*{Fuente: elaboración propia con paquete \textbf{xymatrix} para computadora.}
 \label{fig:categorias}
 \end{figure}
-\end{proof}
+\end{proof*}
 \begin{nota}
 Si en el corolario \ref{aumento} se hace $H=\{1\}$ y se considera la función $m \colon G \to \{1\}$ entonces esta función induce un homomorfismo de anillos $\epsilon \colon RG \to R$ tal que $\epsilon\left(\srg{g}{G}{a}\right) = \sum_{g \in G} a(g)$. 
 \end{nota}
@@ -192,16 +192,16 @@ satisface:
 \newItem $\alpha^* = \alpha$.
 \end{bulletList}
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Se procede por incisos:
 \begin{bulletList}
 \newItem $\left( \sum_{g \in G} (a_g +b_g)g\right)^* =  \sum_{g \in G} (a_g +b_g)g^{-1} = \alpha^* + \beta^*$.
 \newItem  $\left( \sum_{g, h \in G} (a_gb_h)gh\right)^* = \sum_{g,h \in G} a_gb_hh^{-1}g^{-1} = \sum_{g,h \in G} b_h a_g h^{-1}g^{-1} = \beta^*\alpha^*$.
 \newItem  $\left(\left( \srg{g}{G}{a}\right)^*\right)^* = \left(\sum_{g\in G}a_gg^{-1}\right)^* = \srg{g}{G}{a}$.
 \end{bulletList}
-\end{proof}
+\end{proof*}
 %----------------------------------------------------------> Ideales de Aumento
-\section{Ideales de aumento}
+\section{\hskip 1em Ideales de aumento}
 En lo que sigue es de mucho interés encontrar condiciones de $R$ y $G$ que permitan descomponer a $RG$ como sumas directas de ciertos subanillos. Será de especial interés conocer cuando $RG$ es un anillo semisimple para así poder escribirlo como sumas directas de ideales minimales. \\
 
 
@@ -219,7 +219,7 @@ Cuando se esté trabajando con un anillo fijo $R$ se omitirá el subíndice y po
 \begin{lema}
 Sea $H$ un subgrupo de un grupo $G$ y sea $S$ el conjunto de los generadores de $H$. Entonces, el conjunto $\{ s-1 : s \in S \}$ es un conjunto de generadores de $\Delta (G,H) $ como ideal por izquierda de $RG$.
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Como $S$ es un conjunto de generadores de $H$, cada elemento $1 \neq h \in H$ puede ser escrito en la forma $h=s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_r^{\epsilon_r} $ donde $s_i \in S$ y $\epsilon_i =\pm 1$, $1 \leq i \leq r$. Por lo tanto es suficiente probar que todo elemento de la forma $h-1$ con $h \in H$  pertenece al ideal generado por $\{s-1 : s \in S \}$. Para hacer esto se procede por inducción matemática sobre $r$. 
 
 Caso Base: nótese que el menor caso sucede en $r =2$. Por lo tanto sea $h \in H$ entonces $h-1 = s_1^{\epsilon_1} s_2^{\epsilon_2} = s_1^{\epsilon_1}( s_2^{\epsilon_2} -1 ) + ( s_1^{\epsilon_1} -1 ) \in (S)  $ donde (S) es el ideal generado por $\{ s-1 : s \in S \}$.
@@ -228,17 +228,17 @@ Hipótesis de Inducción: supóngase que cualquier expresión de la forma \[(s_1
 
 
 Conclusión: considérese la expresión de la forma $ (s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k}s_{k+1}^{\epsilon_{k+1}} -1) $, hágase la sustitución $x =  s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k} $ entonces $ (s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k}s_{k+1}^{\epsilon_{k+1}} -1)  = x s_{k+1}^{\epsilon_{k+1}} -1 = x( s_{k+1}^{\epsilon_{k+1}} -1 ) + (x-1) \in (S) $ ya que $x-1, x( s_{k+1}^{\epsilon_{k+1}} -1 ) \in (S)$ por la hipótesis de inducción. La prueba está casi completa, sola falta decir que si apareciera algún $\epsilon_i = -1$ se aplica la factorización $y^{-1}-1 = y^{-1}(1-y)$ y el problema está resuelto.
-\end{proof}
+\end{proof*}
 Para dar un mejor caracterización de $\Delta_R (G,H)$, denótese con $\mathcal{T} = \{q_i\}_{i \in I}$ un conjunto completo de representantes de clases izquierdas de $H$ en $G$, un \textit{transversal} de $H$ en $G$. Se asumirá que siempre se elige como representante de la clase $H$ en $\mathcal{T}$ a la unidad de $G$. De esa manera todo elemento $g \in G$ puede ser escrito de manera única en la forma $g = q_ih_j$ con $q_i \in \mathcal{T}$ y $h_j \in H$
 \begin{proposicion}
 El conjunto $B_H = \{q(h-1) : q \in \mathcal{T}, h \in H, h \neq 1  \}$ es una base de $\Delta_R(G,H)$ sobre $R$.
 \end{proposicion} 
-\begin{proof}
+\begin{proof*}
 Se procede en dos partes, primero se debe probar que el conjunto dado es linealmente independiente y luego que también es un generador de $\Delta_R(G,H)$. 
 Independecia lineal: supóngase que se tiene una combinación lineal de elementos de $B_H$ que se anula, esto es $\sum_{i,j}r_{ij}q_i(h_j-1) =0 $ con $r_{ij} \in R$. De lo anterior se sigue que $\sum_{i,j}r_{ij}q_i(h_j)-\sum_{i,j}r_{ij}q_i = 0$ por lo tanto $ \sum_{i,j}r_{ij}q_i(h_j) = \sum_{i,j}r_{ij}q_i $ lo cual se puede escribir como $\sum_{i,j}r_{ij}q_ih_j =  \sum_i\left( \sum_jr_{ij}q_i \right)$. En la igualdad anterior se puede observar que como $h_j \neq 1$ entonces necesariamente el lado izquierdo de la ecuación tienen distinto soporte que el lado derecho, por lo tanto ambos deben ser igual a cero, pero los elementos de $G$ son linealmente independientes sobre $R$ entonces $r_{ij} = 0$  para todo $i,j$.
 
 Generador: se debe probar que $B_H$ es generador de $\Delta_R(G,H)$ para esto es suficiente demostrar que $g(h-1)$  se puede expresar  como combinación lineal de elementos de $B_H$. Para esto basta recordar que $g = q_ih_j$ para algún $q_i \in \mathcal{T}$ y $h_j \in H$ entonces $g(h-1) = q_ih_j(h-1) = q_i(h_jh-1)+ (q_i-1) $ con lo que se demuestra lo que se pedía. 
-\end{proof}
+\end{proof*}
 \begin{nota}
 Si $G=H$ en la proposición anterior entonces $\mathcal{T} = \left\{ 1 \right\}$ y por lo tanto $B_H = \left\{ (h-1 , h \in H, h \neq 1) \right\}$ y así esto se reduce a la proposición \ref{gen}. 
 \end{nota}
@@ -250,7 +250,7 @@ tal que
 Con la notación anterior
 $$\ker(\omega^*) =\Delta(G,H)$$
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Considérese de nuevo $\mathcal{T}$ el transversal de $H$ en $G$. Entonces, cada elemento $\alpha \in RG$ se puede escribir como $ \alpha = \sum{i,j} r_{ij} q_ih_j$, $r_{ij} \in R$, $q_i \in \mathcal{T}$, $h_i \in H$. Si se denota $\overline{q_i} = \omega(q_i)$ entonces se tiene
 \[\omega^*(\alpha) = \sum_i\left(\sum_jr_{ij}\right)\overline{q_i}. \]
 Entonces, $\alpha \in \ker(\omega^*)$ si y sólo si $ \sum_jr_{ij} = 0 $ para cada calor de $i$. Entonces si se tiene un $\alpha \in \ker(w^*)$ se puede escribir
@@ -259,21 +259,21 @@ Entonces, $\alpha \in \ker(\omega^*)$ si y sólo si $ \sum_jr_{ij} = 0 $ para ca
  &=& \sum_{ij}r_{ij}q_i(h_j-1) \in \Delta(G,H).  
 \end{eqnarray*}
 Con lo cual se tiene que $\ker(\omega^*) \subset \Delta(G,H)$. El hecho que $\Delta(G,H) \subset \ker(\omega^*)$ es trivial, por lo tanto $\ker(\omega^*) = \Delta(G,H)$.
-\end{proof}
+\end{proof*}
 \begin{corolario}
 Sea $H$ un subgrupo normal de $G$. Entonces $\Delta(G,H)$ es un ideal bilateral de $RG$ y
 \[\frac{RG}{\Delta(G,H)} \simeq R(G/H)\]
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Como $\ker(\omega^*) = \Delta(G,H)$ entonces por el primer teorema de isomorfía $ \frac{RG}{\Delta(G,H)} \simeq Im(\omega^*) $ pero como $\omega^*$ es sobreyectiva entonces $Im(\omega^*) = R(G/H)$ con lo que concluye la prueba. 
-\end{proof}
+\end{proof*}
 Hasta este punto se ha visto que hay una relación entre subgrupos normales de $G$ y los ideales bilaterales de $RG$, es decir, se pueden construir funciones de $\mathcal(S) $ a $\mathcal{I}(RG)$. La pregunta es entonces, ¿qué pasa con las funciones en la otra vía? Para responder esa pregunta considérese 
 \[\nabla(I) = \{ g \in G \colon  g-1 \in I\}.\]
 Es fácil notar que $\nabla(I) = G \cap (1+I)$
 \begin{lema}
 $\nabla(I)$ es subgrupo de $G$
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Se debe probar dos cosas:
 \begin{bulletList}
 \newItem Sean $g_1,g_2 \in \nabla(I)$ entonces 
@@ -281,28 +281,28 @@ Se debe probar dos cosas:
 por lo tanto $g_1g_2 \in \nabla(I)$.
 \newItem Si $g \in \nabla(I)$ entonces $g^{-1} -1 = g^{-1}(1-g) \in I$ de donde se sigue que $g^{-1} \in \nabla(I)$. 
 \end{bulletList}
-\end{proof}
+\end{proof*}
 \begin{lema}
 Si $I$ es un ideal bilateral entonces $\nabla(I) \lhd G$.
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Se quiere probar que $gig^{-1} \in \nabla(I)$ entonces todo se reduce a demostrar que $gig^{-1} -1 \in I$. Nótese que $gig^{-1}-1 = gi(g^{-1}-1)+(gi-1) $ como $I$ es ideal bilateral, entonces $gi(g^{-1}-1) \in I$ y $(g_i-1) \in I$  por lo tanto $gig^{-1} \in I$. 
-\end{proof}
+\end{proof*}
 \begin{proposicion}
 Si $H \in \mathcal(S)(G)$ entonces $\nabla(\Delta(G,H)) = H$. 
 \end{proposicion}
-\begin{proof}
+\begin{proof*}
 Sea $1 \neq x \in \nabla(\Delta(G,H))$ entonces $x-1 \in \Delta(G,H)$ por lo tanto se puede escribir 
 \[x-1 = \sum_{i,j}r_{ij}q_i(h_j-1).\]
 Como 1 aparece en el lado izquierdo de la ecuación también debe aparecer en el lado derecho, por lo tanto alguno de los $q_i$ debe ser igual a uno y por lo tanto hay en término de la forma $r_{1j}(h_j-1)$ . Nótese que todos los elementos de $G$ del lado derecho de la ecuación son distintos a pares pero $x$ debe aparecer allí, por lo tanto $x = h_j$. De lo anterior es inmediato que $\nabla(\Delta(G,H)) \subset H$. La otra contención es trivial. 
-\end{proof}
+\end{proof*}
 Según lo expuesto en la proposición anterior parece ser que $\nabla$ y $\Delta$ son funciones inversas la una de la otra, pero esto no es cierto. 
 Si se toma un ideal $I \in \mathcal(I)(RG)$ entonces ¿qué pasa con $\Delta(G,\nabla(I))$? Pues bien, sea $x \in \Delta(G, \nabla (I))$ entonces $x = \sum_{i,j} r_{ij}q_i(m_j-1)$ , $m_j \in \nabla(I)$ por lo tanto $m_j -1\in I$ y de allí que $x \in I$. Con eso se ha probado que $\Delta(G,\nabla(I)) \subset I$, pero la igualdad no es necesariamente cierta. Considérese $I=RG$ entonces $\nabla(RG) = G$ de donde $\Delta (G,\nabla(RG)) = \Delta G \neq RG $
 
 
 %--------------------------------------------------------------------->Semisimplicidad
 
-\section{Semisimplicidad}
+\section{\hskip 1em Semisimplicidad}
 Con lo visto en la anterior sección ahora es accesible determinar condiciones necesarias y suficientes de $R$ y $G$ para que $RG$ sea semisimple.
 Pero antes se probarán algunos resultados técnicos acerca de aniquiladores. 
 
@@ -325,7 +325,7 @@ $$Ann_d(\Delta(G,H)) = \hat{H} \cdot RG $$
 Mas aún, si $H \lhd G$ entonces $\hat{H}$ es central en $RG$ y 
 \[Ann_d(\Delta(G,H)) = Ann_i(\Delta(G,H)) = RG \cdot \hat{H}\]
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Supóngase que $Ann_d(\Delta(G,H)) = \{ 0\}$ y considérese $\alpha = \srg{g}{G}{a} \in RG$, $\alpha \in Ann_d(\Delta(G,H))$ entonces
 \begin{eqnarray}
 (h-1)\alpha &=& 0  \quad \mbox{para cada } h \in H  \nonumber \\
@@ -340,7 +340,7 @@ De nuevo analizando la ecuación \ref{ep} se deduce que dado $g_0 \in \sop(\alph
 Lo anterior muestra que si $H$ es finito entonces $Ann_d(\Delta(G,H))\subset \hat{H}RG$. Por otro lado $h\hat{H} = \hat{H}$ ya que $H$ es finito, entonces $h\hat{H} -\hat{H} = 0$ y por consiguiente $(h-1)\hat{H} = 0$ de donde $\hat{H}RG \subset Ann_d(\Delta(G,H))  $
 
 Por último si $H \lhd G$ entonces para todo $g$ elemento de $G$ se cumple que $gHg^{-1} = H$ de donde $g\hat{H}g^{-1} = \hat{H}$ y se concluye que $\hat{H}g = g\hat{H}$ lo cual prueba que $\hat{H}$ es central en $RG$ y de allí se sigue fácilmente la conclusión. \qedhere
-\end{proof}
+\end{proof*}
 
 Del lema anterior se sigue el siguiente corolario.
 
@@ -354,26 +354,26 @@ Sea $G$ un grupo finito. Entonces
 \end{corolario}
 
 
-\begin{proof}
+\begin{proof*}
 Se procede por incisos:
 \begin{bulletList}
 \newItem Ya se ha establecido que $\Delta(G,G) = G$, por lo tanto hágase $H=G$ en el teorema anterior y el resultado es inmediato.
 \newItem Sea $x \in Ann_d(\Delta G) \cap \Delta G$ entonces $x = a\sum_{g\in G}g$ y además $x \in \ker(\omega^*)$ por tanto $\ker(x)= a\omega^*\hat{G} = a|G| = 0 $. \qedhere
 \end{bulletList}
-\end{proof}
+\end{proof*}
 \begin{lema}
 Sea $I$ un ideal bilateral de $R$. Supóngase que existe un ideal por la izquierda $J$ tal que $R = I \oplus J$ (como $R-$ módulos). Entonces $J \subset Ann_d(I) $
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Sea $x \in J$ y $y \in I $ entonces $yx \in J$, $yx \in I$ entonces $yx \in J\cap I$ por lo tanto $yx=0$ de donde $x \in Ann_d(I)$, por consiguiente $J \subset Ann_d(J)$ \qedhere 
-\end{proof}
+\end{proof*}
 \begin{lema}\label{aumento}
 Si el ideal de aumento de $RG$ es un sumando directo de $RG$ como un $RG-$módulo entonces $G$ es finito y $|G|$ es invertible en $R$.
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Las condiciones anteriores aseguran que existe $J$ como en el lema anterior tal que $RG = \Delta G \oplus J$, de donde $J \subset \Delta G$  y por tanto $\Delta G \neq \{ 0 \}$, con lo cual $G$ es necesariamente finito.
 Por otra parte $1 \in RG$ entonces $1 = e_1 + e_2$ donde $e_1 \in \Delta G$ y $e_2=a\hat{G}$, de lo cual se sigue que $\epsilon(1) = 1 = \epsilon(e_1) + \epsilon(e_2)$ pero $\epsilon(e_1) = 0$ por ser $\Delta G$ el núcleo de $\epsilon$ por ende se tiene $a|G| = 1$ con lo que se ha mostrado lo pedido. \qedhere
-\end{proof}
+\end{proof*}
 Ahora se está en disposición de determinar condiciones necesarias y suficientes en $R$ y $G$ para que el grupo-anillo $RG$ sea semisimple. Los primeros resultados que apuntaron en esta dirección fueron dados por Maschke, logros que están plasmados en el siguiente teorema:
 \begin{teorema}[Maschke]
 Sea $G$ un grupo. Entonces, el grupo-anillo $RG$ es semisimple si y sólo si las siguientes condiciones son verdaderas:
@@ -383,7 +383,7 @@ Sea $G$ un grupo. Entonces, el grupo-anillo $RG$ es semisimple si y sólo si las
 \newItem $|G|$ es invertible en $R$
 \end{bulletList}
 \end{teorema}
-\begin{proof}
+\begin{proof*}
 Se procederá a probar las implicaciones en ambos sentidos:
 \begin{bulletList}
 \newItem En esta parte se asume que $RG$ es semisimple, por lo tanto se puede utilizar el hecho que $\frac{RG}{\Delta (G)} = R$. De lo anterior se deduce que $R$ es un cociente y ya se ha demostrado que los cocientes son simples. Por otro lado se sabe que $\Delta (G)$ es un ideal y de la semisimplicidad de $RG$ se sabe que $\Delta (G)$ es sumando directo y del lema \ref{aumento} se asegura que la segunda y tercera condición se satisfacen. 
@@ -406,7 +406,7 @@ De lo anterior se sigue que $Im(\pi^*) \subset M$ y además $(\pi^*)^2 = \pi $. 
 
 De esta manera se tiene que $\ker(\pi^*)$ es un $RG$-submódulo tal que $RG = M \oplus ker(\pi^*)$.
 \end{bulletList}
-\end{proof} 
+\end{proof*} 
 
 Como es usual en ciencias, se explorará un caso particular del teorema anterior con la interrogante natural ¿qué pasa si en lugar de un anillo se considera un campo? La pregunta anterior se reduce a contemplar el caso $R = K$, donde $K$ es un campo. Un campo siempre es semisimple, además se sabe que $|G|$ es invertible siempre y cuando $|G| \neq 0$, es decir, $\car(K) \nmid |G|$, de donde se sigue el siguiente corolario:
 \begin{corolario}\label{cor:car}
@@ -444,16 +444,16 @@ Sea $G$ un grupo finito y $K$ un campo algebraicamente cerrado tal que $\car(K) 
 \[Kg \simeq \oplus_{i=1}^{r} M_{n_i}(K)\]
 y $n_1^2 + n_2^2 + \dots + n_r^2 = |G|$.
 \end{corolario}
-\begin{proof}
+\begin{proof*}
 Como $\car(K) \nmid |G|$ es inmediato que 
 \[KG \simeq \oplus_{i=1}^{r} M_{n_i}(D_i),\]
 donde $D_i$ es un anillo de división conteniendo una copia de $K$ en su centro. Calculando la dimensión sobre $K$ en ambos lados de la ecuación se tiene:
 \[ |G| = \sum_{i=1}^{r} n_i^2[D_i:K],\]
 de donde se sique que cada anillo de división $D_i$ es de dimensión finita. Sea $0 \neq d_i \in D_i$ entonces $kd_i = 0$ implica que $k=0$. Similarmente, dado $a_i \in D_i$ tal que $kd_i 0 a_i$ se tiene que $k = a_id_i^{-1} \in K$ por ser $K$ algebraicamente cerrado y por lo tanto $[D_i:K = 1]$ y $D_i = K$ para $1 \leq i \leq r$, con lo cual concluye la demostración. 
-\end{proof}
+\end{proof*}
 
 %------------------------------> grupo-algebras de grupos abelianos
-\section{Grupo-Algebras de grupos abelianos finitos}\label{sec:codigos}
+\section{\hskip 1em Grupo-álgebras de grupos abelianos finitos}\label{sec:codigos}
  En esta sección se dará una descripción completa de grupo-anillo cuando el grupo es finito y además abeliano. 
  
  Como en la parte final de la sección anterior, se supone que $K$ es un campo tal que $\car(K) \nmid |G|$. Esta caracterización fue dada por primera vez por S. Perlis y G Walker (dar la referencia). 
@@ -526,12 +526,12 @@ Sea $G$ un grupo finito abeliano de orden $n$ y sea $K$ un campo tal que $\car(K
 \[  KG \simeq \oplus_{d\mid n}a_dK(\zeta), \]
 donde $\zeta_d$ es una raíz primitiva de la unidad de orden $d$ y $a_d = \frac{n_d}{[K(\zeta_d):K]}$. En esta expresión $n_d$ denota el número de elementos de orden $d$ en $G$.
 \end{teorema} 
-\begin{proof}
+\begin{proof*}
 Para proceder con la demostración es necesario enunciar y demostrar los siguientes lemas:
 \begin{lema}\label{lema1}
 Sea $R$ un anillo conmutativo y $G, H$ grupos, entonces $R(G \times H) \simeq (RG)H$ (el grupo-anillo de $H$ sobre el anillo $RG$)
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Considérese el conjunto $M_{n,\gamma} = \{ g: (g,h) \in \sop(\gamma)\}$. y la función $f \colon R(G \times H) \to (RG)H$ tal que $\gamma \mapsto \beta $ donde $\beta = \sum_{h \in H} \alpha_hh $  con $\alpha_h = \sum_{g \in M_{h,\gamma}}a_{gh}g$. Se debe demostrar que $f$ es una función biyectiva y además es un homomorfismo de anillos.
 Para demostrar que $f$ es un homomorfismo primero se prueba que dicha función conserva sumas.
 Sea $\gamma_1, \gamma_2 \in R(G \times H),\quad \gamma_1 = \sum_{g \in G, h \in H}a_{gh}(g,h), \quad  \gamma_2 = \sum_{g\in G, h\in H}b_{gh}(g,h)$. De esta forma se tiene $f(\gamma_1) = \sum_{h \in H}\beta_hh, \quad \beta_h = \sum_{g\in M_{h,\gamma_1}}a_{gh}h$ y $f(\gamma_2) = \sum_{h\in H}\xi_hh,\quad \xi_h = \sum_{g \in M_{h,\gamma_2}}b_{gh}h$.
@@ -556,11 +556,11 @@ Para demostrar que $f$ es inyectiva se debe probar que el único elemento que an
 
 Dado $\sum_{h \in h}\alpha_hh \in (RG)H$ se construye $\gamma = \sum_{g \in G, h\in H}a_{gh}(g,h)$, donde $a_{gh}$, es decir, el coeficiente de $(g,h)$ es el mismo que el de $g$ en $\alpha_h$, con esto se demuestra que $f$ es sobreyectiva, con lo que concluye la prueba. 
 \qedhere
-\end{proof}
+\end{proof*}
 \begin{lema}\label{lema2}
 Sea $\{R_i\}_{i\in I}$ una familia de anillos y sea $R = \oplus_{i \in I}R_i$. Entonces para cualquier grupo $G$ se tiene $RG \simeq \oplus_{i \in I}R_iG$
 \end{lema}
-\begin{proof}
+\begin{proof*}
 Considérese la función $f \colon \oplus_{i \in I}R_iG \to RG$ dado por $(\alpha_1, \cdots, \alpha_n) \mapsto \sum_{g \in G}a_gg, \quad a_g = (a_g^{(1)}, \cdots, a_g ^{(n)})$, donde $a_g^{(i)}$ es el coeficiente de $g$ en $\alpha_i = \sum_{g \in G}a_g^{(i)}g$. Se debe comprobar que $f$ es un homomorfismo de anillos.
 Sean $\alpha = (\alpha_1, \cdots, \alpha_n), \quad \beta = (\beta_1, \cdots, \beta_n) \in \oplus_{i \in I}R_iG$, entonces su suma viene dada por $\gamma = (\alpha_1 + \beta_1, \cdots, \alpha_n + \alpha_n)$, y con ello la imagen de la suma seria $f(\gamma) = \sum_{g \in G}c_gg, \quad c_g = (a_g^{(1)}, \cdots, a_g^{(n)})$. 
 
@@ -579,7 +579,7 @@ Por otro lado, $f(\alpha) = \sum_{g \in G}a_gg, \quad f(\beta) = \sum_{g \in G}b
 Se procede a demostrar que $f$ es inyectiva. Para ello supóngase que $f(\alpha) = \sum_{g\in G}a_gg = 0$ entonces $a_g = (0, \cdots, 0)$, de donde $\alpha = (0, \cdots, 0)$. 
 
 Dado $\sum_{g \in G}a_gg, \quad a_g = (a_g^{(1)}, \cdots, a_g^{(n)})$. Entonces se construye \[\alpha= \left( \sum_{g\in G}a_g^{(1)}g, \cdots, \sum_{g\in G}a_g^{(n)}g  \right).\] De esto, se puede verificar que $f(\alpha) = \sum_{g \in G}a_gg$, con lo que se prueba que $f$ es sobreyectiva. \qedhere
-\end{proof}
+\end{proof*}
 
 
 
@@ -599,4 +599,4 @@ Sea $d = [d_1, d_2]$ entonces por el teorema del elemento primitivo, se tiene $K
 \[ KG \simeq \oplus_{d\mid n}a_dK(\zeta_d),\]
 donde $a_d = \sum_{d1,d2}a_{d_1}a_{d_2}$ y donde la  suma recorre todos los $d_1,d_2$ son números naturales tales que $[d_1,d_2] = d$. Por otro lado, del hecho que \[[K(\zeta_d):K] = [K(\zeta_{d_1, \zeta_{d_2}}): K(\zeta_{d_1})][K(\zeta_{d_1}):K]\]  se tiene que: 
 \[ a_d[K(\zeta_{d} :K)] = \sum_{d_1,d_2}a_{d_1}a_{d_2}[K(\zeta_{d_1, \zeta_{d_2}}): K(\zeta_{d_1})][K(\zeta_{d_1}):K] = \sum_{d_1,d_2}n_{d_1}n_{d_2}.\] \qedhere
-\end{proof}
+\end{proof*}

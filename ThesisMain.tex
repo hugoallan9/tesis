@@ -1,7 +1,7 @@
 %-----------------------Inicio Preámbulo-----------------------------------------------
 \documentclass[letterpaper,12pt]{thesis}
 \raggedbottom
-\usepackage{layouts}
+\usepackage{layout}
 \usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{tikz}
@@ -10,11 +10,13 @@
 \usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
 \usepackage{latexsym,wasysym}
 %manejando los margenes
-\usepackage[paper=letterpaper, marginparsep=0in,footskip = 0.7505cm, marginparwidth= 0in, headsep= 0in, headheight= 0in, top=4cm, bottom=2.5cm,left=4cm,right=2.5cm,twoside]{geometry}
+\usepackage[letterpaper, textwidth=5.94095 in, textheight=21.3 cm, footskip = 0.815cm, left=1.5748 in, top=1.55480315in,twoside ]{geometry}
+%\usepackage[paper=letterpaper, marginparsep=0in,footskip = 0.7505cm, marginparwidth= 0in, headsep= 0in, headheight= 0in, top=4cm, bottom=2.5cm,left=4cm,right=2.5cm,twoside]{geometry}
 \usepackage{textcomp}
 \usepackage[all]{xy}
 \usepackage{longtable}
 \usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand{\listfigurename}{ÍNDICE DE ILUSTRACIONES}}
 \usepackage{bibthesis,color, enumerate, indentfirst}
 \usepackage{hyperref,url,breakurl}
 \usepackage{ dsfont }
@@ -24,65 +26,108 @@
 %para cambiar letra de subcaption a 10 pt
 \usepackage{etoolbox}
 \usepackage[nodisplayskipstretch]{setspace}
+%Paquete para el manejo del Indice
+\usepackage[titles]{tocloft}
+
+
+
+
+%---------------------------Fin Preambulo------------------------------------------------
+%------------Nueva Definicion para ámbito proof.
+\makeatletter
+\newenvironment{proof*}[1][\proofname]{\par
+  \pushQED{\qed}%
+  \normalfont \partopsep=\z@skip \topsep=\z@skip
+  \trivlist
+  \item[\hskip\labelsep
+        \itshape
+    #1\@addpunct{.}]\ignorespaces
+}{%
+  \popQED\endtrivlist\@endpefalse
+}
+\makeatother
 
 
 \makeatletter
 \g@addto@macro\normalsize{%
-  \setlength\abovedisplayskip{1.5em}
-  \setlength\belowdisplayskip{1.5em}
-  \setlength\abovedisplayshortskip{1.5em}
-  \setlength\belowdisplayshortskip{1.5em}
+  \setlength\abovedisplayskip{1.81em}
+  \setlength\belowdisplayskip{1.81em}
+  \setlength\abovedisplayshortskip{1.81em}
+  \setlength\belowdisplayshortskip{1.81em}
 }
-
-%---------------------------Fin Preambulo------------------------------------------------
-
-
 %-------------Implementacion distancia titulos, subtitulos, etc -------------
 \titlespacing{\section}{0pt}{*0.1}{*0.1} % <------  Separación ente el titulo de seccion y parrafo y seccion y titulo.
-\titlespacing{\subsection}{2cm}{*0.1}{*0.1} % <------  Separación ente el subtitulo y el inicio de párrafo.
+\titlespacing{\subsection}{1.76cm}{*0.1}{*0.1} % <------  Separación ente el subtitulo y el inicio de párrafo.
 
 
 
-%------------Comandos para las figuras-----------
+%------------Sección de comandos-----------
+\decimalpoint %<--------- para manejar punto decimal en lugar de coma decimal
+\setlength{\parindent}{1cm}%<-------------------------sangría
+%\setlength{\parskip}{7mm}
+\setlength{\parskip}{1.37\baselineskip}%<---------------distancia entre párrafos
+\setstretch{1.45}    
+%\renewcommand\baselinestretch{1.5}               %<-----------------interlineado
+\setlength\LTleft{0pt} \setlength\LTright{0pt} %<------------- parametros para tablas largas
 
 
 
 
-\decimalpoint
-\newenvironment{myproof}[1][\proofname]
- {\par\pushQED{\qed}%
-  \normalfont \topsep6\p@\@plus6\p@\relax
-  \trivlist
-  \item[\hskip\labelsep\itshape#1\@addpunct{.}]\par\noindent}
- {\popQED\endtrivlist\@endpefalse}
-\makeatother
-\makeatletter
-\patchcmd{\caption@@@make}% <cmd>
-  {\ifcaption@star}% <search>
-    {\ifcaption@star\footnotesize}% <replace>
-    {}{}% <success><failure>
-\makeatother
-
-\hypersetup{pdftitle = {tituloDePDF}, pdfkeywords = {poner un listado de palabras clave}, pdfauthor = {\textcopyright\ 2012, Hugo Allan García Monterrosa (hugoallangm@gmail.com)}, pdfsubject = {Trabajo
-de graduación para obtener la Licenciatura en Matemática Aplicada},
-pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
-{true}}
 
 
-\setlength{\parindent}{1cm}              % sangr�a
-\setlength{\parskip}{1.3\baselineskip}              % distancia entre p�rrafos
 
-\setstretch{1.48}                   % interlineado
 
-\setlength\LTleft{0pt} \setlength\LTright{0pt} % par�metros para tablas largas
-
-% Citas (sistema lancasteriano) y direcciones web ------------------
+% -------- Modificaciones a Citas (sistema lancasteriano) y direcciones web -------------
 \bibpunct[--]{[}{]}{,}{n}{,}{;}
 \setlength{\bibsep}{21pt}               % distancia entre items en la bibliograf�a
 %\urlstyle{rm}                          % fuente en direcciones web
 
-% Protecci�n de la tabla de contenidos
-\addtocontents{toc}{\protect\setlength{\parskip}{1pt}}
+% ---- Sección de parametrización del Indice General y de ilustraciones -----------------
+%Agregar lineas punteadas del capitulo al numero de pagina
+\renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+%quitar las negrillas para los titulos de los capitulos
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+%Espacio vertical entre capítulos
+\setlength{\cftbeforechapskip}{-.01cm}
+%Espacio vertical entre secciones y capítulo
+\setlength{\cftbeforesecskip}{-0.01cm}
+%Espacio vertical entre subsecciones y secciones
+\setlength{\cftbeforesubsecskip}{-.01cm}
+%Espacio vertical entre subsubsecciones y subsecciones
+\setlength{\cftbeforesubsubsecskip}{-.01cm}
+% Espacio vertical entre figuras
+\setlength{\cftbeforefigskip}{-.01cm}
+% Espacio vertical entre tablas
+\setlength{\cftbeforetabskip}{-.01cm}
+% Espacio del margen al capítulo
+\setlength{\cftchapindent}{0cm}
+% Espacio entre número y capítulo
+\setlength{\cftchapnumwidth}{1.36cm}
+% Espacio del margen a la sección
+\setlength{\cftsecindent}{1.21cm}
+% Espacio entre número y sección
+\setlength{\cftsecnumwidth}{1.27cm}
+% Espacio del margen a la subsección
+\setlength{\cftsubsecindent}{2.93cm}
+% Espacio entre número y la subsección
+\setlength{\cftsubsecnumwidth}{1.48cm }
+% Espacio del margen a la subsección
+\setlength{\cftsubsubsecindent}{4.92cm}
+% Espacio entre número y la subsubsección
+\setlength{\cftsubsubsecnumwidth}{2.25cm}
+% Espacio entre número y figura
+\setlength{\cftfignumwidth}{1.3cm}
+% Espacio del margen a la figura
+\setlength{\cftfigindent}{0cm}
+% Espacio entre número y tabla
+\setlength{\cfttabnumwidth}{1.3cm}
+% Espacio del margen a la tabla
+\setlength{\cfttabindent}{0cm}
+%Para alinear los numeros romanos
+\cftsetpnumwidth{2em}
+
 
 %----------------Definicion de listas----------
 %Para listados enumerados
@@ -102,10 +147,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \end{list}
 }
 
-\newcommand{\newItem}{\item[$\bullet$]}
-
-
-
+%-----------------Definicion de estilos para los teoremas--------------------------------
 \newtheoremstyle{ejem} %
   {\baselineskip} % Space above
   {\topsep} % Space below
@@ -130,19 +172,19 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \theoremstyle{resto}\newtheorem{proposicion}{Proposición}[section]
 \theoremstyle{resto}\newtheorem{propiedad}{Propiedad}[section]
 \theoremstyle{resto}\newtheorem{corolario}{Corolario}[section]
-\theoremstyle{resto}\newtheorem{nota}{Nota}[section]
+\theoremstyle{ejem}\newtheorem{nota}{Nota}[section]
 \newtheorem{solucion}{Solución}[section]
 \newtheorem{problema}{Problema}[section]
-\theoremstyle{resto}\newtheorem{definicion}{Definición}[section]
-\newtheorem{notacion}{Notación}[section]
-\newtheorem{consideracion}{Consideración}[section]
-\newtheorem{ejercicio}{Ejercicio}[section]
+\theoremstyle{ejem}\newtheorem{definicion}{Definición}[section]
+\theoremstyle{ejem}\newtheorem{notacion}{Notación}[section]
+\theoremstyle{ejem}\newtheorem{consideracion}{Consideración}[section]
+\theoremstyle{ejem}\newtheorem{ejercicio}{Ejercicio}[section]
 \theoremstyle{ejem} \newtheorem{ejemplo}{Ejemplo}[section]
 \numberwithin{equation}{chapter}
 \renewcommand{\theequation}{\thechapter.\arabic{equation}}
 %para manejar el estilo de los ejemplos
 
-% Operadores y funciones -------------------------------------------
+%---------------- Operadores y funciones -------------------------------------------
 \DeclareMathOperator{\car}{car}
 \DeclareMathOperator{\rango}{rango}
 \DeclareMathOperator{\sop}{sop}
@@ -152,67 +194,82 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \makeatother
 \newcommand{\srg}[3]{\sum_{#1 \in #2} #3_{#1} #1 }
 \newcommand{\modulo}[1]{R\mbox{-módulo}}
+\newcommand{\newItem}{\item[$\bullet$]}
 
+%-------palabras claves para el documento --------------------------
+\hypersetup{pdftitle = {tituloDePDF}, pdfkeywords = {poner un listado de palabras clave}, pdfauthor = {\textcopyright\ 2012, Hugo Allan García Monterrosa (hugoallangm@gmail.com)}, pdfsubject = {Trabajo
+de graduación para obtener la Licenciatura en Matemática Aplicada},
+pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
+{true}}
 
 
 \begin{document}
 \captionsetup[figure]{labelformat=simple, labelsep=period}
-{ %\setlength{\baselineskip}{1.5\baselineskip}
+\input{portada}
+%Para incluir cartas
+\newpage
+\thispagestyle{empty}
+\mbox{}
+%\includepdf[pages={1}]{Cartas/NormativoGeneral_Evaluacion_y_Promocion.pdf}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+%\includepdf[pages={2}]{Cartas/NormativoGeneral_Evaluacion_y_Promocion.pdf}
+\newpage
+\thispagestyle{empty}
+\mbox{}
 
-%\include{portada} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Portada
+%Para incluir  dedicatoria y agradecimientos
+\input{Dedicatoria}
+\input{Agradecimientos}
 
-%\include{identi} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Identificaci�n
 
-%\include{nomina} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % N�mina de Junta Directiva
+%---------------Inicio del front matter -----------
+\frontmatter     	
+%Índice general
+\tableofcontents
+% Para añadir el Índice de ilustraciones
+%Listado de figuras
+\listoffigures
+%Listado de tablas
+%\listoftables
+\input{Simbolos}  		
+\input{Glosario}		
+\input{Resumen}		
+\input{Objetivos}     	
+\input{intr}  	
+% Modificación para tabla de contenidos
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 
-%\include{hojapr} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Hoja de protocolo
 
-% si las cartas est�n en un fichero PDF, ser� f�cil adjuntarlas con el paquete: pdfpages
-%\include{letter1} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del asesor
-%\include{letter2} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del revisor
-%\include{letter3} %\textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Carta del Director de Escuela
-%\include{letter4} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}   % Orden de impresi�n
-
-%\include{agrade} \textcolor[rgb]{1,1,1}{.} \thispagestyle{empty}    % Agradecimientos
-
-%\include{dedica} \thispagestyle{empty}                              % Dedicatoria
-
-\par}
-
-\frontmatter    % --------------------------------------------------  Hojas preliminares
-
-\tableofcontents    % �ndice general vinculado
-
-{     
-%\onehalfspacing 
-%\setlength{\baselineskip}{1.3\baselineskip}
-%\include{simbolos}  % Lista de s�mbolos
-
-%\include{obje}      % Resumen y objetivos
-
-%\include{intr}      % Introducci�n
-
+% -------------- Inicio del cuerpo de la tesis -----
 \mainmatter
-
-
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter1}
-
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter2}
-
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter3}
-
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter4}
-
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter5}
-
+\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter6}
-\backmatter     % --------------------------------------------------  Apartados finales
 
-\include{c_y_r}     % Conclusiones y recomendaciones
 
-\par}
-
-\include{bbtesis}   % Bibliograf�a
+%----------------Inicio del apartado Final de la tesis ------------------------------
+% Modificación para tabla de contenidos
+%\addtocontents{toc}{\protect\addvspace{+.8cm}}
+     %En el apartado final, las páginas son numeradas como en apartado principal (la numeración continúa) 
+     %pero los capítulos no son numerados. 
+     \backmatter     		
+     % Modificación para tabla de contenidos
+     \addtocontents{toc}{\protect\addvspace{1.8em}}
+     \input{Conclusiones}
+     \input{Recomendaciones}
+     \input{Bibliografia}
+     
 \end{document}
 
 

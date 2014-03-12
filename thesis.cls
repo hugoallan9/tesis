@@ -1,5 +1,6 @@
+
 %%
-%% This is file `book.cls',
+%% This is file `thesis.cls',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
@@ -397,7 +398,7 @@
 %					Definición del comando Chapter 
 %-------------------------------------------------------------------------------------
 \newcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
-                    \thispagestyle{plain}%                      %<--------------------  numeraci�n de p�gina
+                    \thispagestyle{plain}%                      %<--------------------  numeracion de pagina
                     \global\@topnum\z@
                     \@afterindentfalse
                     \secdef\@chapter\@schapter}
@@ -406,7 +407,7 @@
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
                          \addcontentsline{toc}{chapter}%
-                                   {\protect\numberline{\thechapter}#1}%
+                                   {\protect\hskip -0.4em \numberline{ \thechapter}#1}%<--- modificacion del número al titulo en el índice.
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
                        \fi
@@ -422,16 +423,16 @@
                       \@makechapterhead{#2}%
                       \@afterheading
                     \fi}
-\def\@makechapterhead#1{%
-  %\vspace*{0cm}%                             %<------------------ espacio hacia arriba
-  {\parindent \z@ \raggedright \normalfont \centering
+\def\@makechapterhead#1{
+\vspace*{-44\p@}
+{\parindent \z@ \raggedright \normalfont \centering
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
-        \Large \bfseries \thechapter.\        %<-------------------- tipo de letra contador del t�tulo
+        \large \bfseries \thechapter.\ \hskip 4mm        %<-------------------- tipo de letra contador del t�tulo
       \fi
     \fi
     \interlinepenalty\@M
-    \Large \bfseries #1\par\nobreak           %<---------------------- tipo de letra del t�tulo
+    \large  \bfseries #1 \par\nobreak %<---- modificacion de espacio del número al título.  #1\par\nobreak           %<---------------------- tipo de letra del t�tulo
     \vspace{0.55in}                                %\vskip 40\p@
   }}
 \def\@schapter#1{\if@twocolumn
@@ -441,18 +442,19 @@
                    \@afterheading
                  \fi}
 \def\@makeschapterhead#1{%
-  \vspace*{-28\p@}%
+  \vspace*{-50\p@}%-> Controla el espacio del margen a la cabecera
   {\parindent \z@ \raggedright \centering
     \normalfont
     \interlinepenalty\@M
-    \Large \bfseries  #1\par\nobreak
+    \large \bfseries  #1\par\nobreak
     \vskip 40\p@
   }}
 
 \newcommand\section{\@startsection {section}{1}{0cm}%                   %<--------------- sangría en el subtítulo
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
-                                   {\normalfont\normalsize\bfseries}}
+                                   %{\normalfont\normalsize\bfseries}}
+                                    {\normalfont\normalsize\bfseries}}	
 \newcommand\subsection{\@startsection{subsection}{2}{0cm}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
@@ -632,16 +634,17 @@
 \newcommand\@pnumwidth{1.55em}
 \newcommand\@tocrmarg{2.55em}
 \newcommand\@dotsep{5}       %<------------------------------------------ puntos suspensivos en el �ndice
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 \newcommand\tableofcontents{%
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\MakeUppercase\contentsname
+    \chapter*{\vspace*{18\p@}\MakeUppercase\contentsname
         \@mkboth{%
            \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \vskip 2.1em %<----- Distancia de cabecera de toc a inicio del mismo
     \@starttoc{toc}%
     \if@restonecol\twocolumn\fi
     }
@@ -667,14 +670,14 @@
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
-      \leavevmode \bfseries          %<-------------------------------------------- negritas en el �ndice
+      \leavevmode           %<-------------------------------------------- negritas en el �ndice
       \advance\leftskip\@tempdima
       \hskip -\leftskip
       #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
       \penalty\@highpenalty
     \endgroup
   \fi}
-\newcommand*\l@section{\@dottedtocline{1}{1cm}{2.8em}}        %<------------------- sangr\'ia en el �ndice
+\newcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}        %<------------------- sangr\'ia en el �ndice
 \newcommand*\l@subsection{\@dottedtocline{2}{3.8em}{3.2em}}
 \newcommand*\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
 \newcommand*\l@paragraph{\@dottedtocline{4}{10em}{5em}}
@@ -685,9 +688,11 @@
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\listfigurename}%
+    \chapter{\listfigurename}%
       \@mkboth{\MakeUppercase\listfigurename}%
               {\MakeUppercase\listfigurename}%
+    {\centering \large\bfseries FIGURAS \par\nobreak}% Título de Figuras
+    \vspace{.7cm} % Distancia entre título y listado
     \@starttoc{lof}%
     \if@restonecol\twocolumn\fi
     }
@@ -791,4 +796,4 @@
 \fi
 \endinput
 %%
-%% End of file `book.cls'.
+%% End of file `thesis.cls'.
