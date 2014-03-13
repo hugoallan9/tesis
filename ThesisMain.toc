@@ -21,30 +21,30 @@
 \contentsline {subsection}{\numberline {1.3.5}\hskip 1.1em El teorema de Wedderburn-Artin}{32}{subsection.1.3.5}
 \addvspace {1.8em}
 \contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 2.\hfil }GRUPO-ANILLOS}{41}{chapter.2}
-\contentsline {section}{\numberline {2.1}\hskip 1em Hechos B\IeC {\'a}sicos De Los Grupo-Anillos}{41}{section.2.1}
-\contentsline {section}{\numberline {2.2}\hskip 1em Ideales de aumento}{50}{section.2.2}
-\contentsline {section}{\numberline {2.3}\hskip 1em Semisimplicidad}{56}{section.2.3}
-\contentsline {section}{\numberline {2.4}\hskip 1em Grupo-\IeC {\'a}lgebras de grupos abelianos finitos}{64}{section.2.4}
+\contentsline {section}{\numberline {2.1}\hskip 1em Hechos B\IeC {\'a}sicos de los Grupo-Anillos}{41}{section.2.1}
+\contentsline {section}{\numberline {2.2}\hskip 1em Ideales de aumento}{52}{section.2.2}
+\contentsline {section}{\numberline {2.3}\hskip 1em Semisimplicidad}{58}{section.2.3}
+\contentsline {section}{\numberline {2.4}\hskip 1em Grupo-\IeC {\'a}lgebras de grupos abelianos finitos}{65}{section.2.4}
 \addvspace {1.8em}
-\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 3.\hfil }TEOR\IeC {\'I}A DE REPRESENTACI\IeC {\'O}N DE GRUPOS}{75}{chapter.3}
-\contentsline {section}{\numberline {3.1}\hskip 1em Definici\IeC {\'o}n y Ejemplos}{75}{section.3.1}
-\contentsline {section}{\numberline {3.2}\hskip 1em Representaci\IeC {\'o}n y M\IeC {\'o}dulos.}{90}{section.3.2}
+\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 3.\hfil }TEOR\IeC {\'I}A DE REPRESENTACI\IeC {\'O}N DE GRUPOS}{77}{chapter.3}
+\contentsline {section}{\numberline {3.1}\hskip 1em Definici\IeC {\'o}n y Ejemplos}{77}{section.3.1}
+\contentsline {section}{\numberline {3.2}\hskip 1em Representaci\IeC {\'o}n y M\IeC {\'o}dulos.}{92}{section.3.2}
 \addvspace {1.8em}
-\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 4.\hfil }ELEMENTOS ALGEBRAICOS}{99}{chapter.4}
-\contentsline {section}{\numberline {4.1}\hskip 1em\relax Generalidades y definiciones}{99}{section.4.1}
-\contentsline {section}{\numberline {4.2}\hskip 1em Elementos Idempotentes}{103}{section.4.2}
-\contentsline {section}{\numberline {4.3}\hskip 1em Unidades de Torsi\IeC {\'o}n}{104}{section.4.3}
-\contentsline {section}{\numberline {4.4}\hskip 1em Elementos nilpotentes}{106}{section.4.4}
+\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 4.\hfil }ELEMENTOS ALGEBRAICOS}{101}{chapter.4}
+\contentsline {section}{\numberline {4.1}\hskip 1em\relax Generalidades y definiciones}{101}{section.4.1}
+\contentsline {section}{\numberline {4.2}\hskip 1em Elementos Idempotentes}{105}{section.4.2}
+\contentsline {section}{\numberline {4.3}\hskip 1em Unidades de Torsi\IeC {\'o}n}{106}{section.4.3}
+\contentsline {section}{\numberline {4.4}\hskip 1em Elementos nilpotentes}{108}{section.4.4}
 \addvspace {1.8em}
-\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 5.\hfil }UNIDADES DE LOS GRUPO-ANILLOS}{115}{chapter.5}
-\contentsline {section}{\numberline {5.1}\hskip 1em Algunas formas de construir unidades}{115}{section.5.1}
-\contentsline {section}{\numberline {5.2}\hskip 1em Unidades Triviales}{124}{section.5.2}
+\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 5.\hfil }UNIDADES DE LOS GRUPO-ANILLOS}{117}{chapter.5}
+\contentsline {section}{\numberline {5.1}\hskip 1em Algunas formas de construir unidades}{117}{section.5.1}
+\contentsline {section}{\numberline {5.2}\hskip 1em Unidades Triviales}{126}{section.5.2}
 \addvspace {1.8em}
-\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 6.\hfil }APLICACIONES}{133}{chapter.6}
-\contentsline {section}{\numberline {6.1}\hskip 1em\relax Sistema de Comunicaci\IeC {\'o}n}{133}{section.6.1}
-\contentsline {section}{\numberline {6.2}\hskip 1em C\IeC {\'o}digos C\IeC {\'\i }clicos}{140}{section.6.2}
+\contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 6.\hfil }APLICACIONES}{135}{chapter.6}
+\contentsline {section}{\numberline {6.1}\hskip 1em\relax Sistema de Comunicaci\IeC {\'o}n}{135}{section.6.1}
+\contentsline {section}{\numberline {6.2}\hskip 1em C\IeC {\'o}digos C\IeC {\'\i }clicos}{142}{section.6.2}
 \addvspace {1.8em}
 \addvspace {1.8em}
-\contentsline {chapter}{CONCLUSIONES}{145}{chapter*.20}
-\contentsline {chapter}{RECOMENDACIONES}{147}{chapter*.21}
-\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{149}{chapter*.22}
+\contentsline {chapter}{CONCLUSIONES}{147}{chapter*.21}
+\contentsline {chapter}{RECOMENDACIONES}{149}{chapter*.22}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{151}{chapter*.23}

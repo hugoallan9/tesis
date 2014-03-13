@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.7)  12 MAR 2014 12:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.7)  12 MAR 2014 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1639,89 +1639,56 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 4.
 
-[41] [42] [43]
-Overfull \hbox (10.53004pt too wide) in paragraph at lines 63--64
-[]\OT1/cmr/m/n/12 Sean $\OML/cmm/m/it/12 ; ^^L; ^^M \OMS/cmsy/m/n/12 2 \OML/cm
-m/m/it/12 RG$ \OT1/cmr/m/n/12 en-ton-ces $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 + 
-(\OML/cmm/m/it/12 ^^L \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 ) =
- [][] \OML/cmm/m/it/12 a[]g \OT1/cmr/m/n/12 + [] =
- []
+[41] [42] [43] [44] [45] [46] <xymatrix 2x2 141> [47] [48] <xymatrix 2x2 141>
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Overfull \hbox (39.55019pt too wide) in paragraph at lines 78--79
-[]$\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^L^^M\OT1/cmr/m/n/12 ) 
-= [] [] = [] [] =
- []
+<xymatrix 3x3 280>
 
-[44]
-Overfull \hbox (22.12553pt too wide) in paragraph at lines 79--80
-[]$\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^L \OT1/cmr/m/n/12 + \O
-ML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 ) = [] [] = [][] \OML/cmm/m/it/12 a[]g [] \OT
-1/cmr/m/n/12 =
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (38.34863pt too wide) in paragraph at lines 80--81
-[]$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ^^L\O
-T1/cmr/m/n/12 )\OML/cmm/m/it/12 ^^M \OT1/cmr/m/n/12 = [] [] = [][](\OML/cmm/m/i
-t/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/1
-2 c[]gh \OT1/cmr/m/n/12 = [][] \OML/cmm/m/it/12 a[]c[]gh \OT1/cmr/m/n/12 +
- []
-
-[45] <xymatrix 2x2 141> [46]
-Overfull \hbox (7.69595pt too wide) in paragraph at lines 123--126
-[]\OT1/cmr/m/n/12 Similarmente $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m
-/it/12 ^^L\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 a[]b[]f\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 gh\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 a[]b[]f\OT1/cmr/m/n/
-12 (\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/
-cmm/m/it/12 h\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/
-m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
- ^^L\OT1/cmr/m/n/12 )$.
- []
-
-<xymatrix 2x2 141> [47] <xymatrix 3x3 280> [48] [49]
+[49] [50] [51]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
-(hyperref)                replaced by space on input line 204.
+(hyperref)                replaced by space on input line 245.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-[50] [51] [52] [53] [54] [55]
+[52] [53] [54] [55] [56] [57]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
-(hyperref)                replaced by space on input line 305.
+(hyperref)                replaced by space on input line 347.
 
-[56] [57] [58] [59] [60] [61]
-Overfull \hbox (14.35863pt too wide) in paragraph at lines 432--435
-\OT1/cmr/m/it/12 es un ideal mi-ni-mal iz-quier-do. Da-do $\OML/cmm/m/it/12 x \
-OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 KG$\OT1/cmr/m/it/12 , se con-si-de-ra $\OML/
-cmm/m/it/12 ^^^\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = (\OML/cmm
-/m/it/12 []; [] ; []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2
+[58] [59] [60] [61]
+Overfull \hbox (13.19621pt too wide) in paragraph at lines 437--440
+\OT1/cmr/m/n/12 ya que $\OML/cmm/m/it/12 ^^Y[]$ \OT1/cmr/m/n/12 ya es un $\OML/
+cmm/m/it/12 R [][]$ \OT1/cmr/m/n/12 . En efec-to $\OML/cmm/m/it/12 ^^Y[]\OT1/cm
+r/m/n/12 (\OML/cmm/m/it/12 ax\OT1/cmr/m/n/12 ) = [] [][] \OML/cmm/m/it/12 g[]^^
+Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 gax\OT1/cmr/m/n/12 ) =
  []
 
-[62] [63]
+[62]
+Overfull \hbox (14.55724pt too wide) in paragraph at lines 444--445
+[]\OT1/cmr/m/n/12 Sobreyectividad y com-po-si-ci^^Son: n^^Sote-se que $\OML/cmm
+/m/it/12 gm \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 M$ \OT1/cmr/m/n/12 ya que $\OML
+/cmm/m/it/12 M$ \OT1/cmr/m/n/12 es un $\OML/cmm/m/it/12 RG[]$\OT1/cmr/m/n/12 ,
+ []
+
+[63] [64]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
-(hyperref)                replaced by space on input line 456.
+(hyperref)                replaced by space on input line 498.
 
-[64] [65] [66] [67] [68] [69]
-Overfull \hbox (7.88705pt too wide) in paragraph at lines 564--566
-\OT1/cmr/m/n/12 Se de-be com-pro-bar que $\OML/cmm/m/it/12 f$ \OT1/cmr/m/n/12 e
-s un ho-mo-mor-fis-mo de ani-llos. Sean $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = (
-\OML/cmm/m/it/12 []; []  ; []\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  ^^L \OT1/cm
-r/m/n/12 =
- []
+[65] [66] [67] [68] [69] [70] [71] [72] [73]
 
-[70] [71] [72]) [73]
+LaTeX Warning: Reference `\unhbox \voidb@x \penalty \@M \ ' on page 74 undefine
+d on input line 626.
+
+[74]) [75]
 \openout2 = `Chapters/chapter3.aux'.
 
- (./Chapters/chapter3.tex [74
+ (./Chapters/chapter3.tex [76
 
 
 
@@ -1737,28 +1704,28 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 3.
 
-[75] [76]
-Overfull \hbox (9.68477pt too wide) in paragraph at lines 35--36
+[77] [78]
+Overfull \hbox (12.29716pt too wide) in paragraph at lines 35--36
 [][]\OT1/cmr/bx/n/12 Ejemplo 3.1.2. []\OT1/cmr/m/n/12 Sea $\OML/cmm/m/it/12 G$ 
-\OT1/cmr/m/n/12 el gru-po de Klein de cua-tro ele-men-tos,es de-cir, $\OML/cmm/
-m/it/12 G \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12
- ; a; b; ab\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
+\OT1/cmr/m/n/12 el gru-po de Klein de cua-tro ele-men-tos, es de-cir, $\OML/cmm
+/m/it/12 G \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/1
+2 ; a; b; ab\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
  []
 
-[77] [78] [79] [80] [81] [82] <cuadrado.png, id=959, 267.399pt x 253.78815pt>
+[79] [80] [81] [82] [83] [84] <cuadrado.png, id=961, 267.399pt x 253.78815pt>
 File: cuadrado.png Graphic file (type png)
 
 <use cuadrado.png>
-Package pdftex.def Info: cuadrado.png used on input line 173.
+Package pdftex.def Info: cuadrado.png used on input line 170.
 (pdftex.def)             Requested size: 267.39835pt x 253.7875pt.
- [83] [84 <./cuadrado.png>] [85] <xymatrix 2x2 182> [86]
-[87] [88] [89]
+ [85] [86 <./cuadrado.png>] [87] <xymatrix 2x2 182> [88]
+[89] [90] [91]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
-(hyperref)                replaced by space on input line 353.
+(hyperref)                replaced by space on input line 350.
 
-[90] [91] [92] [93] [94] [95] [96] [97]) [98]
+[92] [93] [94] [95] [96] [97] [98] [99]) [100]
 \openout2 = `Chapters/chapter4.aux'.
 
  (./Chapters/chapter4.tex
@@ -1773,24 +1740,24 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 3.
 
-[99
+[101
 
 
 
-] [100] [101]
+] [102] [103]
 Overfull \hbox (3.54398pt too wide) in paragraph at lines 80--81
 [][]\OT1/cmr/bx/n/12 Teorema 4.1.2. []\OT1/cmr/m/it/12 Sea $\OML/cmm/m/it/12 G$
  \OT1/cmr/m/it/12 un gru-po fi-ni-to y $\OML/cmm/m/it/12 K$ \OT1/cmr/m/it/12 un
  cam-po de ca-rac-ter^^S^^Psti-ca ce-ro. Sup^^Songa-
  []
 
-[102]
+[104]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 92.
 
-[103]
+[105]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
@@ -1816,13 +1783,13 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 125.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 125.
 
-[104] [105]
+[106] [107]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 170.
 
-[106]
+[108]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 175.
 
@@ -1835,7 +1802,7 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 175.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 175.
 
-[107] [108] [109] [110]
+[109] [110] [111] [112]
 
 LaTeX Warning: Command \textless invalid in math mode on input line 301.
 
@@ -1848,10 +1815,10 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 301.
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 301.
 
-[111] [112]) [113]
+[113] [114]) [115]
 \openout2 = `Chapters/chapter5.aux'.
 
- (./Chapters/chapter5.tex [114
+ (./Chapters/chapter5.tex [116
 
 
 
@@ -1867,17 +1834,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 2.
 
-[115] [116] [117] [118] [119] [120] [121] [122] [123]
+[117] [118] [119] [120] [121] [122] [123] [124] [125]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 115.
 
-[124] [125] [126] [127] [128] [129] [130]) [131]
+[126] [127] [128] [129] [130] [131] [132]) [133]
 \openout2 = `Chapters/chapter6.aux'.
 
  (./Chapters/chapter6.tex
-[132
+[134
 
 
 
@@ -1893,34 +1860,34 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 4.
 
-<Pictures/sistema.pdf, id=1292, 362.07271pt x 793.5246pt>
+<Pictures/sistema.pdf, id=1291, 362.07271pt x 793.5246pt>
 File: Pictures/sistema.pdf Graphic file (type pdf)
 
 <use Pictures/sistema.pdf>
 Package pdftex.def Info: Pictures/sistema.pdf used on input line 10.
 (pdftex.def)             Requested size: 362.07182pt x 793.52266pt.
- [133] [134 <./Pictures/sistema.pdf>]
+ [135] [136 <./Pictures/sistema.pdf>]
 (./Sources/CBS.tex
 \du=\skip92
-) (./codificacion.tex) [135] [136] [137] [138]
+) (./codificacion.tex) [137] [138] [139] [140]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 114.
 
-[139] [140] [141] [142] [143]) [144] (./Conclusiones.tex)
-(./Recomendaciones.tex [145
+[141] [142] [143] [144] [145]) [146] (./Conclusiones.tex)
+(./Recomendaciones.tex [147
 
 
 
-] [146
+] [148
 
-]) (./Bibliografia.tex [147] [148
+]) (./Bibliografia.tex [149] [150
 
-] [149])
+] [151])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
 
-[150]
+[152]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./ThesisMain.aux (./Chapters/chapter1.aux) (./Chapters/chapter2.aux)
 (./Chapters/chapter3.aux) (./Chapters/chapter4.aux) (./Chapters/chapter5.aux)
@@ -1928,25 +1895,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `ThesisMain.out' has not changed.
-(rerunfilecheck)             Checksum: 3276DAB6B6886FF51CAE39AE199A7912;2979.
+(rerunfilecheck)             Checksum: 0929624871A980FAAE3A7DF0FCE03BE1;2979.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 22267 strings out of 493488
- 361194 string characters out of 3141348
- 505601 words of memory out of 3000000
- 24490 multiletter control sequences out of 15000+200000
+ 22271 strings out of 493488
+ 361290 string characters out of 3141348
+ 505618 words of memory out of 3000000
+ 24495 multiletter control sequences out of 15000+200000
  21046 words of font info for 94 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,17n,92p,3243b,723s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -1958,37 +1923,33 @@ fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
-/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
-12/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/wasy/wasy10.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/local/texlive/2012/texmf
--dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on ThesisMain.pdf (172 pages, 746384 bytes).
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib
+8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/wasy/wasy10.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on ThesisMain.pdf (174 pages, 713819 bytes).
 PDF statistics:
- 1631 PDF objects out of 1728 (max. 8388607)
- 1401 compressed objects within 15 object streams
- 508 named destinations out of 1000 (max. 500000)
+ 1617 PDF objects out of 1728 (max. 8388607)
+ 1390 compressed objects within 14 object streams
+ 507 named destinations out of 1000 (max. 500000)
  364 words of extra memory for PDF output out of 10000 (max. 10000000)
 
