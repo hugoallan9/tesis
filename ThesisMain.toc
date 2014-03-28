@@ -14,10 +14,10 @@
 \contentsline {subsection}{\numberline {1.2.3}\hskip 1.1em Grupos abelianos}{12}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}\hskip 1.1em Grupos hamiltonianos}{14}{subsection.1.2.4}
 \contentsline {section}{\numberline {1.3}\hskip 1.1em Anillos, M\IeC {\'o}dulos y \IeC {\'A}lgebras}{16}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}\hskip 1.1em Anillos}{16}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.1}\hskip 1.1em Anillos}{17}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}\hskip 1.1em M\IeC {\'o}dulos y \IeC {\'a}lgebras}{22}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}\hskip 1.1em M\IeC {\'o}dulos libres}{24}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}\hskip 1.1em Semisimplicidad}{25}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.4}\hskip 1.1em Semisimplicidad}{26}{subsection.1.3.4}
 \contentsline {subsection}{\numberline {1.3.5}\hskip 1.1em El teorema de Wedderburn-Artin}{32}{subsection.1.3.5}
 \addvspace {1.8em}
 \contentsline {chapter}{\hskip -0.4em \hbox to\@tempdima { 2.\hfil }GRUPO-ANILLOS}{41}{chapter.2}

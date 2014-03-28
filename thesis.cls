@@ -614,7 +614,7 @@
 \setlength\belowcaptionskip{0\p@}
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{#1: #2}%
+  \sbox\@tempboxa{#1: \bfseries #2}%
   \ifdim \wd\@tempboxa >\hsize
     #1: #2\par
   \else
@@ -641,7 +641,7 @@
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\vspace*{18\p@}\MakeUppercase\contentsname
+    \chapter*{\vspace*{8\p@}\MakeUppercase\contentsname
         \@mkboth{%
            \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
     \vskip 2.1em %<----- Distancia de cabecera de toc a inicio del mismo

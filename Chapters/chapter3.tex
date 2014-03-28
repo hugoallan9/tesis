@@ -4,15 +4,15 @@
 
 Como se mencionó en el capítulo 1 el concepto de \textbf{grupo de permutaciones} fue dado explícitamente por primera vez en las memorias de Galois en  1830, aunque la primera definición de grupo abstracto fue dado hasta en 1854 por Cayley, aunque pasó inadvertidamente por un tiempo, hasta que dicha definición fue dada nuevamente en repetidas ocasiones por varios matemáticos, a saber: Leopold Kronecker en 1870, Heinrich Martin Weber en 1882 y Ferdinand Georg Frobenius en 1887. De esa forma los grupos fueron considerados por mucho tiempo como objetos concretos antes de llegar a ser estudiados como estructuras algebraicas abstractas.
 
-En este contexto histórico es natural hacer la pregunta: Dado un grupo abstracto ¿cómo se puede saber qué grupo es? Es decir, ¿se puede decir cuando es un grupo de permutaciones, un grupo lineal o un grupo de transformaciones proyectivas? En la última interrogante es importante aclarar que se  listó sólo algunos ejemplos de las clases de grupos que existen. 
+En este contexto histórico es natural hacer la pregunta: Dado un grupo abstracto ¿cómo se puede saber qué grupo es? Es decir, ¿se puede decir cuándo es un grupo de permutaciones, un grupo lineal o un grupo de transformaciones proyectivas? En la última interrogante es importante aclarar que se  listó sólo algunos ejemplos de las clases de grupos que existen. 
 
 En 1879, durante las lecturas de un coloquio matemático realizado en Evanston, Illinois, Felix Klein planteó la posibilidad de representar un grupo abstracto dado como un grupo de transformaciones lineales (véase \cite{bib:historia}).
 
-Siguiendo estas ideas, Theodor Molien, Georg Frobenius, Issai Schur, William Burnside y  Heinrich Maschke desarrollaron la teoría básica de la representación de grupos al inicio del siglo XX y Burnside presentó la primera exposición  sistemática de este tema en su libro \cite{bib:burnside}, que actualmente es considerado un libro clásico en este tema. 
+Siguiendo estas ideas, Theodor Molien, Georg Frobenius, Issai Schur, William Burnside y  Heinrich Maschke desarrollaron la teoría básica de la representación de grupos al inicio del siglo XX y Burnside presentó la primera exposición  sistemática\newpage de este tema en su libro \cite{bib:burnside}, que actualmente es considerado un libro clásico en este~ tema. 
 
 La teoría de la representación se volvió mas importante a medida que se fueron obteniendo nuevos resultados. Uno de los resultados mas importantes es el famoso teorema que establece que si $p$ y $q$ son números enteros primos y  $a$, $b$ enteros positivos, entonces cualquier grupo de orden $p^aq^b$ es soluble. Este teorema fue demostrado en 1904 por William Burnside usando la teoría de representación de grupos y, como dato curioso, la primera demostración que no utiliza dicha teoría fue proporcionada por John Griggs Thompson más de 60 años después (ver \cite{bib:grupsfact}).
 
-William Burnside también conjeturó que todo grupo de orden impar es soluble. Esta conjetura fue un problema abierto hasta que Walter Feit y John Thompson dieron una demostración de esta conjetura en 1963 (ver \cite{bib:solubilidad}), usando para ello teoría de la representación. Luego de hacer énfasis en la importancia histórica que tiene la teoría de representación de grupos, se entra a estudiar algunas definiciones de la misma.
+William Burnside también conjeturó que todo grupo de orden impar es soluble. Esta conjetura fue un problema abierto hasta que Walter Feit y John Thompson dieron una demostración de esta conjetura en 1963 (ver \cite{bib:solubilidad}), usando para ello teoría de la representación. Luego de hacer énfasis en la importancia histórica que tiene la teoría de representación de grupos, se presentan algunas definiciones de la~ misma.
 \begin{definicion}
 Sean $G$ un grupo, $R$ un anillo conmutativo y $V$ un $R\mbox{-módulo}$ libre de rango finito. Una \textbf{representación} de $G$ sobre $R$, con espacio de representación $V$, es un homomorfismo de grupos $T \colon G \to GL(V)$, donde $GL(V)$ es el grupo de automorfismo de $V$. El rango de $V$ es llamado \textbf{grado} de la representación $T$ y se denotará como $\grado(T)$.
 \end{definicion}
@@ -89,7 +89,7 @@ Considérese, de nuevo, el grupo de Klein de cuatro elementos, $G = \{ 1, a, b, 
 
 Para conocer la representación regular de $a$, se procede a multiplicar por  la izquierda por $a$ a los elementos de $G$:
 \begin{equation*} ag_1 = g_2, \quad ag_2 = g_1, \quad ag_3 = g_4, \quad ag_4 = g_3, \end{equation*} entonces 
-\begin{equation*} T_a(g_1) = g_2 , \quad T_a(g_2) = g_1, \quad T_a(g_3) = g_4, \quad T_a(g_4) = g_3 \end{equation*} y como en el ejemplo anterior, se puede obtener la representación matricial de $a$:
+\begin{equation*} T_a(g_1) = g_2 , \quad T_a(g_2) = g_1, \quad T_a(g_3) = g_4, \quad T_a(g_4) = g_3 \end{equation*} \nopagebreak[0] y como en el ejemplo anterior, se puede obtener la representación matricial de $a$:
 \begin{equation*}  \rho(a) = \begin{pmatrix}
 0 & 1 & 0 & 0 \\
 1 & 0 & 0 & 0 \\
@@ -138,7 +138,7 @@ Supóngase que $\car(K) \nmid m$ y que $K$ contiene una raíz primitiva de la un
  0 & 0 & \dots & \xi_m^r
 \end{pmatrix} = I. \end{equation*}
 
-Nótese que esta representación es distinta a la representación regular, que en el caso de $a$, está dada por 
+Nótese que esta representación es distinta a la representación regular, que en \nopagebreak[0] el caso de $a$, está dada por 
 \begin{equation*} \Gamma(a) = \begin{pmatrix}
 0 & 0 & \dots & 0 & 1 \\
 1 & 0 & \dots & 0 & 0\\
@@ -156,7 +156,7 @@ C(a) = \begin{pmatrix}
  ya que $(C(a))^r = \begin{pmatrix}
 1 & r\cdot 1\\
 0 & 1
-\end{pmatrix} = I$ para $r \in \mathds{Z}$, dado que $\\car(K) < \infty $.
+\end{pmatrix} = I$ para $r \in \mathds{Z}$, dado que $\car(K) < \infty $.
 \end{ejemplo} 
 \begin{ejemplo}[Representación de $D_4$]\label{ejem:diedrico}
 Considérese el grupo de simetrías de un cuadrado. Este grupo de 8 elementos, a saber, las reflexiones a través de los ejes $r_1, r_2, r_3, r_4$ (véase la Figura \ref{fig:ejemplo}) y las rotaciones con ángulos $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$ y $2\pi$ alrededor del centro. 
@@ -165,7 +165,7 @@ Considérese el grupo de simetrías de un cuadrado. Este grupo de 8 elementos, a
 
 \begin{figure}[t]
   \centering
-  \caption{\hskip 2em \textbf{Forma gráfica del grupo $D_4$}}
+  \caption{\hskip 2em Forma gráfica del grupo $D_4$}
   	  \vskip -0.59em
   	  \includegraphics{cuadrado}
 	  \captionsetup[figure]{textfont = normal, labelformat=empty, labelsep=period}
@@ -233,7 +233,7 @@ Los ejemplos anteriormente expuestos sirven de motivación para introducir algun
 Primero considérese $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$ y asúmase que $\phi \colon V \to W$ es un isomorfismo de espacios vectoriales sobre $K$. Entonces se puede definir una nueva representación $\overline{T} \colon G \to GL(W)$ por medio de $\overline{T_g} \colon \phi \circ T_g \circ \phi^{-1}$ para todo $g \in G$. Esto es, esencialmente, una copia de $T$. La relación entre estas dos representaciones está ilustrada en el diagrama de la figura \ref{fig:ejemploSumaRepresentaciones}, 
 \begin{figure}[t]
   \centering
-  \caption{\hskip 2em \textbf{Diagrama conmutativo para representaciones equivalentes}}
+  \caption{\hskip 2em Diagrama conmutativo para representaciones equivalentes}
   	  \vskip -0.59em 
   	  \[\xymatrix { V \ar[r]^{T_g} 
   	  \ar[d]_{\phi}
@@ -398,7 +398,7 @@ A(g) & 0 \\
  
  Al converso, si $M$ es un $RG\mbox{-módulo}$ de rango finito sobre $R$, se define la representación de $G$ sobre $R$ asignando a cada elemento $g \in G$ el $R\mbox{-automorfismo}$ $T_g \colon M \to M$ dado por $T_g(m) = gm$.
  
- Nótese que dado $T \colon G \to GL(V)$ una representación de $G$ sobre $R$ y $M$ su $RG\mbox{-módulo}$ inducido, se tiene que $S$, la representación inducida por $M$, es tal que $S_g(m) = gm = \alpha m \simeq T_g(m)$, donde $\alpha$ es la imagen de la inmersión de $G$ en $RG$ dada en el teorema \ref{inmersion}.
+ Nótese que dado $T \colon G \to GL(V)$ una representación de $G$ sobre $R$ y $M$ su $RG\mbox{-módulo}$ inducido, se tiene que $S$, la representación inducida por $M$, es tal que $S_g(m) = gm = \alpha m \simeq T_g(m)$, donde $\alpha$ es la imagen de la inmersión de $G$ en $RG$ dada en el teorema~\ref{inmersion}.
  
  De manera similar, dado $M$ un $RG\mbox{-módulo}$ y $S \colon G \to GL(M)$ su representación inducida, entonces su $RG\mbox{-módulo}$ inducido por la ecuación~\eqref{defproducto} deja invariante a $M$. Por lo tanto se ha demostrado que las aplicaciones construidas anteriormente son inversas la una de la otra. 
  \end{proof*}

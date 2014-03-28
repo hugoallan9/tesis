@@ -4,7 +4,7 @@
 En este capítulo será de especial interés estudiar algunos elementos algebraicos en grupo-álgebras usando la representación regular que puede ser definida para un álgebra finito dimensional con unidad sobre un campo $K$ de la siguiente manera.
 
 \begin{definicion}
-Sea $T \colon A \to \hom_k(A,A)$ tal que $a \mapsto T_a \in \hom_k(A,A)$, definida mediante multiplicación por la izquierda por $a$. Esto es, $T_a$ es una aplicación tal que $T_a(x) = ax$, para cualquier $x \in A$.  
+Sea $T \colon A \to \hom_K(A,A)$ tal que $a \mapsto T_a \in \hom_K(A,A)$, definida mediante multiplicación por la izquierda por $a$. Esto es, $T_a$ es una aplicación tal que $T_a(x) = ax$, para cualquier $x \in A$.  
 \end{definicion}
 
 Se puede observar a partir de la definición que
@@ -17,7 +17,9 @@ para todo $a,b \in A,$  $k\in K$. Mas aún, la aplicación $a \mapsto T_a$ es in
 \begin{equation*}
 a \mapsto \rho(a) \in M_n(K).
 \end{equation*}
-Si $a$ es un elemento algebraico de $A$, esto es, si existe un polinomio no nulo $f(X) \in K[X]$ tal que $f(a) = 0$, entonces los valores propios de la matriz $\rho(a)$ también anulan a $f(X)$, debido al teorema de Cayley-Hamilton (véase \cite[p. 241]{bib:lang}). De esta manera, por ejemplo, si $a$ es un elemento nilpotente entonces los valores propios de $\rho(a)$ son todos cero. Si $a$ es de orden multiplicativo finito, es decir, si $a^m = 1$ para algún $m$ entero positivo, entonces los valores propios de $\rho(a)$ son raíces de la unidad de orden $m$. 
+Si $a$ es un elemento algebraico de $A$, esto es, si existe un polinomio no nulo $f(X) \in K[X]$ tal que $f(a) = 0$, entonces los valores propios de la matriz $\rho(a)$ también anulan a $f(X)$, debido al teorema de Cayley-Hamilton (véase \cite[241]{bib:lang}). 
+
+De esta manera, por ejemplo, si $a$ es un elemento nilpotente entonces los valores propios de $\rho(a)$ son todos cero. Si $a$ es de orden multiplicativo finito, es decir, si $a^m = 1$ para algún $m$ entero positivo, entonces los valores propios de $\rho(a)$ son raíces de la unidad de orden $m$. 
 \begin{lema}\label{lem:traza}
 Sea $G$ un grupo finito y $K$ un campo. Sea $p$ la representación regular de $KG$ y $\gamma = \sum_{g \in G}\gamma(g)g \in KG$. Entonces la traza de $\rho(\gamma)$ viene dada por
 \begin{equation*}
@@ -30,7 +32,7 @@ Entonces
 \begin{equation*}
 \rho(\gamma) = \rho\left( \sum_{g \in G}\gamma(g)g \right) = \sum_{g \in G}\gamma(g)\rho(g) .
 \end{equation*}
-Para un elemento $g\neq 1 \in G$, se tiene $gg_i \neq g_i$, para $1\leq i\leq n$, de donde se sigue que los elementos de la diagonal de la matriz $\rho(g)$ son todos nulos si $g \neq 1$. Así $\tr\rho(g) = 0$ si $g \neq 1$. Más aún, como $\rho(1)$ es la matriz identidad, se tiene que $\tr\rho(1) = n$. Entonces
+Para un elemento $ 1 \neq g  \in G$, se tiene $gg_i \neq g_i$, para $1\leq i\leq n$, de donde se sigue que los elementos de la diagonal de la matriz $\rho(g)$ son todos nulos si $g \neq 1$. Así $\tr\rho(g) = 0$ si $g \neq 1$. Más aún, como $\rho(1)$ es la matriz identidad, se tiene que $\tr\rho(1) = n$. Entonces
 \begin{equation*}
 \tr\rho(\gamma) = \sum_{g \in G}\gamma(g)\tr(g) = \gamma(1)\tr\rho(1) = \gamma(1)|G|.\qedhere
 \end{equation*} 
@@ -41,7 +43,7 @@ Sea $\gamma = \sum_{g \in G}\gamma(g)g$ una unidad de orden finito en el grupo-a
 \end{lema}
 \begin{proof*}
 Sea $|G| = n$ y supóngase que $\gamma^{m} = 1$ para algún entero positivo $m$. Si se considera la representación regular $\rho$ del grupo-álgebra $\mathds{C}G$ y a $\mathds{Z}G$ como un subanillo de la misma, se tiene que $\tr\rho(\gamma) = n\gamma(1)$.
-Como $\gamma^{m} = 1$, entonces $\left( \rho(\gamma) \right)^m = \rho(\gamma^{m}) = I$, de esto se sigue que $\rho(\gamma)$ es raíz del polinomio $X^m-1$, cuyas raíces son todas distintas. Esto implica, por el teorema espectral(véase \cite[p 214]{bib:lang}), que existe una base de $\mathds{C}G$ donde la matriz de $\rho(\gamma)$ es diagonal de la forma
+Como $\gamma^{m} = 1$, entonces $\left( \rho(\gamma) \right)^m = \rho(\gamma^{m}) = I$, de esto se sigue que $\rho(\gamma)$ es raíz del polinomio $X^m-1$, cuyas raíces son todas distintas. Esto implica, por el teorema espectral (véase \cite[214]{bib:lang}), que existe una base de $\mathds{C}G$ donde la matriz de $\rho(\gamma)$ es diagonal de la forma
 \begin{equation*}
 \mathds{A} = \begin{pmatrix}
 \xi_1 & & & &\\
@@ -57,9 +59,9 @@ Como $\gamma^{m} = 1$, entonces $\left( \rho(\gamma) \right)^m = \rho(\gamma^{m}
  
  Por lo tanto, aplicando valor absoluto,
  \begin{equation*}
- \mid n\gamma(1) \mid = \left| \sum_{i = 1}^{n}\xi_i \right| \leq \sum_{i = 1}^{n}\mid \xi \mid = n.
+  |n\gamma(1)| = \left| \sum_{i = 1}^{n}\xi_i \right| \leq \sum_{i = 1}^{n}|\xi| = n.
  \end{equation*}
- Como $\mid n\gamma(1)\mid = n\mid\gamma(1)\mid \leq n$, entonces $\mid \gamma(1) \mid = 1$ y $\left| \sum_{i = 1}^{n}\xi_i \right| = \sum\limits_{i = 1}^{n}\mid \xi_i \mid$, lo cual sucede si y sólo si $\xi_1=\xi_2=\cdots = \xi_n$.
+ Como $|n\gamma(1)| = n|\gamma(1)| \leq n$, entonces $|\gamma(1)| = 1$ y $\left| \sum_{i = 1}^{n}\xi_i \right| = \sum\limits_{i = 1}^{n}| \xi_i|$, lo cual sucede si y sólo si $\xi_1=\xi_2=\cdots = \xi_n$.
  
  Así $n\gamma(1) = n\xi_1$ y $\gamma(1) = \xi_1=\pm 1$. Se concluye que $\rho(\gamma) = \pm I$, de donde, $\gamma = \pm 1$.
 \end{proof*}
@@ -85,7 +87,7 @@ Sea $G$ un grupo finito y $K$ un campo de característica cero. Supóngase que $
 \end{bulletList} 
 \end{teorema}
 \begin{proof*}
-Considérese la representación regular de $KG$ escrita con respecto a la base $G$ de $KG$. Entonces, por el lema \ref{lem:traza}, se tiene que $\tr\rho = \mid G \mid e(1)$. Más aún, como $e^2 = e$, $\rho(e)$ satisface el polinomio $X^2 - X = X(X-1)$ y por lo tanto $\rho(e)$ puede ser diagonalizada. Los valores propios de $\rho(e)$ son $0$ o $1$ ya que $\rho(e)$ es idempotente. Debido a que la traza es la suma de los valores propios, se tiene que $\tr\rho(e) = r$, donde $r$ es el número de valores propios iguales a $1$ y por lo tanto también es el rango de $\rho(e)$. Se concluye entonces que $0\leq e(1) \leq 1$.
+Considérese la representación regular de $KG$ escrita con respecto a la base $G$ de $KG$. Entonces, por el lema \ref{lem:traza}, se tiene que $\tr\rho = |G| e(1)$. Más aún, como $e^2 = e$, $\rho(e)$ satisface el polinomio $X^2 - X = X(X-1)$ y por lo tanto $\rho(e)$ puede ser diagonalizada. Los valores propios de $\rho(e)$ son $0$ o $1$ ya que $\rho(e)$ es idempotente. Debido a que la traza es la suma de los donde valores propios, se tiene \ que  $\tr\rho(e) = r$,  donde  $r$  es el número de valores propios iguales a $1$ y por lo tanto también es el  rango de $\rho(e)$. Por lo expuesto anteriormente se puede afirmar que $0\leq e(1) \leq 1$.
 
 Nótese que $e(1) = 0 $ si y sólo si el rango de $\rho(e)$ es $0$ y eso pasa sólo si $e = 0$. Similarmente $e(1) = 1$ si y sólo si el rango de $\rho(e)$ es $\mid G \mid $, lo cual pasa sólo si $\rho(e)$ es la matriz identidad, es decir, si $e = 1$. 
 \end{proof*} 
@@ -98,13 +100,13 @@ Sea $K$ un campo de característica $p > 0$ y sea $G$ cualquier grupo. Supóngas
 
 La demostración de este resultado está fuera del alcance de este trabajo, pero se recomienda al lector consultar \cite{bib:passman}. 
 
-En el teorema \ref{teo:idme} se demostró el teorema anterior cuando la característica del campo es cero con la condición de que el grupo sea finito, pero dicho resultado es válido aún cuando el grupo es infinito, pero su demostración requiere el uso de resultados previos de teoría de números. Para la demostración del siguiente resultado, se sugiere al lector consultar \cite{bib:passman}
+En el teorema \ref{teo:idme} se demostró el teorema anterior cuando la característica del campo es cero con la condición de que el grupo sea finito, pero dicho resultado es válido aún cuando el grupo es infinito, pero su demostración requiere el uso de resultados previos de teoría de números. Para la demostración del siguiente resultado, se sugiere al lector consultar \cite{bib:passman}.
 
 \begin{teorema}\label{teo:genidem23}
 Sea $G$ un grupo cualquiera y $K$ un campo de característica cero. Supóngase que $e = e^2 = \sum e(g)g \in KG$. Entonces:
 \begin{bulletList}
-\newItem $e(1) \in \mathds{Q}$
-\newItem $0\leq e(1) \leq 1$
+\newItem $e(1) \in \mathds{Q}$.
+\newItem $0\leq e(1) \leq 1$.
 \newItem $e(1) = 0 \Leftrightarrow e= 0 $ y $e(1) = 1 \Leftrightarrow e = 1$. 
 \end{bulletList}
 \end{teorema} 
@@ -114,7 +116,7 @@ Supóngase que $e = e^2 \in \mathds{Z}G$, como $e(1)$ es un entero, se sigue del
 El grupo-anillo entero $\mathds{Z}G$ sólo contiene idempotentes triviales, para cualquier grupo $G$.
 \end{corolario}
 \section{\hskip 1em Unidades de Torsión}
-Se demostró en el lema \ref{lem:BH} que si $G$ es un grupo finito, $\gamma \in \mathds{Z}G$ es una unidad de orden finito y $\gamma(1) \neq 0$ entonces $\gamma = \pm 1$.Dicho resultado es válido también cuando $G$ es un grupo infinito. 
+Se demostró en el lema \ref{lem:BH} que si $G$ es un grupo finito, $\gamma \in \mathds{Z}G$ es una unidad de orden finito y $\gamma(1) \neq 0$ entonces $\gamma = \pm 1$. Dicho resultado es válido también cuando $G$ es un grupo infinito. 
 \begin{teorema}\label{teo:Passman-Bass}
 Sea $\gamma = \sum\gamma(g)g \in \mathds{Z}G$ que satisface $\gamma^n = 1$, para algún entero positivo $n$. Si $\gamma(1) \neq 0$ entonces $\gamma = \pm 1$.
 \end{teorema} 
@@ -122,7 +124,7 @@ Sea $\gamma = \sum\gamma(g)g \in \mathds{Z}G$ que satisface $\gamma^n = 1$, para
 Sea $\mathds{C}[X]$ el anillo de polinomios con coeficientes en $\mathds{C}$. Considérese el homomorfismo $\phi \colon \mathds{C}[X] \to \mathds{C}[\gamma]$ dada por $X \mapsto \gamma$. El kernel de este homomorfismo es el ideal $\langle f(X) \rangle$ generado por el polinomio minimal $f(X)$ de $\gamma$. Entonces $f(X)$ divide a $X^n - 1$ y por lo tanto tiene sus raíces distintas. 
 Así, se tiene 
 \begin{equation*}
-\mathds{C}[\gamma] \simeq \frac{\mathds{C}[X]}{\textless f(X) \textgreater} \simeq \mathds{C}\oplus\mathds{C}\oplus\cdots\oplus\mathds{C} \simeq \oplus_i\mathds{C}e_i,
+\mathds{C}[\gamma] \simeq \frac{\mathds{C}[X]}{\langle (X) \rangle} \simeq \mathds{C}\oplus\mathds{C}\oplus\cdots\oplus\mathds{C} \simeq \oplus_i\mathds{C}e_i,
 \end{equation*}
 donde los $e_i$ son idempotentes ortogonales primitivos de $\mathds{C}[\gamma]$. De lo anterior, se puede escribir $\gamma = \sum_{i}\xi_ie_i$ donde $\xi_i\in \mathds{C}$, $\xi_i^n = 1$ y $e_ie_j = \delta_{ij}e_j$, con $\delta_{ij}$ la función delta de Kronecker. 
 
@@ -132,9 +134,9 @@ Calculando el primer coeficiente en ambos lados de la ecuación y usando el teor
 \end{equation*}
 Entonces, $s\gamma(1) = \sum\xi_ir_i$. De igual manera; como $\sum e_i = 1$ se tiene que $1 = \sum \frac{r_i}{s}$, así $\sum r_i = s$. De donde
 \begin{equation*}
-\mid s\gamma(1) \mid = \left| \sum\xi_ir_i  \right| \leq \sum \mid \xi \mid \mid r_i \mid = \sum \mid r_i \mid = s.
+|s\gamma(1)| = \left| \sum\xi_ir_i  \right| \leq \sum |\xi||r_i| = \sum |r_i|=s.
 \end{equation*}
-Como $\mid s\gamma(1) \mid \leq s$, se tiene $\mid \gamma(1) \mid = 1$ y también $\left| \sum \xi_ir_i \right| = \sum \mid \xi_i \mid \mid r_i \mid$. Se sigue que todos los $\xi_i$ son iguales y $\gamma = \sum \xi_1e_1 = \xi_1 = \gamma(1) \in \mathds{Z}$. 
+Como $|s\gamma(1)|\leq s$, se tiene $|\gamma(1)|= 1$ y también $\left| \sum \xi_ir_i \right| = \sum|\xi_i||r_i|$. Se sigue que todos los $\xi_i$ son iguales y $\gamma = \sum \xi_1e_1 = \xi_1 = \gamma(1) \in \mathds{Z}$. 
 \end{proof*}
 
 Este último resultado tiene bastantes consecuencias útiles. El lector deberá recordar que, como se mostró en la proposición \ref{prep:conjugacion}, hay una involución estándar en $\mathds{Z}G$ dada por 
@@ -160,7 +162,6 @@ Supóngase que $\gamma \in \mathds{Z}G$ tiene la propiedad de conmutar con $\gam
 \begin{proof*}
 Por hipótesis $\gamma^n = 1$ para algún entero positivo $n$ y $\gamma\gamma^* = \gamma^*\gamma$, por lo tanto $(\gamma\gamma^*) = 1$. Más aún, $(\gamma\gamma^*)(1) = \sum \gamma(g)^2 \neq 0$. Entonces, por el teorema anterior, $\gamma\gamma^* = 1$. De esta manera, existe un único coeficiente $\gamma(g_0)$ que es distinto de cero. Se concluye entonces que $\gamma = \pm g_0$. 
 \end{proof*}
-Como consecuencia inmediata se tienen los siguientes:
 \begin{corolario}
 Todas las unidades centrales de orden finito en $\mathds{Z}G$ son triviales.
 \end{corolario}
@@ -172,9 +173,9 @@ Ahora se desea clasificar los grupo-álgebras $KG$ de un grupo finito $G$ sobre 
 \begin{proposicion}\label{prop:nilpotentes}
 Si $K$ es un campo de característica $p > 0 $ y $G$ contiene $p$-elementos, entonces $KG$ contiene elementos nilpotentes.  
 \end{proposicion}
-A partir de este punto se asumirá que $G$ es finito, $p\geq 0$ y que si $p >0 $ entonces $G$ no tiene $p$-elementos. Supóngase que $KG$ no contiene elementos nilpotentes a excepción de los triviales y sea $e \in KG$ un idempotente. Entonces, para cada $x \in KG$, el idempotente $\eta = ex(1-e)$ satisface $\eta^2 = 0$ y por lo tanto $ ex = exe $. Similarmente si $\eta = (1 - e)xe$ entonces $\eta^2 = 0$ y $xe = exe$, con lo que se comprueba que $e$ es central. Ahora para cualquier $g \in G$, el elemento $e = \frac{\hat{g}}{\circ (g)} = \frac{\sum_{i = 1}^{\circ(g)}g^i}{\circ(g)}$ es idempotente y por lo tanto es central. Esto significa que el subgrupo $\textless g \textgreater$ es normal para cualquier $g \in G$. Se sigue del teorema \ref{teo:abelianohamiltoniano} que $G$ es abeliano o hamiltoneano. 
+A partir de este punto se asumirá que $G$ es finito, $p\geq 0$ y que si $p >0 $ entonces $G$ no tiene $p$-elementos. Supóngase que $KG$ no contiene elementos nilpotentes a excepción de los triviales y sea $e \in KG$ un idempotente. Entonces, para cada $x \in KG$, el idempotente $\eta = ex(1-e)$ satisface $\eta^2 = 0$ y por lo tanto $ ex = exe $. Similarmente si $\eta = (1 - e)xe$ entonces $\eta^2 = 0$ y $xe = exe$, con lo que se comprueba que $e$ es central. Ahora para cualquier $g \in G$, el elemento $e = \frac{\hat{g}}{\circ (g)} = \frac{\sum_{i = 1}^{\circ(g)}g^i}{\circ(g)}$ es idempotente y por lo tanto es central. Esto significa que el subgrupo $\langle g \rangle$ es normal para cualquier $g \in G$. Se sigue del teorema \ref{teo:abelianohamiltoniano} que $G$ es abeliano o hamiltoneano. 
 
-En el caso que $G$ sea hamiltoneano, $G = K_8 \times E \times A$, donde $K_8$ es el grupo de cuaterniones de orden ocho, $E^2 = 1$ y $A$ es un grupo abeliano de orden impar. Para obtener más información de este caso es necesario hacer un estudio mas profundo del grupo-álgebra $FK_8$, donde $F$ es un campo.
+En el caso que $G$ sea hamiltoniano, $G = K_8 \times E \times A$, donde $K_8$ es el grupo de cuaterniones de orden ocho, $E^2 = 1$ y $A$ es un grupo abeliano de orden impar. Para obtener más información de este caso es necesario hacer un estudio mas profundo del grupo-álgebra $FK_8$, donde $F$ es un campo.
 
 \begin{proposicion}\label{prop:AH}
 Sea $K$ un campo de característica $p \geq 0$ y sea $G$ un grupo finito. Si $KG$ no tiene elementos nilpotentes entonces todos los idempotentes de $KG$ son centrales y $G$ es abeliano o hamiltoniano.
@@ -184,7 +185,7 @@ En lo que sigue el lector deberá recordar el concepto de números cuaterniones.
 \begin{equation*}
 H_{\mathds{Q}} = \mathds{Q}\oplus\mathds{Q}i\oplus\mathds{Q}j\oplus\mathds{Q}k,
 \end{equation*}
-con su ya conocida multiplicación (véase \cite[p. 31]{bib:herstein}). Se puede definir formalmente una estructura similar sobre cualquier campo $F$. Considérese el espacio vectorial
+con su ya conocida multiplicación, véase \cite[ 31]{bib:herstein}. Se puede definir formalmente una estructura similar sobre cualquier campo $F$. Considérese el espacio vectorial
 \begin{equation*}
 H(F) = F\oplus Fi\oplus Fj\oplus Fk 
 \end{equation*} 
@@ -222,11 +223,11 @@ Las siguientes proposiciones son equivalentes:
 \end{proposicion}
 
 \begin{proof*}
-Para la demostración de esta proposición solo falta probar que si $H(F)$ no tiene divisores de cero entonces es un anillo de división. Sea $0 \neq \alpha \in H(F)$ entonces $\overline{\alpha}\alpha = N(\alpha) \neq 0$ y por lo tanto $\alpha\left( \frac{\overline{\alpha}}{N(\alpha)} = 1\right)$.
+Para la demostración de esta proposición solo falta probar que si $H(F)$ no tiene divisores de cero entonces es un anillo de división. Sea $0 \neq \alpha \in H(F)$ entonces $\overline{\alpha}\alpha = N(\alpha) \neq 0$ y por lo tanto $\alpha\left( \frac{\overline{\alpha}}{N(\alpha)}\right) = 1$.
 \end{proof*}
 
 \begin{teorema}\label{teo:caracterizacion}
-Supóngase que $\car(F) \neq 2$. Entonces el álgebra de los cuaterniones $H(F)$ es un anillo de división o isomorfo a $M_2(F)$, el anillo de matrices de $2\times 2$ sobre el campo $F$. La última opción sucede únicamente si $X^2 + Y^2 = -1$ tiene solución en $F$.
+Supóngase que $\car(F) \neq 2$. Entonces el álgebra de los cuaterniones $H(F)$ es un anillo de división o isomorfo a $M_2(F)$, el anillo de matrices de $2\times 2$ sobre el campo $F$. La última opción sucede únicamente si $X^2 + Y^2 = -1$ tiene solución en~$F$.
 \end{teorema}
 
 \begin{proof*}
@@ -273,7 +274,7 @@ by + c + dx &=& 0 \\
 by -c + dx &=& 0 \\
 a -bx + dy &=& 0
 \end{eqnarray*}
-un sistema de ecuaciones en $a, b, c,d$ con determinante $4(x^2 + y^2) \neq 0$, entonces la única solución de dicho sistema es la trivial, de donde $H(F) \simeq M_2(F)$.
+un sistema de ecuaciones homogéneo en $a, b, c,d$ con determinante $4(x^2 + y^2) \neq 0$, entonces la única solución de dicho sistema es la trivial, de donde $H(F) \simeq M_2(F)$.
 \end{proof*}
 
 Por lo expuesto en esta sección, el lector podrá intuir que es esencial poder trabajar con álgebras de cuaterniones sobre campos ciclótomicos de la forma $F = \mathds{Q}(\xi)$, donde $\xi$ es una raíz primitiva de la unidad. 
@@ -298,7 +299,7 @@ FK_8 \simeq 4F\oplus H(F).
 \begin{proof*}
 Se escribe $K_8$ como
 \begin{equation*}
-K_8 = \textless a, b \colon a^4 = 1, a^2 = b^2, bab^{-1} = a^{-1} \textgreater
+K_8 = \langle a, b \colon a^4 = 1, a^2 = b^2, bab^{-1} = a^{-1} \rangle
 \end{equation*}
 y como se demostró en el ejercicio \ref{ejer:klein}, $\overline{K_8} = \frac{K_8}{K_8'}$ es el grupo de Klein de cuatro elementos, se tiene
 \begin{equation*}
@@ -312,7 +313,7 @@ Ahora se tiene la capacidad de clasificar las grupo-álgebras $FG$ con la propie
 Sea $F$ un campo de característica $p > 0$ y sea $G$ un grupo finito. Entonces $FG$ no tiene elementos nilpotentes si y sólo si $G$ es un $p'$-grupo abeliano. 
 \end{teorema}
 \begin{proof*}
-Supóngase que $FG$ no tiene elementos nilpotentes. Entonces de las proposiciones \ref{prop:nilpotentes} y \ref{prop:AH} se tiene que $G$ es un $p'$-grupo y que $G$ es abeliano o hamiltoniano. Supóngase que $G$ es hamiltoneano. Entonces $p \neq 2$.Más aún, siempre se puede resolver $X^2 + Y^2 = -1$ en un campo con $p$ elementos (y por lo tanto también en $F$). Entonces $FK_8$ tiene elementos nilpotentes por el teorema \ref{teo:caracterizacion} y el lema \ref{lem:K8}. Así, $G$ debe ser abeliano.
+Supóngase que $FG$ no tiene elementos nilpotentes. Entonces de las proposiciones \ref{prop:nilpotentes} y \ref{prop:AH} se tiene que $G$ es un $p'$-grupo y que $G$ es abeliano o hamiltoniano. Supóngase que $G$ es hamiltoneano. Entonces $p \neq 2$. Más aún, siempre se puede resolver $X^2 + Y^2 = -1$ en un campo con $p$ elementos (y por lo tanto también en $F$). Entonces $FK_8$ tiene elementos nilpotentes por el teorema \ref{teo:caracterizacion} y el lema \ref{lem:K8}. Así, $G$ debe ser abeliano.
 Para el converso basta notar que $FG$, siendo semisimple y conmutativo, es suma directa de campos. 
 \end{proof*}
 
@@ -322,7 +323,7 @@ Sea $G$ un grupo finito de orden $2^km$ con $(2,m) = 1$. Entonces $\mathds{Q}G$ 
 \end{teorema}
 
 \begin{teorema}
-Sea $G$ un grupo nilpotente finitamente generado. El grupo-anillo $\mathds{Z}G$ no tiene elementos nilpotentes si y sólo si cada subgrupo finito de $G$ es normal y sucede alguna de las siguientes:
+Sea $G$ un grupo nilpotente finitamente generado. El grupo-anillo $\mathds{Z}G$ no tiene elementos nilpotentes si y sólo si cada subgrupo finito de $G$ es normal y sucede alguna de las siguientes condiciones:
 \begin{bulletList}
 \newItem $T(G)$, el conjunto de los elementos de torsión de $G$, es un subgrupo abeliano.
 \newItem $T(G) = K_8 \times E \times A$, donde $E$ es un $2$-grupo elemental abeliano y $A$ es un grupo abeliano de orden impar $m$ tal que el orden multiplicativo de $2$ módulo $m$ es impar.  

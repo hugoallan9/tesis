@@ -7,6 +7,7 @@
 \usepackage{tikz}
 \usepackage{titlesec}
 \usepackage{parskip}
+\usepackage{pdfpages}
 \usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
 \usepackage{latexsym,wasysym}
 %manejando los margenes
@@ -15,9 +16,11 @@
 \usepackage{textcomp}
 \usepackage[all]{xy}
 \usepackage{longtable}
+\usepackage{multirow}
 \usepackage[spanish]{babel}
 \addto\captionsspanish{\renewcommand{\listfigurename}{ÍNDICE DE ILUSTRACIONES}}
-\usepackage{bibthesis,color, enumerate, indentfirst}
+\usepackage[round,colon]{bibthesis}
+\usepackage{color, enumerate, indentfirst}
 \usepackage{hyperref,url,breakurl}
 \usepackage{ dsfont }
 %para manejar las imagenes (titulos y subtitulos de)
@@ -28,7 +31,8 @@
 \usepackage[nodisplayskipstretch]{setspace}
 %Paquete para el manejo del Indice
 \usepackage[titles]{tocloft}
-
+\renewcommand{\captionfont}{\bf}
+\renewcommand{\captionlabelfont}{\normalfont}
 
 
 
@@ -69,8 +73,8 @@
 \setstretch{1.45}    
 %\renewcommand\baselinestretch{1.5}               %<-----------------interlineado
 \setlength\LTleft{0pt} \setlength\LTright{0pt} %<------------- parametros para tablas largas
-
-
+\pretolerance=2000
+\tolerance=3000 %<- para no separar las palabras
 
 
 
@@ -78,7 +82,7 @@
 
 
 % -------- Modificaciones a Citas (sistema lancasteriano) y direcciones web -------------
-\bibpunct[--]{[}{]}{,}{n}{,}{;}
+\bibpunct[:]{(}{)}{,}{n}{,}{;}
 \setlength{\bibsep}{21pt}               % distancia entre items en la bibliograf�a
 %\urlstyle{rm}                          % fuente en direcciones web
 
@@ -210,15 +214,14 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \newpage
 \thispagestyle{empty}
 \mbox{}
-%\includepdf[pages={1}]{Cartas/NormativoGeneral_Evaluacion_y_Promocion.pdf}
+\includepdf{Cartas/aprobacionSergioM.pdf}
 \newpage
 \thispagestyle{empty}
 \mbox{}
-%\includepdf[pages={2}]{Cartas/NormativoGeneral_Evaluacion_y_Promocion.pdf}
+\includepdf{Cartas/cartaAsesor2.pdf}
 \newpage
 \thispagestyle{empty}
 \mbox{}
-
 %Para incluir  dedicatoria y agradecimientos
 \input{Dedicatoria}
 \input{Agradecimientos}
@@ -226,7 +229,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 
 %---------------Inicio del front matter -----------
 \frontmatter     	
-%Índice general
+%Índice general	
 \tableofcontents
 % Para añadir el Índice de ilustraciones
 %Listado de figuras
@@ -269,6 +272,7 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
      \input{Conclusiones}
      \input{Recomendaciones}
      \input{Bibliografia}
+     \bibliographystyle{plainnat}
      
 \end{document}
 

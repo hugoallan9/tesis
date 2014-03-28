@@ -53,7 +53,6 @@ donde $a_g \in R$ y $a_g \neq 0$ si $g \in \sop (\alpha)$.
 \begin{nota}
 Con la identificación anterior se verifica que la suma de $\alpha, \beta \in RG$ es componente a componente, es decir $\alpha + \beta= \srg{g}{G}{a}+\srg{g}{G}{b}= \sum_{g\in G} (a_g+b_g)g $ y el producto está dado por $\alpha\beta=\sum_{g,h\in G}a_gb_hgh$.
 \end{nota}
-Ahora es práctico establecer los siguientes teoremas:
 \begin{teorema}\label{grupo}
 $RG$ es un grupo aditivo.
 \end{teorema}
@@ -142,7 +141,7 @@ Un resultado de mucha importancia en los grupo-anillos, es el que relaciona a es
 \begin{proposicion}\label{up}
 Sea $G$ un grupo y $R$ un anillo. Dado cualquier anillo $A$ tal que $R \subset A$ y cualquier función $f \colon G \to A$ tal que $f(gh) = f(g)f(h)$ para cualquier $g,h \in G$, existe un único homomorfismo de anillos $f^* \colon  RG \to A$, que es $R$-lineal, tal que $f^*\circ i = f$, donde $i$ es la función de inclusión. Lo anterior se reduce a decir que el diagrama de la figura \ref{fig:diagramaProposicion} es conmutativo.
 \begin{figure}
-\caption{\hskip 2em \textbf{Diagrama conmutativo para la proposición \ref{up}}}
+\caption{\hskip 2em Diagrama conmutativo para la proposición \ref{up}}
 \vskip -0.1em
 \[\xymatrix { G \ar[r]^f 
 \ar[d]_i & A\\
@@ -158,7 +157,6 @@ Considérese la función $f^* \colon RG \to A$ tal que $f^*(g)=\sum_{g\in G}a_gf
 f^*(\alpha + \beta ) &= \sum_{g \in G}(a_g + b_g)f(g)\\ 
 &= \sum_{g \in G}a_gf(g) + \sum_{g \in G}b_gf(g)\\ &= f^*(\alpha) + f^*(\beta).
 \end{align*}
- 
 De manera análoga se tiene
 \begin{align*}
 f^*(\alpha\beta)&=\sum_{g,h\in G}a_gb_hf(gh)\\
@@ -179,7 +177,7 @@ De hecho la proposición \ref{up} se puede utilizar como una definición de $RG$
 \begin{proposicion}
 Sea $G$ un grupo y $R$ un anillo. Sea $X$ un anillo que contiene a $R$ y $\nu \colon G \to X$ una función tal que $\nu (gh) = \nu(g)\nu(h)$ para todo $g,h \in G$ y tal que, para todo anillo $A$ que contiene a $R$ y cualquier función $f \colon G \to A$ que satisface $f(gh) = f(g)f(h)$ para todo $g, h \in G$, existe un único homomorfismo $R$-lineal $f^* \colon X \to A$ tal que el diagrama de la figura\ref{fig:alternativa para RG} es conmutativo: 
 \begin{figure}[h!]
-\caption{\hskip 2em \textbf{Definición alternativa para $RG$}}
+\caption{\hskip 2em Definición alternativa para $RG$}
 \vskip -0.59em
 \[\xymatrix { G \ar[r]^f 
 \ar[d]_{\nu}
@@ -194,7 +192,7 @@ Entonces $X \simeq RG$
 \begin{proof*}
 La demostración es tan simple como notar que el  diagrama de la figura\ref{fig:categorias} conmuta con $I_X$.\qedhere
 \begin{figure}[h!]
-\caption{\hskip 2em \textbf{Diagrama Conmutativo}}
+\caption{\hskip 2em Diagrama Conmutativo}
 \vskip -0.59em
 \[\xymatrix @!0 @R=3pc @C=4.5pc { & X \ar@{--}[d]^{i*} \ar@{ --}^{I_X}[ddr] \\ & RG \ar@{--}_{\nu^*}[rd] & \\ G \ar[ruu]^{\nu} \ar[ru]^{i} \ar[rr]^{\nu}& & X}\]
 \vskip 0.55em
@@ -222,7 +220,7 @@ Nótese que, en particular, si $R$ es conmutativo y $G$ es finito, entonces $\De
 
 Se concluye esta sección mostrando que el grupo-anillo $RG$ donde $R$ es conmutativo es un anillo con \textbf{involución}.
 \begin{proposicion}\label{prep:conjugacion}
-Sea $R$ un anillo conmutativo. La función $* \colon RG \to RG$ definida por 
+Sea $R$ un anillo conmutativo. La función $* \colon RG \to RG$ definida~\nopagebreak[0] por: 
 \begin{equation}
 \left(\sum_{g \in G}a(g)g\right)^* = \sum_{g \in G} a(g) g^{-1}
 \end{equation}
@@ -238,7 +236,7 @@ Se procede por incisos:
 \begin{bulletList}
 \newItem $\left( \sum_{g \in G} (a_g +b_g)g\right)^* =  \sum_{g \in G} (a_g +b_g)g^{-1} = \alpha^* + \beta^*$.
 \newItem  $\left( \sum_{g, h \in G} (a_gb_h)gh\right)^* = \sum_{g,h \in G} a_gb_hh^{-1}g^{-1} = \sum_{g,h \in G} b_h a_g h^{-1}g^{-1} = \beta^*\alpha^*$.
-\newItem  $\left(\left( \srg{g}{G}{a}\right)^*\right)^* = \left(\sum_{g\in G}a_gg^{-1}\right)^* = \srg{g}{G}{a}$.
+\newItem  $\left(\left( \srg{g}{G}{a}\right)^*\right)^* = \left(\sum_{g\in G}a_gg^{-1}\right)^* = \srg{g}{G}{a}$.\qedhere
 \end{bulletList}
 \end{proof*}
 %----------------------------------------------------------> Ideales de Aumento
@@ -334,7 +332,7 @@ Se quiere probar que $gig^{-1} \in \nabla(I)$ entonces todo se reduce a demostra
 Si $H \in \mathcal(S)(G)$ entonces $\nabla(\Delta(G,H)) = H$. 
 \end{proposicion}
 \begin{proof*}
-Sea $1 \neq x \in \nabla(\Delta(G,H))$ entonces $x-1 \in \Delta(G,H)$ por lo tanto se puede escribir 
+Sea $1 \neq x \in \nabla(\Delta(G,H))$ entonces $x-1 \in \Delta(G,H)$ por lo tanto se \nopagebreak[0] puede escribir 
 \[x-1 = \sum_{i,j}r_{ij}q_i(h_j-1).\]
 Como 1 aparece en el lado izquierdo de la ecuación también debe aparecer en el lado derecho, por lo tanto alguno de los $q_i$ debe ser igual a uno y por lo tanto hay en término de la forma $r_{1j}(h_j-1)$. Nótese que todos los elementos de $G$ del lado derecho de la ecuación son distintos a pares pero $x$ debe aparecer allí, por lo tanto $x = h_j$. De lo anterior es inmediato que $\nabla(\Delta(G,H)) \subset H$. La otra contención es trivial. 
 \end{proof*}
@@ -404,7 +402,7 @@ Se procede por incisos:
 \end{bulletList}
 \end{proof*}
 \begin{lema}
-Sea $I$ un ideal bilateral de $R$. Supóngase que existe un ideal por la izquierda $J$ tal que $R = I \oplus J$ (como $R\mbox{-módulos}$ ). Entonces $J \subset Ann_d(I) $.
+Sea $I$ un ideal bilateral de $R$. Supóngase que existe un ideal por la izquierda $J$ tal que $R = I \oplus J$ (como $R\mbox{-módulos}$). Entonces $J \subset Ann_d(I) $.
 \end{lema}
 \begin{proof*}
 Sea $x \in J$ y $y \in I $ entonces $yx \in J$, $yx \in I$ entonces $yx \in J\cap I$ por lo tanto $yx=0$ de donde $x \in Ann_d(I)$, por consiguiente $J \subset Ann_d(J)$. \qedhere 
@@ -428,7 +426,7 @@ Sea $G$ un grupo. Entonces, el grupo-anillo $RG$ es semisimple si y sólo si las
 \begin{proof*}
 Se procederá a probar las implicaciones en ambos sentidos:
 \begin{bulletList}
-\newItem En esta parte se asume que $RG$ es semisimple, por lo tanto se puede utilizar el hecho que $\frac{RG}{\Delta (G)} = R$. De lo anterior se deduce que $R$ es un cociente y ya se ha demostrado que los cocientes son simples. Por otro lado se sabe que $\Delta (G)$ es un ideal y de la semisimplicidad de $RG$ se sabe que $\Delta (G)$ es sumando directo y del lema~\ref{aumento} se asegura que la segunda y tercera condición se satisfacen. 
+\newItem En esta parte se asume que $RG$ es semisimple, por lo tanto se puede utilizar el hecho que $\frac{RG}{\Delta (G)} = R$. De lo anterior se deduce que $R$ es un cociente y ya se ha demostrado que los cocientes son simples. Por otro lado se sabe que $\Delta (G)$ es un ideal y de la semisimplicidad de $RG$ se sabe que $\Delta (G)$ es sumando directo y del lema~\ref{aumento} se asegura que la segunda y tercera condición se~ satisfacen. 
 
 \newItem  Para mostrar la segunda implicación, supóngase que todas las condiciones de los incisos son verdaderas. 
 De la primera condición se sigue que $RG$ es semisimple como $\modulo{R}$. Considérese $M$ como $\modulo{RG}$, tal que $M \in RG$, entonces existe $N$ como $\modulo{R}$ tal que 
@@ -436,14 +434,13 @@ De la primera condición se sigue que $RG$ es semisimple como $\modulo{R}$. Cons
 Sea $\pi\colon RG \to M$ la proyección canónica asociada con la suma directa. Se define $\pi ^ *  \colon RG \to M$ tal que:
 \[x \mapsto \frac{1}{|G|}\sum_{g \in G} g^{-1}\pi (gx), \mbox{ para cada } x \in RG. \] 
 Es claro que dicha función existe, ya que $G$ es finito por la segunda condición y se cumple que $\frac{1}{|G|} < \infty$ por la tercera. Se desea probar que $\pi ^ * $ es un $RG~\mbox{-homomorfismo}$  tal que $(\pi ^*)^2 = \pi ^* $ y $M = Im(\pi ^*)$, lo cual se muestra en dos partes a continuación:\\
-Homomorfismo: basta demostrar que $\pi ^* (ax) = a \pi^*(x) \mbox{, para cada } a, g \in G$, ya que $\pi^* $ ya es un $R~\mbox{-homomorfismo}$ . En efecto $\pi^* (ax) = \frac{1}{|G|} \sum_{g \in G}g^{-1}\pi (gax) = \frac{a}{|G|} \sum_{g \in G}(ga)^{-1}\pi ((ga)x) $.
+Homomorfismo: basta demostrar que $\pi ^* (ax) = a \pi^*(x) \mbox{, para cada } a, g \in G$, ya que $\pi^* $ ya es un $R\mbox{-homomorfismo}$. En efecto \[\pi^* (ax) = \frac{1}{|G|} \sum_{g \in G}g^{-1}\pi (gax) = \frac{a}{|G|} \sum_{g \in G}(ga)^{-1}\pi ((ga)x).\]
 
 Ahora se tiene que $ga \in G$, por ser $G$ un grupo, por lo tanto cuando $g$ recorre todo $G$ el producto $ga$ también lo hará, ya que $a$ es un elemento dado fijo. Por lo tanto la última expresión se puede volver a escribir como:
 \[\pi^* (ax) = \frac{a}{|G|} \sum_{t \in G}t^{-1}\pi (tx) = a\pi^*(x).\]
-
-Sobreyectividad y composición: nótese que $gm \in M$ ya que $M$ es un $\modulo{RG}$, así que $\pi (gm) = gm$ y por lo tanto 
+\newpage
+Sobreyectividad y composición: nótese que $gm \in M$ ya que $M$ es un \nopagebreak[0] $\modulo{RG}$, así que $\pi (gm) = gm$ y por lo tanto 
 \[\pi ^* (m) = \frac{1}{|G|} \sum_{g \in G}g^{-1}\pi (gm) = \frac{1}{|G|} \sum_{g \in G}g^{-1}(gm) = \frac{1}{|G|}|G|m  = m.\]
-
 De lo anterior se sigue que $Im(\pi^*) \subset M$ y además $(\pi^*)^2 = \pi $. Por otro lado sea $m \in M$, entonces $\pi ^* (m) = m \in Im(\pi^*)$, de donde $M \in Im(\pi^*)$. 
 
 De esta manera se tiene que $\ker(\pi^*)$ es un $RG$-submódulo tal que $RG = M \oplus ker(\pi^*)$.\qedhere
@@ -480,9 +477,9 @@ Dado $x \in KG$, se considera \[\phi (x) = (\alpha_1, \dots, \alpha_r) \in \oplu
 \end{bulletList}
 \end{teorema}
 
-Se ha hecho énfasis en este resultado, ya que en el siguiente capitulo, se explorará la conexión entre este resultado y la teoría de representación de grupos. 
+Se ha hecho énfasis en este resultado, ya que en el siguiente capitulo, se explorará la conexión entre este y la teoría de representación de grupos. 
 \begin{corolario}
-Sea $G$ un grupo finito y $K$ un campo algebraicamente cerrado tal que $\car(K) \nmid |G| $. Entonces:
+Sea $G$ un grupo finito y $K$ un campo algebraicamente cerrado tal \nopagebreak[0] que $\car(K) \nmid |G| $. Entonces:
 \[Kg \simeq \oplus_{i=1}^{r} M_{n_i}(K)\]
 y $n_1^2 + n_2^2 + \dots + n_r^2 = |G|$.
 \end{corolario}
@@ -499,7 +496,7 @@ de donde se sique que cada anillo de división $D_i$ es de dimensión finita. Se
  En esta sección se dará una descripción completa de grupo-anillo cuando el grupo es finito y además abeliano. 
  
  Como en la parte final de la sección anterior, se supone que $K$ es un campo tal que $\car(K) \nmid |G|$. Esta caracterización fue dada por primera vez por S. Perlis y G Walker, véase~\cite{bib:PerlisWalker}. 
- 
+ \newpage
  Se comenzará con el caso donde $G$ es un grupo cíclico, así que se asume que $G = \langle a \colon a^n = 1 \rangle$ y que $K$ es un campo tal que $\car(K) \nmid |G|$. Considérese la función $\phi \colon K[X] \to KG$ dada por 
  \[K[X] \ni f \mapsto f(a) \in KG \]
  Debido a que la función $\phi$ consiste en tomar un polinomio de $K[G]$ y evaluarlo en $a$, es obvio que $\phi$ es un epimorfismo de anillos y por lo tanto:
@@ -526,7 +523,7 @@ de esta forma si $\zeta$ es una raíz de la unidad de orden 7 distinta de 1, se 
 \[  \mathds{Q}G = \mathds{Q}(1) \oplus \mathds{Q}(\zeta) = \mathds{Q} \oplus \mathds{Q}(\zeta).   \]
 \end{ejemplo}
 \begin{ejemplo}
-Sea $G = \langle a: a^6 = 1 \rangle$ y $K = \mathds{Q}$. La descomposición de $X^6 - 1 $ en $\mathds{Q}[X]$ es 
+Sea $G = \langle a: a^6 = 1 \rangle$ y $K = \mathds{Q}$. La descomposición de $X^6 - 1 $ en \nopagebreak[0] $\mathds{Q}[X]$ es 
 \[ X^6 - 1 = (X-1)(X+1)(X^2 + X + 1)(X^2-X+1), \]
 entonces se obtiene 
 \[  \mathds{Q}G \simeq \mathds{Q} \oplus \mathds{Q} \oplus \mathds{Q}\left( \frac{-1+i\sqrt{3}}{2} \right) \oplus \mathds{Q}\left( \frac{1+i\sqrt{3}}{2} \right),\]
@@ -552,6 +549,7 @@ Por otro lado, como $\grado(f_{d_i}) = [K(\zeta_d):K]$, se deduce que todos los 
 \[ \phi(d) = a_d[K(\zeta_d):K], \]
 donde $\phi$ es la función totiente de Euler. Como $G$ es un grupo cíclico de orden $n$, para cada divisor de $n$, el número de elementos de orden $d$ en $G$, que se denota con $n_d$, es precisamente $\phi(d)$, entonces:
 \[ a_d = \frac{n_d}{| K(\zeta_d) : K|}  \]
+Dado $n$, un entero positivo, se cumple que si la factorización de $n$ en producto de números primos es $n = p_1^{n_1}\cdots p_t^{n_t}$, entonces \[ \phi(n) = p_1^{n_1-1}(p_1-1)\cdots p_t^{n_t-1}(p_t-1).  \] Una propiedad de mucha importancia es el famoso teorema de Euler: Si $m$ y $n$ son primos relativos entonces $m^{\phi(n)} \equiv 1 \pmod{n}.$
 \begin{ejemplo}\label{ejem:descomposicionRacional}
 Sea $G = \langle a: a^n = 1 \rangle$  un grupo cíclico de orden $n$ y $K = \mathds{Q} $. Es conocido que el polinomio $X^n-1$ se descompone en $\mathds{Q}[X]$ como un producto de polinomios ciclotómicos, a saber:
 \[ X^n -1 = \prod_{d \mid n}\Phi_d(X)  \]
@@ -596,24 +594,24 @@ Dado $\sum_{h \in h}\alpha_hh \in (RG)H$ se construye $\gamma = \sum_{g \in G, h
 Sea $\{R_i\}_{i\in I}$ una familia de anillos y sea $R = \oplus_{i \in I}R_i$. Entonces para cualquier grupo $G$ se tiene $RG \simeq \oplus_{i \in I}R_iG$.
 \end{lema}
 \begin{proof*}
-Considérese la función $f \colon \oplus_{i \in I}R_iG \to RG$ dado por $(\alpha_1, \cdots, \alpha_n) \mapsto \sum_{g \in G}a_gg, \quad a_g = (a_g^{(1)}, \cdots, a_g ^{(n)})$, donde $a_g^{(i)}$ es el coeficiente de $g$ en $\alpha_i = \sum_{g \in G}a_g^{(i)}g$. Se debe comprobar que $f$ es un homomorfismo de anillos.
-Sean $\alpha = (\alpha_1, \cdots, \alpha_n), \  \beta = (\beta_1, \cdots, \beta_n) \in \oplus_{i \in I}R_iG$, entonces su suma viene dada por $\gamma = (\alpha_1 + \beta_1, \cdots, \alpha_n + \alpha_n)$, y con ello la imagen de la suma seria $f(\gamma) = \sum_{g \in G}c_gg, \quad c_g = (a_g^{(1)}, \cdots, a_g^{(n)})$. 
+Considérese la función $f \colon \oplus_{i \in I}R_iG \to RG$ dado por $(\alpha_1, \dots, \alpha_n) \mapsto \sum_{g \in G}a_gg, \quad a_g = (a_g^{(1)}, \dots, a_g ^{(n)})$, donde $a_g^{(i)}$ es el coeficiente de $g$ en $\alpha_i = \sum_{g \in G}a_g^{(i)}g$. Se debe comprobar que $f$ es un homomorfismo de anillos.
+Sean $\alpha = (\alpha_1, \dots, \alpha_n), \  \beta = (\beta_1, \dots, \beta_n) \in \oplus_{i \in I}R_iG$, entonces su suma viene dada por $\gamma = (\alpha_1 + \beta_1, \dots, \alpha_n + \beta_n)$, y con ello la imagen de la suma es $f(\gamma) = \sum_{g \in G}c_gg, \quad c_g = (a_g^{(1)}+b_g^{(1)}, \dots, a_g^{(n)}+b_g^{(n)})$. 
 
 Por otro lado, se tiene:
 \begin{eqnarray*}
 f(\alpha) + f(\beta) &=& \sum_{g \in G}a_gg + \sum_{g\in G}b_gg\\
  &=& \sum_{g \in G}(a_g + b_g)g \\
-  & = &  \sum_{g \in G}d_gg, \quad d_g = (a_g^{(1)} + b_g{(1)}, \cdots, a_g^{(n)} + b_g{(n)} )
+  & = &  \sum_{g \in G}d_gg, \quad d_g = (a_g^{(1)} + b_g^{(1)}, \dots, a_g^{(n)} + b_g^{(n)} )
 \end{eqnarray*}
 por lo tanto $f(\alpha + \beta) = f(\alpha) + f(\beta)$ y con esto se demuestra que $f$ conserva sumas.
 
-Para demostrar que $f$ conserva producto, se procede de manera similar que en la parte anterior, con lo que se  tiene $\gamma = \alpha\beta = (\alpha_1\beta_1, \cdots, \alpha_n\beta_n)$, y por lo tanto, su imagen bajo $f$, es $f(\gamma) = \sum_{u \in G}c_uu$ donde $c_u = (c_u^{(1)}, \cdots, c_u^{(n)}), \quad c_u^{(i)} = \sum_{gh=u}a_g^{(i)}b_h^{(i)}$.
+Para demostrar que $f$ conserva producto, se procede de manera similar que en la parte anterior, con lo que se  tiene $\gamma = \alpha\beta = (\alpha_1\beta_1, \dots, \alpha_n\beta_n)$, y por lo tanto, su imagen bajo $f$, es $f(\gamma) = \sum_{u \in G}c_uu$ donde $c_u = (c_u^{(1)}, \dots, c_u^{(n)}), \quad c_u^{(i)} = \sum_{gh=u}a_g^{(i)}b_h^{(i)}$.
 
-Por otro lado, $f(\alpha) = \sum_{g \in G}a_gg, \quad f(\beta) = \sum_{g \in G}b_gg$, multiplicando, se obtiene $f(\alpha)f(\beta) = \sum_{u \in G}d_uu, \quad d_u = \sum_{gh = u }a_gb_h = \left( \sum_{gh=u}a_g^{(1)}b_g^{(1)}, \dots, \sum_{gh=u}a_g^{(n)}b_g^{(n) } \right) = c_u$
+Por otro lado, $f(\alpha) = \sum_{g \in G}a_gg, \quad f(\beta) = \sum_{g \in G}b_gg$, multiplicando, se obtiene $f(\alpha)f(\beta) = \sum_{u \in G}d_uu, \quad d_u = \sum_{gh = u }a_gb_h = \left( \sum_{gh=u}a_g^{(1)}b_h^{(1)}, \dots, \sum_{gh=u}a_g^{(n)}b_h^{(n) } \right)=c_u$
 
 Se procede a demostrar que $f$ es inyectiva. Para ello supóngase que $f(\alpha) = \sum_{g\in G}a_gg = 0$ entonces $a_g = (0, \dots, 0)$, de donde $\alpha = (0, \dots, 0)$. 
 
-Dado $\sum_{g \in G}a_gg, \quad a_g = (a_g^{(1)}, \dots, a_g^{(n)})$. Entonces se construye \[\alpha= \left( \sum_{g\in G}a_g^{(1)}g, \cdots, \sum_{g\in G}a_g^{(n)}g  \right).\] De esto, se puede verificar que $f(\alpha) = \sum_{g \in G}a_gg$, con lo que se prueba que $f$ es sobreyectiva. \qedhere
+Dado $\sum_{g \in G}a_gg, \quad a_g = (a_g^{(1)}, \dots, a_g^{(n)})$. Entonces se construye \[\alpha= \left( \sum_{g\in G}a_g^{(1)}g, \dots, \sum_{g\in G}a_g^{(n)}g  \right).\] De esto, se puede verificar que $f(\alpha) = \sum_{g \in G}a_gg$, con lo que se prueba que $f$ es sobreyectiva. \qedhere
 \end{proof*}
 \begin{teorema}[Perlis-Walker]\label{teo:Perlis-Walker}
 Sea $G$ un grupo finito abeliano de orden $n$ y sea $K$ un campo tal que $\car(K)\nmid n$. Entonces
@@ -623,7 +621,7 @@ donde $\zeta_d$ es una raíz primitiva de la unidad de orden $d$ y $a_d = \frac{
 \begin{proof*}
 Para demostrar el teorema se procede por inducción sobre el orden de $G$. Supóngase que el resultado es válido para cualquier grupo abeliano de orden menor que $n$. 
 
-Sea $G$ tal que $|G| = n$. Si $G$ es generado no hay algo que demostrar. Si $G$ no fuera un grupo generado se puede utilizar el teorema\ref~{teo:estructuraAbelianos} de estructura de los grupos finitos abelianos para escribir $G = G_1 \times H$ donde $H$ es generado y $|G_1| = n_1 < n$. Por hipótesis de inducción se puede escribir 
+Sea $G$ tal que $|G| = n$. Si $G$ es generado no hay algo que demostrar. Si $G$ no fuera un grupo generado se puede utilizar el teorema~\ref{teo:estructuraAbelianos} de estructura de los grupos finitos abelianos para escribir $G = G_1 \times H$ donde $H$ es generado y $|G_1| = n_1 < n$. Por hipótesis de inducción se puede escribir 
 \[ RG_1 \simeq \oplus_{d_1\mid n_1} a_{d_1}K(\zeta_{d_1}),\]
 donde $a_{d_1} =\frac{n_{d_1}}{[K(\zeta_{d_1}):K]}$ y $n_{d_1}$ denota el numero de elementos de orden $d_1$ en $G_1$. Aplicando el lema \ref{lema1} se cumple
 \[  RG = R(G_1 \times H) \simeq (RG_1)H \simeq \left(\oplus_{d_1\mid n_1}a_{d_1}K(\zeta_{d_1})\right) H \]

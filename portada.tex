@@ -1,28 +1,138 @@
-% para generar en el pdf la barra naranja que identifica a la escuela
-% utilizar el siguiente c�digo, de lo contrario no hacer cambios
-%\vspace*{-1.63in}\hspace{-1.97in}{\color[rgb]{1,.5,0}{\rule{8.5in}{5mm}}}
-\vspace*{-1.63in}\hspace{-1.97in}%{\color[rgb]{1,.5,0}{\rule{8.5in}{5mm}}}
-%\vspace*{-1.63in}\hspace{-1.9in}{\color[rgb]{1,1,1}{\rule{1in}{5mm}}}
-\vspace{12pt} \pdfbookmark[0]{PORTADA}{prt} \thispagestyle{empty}
+\include{Datos}
 
-\begin{figure}[h]
-\setbox0 \vbox{\begin{flushleft}
-\hspace{-10mm}\includegraphics[width = 2.5cm]{Pictures/escudo}\\
-\end{flushleft}}
-\wd0 = 0pt \ht0 = 0pt \box0
-\end{figure} \hangindent = 18mm \hangafter = -3\vspace{-4mm}
+\newpage
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Primera Página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbox0\vbox{\noindent
+\hspace{.7cm}
+\includegraphics[width=2.2cm]{Pictures/escudo.png}}
+\ht0=13pt\box0
+\hangindent=35mm\hangafter=-3\vspace{-1.55cm}
+% aquí está el ecabezado
 \noindent Universidad de San Carlos de Guatemala\\
-Facultad de Ingeniería \\ Escuela de Ciencias
+Facultad de Ingeniería\\
+Escuela de \Esc  \\ 
+\vspace{5.2cm}
+\begin{center}
+% Título
+\textbf{TEORÍA DE LOS GRUPO-ANILLOS} \\
+\textbf{Y SUS APLICACIONES} \\ 
+\vspace{5.8cm}
+% Autor
+\textbf{\Nomb}\\ 
+Asesorado por: \Ases  \\
+\hskip 7.5em Lic. William Roberto Gutiérrez Herrera\\
+\vspace{1.5cm}
+% Lugar y fecha
+Guatemala,  \Fec
+\end{center}
 
-\vspace{5.5cm}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Segunda Página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+UNIVERSIDAD DE SAN CARLOS DE GUATEMALA \\[3mm]
+\includegraphics[width=4cm]{Pictures/escudo.png} \\ [1mm]
+FACULTAD DE INGENIERÍA\\
+\vspace{1.4cm}
+\textbf{TEORÍA DE LOS GRUPO-ANILLOS}\\
+\textbf{Y SUS APLICACIONES} 
+
+TRABAJO DE GRADUACIÓN 
+
+PRESENTADO A LA JUNTA DIRECTIVA DE LA \\ 
+FACULTAD DE INGENIERÍA \\ 
+POR\\
+\vspace{1.4cm}
+\textbf{\MakeUppercase{\Nomb}} \\
+ASESORADO POR \MakeUppercase{\Ases}\\
+\hskip 11em LIC. WILLIAM ROBERTO GUTIÉRREZ HERRERA 
+	
+AL CONFERÍRSELE EL TÍTULO DE 
+
+\textbf{\MakeUppercase{\Grado}} \\ 
+%\vspace{1.3cm}
+\vfill
+GUATEMALA, \MakeUppercase{\Fec}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Tercera Página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
-{\large \textbf{TEORÍA DE LOS GRUPOS-ANILLOS Y SUS APLICACIONES}}
 
-\vspace{3.5cm}
+UNIVERSIDAD DE SAN CARLOS DE GUATEMALA \\
+FACULTAD DE INGENIERÍA 
 
-\textbf{Hugo Allan García Monterrosa}\\[6pt]
-Asesorado por el Lic. William Roberto Gutiérrez Herrera \\[5cm]
+\includegraphics[width=4cm]{Pictures/escudo.png}\\ [17mm]
 
-Guatemala, FECHA
+\textbf{NÓMINA DE JUNTA DIRECTIVA} 	
+
+\begin{tabular}{ll}
+    DECANO     & \Dec \\ 
+    VOCAL I    & \VocI \\ 
+    VOCAL II   & \VocII \\ 
+    VOCAL III  & \VocIII \\ 
+    VOCAL IV   & \VocIV \\ 
+    VOCAL V    & \VocV \\ 
+    SECRETARIO & \Sec  
+\end{tabular}\\
+\vspace{1.6cm}
+\textbf{TRIBUNAL QUE PRACTICÓ EL EXAMEN GENERAL PRIVADO} 
+
+\begin{tabular}{ll}
+    DECANO     & \Dec \\
+    EXAMINADOR & \ExaI \\
+    EXAMINADOR & \ExaII \\
+    EXAMINADOR & \ExaIII \\
+    SECRETARIO & \Sec
+\end{tabular}
 \end{center}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Cuarta Página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+  \textbf{HONORABLE TRIBUNAL EXAMINADOR}
+\end{center} 
+\vspace{1.0cm}
+En cumplimiento con los preceptos que establece la ley de la Universidad de
+San Carlos de Guatemala, presento a su consideración mi trabajo de
+graduación titulado: 
+\vspace{.4cm}
+\begin{center}
+\textbf{ \MakeUppercase{\TiTes}} 
+\end{center}
+\vspace{1.0cm}
+Tema que me fuera asignado por la Dirección de la Escuela de \Esc , con fecha \FecP. 
+\vspace{.4cm}
+\begin{figure}[!ht]
+\begin{flushright}
+\begin{tabular}{c}
+%\includegraphics[scale=.5]{Pictures/Firma.jpg}\\
+\Nomb
+\end{tabular}
+\end{flushright}
+\end{figure}
+\newpage
+\thispagestyle{empty}
