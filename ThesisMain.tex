@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{tikz}
+\usepackage{afterpage}
 \usepackage{titlesec}
 \usepackage{parskip}
 \usepackage{pdfpages}
@@ -31,7 +32,7 @@
 \usepackage[nodisplayskipstretch]{setspace}
 %Paquete para el manejo del Indice
 \usepackage[titles]{tocloft}
-\renewcommand{\captionfont}{\bf}
+%\renewcommand{\captionfont}{\bf}
 \renewcommand{\captionlabelfont}{\normalfont}
 
 
@@ -51,6 +52,12 @@
 }
 \makeatother
 
+\makeatletter
+\patchcmd{\caption@@@make}% <cmd>
+  {\ifcaption@star}% <search>
+    {\ifcaption@star\footnotesize}% <replace>
+    {}{}% <success><failure>
+\makeatother
 
 \makeatletter
 \g@addto@macro\normalsize{%
@@ -72,7 +79,9 @@
 \setlength{\parskip}{1.37\baselineskip}%<---------------distancia entre párrafos
 \setstretch{1.45}    
 %\renewcommand\baselinestretch{1.5}               %<-----------------interlineado
-\setlength\LTleft{0pt} \setlength\LTright{0pt} %<------------- parametros para tablas largas
+\setlength\LTleft{0pt} \setlength\LTright{0pt}
+\setlength{\LTcapwidth}{0in}
+ %<------------- parametros para tablas largas
 \pretolerance=2000
 \tolerance=3000 %<- para no separar las palabras
 
@@ -122,7 +131,7 @@
 % Espacio entre número y la subsubsección
 \setlength{\cftsubsubsecnumwidth}{2.25cm}
 % Espacio entre número y figura
-\setlength{\cftfignumwidth}{1.3cm}
+\setlength{\cftfignumwidth}{0.61cm}
 % Espacio del margen a la figura
 \setlength{\cftfigindent}{0cm}
 % Espacio entre número y tabla
@@ -131,6 +140,11 @@
 \setlength{\cfttabindent}{0cm}
 %Para alinear los numeros romanos
 \cftsetpnumwidth{2em}
+%Para cambiar el tamaño de letra al indice (12pts)
+\renewcommand\cftchapfont{\normalfont}
+\renewcommand\cftsecfont{\normalfont}
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lof}{\protect\noaddvspace}
 
 
 %----------------Definicion de listas----------
@@ -156,17 +170,17 @@
   {\baselineskip} % Space above
   {\topsep} % Space below
   {} % Body font
-  {} % Indent amount
-  {\bfseries} % Theorem head font
+  {1cm} % Indent amount
+  {\normalfont} % Theorem head font
   {.} % Punctuation after theorem head
   {.5em} % Space after theorem head
   {} % Theorem head spec (can be left empty, meaning `normal')
 \newtheoremstyle{resto} %
   {\baselineskip} % Space above
   {0mm} % Space below
-  {\itshape} % Body font
-  {} % Indent amount
-  {\bfseries} % Theorem head font
+  {\normalfont} % Body font
+  {1cm} % Indent amount
+  {\normalfont} % Theorem head font
   {.} % Punctuation after theorem head
   {.5em} % Space after theorem head
   {} % Theorem head spec (can be left empty, meaning `normal')
@@ -208,8 +222,11 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 
 
 \begin{document}
+{\setlength{\parskip}{1.37\baselineskip}%<---------------distancia entre párrafos
+\setstretch{1.45}
+\include{Datos}
 \captionsetup[figure]{labelformat=simple, labelsep=period}
-\input{portada}
+\include{portada}
 %Para incluir cartas
 \newpage
 \thispagestyle{empty}
@@ -223,9 +240,9 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \thispagestyle{empty}
 \mbox{}
 %Para incluir  dedicatoria y agradecimientos
-\input{Dedicatoria}
-\input{Agradecimientos}
-
+\include{Dedicatoria}
+\include{Agradecimientos}
+\par}
 
 %---------------Inicio del front matter -----------
 \frontmatter     	
@@ -236,18 +253,24 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \listoffigures
 %Listado de tablas
 %\listoftables
-\input{Simbolos}  		
-\input{Glosario}		
-\input{Resumen}		
-\input{Objetivos}     	
-\input{intr}  	
+\include{Simbolos}  		
+\include{Glosario}	
+\include{Resumen}		
+\include{Objetivos}
+\newpage
+\mbox{}
+\thispagestyle{empty}
+\addtocontents{toc}{\protect\addvspace{1.8em}}    	
+\include{intr}  	
 % Modificación para tabla de contenidos
 \addtocontents{toc}{\protect\addvspace{1.8em}}
 
 
+
+
+
 % -------------- Inicio del cuerpo de la tesis -----
 \mainmatter
-\addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter1}
 \addtocontents{toc}{\protect\addvspace{1.8em}}
 \include{Chapters/chapter2}

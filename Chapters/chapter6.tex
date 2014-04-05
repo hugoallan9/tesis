@@ -1,11 +1,11 @@
 \chapter{APLICACIONES}
 En este capítulo se darán los conceptos básicos de teoría de códigos. Se empezará dando una descripción del sistema de comunicación como lo propuso Claude E. Shannon\footnote{Claude Elwood Shannon (Míchigan, 30 de abril de 1916 -- 24 de febrero de 2001) fue un ingeniero electrónico y matemático estadounidense, recordado como el padre de la teoría de la información.} en 1948. En esta parte también se introducirán todos los conceptos básicos del sistema de comunicación como canal, codificador, decodificador y código. Una vez la teoría básica está dada se hace un breve estudio de los códigos lineales, para terminar este capítulo con una clase de códigos en particular, los cíclicos. 
 
-\section{\quad Sistema de Comunicación}
+\section{\quad Sistema de comunicación}
 La figura \ref{fig:sistemaComunicacion} muestra un sistema de comunicación de una \textbf{fuente} a un \textbf{destino} mediante un \textbf{canal}. La comunicación puede ser en el dominio del espacio (es decir, de un punto a otro) o en el dominio del tiempo (al guardar información en algún punto en el tiempo para ser recuperada posteriormente).
 \begin{figure}
 \centering
-\caption{\hskip 2em Sistema de Comunicación propuesto por Shannon}
+\caption{\hskip 2em Sistema de comunicación propuesto por Shannon}
 \vskip 1em
 \includegraphics[angle=-90,width=0.9\linewidth]{Pictures/sistema.pdf}
 \vskip 1.80em
@@ -27,7 +27,7 @@ Más aún, en algunos casos el diseño requiere que el formato de la informació
 Es así como entran a participar los códigos. Los códigos fueron inventados para corregir errores en los canales de comunicación debido al ruido. Por ejemplo, supóngase que hay un cable telegráfico desde Ciudad de Guatemala hasta Ciudad de Panamá, mediante el cual se pueden transmitir unos y ceros. Usualmente cuando un cero es enviado se recibe un cero, pero ocasionalmente un cero puede ser recibido como un uno o un uno como un cero. Supóngase que en promedio, 1 de cada 100 símbolos se recibe de forma errónea, es decir, por cada símbolo hay una probabilidad $p=1/100$ de que ocurra un error en el canal. A esto se le llama un canal binario simétrico y se denota como BSC por sus siglas en inglés.
 \begin{figure}
 \centering
-\caption{\hskip 2em Canal Binario Simétrico}
+\caption{\hskip 2em Canal binario simétrico}
 \vskip 1em
 \input{Sources/CBS.tex}
 \vskip 1.80em
@@ -38,7 +38,7 @@ Además supóngase que se enviarán muchos mensajes importantes por ese cable y 
 
 Se van a \textbf{codificar} estos mensajes para darles una protección en contra del ruido del canal. Un bloque de $k$ símbolos del mensaje $u = u_1\dots u_k,\ u_i = 0 \mbox{ o } 1$, será codificado como una \textbf{palabra-código} $x = x_1 \dots x_n, x_i = 0 \mbox{ o } 1$ donde $n \geq k$ (véase la figura \ref{fig:codificacion}). Estas palabra-códigos forman un código.
 \begin{figure}
-\caption{\hskip 2em Proceso de Codificación}
+\caption{\hskip 2em Proceso de codificación}
 \centering
 \vskip 1em
 \input{codificacion.tex}
@@ -115,7 +115,7 @@ La mayor parte del trabajo en teoría de códigos se desarrolla en base a la dis
 
 Como se dijo anteriormente, en la transmisión de una palabra-código en algún canal se puede producir errores debido al ruido. Por error, se entiende que puede ocurrir un cambio en cualquiera de las coordenadas de la $n\mbox{-upla}$ trasmitida. Justamente el punto de codificar es que, bajo ciertas circunstancias, estos errores se pueden corregir.
 
-\section{\hskip 1em Códigos Cíclicos} 
+\section{\hskip 1em Códigos cíclicos} 
 
 Ya que se ha hecho la presentación de los códigos lineales, se procede a estudiar una clase muy particular e importante de ellos; los códigos cíclicos.
 

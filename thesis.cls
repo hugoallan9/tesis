@@ -428,7 +428,7 @@
 {\parindent \z@ \raggedright \normalfont \centering
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
-        \large \bfseries \thechapter.\ \hskip 4mm        %<-------------------- tipo de letra contador del t�tulo
+        \large \bfseries \thechapter.\ \hskip 4mm        %<-------------------- tipo de letra contador del título
       \fi
     \fi
     \interlinepenalty\@M
@@ -641,7 +641,7 @@
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\vspace*{8\p@}\MakeUppercase\contentsname
+    \chapter*{\vspace*{18\p@}\MakeUppercase\contentsname
         \@mkboth{%
            \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
     \vskip 2.1em %<----- Distancia de cabecera de toc a inicio del mismo
@@ -662,7 +662,7 @@
          \everypar{\global\@nobreakfalse\everypar{}}%
     \endgroup
   \fi}
-\newcommand*\l@chapter[2]{%
+\newcommand*\l@chapter[2]{ %
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
     \vskip 1.0em \@plus\p@
@@ -691,7 +691,8 @@
     \chapter{\listfigurename}%
       \@mkboth{\MakeUppercase\listfigurename}%
               {\MakeUppercase\listfigurename}%
-    {\centering \large\bfseries FIGURAS \par\nobreak}% Título de Figuras
+              \vspace*{.15cm}
+    {\centering \normalfont\bfseries FIGURAS \par\nobreak}% Título de Figuras
     \vspace{.7cm} % Distancia entre título y listado
     \@starttoc{lof}%
     \if@restonecol\twocolumn\fi
