@@ -44,8 +44,8 @@
   \pushQED{\qed}%
   \normalfont \partopsep=\z@skip \topsep=\z@skip
   \trivlist
-  \item[\hskip\labelsep
-        \itshape
+  \item[\hskip\labelsep\indent
+        %\itshape
     #1\@addpunct{.}]\ignorespaces
 }{%
   \popQED\endtrivlist\@endpefalse
@@ -159,6 +159,21 @@
 \setlength{\labelwidth}{1cm}
 \setlength\listparindent{0cm}
 \setlength\leftmargin{1.4cm} % Distancia entre borde y número
+\setlength{\parsep}{.0cm}% Separación entre elementos
+}
+}{
+\end{list}
+}
+
+\newenvironment{centeredList}{
+\begin{list}
+{\centering\arabic{ContadorLista}.}
+{
+\usecounter{ContadorLista}
+\setlength{\labelsep}{2.125cm}% Separación entre número y texto
+\setlength{\labelwidth}{1cm}
+\setlength\listparindent{0cm}
+\setlength\leftmargin{2.4cm} % Distancia entre borde y número
 \setlength{\parsep}{.0cm}% Separación entre elementos
 }
 }{
