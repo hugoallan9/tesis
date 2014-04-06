@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.2.8)  5 APR 2014 00:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.2.8)  5 APR 2014 19:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1971,11 +1971,25 @@ Underfull \hbox (badness 1019) in paragraph at lines 252--253
 2 (\OML/cmm/m/it/12 n; K\OT1/cmr/m/n/12 )$ y
  []
 
-[88] [89] [90] [91]
+[88] [89] [90]
+Overfull \hbox (4.98306pt too wide) in paragraph at lines 331--332
+[]\OT1/cmr/m/n/12 Sea $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 w[]; w[]; [] ; w[]\OM
+S/cmsy/m/n/12 g$ \OT1/cmr/m/n/12 y $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 w[]; [] 
+; w[]\OMS/cmsy/m/n/12 g$ \OT1/cmr/m/n/12 ba-ses da-das pa-ra $\OML/cmm/m/it/12 
+W$ \OT1/cmr/m/n/12 y $\OML/cmm/m/it/12 W[]$ []\OT1/cmr/m/n/12 ,
+ []
+
+[91]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 350.
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 351--352
+[]\OT1/cmr/m/n/12 En es-ta sec-ci^^Son se es-tu-diar^^Sa la co-ne-xi^^Son que h
+ay en-tre m^^Sodu-los y
+ []
 
 [92] [93]
 Underfull \hbox (badness 1701) in paragraph at lines 403--404
@@ -2095,7 +2109,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 11.74988pt
 (hyperref)                replaced by space on input line 4.
 
-<Pictures/sistema.pdf, id=1324, 362.07271pt x 793.5246pt>
+<Pictures/sistema.pdf, id=1323, 362.07271pt x 793.5246pt>
 File: Pictures/sistema.pdf Graphic file (type pdf)
 
 <use Pictures/sistema.pdf>
@@ -2150,11 +2164,11 @@ Package rerunfilecheck Info: File `ThesisMain.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
- 23041 strings out of 493488
- 370420 string characters out of 3144728
- 526099 words of memory out of 3000000
- 25197 multiletter control sequences out of 15000+200000
- 21354 words of font info for 95 fonts, out of 3000000 for 9000
+ 23039 strings out of 493488
+ 370399 string characters out of 3144728
+ 526101 words of memory out of 3000000
+ 25196 multiletter control sequences out of 15000+200000
+ 21046 words of font info for 94 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,18n,92p,3243b,669s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
@@ -2164,34 +2178,33 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 <c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2012/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2012/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/pub
-lic/amsfonts/cmextra/cmex8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi12.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2012/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2012/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2012/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-12.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2012/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2012/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2012/texmf-dist/fonts/type1/p
-ublic/doublestroke/dsrom12.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/d
-oublestroke/dsrom8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/wasy/wasy10.p
-fb><c:/texlive/2012/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb><c:/texliv
-e/2012/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on ThesisMain.pdf (183 pages, 1826020 bytes).
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2012/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2012/texmf-dist/fonts/
+type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2012/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.p
+fb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><
+c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2012/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2012/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2012/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmss12.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2012/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2012/texmf-dist/font
+s/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2012/texmf-dist/fonts/type1
+/public/doublestroke/dsrom8.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/wasy
+/wasy10.pfb><c:/texlive/2012/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb><
+c:/texlive/2012/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on ThesisMain.pdf (183 pages, 1815424 bytes).
 PDF statistics:
- 1651 PDF objects out of 1728 (max. 8388607)
- 1408 compressed objects within 15 object streams
+ 1647 PDF objects out of 1728 (max. 8388607)
+ 1405 compressed objects within 15 object streams
  506 named destinations out of 1000 (max. 500000)
  386 words of extra memory for PDF output out of 10000 (max. 10000000)
 
