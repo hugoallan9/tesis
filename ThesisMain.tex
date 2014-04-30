@@ -11,7 +11,7 @@
 \usepackage{pdfpages}
 \usepackage{amsfonts,amsmath,amssymb,amsthm,mathrsfs}
 \usepackage{latexsym,wasysym}
-%manejando los margenes
+%manejando los margenes para que la portada cuadre poner 
 \usepackage[letterpaper, textwidth=5.94095 in, textheight=21.3 cm, footskip = 0.815cm, left=1.5748 in, top=1.55480315in,twoside ]{geometry}
 %\usepackage[paper=letterpaper, marginparsep=0in,footskip = 0.7505cm, marginparwidth= 0in, headsep= 0in, headheight= 0in, top=4cm, bottom=2.5cm,left=4cm,right=2.5cm,twoside]{geometry}
 \usepackage{textcomp}
@@ -30,15 +30,17 @@
 %para cambiar letra de subcaption a 10 pt
 \usepackage{etoolbox}
 \usepackage[nodisplayskipstretch]{setspace}
-%Paquete para el manejo del Indice
+%Paquete para el manejo del Indic
 \usepackage[titles]{tocloft}
-%\renewcommand{\captionfont}{\bf}
+\renewcommand*{\captionfont}{\bf}
 \renewcommand{\captionlabelfont}{\normalfont}
 
 
 
 %---------------------------Fin Preambulo------------------------------------------------
 %------------Nueva Definicion para ámbito proof.
+
+
 \makeatletter
 \newenvironment{proof*}[1][\proofname]{\par
   \pushQED{\qed}%
@@ -55,7 +57,7 @@
 \makeatletter
 \patchcmd{\caption@@@make}% <cmd>
   {\ifcaption@star}% <search>
-    {\ifcaption@star\footnotesize}% <replace>
+    {\ifcaption@star\normalfont\footnotesize}% <replace>
     {}{}% <success><failure>
 \makeatother
 
@@ -165,6 +167,21 @@
 \end{list}
 }
 
+\newenvironment{finalList}{
+\begin{list}
+{\centering\arabic{ContadorLista}.}
+{
+\usecounter{ContadorLista}
+\setlength{\labelsep}{1.125cm}% Separación entre número y texto
+\setlength{\labelwidth}{1cm}
+\setlength\listparindent{0cm}
+\setlength\leftmargin{1.4cm} % Distancia entre borde y número
+\setlength{\parsep}{\baselineskip}% Separación entre elementos
+}
+}{
+\end{list}
+}
+
 \newenvironment{centeredList}{
 \begin{list}
 {\centering\arabic{ContadorLista}.}
@@ -240,9 +257,13 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 {\setlength{\parskip}{1.37\baselineskip}%<---------------distancia entre párrafos
 \setstretch{1.45}
 \include{Datos}
-\captionsetup[figure]{labelformat=simple, labelsep=period}
+\captionsetup[figure]{labelformat=simple, labelsep=period,textfont=bf}
 \include{portada}
 %Para incluir cartas
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\includepdf{Cartas/cartaMayra.pdf}
 \newpage
 \thispagestyle{empty}
 \mbox{}
@@ -272,13 +293,11 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
 \include{Glosario}	
 \include{Resumen}		
 \include{Objetivos}
-\newpage
-\mbox{}
-\thispagestyle{empty}
+%\newpage
+%\mbox{}
 \addtocontents{toc}{\protect\addvspace{1.8em}}    	
 \include{intr}  	
 % Modificación para tabla de contenidos
-\addtocontents{toc}{\protect\addvspace{1.8em}}
 
 
 
@@ -311,6 +330,8 @@ pdfstartview = {FitH}, plainpages = {false}, bookmarksnumbered =
      \input{Recomendaciones}
      \input{Bibliografia}
      \bibliographystyle{plainnat}
+     \newpage
+     \mbox{}
      
 \end{document}
 

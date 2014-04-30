@@ -8,13 +8,13 @@ En este contexto histórico es natural hacer la pregunta: dado un grupo abstract
 
 En 1879, durante las lecturas de un coloquio matemático realizado en Evanston, Illinois, Felix Klein planteó la posibilidad de representar un grupo abstracto dado como un grupo de transformaciones lineales (véase \cite{bib:historia}).
 
-Siguiendo estas ideas, Theodor Molien, Georg Frobenius, Issai Schur, William Burnside y  Heinrich Maschke desarrollaron la teoría básica de la representación de grupos al inicio del siglo XX y Burnside presentó la primera exposición  sistemática\newpage \noindent de este tema en su libro \cite{bib:burnside}, que actualmente es considerado un libro clásico en este~ tema. 
+Siguiendo estas ideas, Theodor Molien, Georg Frobenius, Issai Schur, William Burnside y  Heinrich Maschke desarrollaron la teoría básica de la representación de grupos al inicio del siglo XX y Burnside presentó la primera exposición  sistemática \mbox{ }\newpage \noindent de este tema en su libro \cite{bib:burnside}, que actualmente es considerado un libro clásico en este~ tema. 
 
 La teoría de la representación se volvió más importante a medida que se fueron obteniendo nuevos resultados. Uno de los resultados más importantes, es el famoso teorema que establece que si $p$ y $q$ son números enteros primos y  $a$, $b$ enteros positivos, entonces cualquier grupo de orden $p^aq^b$ es soluble. Este teorema fue demostrado en 1904 por William Burnside, usando la teoría de representación de grupos y, como dato curioso, la primera demostración que no utiliza dicha teoría fue proporcionada por John Griggs Thompson más de 60 años después (ver \cite{bib:grupsfact}).
 
 William Burnside también conjeturó que todo grupo de orden impar es soluble. Esta conjetura fue un problema abierto hasta que Walter Feit y John Thompson dieron una demostración de esta conjetura en 1963 (ver \cite{bib:solubilidad}), usando para ello teoría de la representación. Luego de hacer énfasis en la importancia histórica que tiene la teoría de representación de grupos, se presentan algunas definiciones de la~ misma.
 \begin{definicion}
-Sean $G$ un grupo, $R$ un anillo conmutativo y $V$ un $R\mbox{-módulo}$ libre de rango finito. Una \textbf{representación} de $G$ sobre $R$, con espacio de representación $V$, es un homomorfismo de grupos $T \colon G \to GL(V)$, donde $GL(V)$ es el grupo de automorfismo de $V$. El rango de $V$ es llamado \textbf{grado} de la representación $T$ y se denotará como $\grado(T)$.
+Sean $G$ un grupo, $R$ un anillo conmutativo y $V$ un $R\mbox{-módulo}$ libre de rango finito. Una representación de $G$ sobre $R$, con espacio de representación $V$, es un homomorfismo de grupos $T \colon G \to GL(V)$, donde $GL(V)$ es el grupo de automorfismo de $V$. El rango de $V$ es llamado grado de la representación $T$ y se denotará como $\grado(T)$.
 \end{definicion}
 
 Para $g \in G$ se denotará con $T_g \colon V \to V$ al automorfismo correspondiente bajo $T$. Así, si $g, h \in G$, se tiene que $T_{gh} = T_g \circ T_h$ y $T_1 = I$.
@@ -146,7 +146,7 @@ Nótese que esta representación es distinta a la representación regular, que e
  &  &  \dots &  &  \\
  0 & 0 & \dots & 1 & 0
 \end{pmatrix}. \end{equation*}
-\indent Además si $\car(K) \mid m$ entonces se propone la representación $C \colon G \to GL(2,K)$, dada por:
+\indent Además si $\car(K) \mid m$, entonces se propone la representación $C \colon G \to GL(2,K)$, dada por:
 \begin{equation*}
 C(a) = \begin{pmatrix}
 1 & 1\\
@@ -162,7 +162,7 @@ C(a) = \begin{pmatrix}
 Considérese el grupo de simetrías de un cuadrado. Este grupo de 8 elementos, a saber las reflexiones a través de los ejes $r_1, r_2, r_3, r_4$ (véase la figura \ref{fig:ejemplo}) y las rotaciones con ángulos $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$ y $2\pi$ alrededor del centro. 
 
 
-
+\captionsetup[figure]{labelformat=simple, labelsep=period}
 \begin{figure}[t]
   \centering
   \caption{\hskip 2em Forma gráfica del grupo $D_4$}
@@ -231,6 +231,7 @@ A(g) & 0 \\
 Los ejemplos anteriormente expuestos, sirven de motivación para introducir algunos conceptos de teoría de la representación. En este trabajo se restringirán las representaciones al caso en el cual $R$ es un campo, debido a que con este caso se logra ilustrar la relación de teoría de representación con los problemas de grupo-anillos.
 
 Primero considérese $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$ y asúmase que $\phi \colon V \to W$ es un isomorfismo de espacios vectoriales sobre $K$. Entonces se puede definir una nueva representación $\overline{T} \colon G \to GL(W)$ por medio de $\overline{T_g} \colon \phi \circ T_g \circ \phi^{-1}$ para todo $g \in G$. Esto es, esencialmente, una copia de $T$. La relación entre estas dos representaciones está ilustrada en el diagrama de la figura \ref{fig:ejemploSumaRepresentaciones}, 
+\captionsetup[figure]{labelformat=simple, labelsep=period}
 \begin{figure}[t]
   \centering
   \caption{\hskip 2em Diagrama conmutativo para representaciones equivalentes}
@@ -239,7 +240,7 @@ Primero considérese $T \colon G \to GL(V)$ una representación de un grupo $G$ 
   	  \ar[d]_{\phi}
   	   & V \ar[d]^{\phi} \\
   	  W \ar[r]_{\overline{T_g}} & W}\]
-	  \captionsetup[figure]{textfont = normal, labelformat=empty, labelsep=period}
+	  \captionsetup[figure]{labelformat=simple, labelsep=period}
 	  \vskip 0.20em
   	  \caption*{Fuente: elaboración propia, con programa para computadora xymatrix.}
   \label{fig:ejemploSumaRepresentaciones}
@@ -260,7 +261,7 @@ Sea $G$ un grupo cíclico de orden $m$ y $K$ un campo que contiene a $\{ \xi_1, 
  & & \cdots & \\
  \xi_m & \xi_m^2 & \cdots & \xi_m^m \\ 
 \end{pmatrix}. \end{equation*}
-Es claro que $\mathsf{U} \in GL(n,K)$, ya que $\mathsf{U}$ es una matriz de Vandermonde con $det(\mathsf{U}) = \prod_{1 \leq i < j \leq m}(\xi_i - \xi_j) \neq 0$. Entonces, calculando, por un lado se tiene: 
+\indent Es claro que $\mathsf{U} \in GL(n,K)$, ya que $\mathsf{U}$ es una matriz de Vandermonde con $det(\mathsf{U}) = \prod_{1 \leq i < j \leq m}(\xi_i - \xi_j) \neq 0$. Entonces, calculando, por un lado se tiene: 
 \begin{equation*} B(a)\mathsf{U} = \begin{pmatrix}
 \xi_1 & 0 & \cdots & 0\\
 0 & \xi_2 & \cdots & 0\\
@@ -321,7 +322,7 @@ A(g) & B(g) \\
 \end{equation*}  
 \end{definicion}
 
-El ejemplo \ref{ejemciclico} muestra que la representación regular de un grupo cíclico de orden $m$, sobre un campo $K$ que contiene raíces de la unidad de orden $m$ es reducible. De hecho, cualquier representación regular de un grupo finito $G \neq \{ 1 \}$ sobre cualquier campo es reducible. En efecto, nótese que si en el espacio de representación $RG$ se toma el elemento $\hat{G} = \sum_{g \in G}g$ entonces $ T_g(\hat{G}) = \hat{G}$ por lo tanto el subespacio generado por $\hat{G}$ es invariante bajo $T$ y $(\hat{G}) \neq RG.$  
+El ejemplo \ref{ejemciclico} muestra que la representación regular de un grupo cíclico de orden $m$, sobre un campo $K$ que contiene raíces de la unidad de orden $m$, es reducible. De hecho, cualquier representación regular de un grupo finito $G \neq \{ 1 \}$ sobre cualquier campo es reducible. En efecto, nótese que si en el espacio de representación $RG$ se toma el elemento $\hat{G} = \sum_{g \in G}g$ entonces $ T_g(\hat{G}) = \hat{G}$ por lo tanto el subespacio generado por $\hat{G}$ es invariante bajo $T$ y $(\hat{G}) \neq RG.$  
 
 \begin{definicion}
 Una representación $T \colon G \to GL(V)$ de un grupo $G$ sobre un campo $K$ es llamada completamente reducible si para todo subespacio $W$ que es invariante bajo $T$ existe un subespacio invariante $W'$ tal que $V = W \oplus W'$.
@@ -347,7 +348,7 @@ A(g) & 0 \\
 \end{definicion}
 
 
-\section{\hskip 1em Representación y módulos.}
+\section{\hskip 1em Representación y módulos}
  En esta sección se estudiará la conexión que hay entre módulos y \mbox{representaciones}. Dicha conexión se establece usando el concepto de grupo-anillo.
  
  \begin{proposicion}\label{prop:biyeccionModulos}
@@ -394,7 +395,7 @@ A(g) & 0 \\
   &=& v.
  \end{eqnarray*}
  \end{bulletList}
-  \indent Por lo expuesto anteriormente es fácil notar que la multiplicación por escalar definida en la ecuación~\eqref{defproducto} induce un $RG\mbox{-módulo}$.
+  \hskip 1cm Por lo expuesto anteriormente es fácil notar que la multiplicación por escalar definida en la ecuación~\eqref{defproducto} induce un $RG\mbox{-módulo}$.
  
  Al converso, si $M$ es un $RG\mbox{-módulo}$ de rango finito sobre $R$, se define la representación de $G$ sobre $R$ asignando a cada elemento $g \in G$ el $R\mbox{-automorfismo}$ $T_g \colon M \to M$ dado por $T_g(m) = gm$.
  
@@ -461,10 +462,10 @@ A(g) & 0 \\
  \begin{equation*} |G| = \sum_{i = 1}^{r}n_{i}^2[D_i:K]. \end{equation*}
  
  Por otro lado, se sabe que el módulo irreducible $I_i$ correspondiente a la componente simple $M_{n_i}(D_i)$ es isomorfo a $D_{i}^{n_i}$. Como el grado de la correspondiente representación $T_i$ viene dado por la dimensión de este módulo sobre $K$, se obtiene que
- \begin{equation*}  \grado (T_i) = [D_{i}^{n_i}:K] = n_i[D_i:K] \end{equation*} así, se puede escribir \begin{equation*} |G| = \sum_{i = 1}^{r}n_i\grado(T_i). \end{equation*} 
+ \begin{equation*}  \grado (T_i) = [D_{i}^{n_i}:K] = n_i[D_i:K] \end{equation*} así, se puede escribir: \begin{equation*} |G| = \sum_{i = 1}^{r}n_i\grado(T_i). \end{equation*} 
  
  \begin{ejemplo}
- Se mostró  en el ejemplo \ref{ejem:orden7} que si $G = \langle a \rangle$ denota al grupo cíclico de orden siete, entonces
+ Se mostró  en el ejemplo \ref{ejem:orden7} que si $G = \langle a \rangle$ denota al grupo cíclico de orden siete, entonces:
  \begin{equation*} \mathds{Q}G \simeq \mathds{Q}\oplus\mathds{Q}(\zeta), \end{equation*} donde $\zeta$ denota una raíz primitiva de la unidad de orden siete. De lo anterior, las componentes simples de $\mathds{Q}G$ son anillos de matrices de $1\times 1$ sobre los anillos $\mathds{Q}$ y $\mathds{Q}(\zeta)$ respectivamente y por ende existen solamente dos representaciones irreducibles que no son equivalentes, $S$ y $T$ de $G$ sobre $\mathds{Q}$, con grados
  \begin{equation*} \grado(S) = [\mathds{Q}:\mathds{Q}] = 1, \quad \grado(T) = [\mathds{Q}:\mathds{Q}] = 6. \end{equation*} 
  

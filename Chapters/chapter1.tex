@@ -1,7 +1,7 @@
 \chapter{CONCEPTOS PRELIMINARES}
 En este capítulo se presentará la teoría básica del álgebra abstracta necesaria para la comprensión del contenido a desarrollar más adelante. Dicha exposición no pretende ser una guía de estudios del álgebra, más bien refresca resultados básicos de teoría de grupos, anillos y álgebras. En la medida de lo posible se evitará dar demostraciones de los resultados de estos conceptos, a menos que no sean materia de estudio de la licenciatura en Matemática.
 \section{\hskip 1.1em Antecedentes}
-La teoría de grupos como la conocemos actualmente tiene sus orígenes en los trabajos de Ruffini, Abel, Lagrange y Galois a inicios siglo \lsc{xix}, quienes trabajaron con el concepto de permutación (en su tiempo Cauchy las llamaba \textsf{sustituciones}, ver \cite[104]{bib:libroGuti}). Con Cayley \cite[ 104]{bib:libroLosGrandes} se formalizó el concepto de grupo y además se dieron muchos avances significativos que impulsaron la investigación de este tema. Entre los avances hechos por Cayley figuran:
+La teoría de grupos como se conoce actualmente tiene sus orígenes en los trabajos de Ruffini, Abel, Lagrange y Galois a inicios siglo \lsc{xix}, quienes trabajaron con el concepto de permutación (en su tiempo Cauchy las llamaba sustituciones, ver \cite[104]{bib:libroGuti}). Con Cayley \cite[ 104]{bib:libroLosGrandes} se formalizó el concepto de grupo y además se dieron muchos avances significativos que impulsaron la investigación de este tema. Entre los avances hechos por Cayley figuran:
 \begin{bulletList}
 \newItem Definición formal de grupo usando la notación de multiplicación.
 \newItem Utilizar una tabla para mostrar como actúa una operación.
@@ -141,12 +141,13 @@ Todo grupo $G$ es isomorfo a un grupo de permutaciones.
 \begin{definicion}
 	Sea $H$ un subgrupo normal de un grupo $G$ y $a, b \in G$. Se dice que $a\equiv b\pmod{H}$ si $b^{-1}a \in H$. Es fácil demostrar que esta relación es de equivalencia. Para un elemento $a \in G$ se denota su clase de equivalencia como \[ \bar{a} = \{ x \in G \colon x \equiv a \pmod{H}  \} = \{ x \in G \colon a^{-1}x \in H \} = aH.  \]
 \indent Se denota como $G/H$ al conjunto de clases de equivalencia de los elementos de $G$. Se define el producto de elementos en $G/H$ como \[ \bar{a}\cdot \bar{b} = \overline{ab}. \] 
-\indent Esta operación es bien definida y $G/H$ es un grupo, llamado \textbf{grupo cociente}. 
+\indent Esta operación es bien definida y $G/H$ es un grupo, llamado grupo cociente. 
 \end{definicion}
 Considérese la aplicación $\omega \colon G \to G/H$ dada por: \[G \ni a \mapsto \omega(a) = 	\bar{a} = aH. \]
 \indent Es evidente que $\omega$ es un epimorfismo de grupos llamado homomorfismo canónico de $G$ hacia el grupo cociente $G/H$. Este homomorfismo satisface que $\omega(1) = 1H = H$ y $\ker(\omega) = H.$ 
 \begin{teorema}[Primer teorema de isomorfía de grupos]
-Sea $f \colon G_1  \to G_2$ un homomorfismo de grupos, $\omega$ el homomorfismo canónico de $G_1$ hacia el grupo cociente $X = G_1/\ker(f)$ e $i$ la inclusión de $\Ima(f)$ en $G_2$. Entonces existe un homomorfismo único $\bar{f} \colon G_1/\ker(f) \to \Ima(f)$ tal que $f = i \circ \bar{f}\circ \omega$, es decir que diagrama  de la figura \ref{fig:primerTeoremaIsomofia} conmuta.
+Sea $f \colon G_1  \to G_2$ un homomorfismo de grupos, $\omega$ el homomorfismo canónico de $G_1$ hacia el grupo cociente $X = G_1/\ker(f)$ e $i$ la inclusión de $\Ima(f)$ en $G_2$. Entonces existe un homomorfismo único $\bar{f} \colon G_1/\ker(f) \to \Ima(f)$ tal que $f = i \circ \bar{f}\circ \omega$, es decir que diagrama  de la figura~\ref{fig:primerTeoremaIsomofia} conmuta.
+\captionsetup[figure]{labelformat=simple, labelsep=period}
 \begin{figure}
 \caption{\hskip 2em Primer teorema de isomorfía de grupos}
 \vskip -0.59em
@@ -155,6 +156,7 @@ Sea $f \colon G_1  \to G_2$ un homomorfismo de grupos, $\omega$ el homomorfismo 
  & G_2\\
 X \ar[r]_{\bar{f}} & \Ima(f) \ar[u]_i }\]
 \vskip 0.20em
+\captionsetup[figure]{textfont=normalfont}
 \caption*{Fuente: elaboración propia con paquete xymatrix para \LaTeX.}
 \label{fig:primerTeoremaIsomofia}
 \end{figure}
@@ -165,7 +167,7 @@ Sea $f \colon G_1 \to G_2$ un epimorfismo. Entonces \[ G_1/\ker(f) \simeq G_2. \
 \end{corolario}
 \newpage
 \begin{lema}
-Sea $H$ un subgrupo normal de $G$. Entonces
+Sea $H$ un subgrupo normal de $G$. Entonces:
 \begin{bulletList}
 \newItem Para cada subgrupo $K$ de $G$ que contiene a $H$, el conjunto $K/H = \{ xH \colon x \in K \}$ es un subgrupo de $G/H$ que es normal si y sólo si $K$ es normal.
 \newItem Si $\mathcal{K}$ es un subgrupo de $G/H$, entonces la preimagen $K = \{ x \in G \colon xH \in \mathcal{K} \}$ es un subgrupo de $G$ que contiene a $H$, tal que $\mathcal{K} = K/H$.
@@ -206,15 +208,15 @@ Si $G_1, \dots, G_n$ es una familia de grupos y $G = G_1\dot{\times}\cdots\dot{\
 De manera similar, si $G$ es el producto directo interno de una familia de subgrupos normales $H_1,\dots,H_n$ y se construye el producto directo externo $\bar{G} = H_1\dot{\times}\cdots\dot{\times}H_n$, entonces se tiene que $\bar{G} \simeq G$. Debido a este hecho, no se hace distinción entre producto interno y externo.
 %-------------subsección de grupos abelianos
 \subsection{\hskip 1.1em Grupos abelianos}
-Resultan de mucho interés para el desarrollo del capítulo \ref{chap:unidades}, así que se remarca sus importancia.
-Sea $G$ un grupo abeliano. Un elemento de $G$ es llamado un elemento de torsión si este es de orden finito. Si dos elementos $g,h \in G$ son de torsión, de órdenes $m$ y $n$ respectivamente, entonces es inmediato que $(g^{-1}h)^{mn} = 1$, lo cual demuestra que el conjunto de elementos de torsión de $G$ es un subgrupo de $G$. Nótese que este hecho también demuestra que dado un número primo $p$, el conjunto de elementos de $G$ cuyos órdenes son potencias de $p$ también constituyen un subgrupo de $G$.
+Resultan de mucho interés para el desarrollo del capítulo \ref{chap:unidades}, así que se remarca su importancia.
+Sea $G$ un grupo abeliano. Un elemento de $G$ es llamado un elemento de torsión si este es de orden finito. Si dos elementos $g,h \in G$ son de torsión, de órdenes $m$ y $n$ respectivamente, entonces es inmediato que $(g^{-1}h)^{mn} = 1$, lo cual demuestra que el conjunto de elementos de torsión de $G$ es un subgrupo de $G$. Es fácil notar que este hecho también demuestra que dado un número primo $p$, el conjunto de elementos de $G$ cuyos órdenes son potencias de $p$ también constituyen un subgrupo de $G$.
 \begin{definicion}
-Sea $G$ un grupo abeliano, entonces el subgrupo 
+Sea $G$ un grupo abeliano, entonces el subgrupo: 
 \[T(G) = \{ g \in G \colon \circ(g) < \infty \}  \]
-es llamado el subgrupo de torsión de $G$ y el subgrupo \[ G(p) = \{g \in G \colon \circ(g) \mbox{ es una potencia de } p  \} \] es llamado la componente $p$-primaria de $G$.
+es llamado el subgrupo de torsión de $G$ y el subgrupo: \[ G(p) = \{g \in G \colon \circ(g) \mbox{ es una potencia de } p  \} \] es llamado la componente $p$-primaria de $G$.
 \end{definicion}
 Se dice que $G$ es un grupo libre de elementos de torsión si $T(G) = (1)$.
-Un grupo abeliano que es producto directo de grupos cíclicos infinitos se llama abeliano libre. Al número de factores directos se le llama rango del grupo abeliano libre. Si dicho número no es finito, se dice que tiene rango infinito.
+Un grupo abeliano que es producto directo de grupos cíclicos infinitos, se llama abeliano libre. Al número de factores directos se le llama rango del grupo abeliano libre. Si dicho número no es finito, se dice que tiene rango infinito.
 \begin{teorema}
 Un grupo $G$ que es abeliano, finitamente generado y libre de elementos de torsión debe ser libre.
 \end{teorema}
@@ -235,6 +237,7 @@ Se dice que un grupo abeliano $G$ es un abeliano elemental si existe un primo $p
 Es interesante notar que los $p$-grupos abelianos elementales también pueden ser vistos como espacios vectoriales.
 \begin{lema}
 Sea $G$ un $p$-grupo abeliano elemental. Entonces $G$ es un espacio vectorial sobre $\mathds{Z}_p$. Más aún, si $G$ es finito entonces puede ser escrito como producto directo de un número finito de grupos cíclicos de orden $p$.
+
 \end{lema}
 Para un grupo $G$ se define su exponente, y se denota como $\exp(G)$, como el entero positivo más pequeño $m$, tal que $g^m=1$ para cualquier $g \in G$. Nótese que $G$ es un $p$-grupo abeliano elemental si y sólo $\exp(G)=p$ y que si $G$ es un grupo abeliano con $\exp(G) = p^m$, entonces $\exp(G^p) = p^{m-1}$.
 \begin{teorema}\label{teo:estructuraAbelianos}
@@ -290,7 +293,7 @@ La demostración de este importante teorema, se puede consultar en \cite[130]{bi
 En lo subsiguiente será de vital importancia conocer propiedades importantes de los anillos, módulos y álgebras, es por eso que se ha dedicado esta sección para su estudio, la mayoría de veces, no se darán demostraciones.
 \subsection{\hskip 1.1em Anillos}
 \begin{definicion}
-Un anillo es un conjunto no vacío $R$ dotado con dos operaciones binarias, llamadas suma y multiplicación y denotadas como $+$ y $\cdot$ respectivamente, tal que para cada $a,b\in R$ se cumplen las siguientes propiedades:
+Un anillo es un conjunto no vacío $R$, dotado con dos operaciones binarias, llamadas suma y multiplicación y denotadas como $+$ y $\cdot$ respectivamente, tal que para cada $a,b\in R$ se cumplen las siguientes propiedades:
 \begin{bulletList}
 \newItem $a+(b+c) = (a+b)+c$.
 \newItem Existe un único elemento $0\in R$ tal que $a+0=0+a=a$.
@@ -310,12 +313,12 @@ Un anillo es llamado dominio si satisface:
 \newItem $a\cdot b = 0$ implica que $a = 0$  o $b = 0$.
 \end{bulletList}
 \end{definicion}
-Dos elementos $a,b$ distintos de cero de un anillo $R$ tales que $ab = 0$ son llamados divisores de cero. Así que un dominio es un anillo sin divisores de cero.
-Un anillo $R$ que contiene un elemento $1\neq 0$ tal que: \[ 1\cdot a = a \cdot 1 = a, \mbox{ para todo } a \in R \]\newpage \noindent es llamado anillo con unidad. A un anillo con unidad que es un dominio conmutativo se le llama dominio entero.
+Dos elementos $a,b$ distintos de cero de un anillo $R$, tales que $ab = 0$ son llamados divisores de cero. Así que un dominio es un anillo sin divisores de cero.
+Un anillo $R$ que contiene un elemento $1\neq 0$ tal que: \[ 1\cdot a = a \cdot 1 = a, \mbox{ para todo } a \in R \]\mbox{ } \newpage \noindent es llamado anillo con unidad. A un anillo con unidad que es un dominio conmutativo se le llama dominio entero.
 \begin{definicion}
 Un elemento $a$ de un anillo $R$ es invertible si existe un elemento $a^{-1} \in R$, conocido como su inverso, tal que $a\cdot a^{-1} = a^{-1} \cdot a = 1$. El conjunto \[ \mathcal{U}(R) = \{a \in R \colon a \mbox{ es invertible} \} \] se llama el grupo de unidades de $R$.
 \end{definicion}
-A un anillo se le llama de división si todos los elementos distintos de cero son invertibles, dicho de otra manera, si $R\backslash \{0\} = \mathcal{U}(R)$. Un anillo de división conmutativo es un campo.
+A un anillo se le llama de división si todos los elementos distintos de cero son invertibles, dicho de otra manera; si $R\backslash \{0\} = \mathcal{U}(R)$. Un anillo de división conmutativo es un campo.
 \begin{ejemplo}
 El conjunto $\mathds{Z}_m = \{ \bar{0}, \bar{1}, \dots, \overline{m-1} \}$ de enteros módulo $m$ es un anillo conmutativo. Más aún $\mathds{Z}_m$ es un campo si y sólo si $m$ es un número primo.
 \end{ejemplo}
@@ -341,7 +344,7 @@ ij &= k &= -ji\\
 jk &= i &= -kj\\
 ki &= j &= -ik.
 \end{alignat*}
- \indent Por medio de un cálculo sencillo se demuestra que $\mathcal{H}$ es un anillo, llamado \textbf{anillo de cuaterniones reales}. Dado un cuaternión $\alpha = x_0 + x_1i + x_2j + x_3k$, se define el \textbf{conjugado} $\bar{\alpha}$ de $\alpha$ como \[ \bar{\alpha} = x_0-x_1i - x_2j-x_3k. \] 
+ \indent Por medio de un cálculo sencillo se demuestra que $\mathcal{H}$ es un anillo, llamado anillo de cuaterniones reales. Dado un cuaternión $\alpha = x_0 + x_1i + x_2j + x_3k$, se define el conjugado $\bar{\alpha}$ de $\alpha$ como \[ \bar{\alpha} = x_0-x_1i - x_2j-x_3k. \] 
  
  La norma de $\alpha$ se define como: \[ \lVert \alpha \rVert = \alpha\bar{\alpha} = x_0 ^2 + x_1^2 + x_ 2^2 + x_ 3^2. \]
 Al igual que en el caso de los números complejos, se cumple que:
@@ -354,7 +357,7 @@ Si $\alpha \in \mathcal{H}$ es distinto de cero, se tiene que $\lVert \alpha \rV
 Se define $\mathcal{H}_{\mathds{Q}}$ restringiendo $\mathcal{H}$ al campo de los números racionales. A este conjunto se le conoce como cuaterniones racionales.
 Finalmente se definen los cuaterniones enteros como: \[ \mathcal{H}_{\mathds{Z}} = \{ x_0 + x_1i + x_2j + x_3k \colon x_0, x_1, x_2, x_3 \in \mathds{Z} \}. \]
 \indent Es evidente que $\mathcal{H}_{\mathds{Z}}$ es un anillo de división.
-Sea $\alpha \in \mathcal{U}(\mathcal{H}_{\mathds{Z}})$ entonces es inmediato, de la definición de norma, que $\lVert \alpha \rVert$ es un entero positivo, más aún como $\alpha\alpha'= 1$ entonces $\lVert \alpha \rVert \lVert \alpha'\rVert = 1$ y consecuentemente $\lVert \alpha \rVert = 1$, es decir, $x_i = 1$ para algún índice $0\leq i \leq 3 $ y $x_j = 0 $ para $j \neq i$. De lo anterior se tiene \[ \mathcal{U}(\mathcal{H}_{\mathds{Z}}) = \{ \pm1, \pm i, \pm j, \pm k \}. \] 
+Sea $\alpha \in \mathcal{U}(\mathcal{H}_{\mathds{Z}})$ entonces es inmediato, de la definición de norma, que $\lVert \alpha \rVert$ es un entero positivo, más aún como $\alpha\alpha'= 1$, entonces $\lVert \alpha \rVert \lVert \alpha'\rVert = 1$ y consecuentemente $\lVert \alpha \rVert = 1$, es decir, $x_i = 1$ para algún índice $0\leq i \leq 3 $ y $x_j = 0 $ para $j \neq i$. De lo anterior se tiene \[ \mathcal{U}(\mathcal{H}_{\mathds{Z}}) = \{ \pm1, \pm i, \pm j, \pm k \}. \] 
 \end{ejemplo} 
 \newpage
 \begin{definicion}
@@ -418,7 +421,7 @@ En particular, un anillo siempre es un módulo sobre sí mismo. Cuando se consid
 Sea $L$ un ideal derecho de un anillo $R$ y $R/L$ el grupo cociente aditivo. Entonces $R/L$ es un $R\mbox{-módulo}$ con \[  r(a+L) = ra +L, \mbox{ para todo } r, a \in R  \]
 \end{ejemplo} 
 \begin{definicion}
-Sea $R$ un anillo conmutativo. Un $R\mbox{-módulo}$ $A$ es un $R\mbox{-álgebra}$ si existe una operación de multiplicación definida en $A$ tal que con su adición y esta multiplicación $A$, es un anillo que cumple: \[ r(ab) = (ra)b = a(rb), \] para todo $r \in R$ y $a,b \in A$.
+Sea $R$ un anillo conmutativo. Un $R\mbox{-módulo}$ $A$ es un $R\mbox{-álgebra}$ si existe una operación de multiplicación definida en $A$, tal que con su adición y esta multiplicación $A$, es un anillo que cumple: \[ r(ab) = (ra)b = a(rb), \] para todo $r \in R$ y $a,b \in A$.
 \end{definicion}
 \begin{definicion}
 Sea $M$ un módulo sobre un anillo $R$. Un conjunto no vacío $N \subset M$ es llamado un $R\mbox{-submódulo}$ de $M$ si se cumplen las siguientes condiciones:
@@ -446,7 +449,7 @@ Un conjunto $S = \{ s_i\}_{i \in I}$, $I$ un conjunto de índices, de elementos 
 Un $R\mbox{-módulo}$ $M$ es libre si tiene una base.
 \end{definicion}
 \begin{definicion}
-Sea $\{M_i\}_{i \in I}$, $I$ un conjunto de índices,  un familia de submódulos de un $R\mbox{-módulo}$ $M$. Se dice que $M$ es la suma directa de submódulos de esta familia y se escribe $M = \oplus_{i \in I}M_i$ si se cumplen las siguientes condiciones:
+Sea $\{M_i\}_{i \in I}$, $I$ un conjunto de índices,  una familia de submódulos de un $R\mbox{-módulo}$ $M$. Se dice que $M$ es la suma directa de submódulos de esta familia y se escribe $M = \oplus_{i \in I}M_i$ si se cumplen las siguientes condiciones:
 \begin{bulletList}
 \newItem Para todo $i \in I$ se satisface que $M_i \cap \left( \sum_{j \neq i} M_j \right) = \emptyset$.
 \newItem $M = \sum_{i \in I}m_i$.
@@ -519,9 +522,9 @@ Todo submódulo de $_RR$ es ideal izquierdo de un anillo $R$, así que $R$ es se
 \begin{teorema}
 Sea $R$ un anillo. Entonces las siguientes proposicione son equivalentes:
 \begin{bulletList}
-\item\label{item:rssimple1} \hfil Todo $\modulo{R}$ es semisimple.
-\item\label{item:rssimple2} \hfil $R$ es un anillo semisimple.
-\item\label{item:rssimple3} \hfil $R$ es una suma directa de un número finito de ideales izquierdos minimales.
+\item\label{item:rssimple1} Todo $\modulo{R}$ es semisimple.
+\item\label{item:rssimple2} $R$ es un anillo semisimple.
+\item\label{item:rssimple3} $R$ es una suma directa de un número finito de ideales izquierdos minimales.
 \end{bulletList}
 \end{teorema}
 \begin{proof*}~\newline
@@ -544,11 +547,12 @@ Ahora bien, supóngase que los ideales izquierdos de $R$ son de la forma propues
 \begin{teorema}\label{teo:familiaIdempotentes}
 Sea $R = \oplus_{i = 1}^t L_i$ una descomposición de un anillo semisimple como suma directa de ideales izquierdos minimales. Entonces, existe una familia $\{e_1, \dots, e_t \}$ de elementos de $R$ tal que:
 \begin{bulletList}
-\item\label{item:orto1}\hfil $e_i \neq 0, 1 \leq i \leq t$ es idempotente.
-\item\label{item:orto2}\hfil Si $i \neq j$ entonces $e_ie_j = 0$.
-\item\label{item:orto3}\hfil $1 = e_1 + \cdots + e_t$.
+\item\label{item:orto1} $e_i \neq 0, 1 \leq i \leq t$ es idempotente.
+\item\label{item:orto2} Si $i \neq j$ entonces $e_ie_j = 0$.
+\item\label{item:orto3}$1 = e_1 + \cdots + e_t$.
 \item\label{item:orto4} $e_i$ no se puede escribir como $e_i = e_i'+ e_i''$, donde $e_i', e_i''$ son idempotentes tales que $e_i, e_i'' \neq 0$ y $e_i'e_i''=0, 1\leq i \leq t$.
 \end{bulletList}
+
 Además, si existe una familia de idempotentes $\{e_1, \dots, e_t \}$ que satisface las cuatro condiciones anteriores, entonces la familia de ideales izquierdos minimales $L_i = Re_i$ es tal que $R = \oplus_{i=1}^tL_i$.
 \end{teorema}
 \begin{proof*}
@@ -591,8 +595,8 @@ Con la notación anterior, $L_{ij} \simeq L_{ik}$ y $L_{ij}L_{kh} = (0)$ si $i \
 \begin{teorema}
 Con la notación anterior, sea $A_i$ la suma de todos los ideales izquierdos isomorfos a $L_{i1}, 1\leq i \leq s$. Entonces:
 \begin{bulletList}
-\item\label{item:Restructura1}\hfil Cada $A_i$ es un ideal minimal de $R$.
-\item\label{item:Restructura2}\hfil $A_iA_j = (0)$ si $i \neq j$.
+\item\label{item:Restructura1} Cada $A_i$ es un ideal minimal de $R$.
+\item\label{item:Restructura2} $A_iA_j = (0)$ si $i \neq j$.
 \item\label{item:Restructura3} $R = \oplus_{i=1}^{s}A_i$ como anillos, donde $s$ es el número de clases isomorficas de ideales minimales de $R$.
 \end{bulletList}
 \end{teorema}
@@ -698,7 +702,7 @@ Sea $R$ un anillo semisimple y supóngase que
 \[ R \simeq M_{n_1} \oplus \cdots \oplus M_{n_s} \simeq M_{m_1}(D_1')\oplus \cdots \oplus M_{m_r}(D_r'), \] donde $D_i, D_j', 1 \leq i \leq s, 1 \leq j \leq r$ son anillos de división. Entonces $s = r$. Además bajo un posible reordenamiento de los índices, se tiene que $n_i = m_i, D_i \simeq D_i'$. 
 \end{teorema} \newpage
 \begin{proof*}
-Como los anillos de matrices sobre anillos de división son simples, se tiene por la proposición \ref{prop:unicidadDescomposicion} que $s = r$ y existe una biyección entre los dos conjuntos de ideales tal que los correspondientes ideales son iguales. Sólo falta demostrar que si $M_n(D)\simeq M_m(D')$, donde $D$ y $D'$ son anillos de división, entonces $n = m$ y $D \simeq D'$.
+Como los anillos de matrices sobre anillos de división son simples, se tiene por la proposición \ref{prop:unicidadDescomposicion} que $s = r$ y existe una biyección entre los dos conjuntos de ideales, tal que los correspondientes ideales son iguales. Sólo falta demostrar que si $M_n(D)\simeq M_m(D')$, donde $D$ y $D'$ son anillos de división, entonces $n = m$ y $D \simeq D'$.
 
 Sea $E = M_n(D)$, $E' = M_m(D')$ y 
 \[ L = \begin{pmatrix} 

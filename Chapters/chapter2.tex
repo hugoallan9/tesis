@@ -140,6 +140,7 @@ Una extensión del resultado anterior es que si $R$ es un anillo conmutativo, en
 Un resultado de mucha importancia en los grupo-anillos, es el que relaciona a estos con los homomorfismos, que es uno de los objetivos del álgebra.
 \begin{proposicion}\label{up}
 Sea $G$ un grupo y $R$ un anillo. Dado cualquier anillo $A$ tal que $R \subset A$ y cualquier función $f \colon G \to A$ tal que $f(gh) = f(g)f(h)$ para cualquier $g,h \in G$, existe un único homomorfismo de anillos $f^* \colon  RG \to A$, que es $R$-lineal, tal que $f^*\circ i = f$, donde $i$ es la función de inclusión. Lo anterior se reduce a decir que el diagrama de la figura \ref{fig:diagramaProposicion} es conmutativo.
+\captionsetup[figure]{labelformat=simple, labelsep=period}
 \begin{figure}
 \caption{\hskip 2em Diagrama conmutativo para la proposición \ref{up}}
 \vskip -0.1em
@@ -147,7 +148,7 @@ Sea $G$ un grupo y $R$ un anillo. Dado cualquier anillo $A$ tal que $R \subset A
 \ar[d]_i & A\\
 RG \ar@{--}[ru]_{f^*} & }\]
 \vskip 0.55em
-\caption*{Fuente: elaboración propia con paquete xymatrix para computadora.}
+\caption*{Fuente: elaboración propia, con paquete xymatrix para computadora.}
 \label{fig:diagramaProposicion}
 \end{figure}
 \end{proposicion}
@@ -162,7 +163,8 @@ De manera análoga se tiene:
 f^*(\alpha\beta)&=\sum_{g,h\in G}a_gb_hf(gh)\\
 &= \sum_{g,h\in G}a_gb_hf(g)f(h)\\ 
 &= f^*(\alpha)f^*(\beta).
-\end{align*}  Ahora sea $r \in R$ entonces $f^*(r\alpha)=\sum_{g\in G}ra_gf(g)=r\sum_{g\in G}a_gf(g)=rf^*(\alpha)$.
+\end{align*}  
+\indent Ahora sea $r \in R$ entonces $f^*(r\alpha)=\sum_{g\in G}ra_gf(g)=r\sum_{g\in G}a_gf(g)=rf^*(\alpha)$.
 Sea $x \in G$ entonces $i(x) = \srg{g}{G}{a}$ donde $a_g = 1$ si $g = x$ y $a_g= 0$ en cualquier otro caso, por lo tanto $f^*(i(g))= \sum_{g \in G} a_gf(g)=f(x)$. De los cálculos anteriores se sigue que $f^*\circ i = f$, con lo cual concluye la prueba. 
 \qedhere
 \end{proof*}
@@ -175,7 +177,8 @@ Usar el teorema anterior con $A=RH$ lo anterior se puede hacer porque $RH$ es un
 \end{proof*}
 De hecho la proposición \ref{up} se puede utilizar como una definición de $RG$, como se sigue de la siguiente proposición:
 \begin{proposicion}
-Sea $G$ un grupo y $R$ un anillo. Sea $X$ un anillo que contiene a $R$ y $\nu \colon G \to X$ una función tal que $\nu (gh) = \nu(g)\nu(h)$ para todo $g,h \in G$ y tal que, para todo anillo $A$ que contiene a $R$ y cualquier función $f \colon G \to A$ que satisface $f(gh) = f(g)f(h)$ para todo $g, h \in G$, existe un único homomorfismo $R$-lineal $f^* \colon X \to A$ tal que el diagrama de la figura\ref{fig:alternativa para RG} es conmutativo: 
+Sea $G$ un grupo y $R$ un anillo. Sea $X$ un anillo que contiene a $R$ y $\nu \colon G \to X$ una función tal que $\nu (gh) = \nu(g)\nu(h)$ para todo $g,h \in G$ y tal que, para todo anillo $A$ que contiene a $R$ y cualquier función $f \colon G \to A$ que satisface $f(gh) = f(g)f(h)$ para todo $g, h \in G$, existe un único homomorfismo $R$-lineal $f^* \colon X \to A$ tal que el diagrama de la figura\ref{fig:alternativa para RG} es conmutativo:
+\captionsetup[figure]{labelformat=simple, labelsep=period} 
 \begin{figure}[h!]
 \caption{\hskip 2em Definición alternativa para $RG$}
 \vskip -0.59em
@@ -184,19 +187,20 @@ Sea $G$ un grupo y $R$ un anillo. Sea $X$ un anillo que contiene a $R$ y $\nu \c
  & A\\
 X \ar@{ --}[ru]_{f^*} & }\]
 \vskip 0.55em
-\caption*{Fuente: elaboración propia con paquete xymatrix para computadora.}
+\caption*{Fuente: elaboración propia, con paquete xymatrix para computadora.}
 \label{fig:alternativa para RG}
 \end{figure}
 Entonces $X \simeq RG$
 \end{proposicion}
 \begin{proof*}
 La demostración es tan simple como notar que el  diagrama de la figura\ref{fig:categorias} conmuta con $I_X$.\qedhere
+\captionsetup[figure]{labelformat=simple, labelsep=period}
 \begin{figure}[h!]
 \caption{\hskip 2em Diagrama conmutativo}
 \vskip -0.59em
 \[\xymatrix @!0 @R=3pc @C=4.5pc { & X \ar@{--}[d]^{i*} \ar@{ --}^{I_X}[ddr] \\ & RG \ar@{--}_{\nu^*}[rd] & \\ G \ar[ruu]^{\nu} \ar[ru]^{i} \ar[rr]^{\nu}& & X}\]
 \vskip 0.55em
-\caption*{Fuente: elaboración propia con paquete xymatrix para computadora.}
+\caption*{Fuente: elaboración propia, con paquete xymatrix para computadora.}
 \label{fig:categorias}
 \end{figure}
 \end{proof*}
@@ -208,7 +212,7 @@ El homomorfismo $\epsilon \colon RG \to R$ dado por \[ \epsilon \left( \srg{g}{G
 \end{definicion}
 Ahora se puede dar algunas propiedades importantes del ideal de aumento de $RG$. Nótese que si un elemento $\alpha = \srg{g}{G}{a}$ pertenece al ideal de aumento entonces, $ \epsilon \left( \srg{g}{G}{a}\right) = \sum_{g \in G}a_g = 0 $ por lo tanto se puede escribir $\alpha$ de la siguiente forma: 
 \[\alpha = \srg{g}{G}{a} -\sum_{g \in G}a_g = \sum_{g \in G}a_g(g-1). \]
-\indent Por lo tanto es claro que cualquier elemento de la forma $g-1, g \in G$ pertenece a $\Delta(G)$, mas aún se acaba de probar que el conjunto $\{g-1 : g \in G, g \neq 1\}$ es un conjunto de generadores del ideal de aumento de $RG$. Por otro lado, de la definición de $RG$ se sigue que el conjunto anterior es linealmente independiente, con lo cual se ha probado lo siguiente
+\indent Por lo tanto es claro que cualquier elemento de la forma $g-1, g \in G$ pertenece a $\Delta(G)$, más aún se acaba de probar que el conjunto $\{g-1 : g \in G, g \neq 1\}$ es un conjunto de generadores del ideal de aumento de $RG$. Por otro lado, de la definición de $RG$ se sigue que el conjunto anterior es linealmente independiente, con lo cual se ha probado lo siguiente:
 \begin{proposicion} \label{gen}
 El conjunto $\{ g-1 : g \in G , g \neq 1\}$ es base de $\Delta (G)$ sobre $R$. Es decir, se puede escribir
 \begin{equation*}
@@ -315,12 +319,12 @@ $\nabla(I)$ es subgrupo de $G$.
 \end{lema}
 \begin{proof*}
 Se debe probar dos cosas:
-\begin{bulletList}
+\begin{finalList}
 \newItem Sean $g_1,g_2 \in \nabla(I)$ entonces 
 \[g_1g_2 -1 = g_1(g_2-1) + (g_2-1) \in I, \]
 por lo tanto $g_1g_2 \in \nabla(I)$.
 \newItem Si $g \in \nabla(I)$ entonces $g^{-1} -1 = g^{-1}(1-g) \in I$ de donde se sigue que $g^{-1} \in \nabla(I)$.\qedhere 
-\end{bulletList}
+\end{finalList}
 \end{proof*}
 \begin{lema}
 Si $I$ es un ideal bilateral entonces $\nabla(I) \lhd G$.
@@ -423,10 +427,10 @@ Sea $G$ un grupo. Entonces, el grupo-anillo $RG$ es semisimple si y sólo si las
 \newItem $|G|$ es invertible en $R$.
 \end{bulletList}
 \end{teorema}
-\newpage
+\mbox{ }\newpage
 \begin{proof*}
 Se procederá a probar las implicaciones en ambos sentidos:
-\begin{bulletList}
+\begin{finalList}
 \newItem En esta parte se asume que $RG$ es semisimple, por lo tanto se puede utilizar el hecho que $\frac{RG}{\Delta (G)} = R$. De lo anterior se deduce que $R$ es un cociente y ya se ha demostrado que los cocientes son simples. Por otro lado se sabe que $\Delta (G)$ es un ideal y de la semisimplicidad de $RG$ se sabe que $\Delta (G)$ es sumando directo y del lema~\ref{aumento} se asegura que la segunda y tercera condición se~ satisfacen. 
 
 \newItem  Para mostrar la segunda implicación, supóngase que todas las condiciones de los incisos son verdaderas. 
@@ -434,18 +438,17 @@ De la primera condición se sigue que $RG$ es semisimple como $\modulo{R}$. Cons
 \[RG = M \oplus N.\]
 Sea $\pi\colon RG \to M$ la proyección canónica asociada con la suma directa. Se define $\pi ^ *  \colon RG \to M$ tal que:
 \[x \mapsto \frac{1}{|G|}\sum_{g \in G} g^{-1}\pi (gx), \mbox{ para cada } x \in RG. \] 
-\indent Es claro que dicha función existe, ya que $G$ es finito por la segunda condición y se cumple que $\frac{1}{|G|} < \infty$ por la tercera. Se desea probar que $\pi ^ * $ es un $RG~\mbox{-homomorfismo}$  tal que $(\pi ^*)^2 = \pi ^* $ y $M = Im(\pi ^*)$, lo cual se muestra en dos partes a continuación:\\
+\hskip 1cm Es claro que dicha función existe, ya que $G$ es finito por la segunda condición y se cumple que $\frac{1}{|G|} < \infty$ por la tercera. Se desea probar que $\pi ^ * $ es un $RG~\mbox{-homomorfismo}$  tal que $(\pi ^*)^2 = \pi ^* $ y $M = Im(\pi ^*)$, como se muestra:
 \newItem Homomorfismo: basta demostrar que $\pi ^* (ax) = a \pi^*(x) \mbox{, para cada } a, g \in G$, ya que $\pi^* $ ya es un $R\mbox{-homomorfismo}$. En efecto \[\pi^* (ax) = \frac{1}{|G|} \sum_{g \in G}g^{-1}\pi (gax) = \frac{a}{|G|} \sum_{g \in G}(ga)^{-1}\pi ((ga)x).\]
 
 \indent Ahora se tiene que $ga \in G$, por ser $G$ un grupo, por lo tanto cuando $g$ recorre todo $G$ el producto $ga$ también lo hará, ya que $a$ es un elemento dado fijo. Por lo tanto la última expresión se puede volver a escribir como:
 \[\pi^* (ax) = \frac{a}{|G|} \sum_{t \in G}t^{-1}\pi (tx) = a\pi^*(x).\]
-
-\newItem Sobreyectividad y composición: nótese que $gm \in M$ ya que $M$ es un \nopagebreak[0] $\modulo{RG}$, así que $\pi (gm) = gm$ y por lo tanto 
+\newItem \vskip -2em Sobreyectividad y composición: nótese que $gm \in M$ ya que $M$ es un \nopagebreak[0] $\modulo{RG}$, así que $\pi (gm) = gm$ y por lo tanto 
 \[\pi ^* (m) = \frac{1}{|G|} \sum_{g \in G}g^{-1}\pi (gm) = \frac{1}{|G|} \sum_{g \in G}g^{-1}(gm) = \frac{1}{|G|}|G|m  = m.\]
 De lo anterior se sigue que $Im(\pi^*) \subset M$ y además $(\pi^*)^2 = \pi $. Por otro lado sea $m \in M$, entonces $\pi ^* (m) = m \in Im(\pi^*)$, de donde $M \in Im(\pi^*)$. 
 
-De esta manera se tiene que $\ker(\pi^*)$ es un $RG$-submódulo tal que $RG = M \oplus ker(\pi^*)$.\qedhere
-\end{bulletList}
+Así, $\ker(\pi^*)$ es un $RG$-submódulo tal que $RG = M \oplus ker(\pi^*)$.\qedhere
+\end{finalList}
 \end{proof*} 
 
 Como es usual en ciencias, se explorará un caso particular del teorema anterior con la interrogante natural ¿qué pasa si en lugar de un anillo se considera un campo? La pregunta anterior se reduce a contemplar el caso $R = K$, donde $K$ es un campo. Un campo siempre es semisimple, además se sabe que $|G|$ es invertible siempre y cuando $|G| \neq 0$, es decir, $\car(K) \nmid |G|$, de donde se sigue el siguiente
@@ -513,7 +516,7 @@ Sea $ X^n -1 = f_1f_2\cdots f_t$, la descomposición de $X^n -1$ como producto d
 Considérese $\zeta_i$ una raíz de $f_i$, $1 \leq i \leq t$. Entonces, se tiene $\frac{K[X]}{(f_i)} \simeq K(\zeta_i)$. Por lo tanto:
 \[ KG \simeq K(\zeta_1) \oplus K(\zeta_2) \oplus \dots \oplus K(\zeta_t). \]
 \indent Como todos los elementos $\zeta_i , \quad 1 \leq i \leq t$ son raíces de $X^n -1$, se ha probado que $KG$ es isomorfo a la suma directa de extensiones ciclotómicas de $K$. Finalmente bajo este 
-ultimo isomorfismo el elemento $a$ tiene imagen $(\zeta_1 , \zeta_2, \dots ,\zeta_t)$.
+último isomorfismo el elemento $a$ tiene imagen $(\zeta_1 , \zeta_2, \dots ,\zeta_t)$.
 
 Antes de continuar, se presentan algunos ejemplos para estudiar y comprender de mejor manera como trabajan las conclusiones anteriores.
 \begin{ejemplo}\label{ejem:orden7}
@@ -542,11 +545,11 @@ El lector debe recordar que para un $d$ entero positivo dado, el polinomio ciclo
 
 Entonces la descomposición de $KG$ puede ser escrita en la forma:
 \[ KG \simeq \oplus_{d \mid n} \oplus_{i=1}^{a_d} \frac{K[X]}{(f_{d_i})} \simeq \oplus_{d \mid n} \oplus_{i=1}^{a_d} K(\zeta _{d_i}) \]
-donde $\zeta_{d_i}$ denota una raíz de $f_{d_i}  \mbox{, } 1 \leq i \leq a_d $. Para un $d$ fijo, todos los elementos $\zeta_{d_i}$ son raíces primitivas de la unidad de orden $d$, por lo tanto, todos los campos de la forma $K(\zeta_{d_i}), \quad 1\leq i \leq a_d$ son iguales y se puede escribir simplemente 
+donde $\zeta_{d_i}$ denota una raíz de $f_{d_i}  \mbox{, } 1 \leq i \leq a_d $. Para un $d$ fijo, todos los elementos $\zeta_{d_i}$ son raíces primitivas de la unidad de orden $d$, por lo tanto, todos los campos de la forma $K(\zeta_{d_i}), \quad 1\leq i \leq a_d$ son iguales y se puede escribir simplemente: 
 \[ KG \simeq \oplus_{d \mid n} a_dK(\zeta_d),\]
 donde $\zeta_d$ es una raíz primitiva de orden $d$ y $a_dK[\zeta_d]$ denota la suma directa de $a_d$ campos diferentes, todos ellos isomorfos a $K(\zeta_d)$.
 
-Por otro lado, como $\grado(f_{d_i}) = [K(\zeta_d):K]$, se deduce que todos los polinomios tienen el mismo grado para $1 \leq i \leq a_d$. De esta forma, calculando el grado en la descomposición de $\Phi_d$, se tiene
+Por otro lado, como $\grado(f_{d_i}) = [K(\zeta_d):K]$, se deduce que todos los polinomios tienen el mismo grado para $1 \leq i \leq a_d$. De esta forma, calculando el grado en la descomposición de $\Phi_d$, se tiene:
 \[ \phi(d) = a_d[K(\zeta_d):K], \]
 donde $\phi$ es la función totiente de Euler. Como $G$ es un grupo cíclico de orden $n$, para cada divisor de $n$, el número de elementos de orden $d$ en $G$, que se denota con $n_d$, es precisamente $\phi(d)$, entonces:
 \[ a_d = \frac{n_d}{| K(\zeta_d) : K|}.  \]

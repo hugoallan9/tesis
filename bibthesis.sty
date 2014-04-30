@@ -713,12 +713,12 @@
 \newcommand\harvardurl[1]{\textbf{URL:} \textit{#1}}
 \providecommand\bibsection{}
 \@ifundefined{chapter}%
-  {\renewcommand\bibsection{\section*{\refname
+  {\renewcommand\bibsection{\chapter{\vskip 0.51cm\refname
     \@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}}}}
   {\@ifundefined{NAT@sectionbib}%
-    {\renewcommand\bibsection{\chapter*{\bibname
+    {\renewcommand\bibsection{\chapter*{\vskip 0.7cm\bibname
      \@mkboth{\MakeUppercase{\bibname}}{\MakeUppercase{\bibname}}}}}
-    {\renewcommand\bibsection{\section*{\bibname
+    {\renewcommand\bibsection{\chapter*{\vskip 0.61cm \bibname
      \ifx\@mkboth\@gobbletwo\else\markright{\MakeUppercase{\bibname}}\fi}}}}
 \@ifclassloaded{amsart}%
   {\renewcommand\bibsection{\section*{\refname}}}{}
@@ -727,7 +727,7 @@
 \@ifundefined{bib@heading}{}{\let\bibsection\bib@heading}
 \newcounter{NAT@ctr}
 \renewenvironment{thebibliography}[1]{%
- \bibsection\parindent \z@\bibpreamble\bibfont\list
+ \bibsection\parindent \z@\bibpreamble\bibfont\vskip -0.7cm \list
    {\@biblabel{\arabic{NAT@ctr}}}{\@bibsetup{#1}%
     \setcounter{NAT@ctr}{0}}%
     \ifNAT@openbib
