@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{tikz}
+\usetikzlibrary{calc}
 \usepackage{afterpage}
 \usepackage{titlesec}
 \usepackage{parskip}
@@ -86,7 +87,13 @@
  %<------------- parametros para tablas largas
 \pretolerance=2000
 \tolerance=3000 %<- para no separar las palabras
-
+\def\particulartemplate#1{
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture]
+    \draw let \p1 = (current page.west), \p2 = (current page.east) in
+      node[minimum width=\x2-\x1, minimum height=0.5cm, draw, rectangle, fill=blue!20, anchor=north west, align=left, text width=\x2-\x1] at ($(current page.north west)$) {\Large\bfseries \quad #1};
+  \end{tikzpicture}
+}
 
 
 
@@ -147,6 +154,8 @@
 \renewcommand\cftsecfont{\normalfont}
 \newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
 \addtocontents{lof}{\protect\noaddvspace}
+
+
 
 
 %----------------Definicion de listas----------

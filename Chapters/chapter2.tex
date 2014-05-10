@@ -40,7 +40,7 @@ Si $g \in G$ y $r \in R$ entonces $rg=gr$ en $RG$.
 \end{propiedad}
 \begin{proof*}
 Nótese que $r=\gamma$ y $x=\alpha$ y usando la definición del producto en $RG$ se tiene que $rx=\gamma\alpha$ donde $(\gamma\alpha)(u)=\sum_{gh=u}\gamma(g) \alpha(h) $ pero por definición $\gamma$ y $\alpha$ se anulan en todas partes excepto en $g=1_G$ y $h=x$ respectivamente, por lo tanto $(\gamma\alpha)(u)=r$ cuando $u=x$ y $(\gamma\alpha)(u)=0$ para $u \neq x $.
-Por otro lado $xr=\alpha\gamma$ dada por $(\alpha\gamma)(u)=\sum_{gh=u}\alpha(g)\gamma(h)$ de nuevo la función sólo existe cuando $g=x$ y $h=1_G$ de esa forma $(\alpha\gamma)(u)=r$ cuando $u=x$ y se anula en cualquier otro caso, con la cual concluye la demostración.
+Por otro lado $xr=\alpha\gamma$ dada por $(\alpha\gamma)(u)=\sum_{gh=u}\alpha(g)\gamma(h)$ de nuevo la función solo existe cuando $g=x$ y $h=1_G$ de esa forma $(\alpha\gamma)(u)=r$ cuando $u=x$ y se anula en cualquier otro caso, con la cual concluye la demostración.
 \end{proof*}
 
 La definición de grupo-anillo que se presentó anteriormente, es bastante rigurosa y además es bien definida. Se construyó un espacio vectorial de funciones en el cual todas las operaciones tienen sentido, lo cual le brinda el soporte necesario para trabajar en álgebra. 
@@ -271,7 +271,7 @@ Hipótesis de inducción: supóngase que cualquier expresión de la forma \[(s_1
 pertenece a $(S)$.
 
 
-Conclusión: considérese la expresión de la forma $ (s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k}s_{k+1}^{\epsilon_{k+1}} -1) $, hágase la sustitución $x =  s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k} $ entonces $ (s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k}s_{k+1}^{\epsilon_{k+1}} -1)  = x s_{k+1}^{\epsilon_{k+1}} -1 = x( s_{k+1}^{\epsilon_{k+1}} -1 ) + (x-1) \in (S) $ ya que $x-1, x( s_{k+1}^{\epsilon_{k+1}} -1 ) \in (S)$ por la hipótesis de inducción. La prueba está casi completa, sola falta decir que si apareciera algún $\epsilon_i = -1$ se aplica la factorización $y^{-1}-1 = y^{-1}(1-y)$ y el problema está resuelto.
+Conclusión: considérese la expresión de la forma $ (s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k}s_{k+1}^{\epsilon_{k+1}} -1) $, hágase la sustitución $x =  s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k} $ entonces $ (s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k}s_{k+1}^{\epsilon_{k+1}} -1)  = x s_{k+1}^{\epsilon_{k+1}} -1 = x( s_{k+1}^{\epsilon_{k+1}} -1 ) + (x-1) \in (S) $ ya que $x-1, x( s_{k+1}^{\epsilon_{k+1}} -1 ) \in (S)$ por la hipótesis de inducción. La prueba está casi completa, solo falta decir que si apareciera algún $\epsilon_i = -1$ se aplica la factorización $y^{-1}-1 = y^{-1}(1-y)$ y el problema está resuelto.
 \end{proof*}
 Para dar una mejor caracterización de $\Delta_R (G,H)$, denótese con $\mathcal{T} = \{q_i\}_{i \in I}$ un conjunto completo de representantes de clases izquierdas de $H$ en $G$, un transversal de $H$ en $G$. Se asumirá que siempre se elige como representante de la clase $H$ en $\mathcal{T}$ a la unidad de $G$. De esa manera todo elemento $g \in G$ puede ser escrito de manera única en la forma $g = q_ih_j$ con $q_i \in \mathcal{T}$ y $h_j \in H$
 \begin{proposicion}
@@ -297,7 +297,7 @@ Con la notación anterior
 \begin{proof*}
 Considérese de nuevo $\mathcal{T}$ el transversal de $H$ en $G$. Entonces, cada elemento $\alpha \in RG$ se puede escribir como $ \alpha = \sum{i,j} r_{ij} q_ih_j$, $r_{ij} \in R$, $q_i \in \mathcal{T}$, $h_i \in H$. Si se denota $\overline{q_i} = \omega(q_i)$ entonces se tiene:
 \[\omega^*(\alpha) = \sum_i\left(\sum_jr_{ij}\right)\overline{q_i}. \]
-\indent Entonces, $\alpha \in \ker(\omega^*)$ si y sólo si $ \sum_jr_{ij} = 0 $ para cada calor de $i$. Entonces si se tiene un $\alpha \in \ker(w^*)$ se puede escribir
+\indent Entonces, $\alpha \in \ker(\omega^*)$ si y solo si $ \sum_jr_{ij} = 0 $ para cada calor de $i$. Entonces si se tiene un $\alpha \in \ker(w^*)$ se puede escribir
 \begin{eqnarray*}
 \alpha &=& \sum_i\left(\sum_jr_{ij}\right)\overline{q_i} \\
  &=& \sum_{ij}r_{ij}q_i(h_j-1) \in \Delta(G,H).  
@@ -364,7 +364,7 @@ Dado un grupo-anillo $RG$ y un subconjunto finito $X$ del grupo $G$, se denotar�
 \end{definicion}
 
 \begin{lema}
-Sea $H$ un subgrupo de $G$ y sea $R$ un anillo. Entonces $Ann_{d}(\Delta(G,H)) \neq \{ 0\}$ si y sólo si $H$ es finito. En ese caso, se tiene
+Sea $H$ un subgrupo de $G$ y sea $R$ un anillo. Entonces $Ann_{d}(\Delta(G,H)) \neq \{ 0\}$ si y solo si $H$ es finito. En ese caso, se tiene
 $$Ann_d(\Delta(G,H)) = \hat{H} \cdot RG $$
 Mas aún, si $H \lhd G$ entonces $\hat{H}$ es central en $RG$ y 
 \[Ann_d(\Delta(G,H)) = Ann_i(\Delta(G,H)) = RG \cdot \hat{H}.\]
@@ -420,7 +420,7 @@ Por otra parte $1 \in RG$ entonces $1 = e_1 + e_2$ donde $e_1 \in \Delta G$ y $e
 \end{proof*}
 Ahora se está en disposición de determinar condiciones necesarias y suficientes en $R$ y $G$ para que el grupo-anillo $RG$ sea semisimple. Los primeros resultados que apuntaron en esta dirección fueron dados por Maschke, logros que están plasmados en el siguiente teorema:
 \begin{teorema}[Maschke]
-Sea $G$ un grupo. Entonces, el grupo-anillo $RG$ es semisimple si y sólo si las siguientes condiciones son verdaderas:
+Sea $G$ un grupo. Entonces, el grupo-anillo $RG$ es semisimple si y solo si las siguientes condiciones son verdaderas:
 \begin{bulletList}
 \newItem $R$ es un anillo semisimple.
 \newItem $G$ es finito.

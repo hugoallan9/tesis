@@ -2,17 +2,17 @@
 
 \section{\hskip 1em Definición y ejemplos}
 
-Como se mencionó en el capítulo 1, el concepto de grupo de permutaciones fue dado explícitamente por primera vez en las memorias de Galois en  1830, aunque la primera definición de grupo abstracto fue dado hasta en 1854 por Cayley, aunque pasó inadvertidamente por un tiempo, hasta que dicha definición fue dada nuevamente en repetidas ocasiones por varios matemáticos, a saber: Leopold Kronecker en 1870, Heinrich Martin Weber en 1882 y Ferdinand Georg Frobenius en 1887. De esa forma los grupos fueron considerados por mucho tiempo como objetos concretos antes de llegar a ser estudiados como estructuras algebraicas abstractas.
+Como se mencionó en el capítulo 1, el concepto de grupo de permutaciones fue dado explícitamente por primera vez en las memorias de Galois en  1830, aunque la primera definición de grupo abstracto fue dada hasta en 1854 por Cayley, pero pasó inadvertida por un tiempo hasta que dicha definición fue formulada nuevamente en repetidas ocasiones por varios matemáticos, a saber: Leopold Kronecker en 1870, Heinrich Martin Weber en 1882 y Ferdinand Georg Frobenius en 1887. De esa forma los grupos fueron considerados por mucho tiempo como objetos concretos antes de llegar a ser estudiados como estructuras algebraicas abstractas.
 
-En este contexto histórico es natural hacer la pregunta: dado un grupo abstracto ¿cómo se puede saber qué grupo es?. Es decir, ¿se puede decir cuándo es un grupo de permutaciones, un grupo lineal o un grupo de transformaciones proyectivas? En la última interrogante es importante aclarar que se  listó sólo algunos ejemplos de las clases de grupos que existen. 
+En este contexto histórico es natural hacer la pregunta: dado un grupo abstracto ¿cómo se puede saber qué grupo es? Es decir, ¿se puede decir cuándo es un grupo de permutaciones, un grupo lineal o un grupo de transformaciones proyectivas? En la última interrogante es importante aclarar que se  listó solo algunos ejemplos de las clases de grupos que existen. 
 
 En 1879, durante las lecturas de un coloquio matemático realizado en Evanston, Illinois, Felix Klein planteó la posibilidad de representar un grupo abstracto dado como un grupo de transformaciones lineales (véase \cite{bib:historia}).
 
-Siguiendo estas ideas, Theodor Molien, Georg Frobenius, Issai Schur, William Burnside y  Heinrich Maschke desarrollaron la teoría básica de la representación de grupos al inicio del siglo XX y Burnside presentó la primera exposición  sistemática \mbox{ }\newpage \noindent de este tema en su libro \cite{bib:burnside}, que actualmente es considerado un libro clásico en este~ tema. 
+Siguiendo estas ideas, Theodor Molien, Georg Frobenius, Issai Schur, William Burnside y  Heinrich Maschke desarrollaron la teoría básica de la representación de grupos al inicio del siglo XX y Burnside presentó la primera exposición  sistemática \mbox{ }\newpage \noindent de este tema en su libro \cite{bib:burnside}, que actualmente es considerado un clásico en este~ tema. 
 
 La teoría de la representación se volvió más importante a medida que se fueron obteniendo nuevos resultados. Uno de los resultados más importantes, es el famoso teorema que establece que si $p$ y $q$ son números enteros primos y  $a$, $b$ enteros positivos, entonces cualquier grupo de orden $p^aq^b$ es soluble. Este teorema fue demostrado en 1904 por William Burnside, usando la teoría de representación de grupos y, como dato curioso, la primera demostración que no utiliza dicha teoría fue proporcionada por John Griggs Thompson más de 60 años después (ver \cite{bib:grupsfact}).
 
-William Burnside también conjeturó que todo grupo de orden impar es soluble. Esta conjetura fue un problema abierto hasta que Walter Feit y John Thompson dieron una demostración de esta conjetura en 1963 (ver \cite{bib:solubilidad}), usando para ello teoría de la representación. Luego de hacer énfasis en la importancia histórica que tiene la teoría de representación de grupos, se presentan algunas definiciones de la~ misma.
+William Burnside también conjeturó que todo grupo de orden impar es soluble. Esta conjetura fue un problema abierto hasta que Walter Feit y John Thompson dieron una demostración de esta conjetura en 1963 (ver \cite{bib:solubilidad}), usando para ello la teoría de la representación. Luego de hacer énfasis en la importancia histórica que tiene la teoría de representación de grupos, se presentan algunas definiciones de la~ misma.
 \begin{definicion}
 Sean $G$ un grupo, $R$ un anillo conmutativo y $V$ un $R\mbox{-módulo}$ libre de rango finito. Una representación de $G$ sobre $R$, con espacio de representación $V$, es un homomorfismo de grupos $T \colon G \to GL(V)$, donde $GL(V)$ es el grupo de automorfismo de $V$. El rango de $V$ es llamado grado de la representación $T$ y se denotará como $\grado(T)$.
 \end{definicion}
@@ -407,7 +407,7 @@ A(g) & 0 \\
   
   Esto significa que $x \in G$ actúa en los elementos de la base $G = \{ g_1, \dots, g_n \}$ multiplicándolos por la izquierda. En otras palabras, la representación asociada al $RG\mbox{-módulo}$ $RG$ es precisamente la representación regular de $G$. 
 \begin{lema}
-  Sea $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$, con espacio de representación $V$, entonces un subespacio $W \subset V$ es invariante bajo $T$ si y sólo si $W$ es un $KG\mbox{-módulo}$ de $V$. 
+  Sea $T \colon G \to GL(V)$ una representación de un grupo $G$ sobre un campo $K$, con espacio de representación $V$, entonces un subespacio $W \subset V$ es invariante bajo $T$ si y solo si $W$ es un $KG\mbox{-módulo}$ de $V$. 
   \end{lema}
   \begin{proof*}
   Se procede a demostrar este hecho en dos partes:
@@ -420,8 +420,8 @@ A(g) & 0 \\
   \begin{teorema}\label{teo:relacionTG}
   Sea $G$ un grupo y $K$ un campo. Entonces:
   \begin{bulletList}
-  \newItem Dos representaciones $T$ y $T'$ de $G$ sobre $R$ son equivalentes si y sólo si los correspondientes $RG\mbox{-módulos}$ son isomorfos.
-  \newItem Una representación es irreducible (o completamente reducible) si y sólo si el correspondiente $RG\mbox{-módulo}$ es irreducible (o completamente reducible).
+  \newItem Dos representaciones $T$ y $T'$ de $G$ sobre $R$ son equivalentes si y solo si los correspondientes $RG\mbox{-módulos}$ son isomorfos.
+  \newItem Una representación es irreducible (o completamente reducible) si y solo si el correspondiente $RG\mbox{-módulo}$ es irreducible (o completamente reducible).
   \end{bulletList}
   \end{teorema}
   \begin{proof*}
@@ -469,7 +469,7 @@ A(g) & 0 \\
  \begin{equation*} \mathds{Q}G \simeq \mathds{Q}\oplus\mathds{Q}(\zeta), \end{equation*} donde $\zeta$ denota una raíz primitiva de la unidad de orden siete. De lo anterior, las componentes simples de $\mathds{Q}G$ son anillos de matrices de $1\times 1$ sobre los anillos $\mathds{Q}$ y $\mathds{Q}(\zeta)$ respectivamente y por ende existen solamente dos representaciones irreducibles que no son equivalentes, $S$ y $T$ de $G$ sobre $\mathds{Q}$, con grados
  \begin{equation*} \grado(S) = [\mathds{Q}:\mathds{Q}] = 1, \quad \grado(T) = [\mathds{Q}:\mathds{Q}] = 6. \end{equation*} 
  
- Como las representaciones $1\mbox{-dimensionales}$ son equivalentes si y sólo si son iguales y como cualquier grupo admite la representación trivial $S \colon G \to GL(1,\mathds{Q})$ dada por $S_g = 1$, para cada $g \in G$, entonces la representación $1\mbox{-dimensional}$ de $G$ sobre $\mathds{Q}$ es la trivial.
+ Como las representaciones $1\mbox{-dimensionales}$ son equivalentes si y solo si son iguales y como cualquier grupo admite la representación trivial $S \colon G \to GL(1,\mathds{Q})$ dada por $S_g = 1$, para cada $g \in G$, entonces la representación $1\mbox{-dimensional}$ de $G$ sobre $\mathds{Q}$ es la trivial.
  
  Para determinar $T_a$, de acuerdo a las consideraciones anteriores, se debe considerar el $\mathds{Q}G\mbox{-módulo}$ irreducible $I_2 = D_2^{n_2}$ correspondiente a la segunda componente simple de $\mathds{Q}$. Entonces, la representación $T \colon G \to GL(I_2)$ está dada por $T_a(v) = av$, para cada $v \in I_2$. En este caso, $n_2 = 1$ y $D_2 = \mathds{Q}(\zeta)$, así que $I_2 = \mathds{Q}(\zeta)$, donde la multiplicación por un elemento $\alpha = (\alpha_1, \alpha_2) \in \mathds{Q}G$ está dada por $\alpha v = \alpha_2v$, para todo $v \in \mathds{Q}(\zeta)$. Recordando que el elemento $a \in \mathds{Q}(\zeta)$ le corresponde, vía isomorfismo, el elemento $(1,\zeta) \in \mathds{Q}\oplus\mathds{Q}(\zeta)$ se tiene
  \begin{equation*} T_a(v) = av = \zeta v, \quad v 

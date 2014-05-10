@@ -27,7 +27,7 @@ En el teorema \ref{teo:caracCar0} y \ref{teo:caracCarEntera} se clasificaron  to
 \end{ejemplo}
 
 \begin{proposicion}\label{prop:UnidadesTriviales}
-Sea $G$ un grupo tal que no es libre de elementos de torsión y $K$ un campo de característica $p\geq 0$. Entonces $KG$ sólo tiene unidades triviales si y sólo si se cumple alguna de las siguientes condiciones
+Sea $G$ un grupo tal que no es libre de elementos de torsión y $K$ un campo de característica $p\geq 0$. Entonces $KG$ solo tiene unidades triviales si y solo si se cumple alguna de las siguientes condiciones
 \begin{bulletList}
 \newItem $K=F_2$ y $G=C_2$ o $C_3$.
 \newItem $K=F_3$ y $G=C_2$.
@@ -43,7 +43,7 @@ Si $\car (K) = p$ entonces $1+c\hat{G}, c \in K$ es una unidad no trivial, a men
 Por otro lado, si $\car(K) \neq p$ entonces, del hecho que $K\langle a \rangle$ es semisimple y conmutativo, $K\langle a \rangle$ es suma directa de campos, a saber
 \[ K \langle a \rangle \simeq K\oplus K(\zeta) \oplus K(\theta) \oplus + \cdots \] donde $\zeta, \theta, \dots$ son raíces de la unidad de orden $p$. Bajo este isomorfismo, se tiene $a \mapsto (1,\zeta,\theta,\dots)$, por lo que una unidad trivial $ka^ i, 0\neq k \in K$ tiene imagen $(k,k\zeta^i,k\theta^i,\dots)$. Nótese que si la descomposición de $K\langle a\rangle$ tuviera más de dos componentes se tendrían unidades de la forma $(1,\zeta,1,\dots)$ que no corresponden a unidades triviales de $K\langle a \rangle$.
 Entonces se debe tener: \[ K\langle a \rangle \simeq K \oplus E\mbox{, } E = K(\zeta)\mbox{, } |K|=q\mbox{, } |E|=q^r\mbox{, } \circ(a) = p. \] Al contar el número de unidades y de elementos se tiene: \[ p(q-1) = (q-1)(q^r-1), p^q = q\cdot q^r. \] 
-\indent De la condición anterior, se tiene que $q^p = q(p-1)$ y $q^{p-1} = p+1$, lo cual sólo es posible para $q=2$ y $p=3$ o $q=3$ y $p=2$. Con lo que se demuestra que $K=F_2$ y $G=C_3$ o $K=F_3$ y $G=C_2$.
+\indent De la condición anterior, se tiene que $q^p = q(p-1)$ y $q^{p-1} = p+1$, lo cual solo es posible para $q=2$ y $p=3$ o $q=3$ y $p=2$. Con lo que se demuestra que $K=F_2$ y $G=C_3$ o $K=F_3$ y $G=C_2$.
 
 Para el converso, una simple inspección demuestra que $F_2C_2, F_3C_3 \simeq F_2\oplus F_4$ y $F_3C_2 \simeq F_3 \oplus F_3$ tiene dos, tres y cuatro unidades triviales, lo cual coincide con el número de unidades triviales en cada caso. 
 \end{proof*}
@@ -65,7 +65,7 @@ Sean $a \in G$ un elemento de orden finito $n$ y $b$ cualquier otro elemento de 
 Es claro que si $a,b \in G$ conmutan, entonces $\mu_{a,b} = 1$. Se desea saber para que casos $\mu_{a,b}$ es una unidad trivial de $\mathds{Z}G$.
 
 \begin{proposicion}\label{prop:unidadesb}
-Sean $g,h$ elementos de un grupo $G$ con $\circ(g) = n < \infty$. Entonces, la unidad bicíclica $\mu_{g,h}$ es trivial si y sólo si $h$ normaliza a $\langle g \rangle$, en cuyo caso $\mu_{g,h} = 1$.
+Sean $g,h$ elementos de un grupo $G$ con $\circ(g) = n < \infty$. Entonces, la unidad bicíclica $\mu_{g,h}$ es trivial si y solo si $h$ normaliza a $\langle g \rangle$, en cuyo caso $\mu_{g,h} = 1$.
 \end{proposicion}
 \begin{proof*}
 Supóngase que $h$ normaliza a $\langle g \rangle$, entonces $h^{-1}gh = g^j$, para algún entero positivo $j$. De esto se tiene $gh = g^jh$ y como $g^j\hat{g} = \hat{g}$, se tiene $gh\hat{g} = h\hat{g}$. Haciendo los cálculos $\mu_{g,h} = 1+(g-1)h\hat{g}= 1+gh\hat{g}-h\hat{g} =1$.
@@ -76,14 +76,14 @@ Para el converso, supóngase que $\mu_{g,h}$ es trivial, entonces, del hecho que
 \end{proof*}
 Como consecuencia inmediata se tiene el resultado:
 \begin{proposicion}
-Sea $G$ un grupo finito. El grupo $\mathcal{B}_2$ es trivial si y sólo si todo subgrupo de $G$ es normal.
+Sea $G$ un grupo finito. El grupo $\mathcal{B}_2$ es trivial si y solo si todo subgrupo de $G$ es normal.
 \end{proposicion}
 \begin{proposicion}
 Toda unidad bicíclica $\mu_{g,h} \neq 1$ de $\mathds{Z}G$ es orden infinito. 
 \end{proposicion}
 \begin{proof*}
 Dado $\mu_{g,h} = 1 +(g-1)h\hat{g}$ se tiene:
-\[  \mu_{g,h}^s = (1+(g-1)h\hat{g}^s = 1+s(g-1)h\hat{g})  \] entonces $\mu_{g,h}^s = 1$ si y sólo si $(g-1)h\hat{g} = 0$, lo cual sucede solo si $\mu_{g,h} = 1$.
+\[  \mu_{g,h}^s = (1+(g-1)h\hat{g}^s = 1+s(g-1)h\hat{g})  \] entonces $\mu_{g,h}^s = 1$ si y solo si $(g-1)h\hat{g} = 0$, lo cual sucede solo si $\mu_{g,h} = 1$.
 \end{proof*}
 Se desea explorar que pasa cuando se trabaja con grupos conmutativos finitos. El lector deberá recordar la definición de la función totiente de Euler $\phi$. 
 \begin{definicion}
@@ -110,7 +110,7 @@ Se sabe que \[ \mathds{Q}\langle g \rangle \simeq \mathds{Q} \oplus \cdot \oplus
 En la definición de unidad cíclica de Bass $\mu_l$, $l$ está en el rango $1<l<n-1$. Si se toma $l=n-1$ se tiene \[ \mu_l= (1+g+\cdots+g^{n-2})^{\phi(n)}+\frac{1-l {\phi(n)}}{n}\hat{g}.\] La proyección de $\mu_l$ sobre cualquier componente es $(-g^{-1})^{\phi(n)}$ y $\mu_l = (-g^{-1})^{\phi(n)}$ es trivial. Así mismo, de la restricción $1<l<n-1$, se tiene que $n\geq 5$ para que $\mu_l$ esté definida.
 \end{nota}
 \begin{nota}
-Lo proposición anterior demuestra que $\mu_l$ es una unidad no trivial.
+La proposición anterior demuestra que $\mu_l$ es una unidad no trivial.
 \end{nota}
 \begin{ejemplo}
 Ahora considérese $g \in G$ un elemento de orden impar, $n \neq 1$ y el elemento \[ \mu = 1-g+g^2-\cdots +g^{c-1},\] donde $(c,2n)=1$. Entonces la proyección en cada componente de $\mathds{Q}\langle g \rangle$ es una unidad ciclótomica y como la proyección en la primera componente es $1$, se tiene que $\mu$ es una unidad en $\mathds{Z}\langle g \rangle$. Esta unidad es llamada una unidad alternante.
@@ -183,7 +183,7 @@ Si $b = 0$, entonces $\alpha = a \in \mathds{Z}$ es una unidad y $\alpha = \pm 1
 El caso en que $\zeta$ es raíz primitiva de la unidad de orden cuatro es aún más fácil, ya que $\zeta = i$ y los elementos en $\mathds{Z}[i]$ son de la forma $\alpha = a + bi, a,b \in \mathds{Z}$, es decir que $\alpha \in \mathds{C}$ y por lo tanto $a = \pm 1$ y $b = 0$ o $a = 0$ y $b = \pm 1$
 \end{proof*}
 \begin{teorema}[Higman]\label{teo:Higman}
-Sea $G$ un grupo de torsión. Entonces, todas las unidades de $\mathds{Z}G$ son triviales si y sólo si $G$ es un grupo abeliano de exponente igual a $1,2,3,4$ o $6$ o $G$ es un 2-grupo hamiltoniano. 
+Sea $G$ un grupo de torsión. Entonces, todas las unidades de $\mathds{Z}G$ son triviales si y solo si $G$ es un grupo abeliano de exponente igual a $1,2,3,4$ o $6$ o $G$ es un 2-grupo hamiltoniano. 
 \end{teorema}
 \begin{proof*}
 La condición necesaria ya se ha demostrado. Para probar la condición suficiente, considérese el caso en que $G$ es un grupo abeliano de exponente igual a $1,2,3,4$ o $6$ y supóngase que $G$ es finito. En este caso, el teorema \ref{teo:Perlis-Walker} asegura~que: \[ \mathds{Q}G \simeq \oplus_{d \mid n}a_d\mathds{Q}(\zeta_d)  \] donde $\zeta_d$ denota a las raíces primitivas de la unidad de orden $d$ y $a_d = \dfrac{\eta_d}{\mid K(\zeta_d : K \mid)}$. En esta fórmula, $\eta_d$ denota el número de elementos de orden $d$ en $G$. En otra palabras, solamente las raíces de la unidad cuyos órdenes son iguales a los órdenes de los elementos en $G$ aparecen en la descomposición.

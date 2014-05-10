@@ -7,7 +7,7 @@ La teoría de grupos como se conoce actualmente tiene sus orígenes en los traba
 \newItem Utilizar una tabla para mostrar como actúa una operación.
 \newItem Demostración de existencia de dos grupos no isomorfos de orden cuatro, dando ejemplos explícitos. 
 \newItem Demostración de existencia de dos grupos no isomorfos de orden seis, uno de los cuales es conmutativo y el otro es isomorfo a $\mathcal{S}_3$, el grupo de permutaciones de tres elementos.
-\newItem Demostración de que el orden de todo elemento es divisor del orden del grupo, cuando éste es finito. 
+\newItem Demostración que el orden de todo elemento es divisor del orden del grupo, cuando este es finito. 
 \end{bulletList}
 %-----------------------> teoría de grupos
 \section{\hskip 1.1em Teoría de grupos}
@@ -50,7 +50,7 @@ i_1 & i_2 & i_3 & \cdots & i_n \\
  1 & 2 & 3 & 4 & 5 \\
   4 & 3 & 1 & 5 & 2
  \end{pmatrix}. \]
-\newpage Este simple cálculo demuestra que, en general, $\mathcal{S}_n$ no es conmutativo. De hecho, es fácil demostrar que $\mathcal{S}_n$ es conmutativo si y sólo si $n \leq 2$. 
+\newpage Este simple cálculo demuestra que, en general, $\mathcal{S}_n$ no es conmutativo. De hecho, es fácil demostrar que $\mathcal{S}_n$ es conmutativo si y solo si $n \leq 2$. 
 \end{ejemplo}
 \begin{definicion}
 Un subconjunto no vacío $H$ de un grupo $G$ es llamado subgrupo de $G$ si es cerrado bajo la operación de $G$ y $H$, con la restricción de la operación de $G$, es un grupo por sí mismo.
@@ -76,7 +76,7 @@ Es fácil demostrar que esta intersección definida previamente es un subgrupo d
 Si $\langle X \rangle = G$ se dice que $X$ es un conjunto de generadores de $G$. Si $X$ es finito, entonces se dice que $G$ es un grupo finitamente generado.
 \end{ejemplo}
  \begin{lema}
- Un subconjunto no vacío $H$ de un grupo $G$ es un subgrupo de $G$ si y sólo si para cualesquiera $x,y \in H$ se tiene que $x^{-1}y \in H$.
+ Un subconjunto no vacío $H$ de un grupo $G$ es un subgrupo de $G$ si y solo si para cualesquiera $x,y \in H$ se tiene que $x^{-1}y \in H$.
  \end{lema}
  \begin{definicion}
  El centro de un grupo $G$ es el subgrupo \[ \mathcal{Z}(G) = \{ a \in G \colon ax=xa, \mbox{ para cada }  x \in G \}. \]
@@ -99,7 +99,7 @@ Sea $H$ un subgrupo de un grupo $G$ y $a,b$ elementos arbitrarios de $G$. Entonc
 \end{bulletList}
 \end{proposicion}
 \begin{corolario}
-Sea $H$ un subgrupo de un grupo $G$. Dados $a,b \in G$ se cumple que $b \in aH$ si y sólo si $aH = bH$.
+Sea $H$ un subgrupo de un grupo $G$. Dados $a,b \in G$ se cumple que $b \in aH$ si y solo si $aH = bH$.
 \end{corolario}
 Todo elemento en una clase lateral es un representante de la misma. Un conjunto completo de representantes de una clase lateral izquierda (derecha), es llamado transversal izquierdo (derecho) de $H$ en $G$.
 \begin{definicion}
@@ -114,9 +114,9 @@ Sea $a$ un elemento de un grupo finito $G$. Entonces $\circ(a)$ es un divisor de
 \end{corolario}
 \begin{ejemplo}
 Considérese nuevamente a $\mathcal{S}_3$, el grupo de simetrías de grado tres. Se sabe que $|  \mathcal{S}_3 | = 6$. Explícitamente, este grupo se expresa como \[ \mathcal{S}_3 = \{ I, (12), (13), (23), (123), (132) \}, \mbox{ donde } I = (1) .\]
-Sea $H = \{ I, (12) \} $ y $\alpha = (123)$. Entonces; \[ \alpha H = \{ (123), (13) \}   \mbox{ y } H\alpha = \{ (123), (23) \} ,\] con esto se demuestra que, en general las clases laterales derechas e izquierdas determinadas por el mismo elemento, no son iguales.
+Sea $H = \{ I, (12) \} $ y $\alpha = (123)$. Entonces; \[ \alpha H = \{ (123), (13) \}   \mbox{ y } H\alpha = \{ (123), (23) \} ,\] con esto se demuestra que, en general, las clases laterales derechas e izquierdas determinadas por el mismo elemento, no son iguales.
 \end{ejemplo}
-Los subgrupos cuyas clases laterales derechas e izquierdas generadas por el mismo elemento son iguales son de especial importancia. Nótese que para un elemento $a$ y un subgrupo $H$ de un grupo $G$, se tiene que $aH = Ha$ si y sólo si $a^{-1}Ha=H$. Esto sugiere la siguiente:
+Los subgrupos cuyas clases laterales derechas e izquierdas generadas por el mismo elemento son iguales son de especial importancia. Nótese que para un elemento $a$ y un subgrupo $H$ de un grupo $G$, se tiene que $aH = Ha$ si y solo si $a^{-1}Ha=H$. Esto sugiere la siguiente:
 \begin{definicion}
 Sea $H$ un subgrupo de un grupo $G$. Se dice que $H$ es normal en $G$, y se escribe $H \triangleleft G$ si $a^{-1}Ha = H$ para cualquier $a \in G$.
 \end{definicion}
@@ -169,7 +169,7 @@ Sea $f \colon G_1 \to G_2$ un epimorfismo. Entonces \[ G_1/\ker(f) \simeq G_2. \
 \begin{lema}
 Sea $H$ un subgrupo normal de $G$. Entonces:
 \begin{bulletList}
-\newItem Para cada subgrupo $K$ de $G$ que contiene a $H$, el conjunto $K/H = \{ xH \colon x \in K \}$ es un subgrupo de $G/H$ que es normal si y sólo si $K$ es normal.
+\newItem Para cada subgrupo $K$ de $G$ que contiene a $H$, el conjunto $K/H = \{ xH \colon x \in K \}$ es un subgrupo de $G/H$ que es normal si y solo si $K$ es normal.
 \newItem Si $\mathcal{K}$ es un subgrupo de $G/H$, entonces la preimagen $K = \{ x \in G \colon xH \in \mathcal{K} \}$ es un subgrupo de $G$ que contiene a $H$, tal que $\mathcal{K} = K/H$.
 \end{bulletList}
 \end{lema}
@@ -239,7 +239,7 @@ Es interesante notar que los $p$-grupos abelianos elementales también pueden se
 Sea $G$ un $p$-grupo abeliano elemental. Entonces $G$ es un espacio vectorial sobre $\mathds{Z}_p$. Más aún, si $G$ es finito entonces puede ser escrito como producto directo de un número finito de grupos cíclicos de orden $p$.
 
 \end{lema}
-Para un grupo $G$ se define su exponente, y se denota como $\exp(G)$, como el entero positivo más pequeño $m$, tal que $g^m=1$ para cualquier $g \in G$. Nótese que $G$ es un $p$-grupo abeliano elemental si y sólo $\exp(G)=p$ y que si $G$ es un grupo abeliano con $\exp(G) = p^m$, entonces $\exp(G^p) = p^{m-1}$.
+Para un grupo $G$ se define su exponente, y se denota como $\exp(G)$, como el entero positivo más pequeño $m$, tal que $g^m=1$ para cualquier $g \in G$. Nótese que $G$ es un $p$-grupo abeliano elemental si y solo $\exp(G)=p$ y que si $G$ es un grupo abeliano con $\exp(G) = p^m$, entonces $\exp(G^p) = p^{m-1}$.
 \begin{teorema}\label{teo:estructuraAbelianos}
 Sea $G$ un $p$-grupo abeliano finito. Entonces $G$ se puede escribir como producto directo de $p$-subgrupos cíclicos. Esta descomposición es única, en el sentido que si
 \[ G = C_1 \times \dots \times C_t = D_1 \times \cdots \times D_s \]
@@ -285,7 +285,7 @@ Un grupo G es hamiltoniano si no es conmutativo y todos sus subgrupos son normal
 Todo grupo hamiltoniano contiene un subgrupo isomorfo a $K_8$.
 \end{lema}
 \begin{teorema}\label{teo:abelianohamiltoniano}
-Un grupo $G$ es hamiltoniano si y sólo si $G$ es producto directo de un grupo cuaterniones de orden 8, un 2-grupo abeliano elemental $E$ y un grupo abeliano $A$ en el cual todos sus elementos son de orden impar.
+Un grupo $G$ es hamiltoniano si y solo si $G$ es producto directo de un grupo cuaterniones de orden 8, un 2-grupo abeliano elemental $E$ y un grupo abeliano $A$ en el cual todos sus elementos son de orden impar.
 \end{teorema}
 La demostración de este importante teorema, se puede consultar en \cite[130]{bib:groupBook}.
 %----------------> teoria de anillos, módulos  y algebras
@@ -320,10 +320,10 @@ Un elemento $a$ de un anillo $R$ es invertible si existe un elemento $a^{-1} \in
 \end{definicion}
 A un anillo se le llama de división si todos los elementos distintos de cero son invertibles, dicho de otra manera; si $R\backslash \{0\} = \mathcal{U}(R)$. Un anillo de división conmutativo es un campo.
 \begin{ejemplo}
-El conjunto $\mathds{Z}_m = \{ \bar{0}, \bar{1}, \dots, \overline{m-1} \}$ de enteros módulo $m$ es un anillo conmutativo. Más aún $\mathds{Z}_m$ es un campo si y sólo si $m$ es un número primo.
+El conjunto $\mathds{Z}_m = \{ \bar{0}, \bar{1}, \dots, \overline{m-1} \}$ de enteros módulo $m$ es un anillo conmutativo. Más aún $\mathds{Z}_m$ es un campo si y solo si $m$ es un número primo.
 \end{ejemplo}
 \begin{ejemplo}
-Sea $R$ un anillo. Entonces el conjunto $R[X]$ de todos los polinomios con coeficientes en $R$ e indeterminada  $X$ con la operación usual de suma y multiplicación de polinomios es un anillo. El anillo de polinomios $R[X]$ es un dominio si y sólo si $R$ lo es. 
+Sea $R$ un anillo. Entonces el conjunto $R[X]$ de todos los polinomios con coeficientes en $R$ e indeterminada  $X$ con la operación usual de suma y multiplicación de polinomios es un anillo. El anillo de polinomios $R[X]$ es un dominio si y solo si $R$ lo es. 
 \end{ejemplo}
 \begin{ejemplo}
 Sea $R$ un anillo, entonces el conjunto $M_n(R)$ de todas la matrices de $n\times n$ con entradas en $R$, con suma y producto usual de matrices es un anillo. Este anillo es llamado anillo completo de matrices de $n\times n$ sobre $R$.
@@ -350,7 +350,7 @@ ki &= j &= -ik.
 Al igual que en el caso de los números complejos, se cumple que:
 \begin{bulletList}
 \newItem $\lVert \alpha\beta \rVert = \lVert \alpha \rVert \lVert \beta \rVert = \lVert \alpha\beta \rVert$.
-\newItem $\lVert \alpha \rVert \geq 0$ y $\lVert \alpha \rVert  = 0 $ si y sólo si $\alpha = 0 $.
+\newItem $\lVert \alpha \rVert \geq 0$ y $\lVert \alpha \rVert  = 0 $ si y solo si $\alpha = 0 $.
 \end{bulletList}
 
 Si $\alpha \in \mathcal{H}$ es distinto de cero, se tiene que $\lVert \alpha \rVert \neq 0$, entonces se puede definir $\alpha' = \bar{\alpha}/\lVert \alpha \rVert$. Entonces \[ \alpha\alpha'= \alpha \frac{\bar{\alpha}}{\lVert \alpha \rVert} = 1 \] y de manera similar se demuestra que $\alpha'\alpha = 1$, de donde se sigue que $\alpha^{-1} = \alpha'$. Este argumento demuestra que $\mathcal{H}$ es un anillo de división.
@@ -414,7 +414,7 @@ para cualesquiera $a,b \in R$ y $m, m_1, m_2 \in M$.
 \end{definicion}
 De manera similar, dado un anillo $R$, se define un $R\mbox{-módulo}$ derecho considerando la multiplicación de elementos de $M$ por elementos de $R$ por la derecha. De acá en adelante, un $R\mbox{-módulo}$ izquierdo será abreviado como $R\mbox{-módulo}$. 
 \begin{ejemplo}
-Un ideal izquierdo $L$ de un anillo $R$ es un $R\mbox{-módulo}$, ya que el producto de elementos de $R$ por elementos de $L$ pertenece a $L$. Así mismo, los ideales derechos también son $R\mbox{-módulos}$ derechos.
+Un ideal izquierdo $L$ de un anillo $R$ es un $R\mbox{-módulo}$, ya que el producto de elementos de $R$ por elementos de $L$ pertenece a $L$. Asimismo, los ideales derechos también son $R\mbox{-módulos}$ derechos.
 En particular, un anillo siempre es un módulo sobre sí mismo. Cuando se considere un anillo como un $R\mbox{-módulo}$ izquierdo o derecho sobre sí mismo, se denotará como $_{R}R$ y $R_R$ respectivamente.
 \end{ejemplo}
 \begin{ejemplo}
@@ -431,7 +431,7 @@ Sea $M$ un módulo sobre un anillo $R$. Un conjunto no vacío $N \subset M$ es l
 \end{bulletList}
 Si $R$ es conmutativo y $M$ es un $R\mbox{-álgebra}$, entonces  se dice que $N$ es un $R\mbox{-subálgebra}$ de $M$ si es un submódulo y un subanillo de $M$ al mismo tiempo. 
 \end{definicion}
-Todo módulo $M \neq \{0\}$ contiene al menos dos submódulos, a saber, $M$ y $\{0\}$, que son llamados triviales. Un submódulo no trivial es llamado submódulo propio. Un módulo, distinto al módulo que sólo contiene al $0$, que no contiene submódulos propios es un  módulo simple. 
+Todo módulo $M \neq \{0\}$ contiene al menos dos submódulos, a saber, $M$ y $\{0\}$, que son llamados triviales. Un submódulo no trivial es llamado submódulo propio. Un módulo, distinto al módulo que solo contiene al $0$, que no contiene submódulos propios es un  módulo simple. 
 Sea $N$ un submódulo de un $R\mbox{-módulo}$ $M$. Al igual que en el caso de los anillos, el grupo cociente aditivo $M/N$ es un $R\mbox{-módulo}$ con $r\bar{m} = \overline{rm}, r\in R, m \in M$. Este es el módulo cociente entre $M$ y $N$. 
 
 %-----------------subsection modulos libres
@@ -461,7 +461,7 @@ Un submódulo $N$ de un $R\mbox{-módulo}$ $M$ es un sumando directo si existe o
 \end{definicion}
 Caso contrario a los espacio vectoriales, no todo submódulo de un módulo dado es un sumando directo.
 \begin{lema}
-Sea $N$ un submódulo de un $R\mbox{-módulo}$ $M$. Entonces $N$ es un sumando directo de $M$ si y sólo si existe un endomorfismo $f \colon M \to M$ tal que $f \circ f = f$ e $\Ima (f) = N$.
+Sea $N$ un submódulo de un $R\mbox{-módulo}$ $M$. Entonces $N$ es un sumando directo de $M$ si y solo si existe un endomorfismo $f \colon M \to M$ tal que $f \circ f = f$ e $\Ima (f) = N$.
 \end{lema}
 El homomorfismo $f \colon M \to M$ del lema anterior es la  proyección de $M$ en $N$. 
 \begin{proposicion}\label{prop:bimodulos}
@@ -492,21 +492,21 @@ Sea $M$ un $\modulo{R}$. Entonces, las siguientes condiciones son equivalentes:
 \end{centeredList}
 \end{teorema}
 \begin{proof*}
-(\ref{item:ssimple1}) $\implies$ (\ref{item:ssimple2}). Sea $\mathcal{F}$ la colección de todos los submódulos de $M$ que se pueden escribir como suma directa de submódulos simples. La proposición anterior asegura la existencia de dichos submódulos. Se define un orden en $\mathcal{F}$ de la siguiente manera: dados dos elementos $\oplus_{i \in I}M_i$ y $\oplus_{i \in J}M_i$ de $\mathcal{F}$, se tiene que $\oplus_{i \in I}M_i  \prec \oplus_{i \in J}M_i$ si y sólo si $I \subset J$. 
+(\ref{item:ssimple1}) $\implies$ (\ref{item:ssimple2}). Sea $\mathcal{F}$ la colección de todos los submódulos de $M$ que se pueden escribir como suma directa de submódulos simples. La proposición anterior asegura la existencia de dichos submódulos. Se define un orden en $\mathcal{F}$ de la siguiente manera: dados dos elementos $\oplus_{i \in I}M_i$ y $\oplus_{i \in J}M_i$ de $\mathcal{F}$, se tiene que $\oplus_{i \in I}M_i  \prec \oplus_{i \in J}M_i$ si y solo si $I \subset J$. 
 Ahora como $(\mathcal{F, \prec})$ satisface las condiciones del lema de Zorn, existe un elemento maximal $M_0 \in \mathcal{F}$ que se puede escribir como $M_0 = \oplus_{i \in I}M_i$ con $M_i, i \in I$ simple.
-Ahora sólo falta demostrar que $M_0 = M$. En efecto, si $M_0 \neq M$, entonces existe un submódulo $N$ de $M$ tal que $M = M_0 \oplus N$, pero, por la proposición anterior, $N$ contiene un submódulo simple $S$ y por lo tanto $M_0 \oplus S = \oplus_{i \in I}M_i \oplus S \supset M_0$, lo cual contradice la maximalidad de $M_0$.
+Ahora solo falta demostrar que $M_0 = M$. En efecto, si $M_0 \neq M$, entonces existe un submódulo $N$ de $M$ tal que $M = M_0 \oplus N$, pero, por la proposición anterior, $N$ contiene un submódulo simple $S$ y por lo tanto $M_0 \oplus S = \oplus_{i \in I}M_i \oplus S \supset M_0$, lo cual contradice la maximalidad de $M_0$.
 
 (\ref{item:ssimple2}) $\implies$ ($\ref{item:ssimple3}$) es trivial.
 
 (\ref{item:ssimple3}) $\implies$ (\ref{item:ssimple1}). Supóngase que $M = \sum_{i \in I}M_i$, donde cada componente $M_i, i \in I$ es simple. Sea $N$ un submódulo propio cualquiera de $M$. Se demostrará que $N$ es sumando directo. 
-Considérese la familia \[ \mathcal{J} = \left\{ \sum_{i \in J} M_i \colon J \subset I, \left(\sum_{i \in J}M_i \right) \cap N = (0)  \right\} \] y nótese que si $N \cap M_i \neq (0)$ entonces $M_i \subset N$. Como $N \neq M$, se deduce que existe al menos un submódulo $M_i$ tal que $N \cap M_i = (0)$ y $\mathcal{J} \neq \emptyset$. Por el lema de Zorn, se puede encontrar un submódulo maximal en $\mathcal{J}$, a saber $M_0 = \sum_{i \in \mathcal{J}_0}M_i$. Como $\left( \sum_{i \in \mathcal{J}_0}M_i  \right) \cap N = (0)$, sólo queda por demostrar que $M = M_0 + N$. Para ello se demostrará que $M_i \subset M_0 + N$, para todo $i \in I$. Supóngase por el absurdo que esto no es cierto, entonces existe un índice $i_{0}$, tal que $M_{i_0} \nsubseteq M_0 + N $. Ahora bien, $M_{i_0}$ es simple, se tiene que $M_{i_0} \cap (M_0 + N) = (0)$. Entonces $(M_{i_0} + M_0)\cap N =(0)$, lo que implica que $M_{i_0} + M_0 \in \mathcal{J}$, lo cual contradice la maximalidad de $M_0$.
+Considérese la familia \[ \mathcal{J} = \left\{ \sum_{i \in J} M_i \colon J \subset I, \left(\sum_{i \in J}M_i \right) \cap N = (0)  \right\} \] y nótese que si $N \cap M_i \neq (0)$ entonces $M_i \subset N$. Como $N \neq M$, se deduce que existe al menos un submódulo $M_i$ tal que $N \cap M_i = (0)$ y $\mathcal{J} \neq \emptyset$. Por el lema de Zorn, se puede encontrar un submódulo maximal en $\mathcal{J}$, a saber $M_0 = \sum_{i \in \mathcal{J}_0}M_i$. Como $\left( \sum_{i \in \mathcal{J}_0}M_i  \right) \cap N = (0)$, solo queda por demostrar que $M = M_0 + N$. Para ello se demostrará que $M_i \subset M_0 + N$, para todo $i \in I$. Supóngase por el absurdo que esto no es cierto, entonces existe un índice $i_{0}$, tal que $M_{i_0} \nsubseteq M_0 + N $. Ahora bien, $M_{i_0}$ es simple, se tiene que $M_{i_0} \cap (M_0 + N) = (0)$. Entonces $(M_{i_0} + M_0)\cap N =(0)$, lo que implica que $M_{i_0} + M_0 \in \mathcal{J}$, lo cual contradice la maximalidad de $M_0$.
 \end{proof*}
 Si se conoce la descomposición de un módulo semisimple como suma directa de módulos simples, entonces se puede determinar la estructura de todos sus submódulos. 
 \begin{corolario}
 Sea $M = \oplus_{i \in I}M_i$ una descomposición de un módulo semisimple $M$ como suma directa de submódulos y sea $N$ un submódulo de $M$. Entonces, existe un subconjunto de índices $J \subset I $ tal que $N \simeq \oplus_{i \in J}M_i$.
 \end{corolario}
 \begin{proof*}
-Como se vió en la demostración de la última implicación del teorema anterior, dado un submódulo $N$ de $M$ se puede encontrar un subconjunto de índices $J_0 \subset I$  tal que $M = N \oplus N_0$, donde $N_0 = \oplus_{i \in J_0}M_i$. Entonces:
+Como se vio en la demostración de la última implicación del teorema anterior, dado un submódulo $N$ de $M$ se puede encontrar un subconjunto de índices $J_0 \subset I$  tal que $M = N \oplus N_0$, donde $N_0 = \oplus_{i \in J_0}M_i$. Entonces:
 \[ N \simeq \frac{M}{N_0} = \frac{\oplus_{i \in I}M_i}{\oplus_{i \in J_0}M_i} \simeq \oplus_{i \in I \backslash J_0} M_i, \] de donde se sigue el resultado, con $J = I \backslash J_0$.
 \end{proof*}
 \begin{corolario}
@@ -518,7 +518,7 @@ Sea $L$ un módulo cociente de $M$, $\pi \colon M \to L$ el homomorfismo canóni
 \begin{definicion}
 Un anillo $R$ es semisimple si como módulo $_RR$ es semisimple. 
 \end{definicion}
-Todo submódulo de $_RR$ es ideal izquierdo de un anillo $R$, así que $R$ es semisimple si y sólo si todo ideal izquierdo es un sumando directo.
+Todo submódulo de $_RR$ es ideal izquierdo de un anillo $R$, así que $R$ es semisimple si y solo si todo ideal izquierdo es un sumando directo.
 \begin{teorema}
 Sea $R$ un anillo. Entonces las siguientes proposicione son equivalentes:
 \begin{bulletList}
@@ -530,14 +530,14 @@ Sea $R$ un anillo. Entonces las siguientes proposicione son equivalentes:
 \begin{proof*}~\newline
 \indent (\ref{item:rssimple1}) $\implies$ (\ref{item:rssimple2}) es evidente.
 
-(\ref{item:rssimple2}) $\implies$ (\ref{item:rssimple3}). Como los submódulos de $_RR$ son precisamente los ideales izquierdos minimales de $R$, se sigue del teorema \ref{teo:caracSemi} que $R$ se puede escribir como $R = \oplus_{i \in I}L_i$ donde cada $L_i, i \in I$ es un ideal izquierdo minimal. De esta manera sólo queda por demostrar que esta suma es finita.
+(\ref{item:rssimple2}) $\implies$ (\ref{item:rssimple3}). Como los submódulos de $_RR$ son precisamente los ideales izquierdos minimales de $R$, se sigue del teorema \ref{teo:caracSemi} que $R$ se puede escribir como $R = \oplus_{i \in I}L_i$ donde cada $L_i, i \in I$ es un ideal izquierdo minimal. De esta manera solo queda por demostrar que esta suma es finita.
 En particular, como $R = \langle 1 \rangle$, el elemento $1 \in R$ se puede escribir como una suma finita; a saber: $1 = x_{i_1} + \cdots + x_{i_n}$, donde $x_{i_j} \in L_{i_j}$. Entonces para $r \in R$, se tiene que $r = r \cdot 1 = rx_{i_1} + \cdots +rx_{i_n}$, donde $rx_{i_j} \in L_{i_j}, 1\leq j \leq n$. Esto demuestra que $R \subset L_{i_1} \oplus \cdots \oplus L_{i_n}$, de donde $R = L_{i_1} \oplus \cdots \oplus L_{i_n}$.
 Nótese que el teorema \ref{teo:caracSemi} demuestra inmediatamente que (\ref{item:rssimple3})~ $\implies$(\ref{item:rssimple2}), así que la demostración estará completa si se demuestra que (\ref{item:rssimple2}) $\implies$~(\ref{item:rssimple1}). 
 
 Supóngase que $R$ es semisimple y sea $M$ un $\modulo{R}$, entonces de la proposición \ref{prop:bimodulos} se sabe que $M$ es una imagen epimórfica de un $\modulo{R}$ libre $F$. Entonces $F$ se puede escribir como $F = \oplus_{i}Ra_i$ donde $Ra_i \simeq R$ es semisimple. Por esto, $F$ es semisimple y por lo tanto $M$ lo es. 
 \end{proof*}
 \begin{teorema}\label{teo:idealIdem}
-Sea $R$ un anillo. Entonces $R$ es semisimple si y sólo si todo ideal izquierdo $L$ de $R$ es de la forma $L = Re$, donde $e \in R$ es un idempotente.
+Sea $R$ un anillo. Entonces $R$ es semisimple si y solo si todo ideal izquierdo $L$ de $R$ es de la forma $L = Re$, donde $e \in R$ es un idempotente.
 \end{teorema}
 \begin{proof*}
 Supóngase que $R$ es semisimple y sea $L$ un ideal  izquierdo de $R$. Entonces $L$ es un sumando directo de $R$, entonces existe un ideal izquierdo $L'$ tal que $R = L \oplus L'$. De esa cuenta, se puede escribir $1 = x + y$ donde $x \in L$ y $y \in L'$. Entonces $x = x \cdot 1 = x^2 + xy$. De la igualdad anterior se deduce que $xy = x - x^2 \in L$ y como $L'$ es un ideal izquierdo se tiene que $xy \in L'$. De la definición de suma directa se sabe que $L \cap L' = (0)$ por lo tanto $xy = x - x^2 = 0$, de donde $x = x^2$ es un idempotente. Es obvio que $Rx \subset L$. Además dado $a  \in L$ se tiene que $a = a \cdot 1 = ax + ay$, de esto se obtiene $a -ax = ay\in L\cap L'=(0)$ y así $a = ax \in Rx$ demostrando que $L = Rx$. 
@@ -565,7 +565,7 @@ $R = L_1 + L_2 + \cdots + L_t$ se deduce fácilmente del hecho que $1 = e_1 + \c
 Sea $R$ un anillo. Una familia de idempotentes $\{ e_1, \dots, e_t \}$ que satisfacen las condiciones \ref{item:orto1}, \ref{item:orto2} y \ref{item:orto3} del teorema anterior es llamada una famlia completa de idempotentes ortogonales. Un idempotente que satisface la condición \ref{item:orto4} se llama primitivo.
 \end{definicion}
 \begin{lema}\label{lema:multiModulo}
-Sea $L$ un ideal izquierdo minimal de un anillo semisimple $R$ y sea $M$ un $\modulo{R}$. Entonces $LM \neq (0)$ si y sólo si $L \simeq M$ como $R\mbox{-módulos}$. En este caso $LM = M$.
+Sea $L$ un ideal izquierdo minimal de un anillo semisimple $R$ y sea $M$ un $\modulo{R}$. Entonces $LM \neq (0)$ si y solo si $L \simeq M$ como $R\mbox{-módulos}$. En este caso $LM = M$.
 \end{lema}
 
 %------------Inicio Subsección: teorema de Wedderburn-Artin
@@ -575,7 +575,7 @@ Este teorema y los que sirven de base para su demostración son de mucha importa
 Sea $L$ un ideal izquierdo minimal de un anillo semisimple $R$. Entonces la suma de todos los ideales izquierdos de $R$ isomorfos a $L$ es un ideal bilateral de $R$.
 \end{lema}
 \begin{proof*}
-Sea $A = \sum_{J \simeq L}J$. Es evidente que $A$ es un ideal izquierdo. Se desea demostrar que $A$ es también un ideal derecho. Como $R$ es semisimple se puede escribir $R = \oplus_{i = 1}^tL_i$ como suma directa de ideales izquierdos minimales. Entonces $AR = \sum_{J \simeq L}JR = \sum_{J \sim L}\sum_{i=1}^{t}JL_i$, pero $JL_i = (0)$ o $JL_i = L_i$. Por el lema \ref{lema:multiModulo} se demuestra que la última alternativa sólo es posible cuando $J \simeq L_i$, lo que implica que $L_i \subset A$. De esta manera se demuestra que $AR \subset A$.
+Sea $A = \sum_{J \simeq L}J$. Es evidente que $A$ es un ideal izquierdo. Se desea demostrar que $A$ es también un ideal derecho. Como $R$ es semisimple se puede escribir $R = \oplus_{i = 1}^tL_i$ como suma directa de ideales izquierdos minimales. Entonces $AR = \sum_{J \simeq L}JR = \sum_{J \sim L}\sum_{i=1}^{t}JL_i$, pero $JL_i = (0)$ o $JL_i = L_i$. Por el lema \ref{lema:multiModulo} se demuestra que la última alternativa solo es posible cuando $J \simeq L_i$, lo que implica que $L_i \subset A$. De esta manera se demuestra que $AR \subset A$.
 \end{proof*}
 \begin{lema}
 Sea $I$ un ideal que contiene a un ideal izquierdo minimal $L$ de un anillo semisimple. Entonces $I$ contiene a todos los ideales izquierdos isomorfos a $L$.
@@ -693,7 +693,7 @@ Sea $R$ un anillo y $M,N$ $R\mbox{-módulos}$ simples. Entonces:
 \end{bulletList}
 \end{corolario}
 \begin{teorema}[Wedderburn-Artin]
-Un anillo $R$ es semisimple si y sólo si es una suma directa de álgebras de matrices sobre anillos de división:
+Un anillo $R$ es semisimple si y solo si es una suma directa de álgebras de matrices sobre anillos de división:
 \[ R \simeq M_{n_1}(D_1)\oplus \cdots \cdots M_{n_s}(D_s).  \]
 \end{teorema}
 Para la demostración de este importante resultado, se sugiere ver \cite[200]{bib:AlgebraPostGrado}.
@@ -702,7 +702,7 @@ Sea $R$ un anillo semisimple y supóngase que
 \[ R \simeq M_{n_1} \oplus \cdots \oplus M_{n_s} \simeq M_{m_1}(D_1')\oplus \cdots \oplus M_{m_r}(D_r'), \] donde $D_i, D_j', 1 \leq i \leq s, 1 \leq j \leq r$ son anillos de división. Entonces $s = r$. Además bajo un posible reordenamiento de los índices, se tiene que $n_i = m_i, D_i \simeq D_i'$. 
 \end{teorema} \newpage
 \begin{proof*}
-Como los anillos de matrices sobre anillos de división son simples, se tiene por la proposición \ref{prop:unicidadDescomposicion} que $s = r$ y existe una biyección entre los dos conjuntos de ideales, tal que los correspondientes ideales son iguales. Sólo falta demostrar que si $M_n(D)\simeq M_m(D')$, donde $D$ y $D'$ son anillos de división, entonces $n = m$ y $D \simeq D'$.
+Como los anillos de matrices sobre anillos de división son simples, se tiene por la proposición \ref{prop:unicidadDescomposicion} que $s = r$ y existe una biyección entre los dos conjuntos de ideales, tal que los correspondientes ideales son iguales. Solo falta demostrar que si $M_n(D)\simeq M_m(D')$, donde $D$ y $D'$ son anillos de división, entonces $n = m$ y $D \simeq D'$.
 
 Sea $E = M_n(D)$, $E' = M_m(D')$ y 
 \[ L = \begin{pmatrix} 
